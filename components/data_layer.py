@@ -21,7 +21,7 @@ def databaseQuery(sql_text):
     connection = MySQLdb.connect(
         user=username,
         passwd=database_password,
-        host='127.0.0.1',
+        host='{username}.mysql.eu.pythonanywhere-services.com',
         db=f'{username}$default',
     )
     
