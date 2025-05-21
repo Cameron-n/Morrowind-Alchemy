@@ -5,14 +5,15 @@ Created on Wed May 21 20:51:51 2025
 @author: Cameron-n
 """
 
+import dash
+from dash import Dash
+import dash_mantine_components as dmc
 
-# A very simple Flask Hello World app for you to get started with...
+dash._dash_renderer._set_react_version("18.2.0")
 
-from flask import Flask
+app = Dash(__name__, use_pages=True)
 
-app = Flask(__name__)
+app.layout = dmc.MantineProvider(dmc.Container(dash.page_container))
 
-@app.route('/')
-def hello_world():
-    return 'Hello from Flask!'
-
+if __name__ == '__main__':
+    app.run(debug=True)
