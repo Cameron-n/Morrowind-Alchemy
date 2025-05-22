@@ -9,7 +9,7 @@ import dash
 from dash import callback, Input, State
 import dash_mantine_components as dmc
 
-from components.data_layer import databaseQuery
+from components.data_access import databaseQuery
 
 if __name__ != '__main__':
     dash.register_page(__name__)
