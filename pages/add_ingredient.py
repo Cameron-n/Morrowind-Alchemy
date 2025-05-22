@@ -5,15 +5,24 @@ Created on Wed May 21 21:41:23 2025
 @author: camer
 """
 
+# TODO
+# Change sql access to stored procedure.
+
+#%% Imports
+# Standard
+
+# Dash
 import dash
 from dash import callback, Input, State
 import dash_mantine_components as dmc
-
+# Relative
 from components.data_access import databaseQuery
 
+#%% Boilerplate
 if __name__ != '__main__':
     dash.register_page(__name__)
 
+#%% Layout
 layout = dmc.Group([
         dmc.TextInput(label="Value", id="textinput_value"),
         dmc.TextInput(label="Weight", id="textinput_weight"),
@@ -26,6 +35,7 @@ layout = dmc.Group([
         ],
     )
 
+#%% Callbacks
 @callback(
     State("textinput_value", "value"),
     State("textinput_weight", "value"),
