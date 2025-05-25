@@ -17,14 +17,16 @@ path = os.path.join(os.path.dirname(__file__), "../.env")
 load_dotenv(path)
 database_password = os.environ.get('PA_DATABASE_PASSWORD')
 username = os.environ.get('PA_USER')
+host_name = os.environ.get('PA_HOST')
+database_name = os.environ.get('PA_DATABASE_NAME')
 
 def database_connection():
     """ Connect to database."""
     connection = MySQLdb.connect(
         user=username,
         passwd=database_password,
-        host=f'{username}.mysql.eu.pythonanywhere-services.com',
-        db=f'{username}$default',
+        host=host_name,
+        db=database_name,
     )
     return connection
 
