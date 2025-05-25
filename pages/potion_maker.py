@@ -25,7 +25,7 @@ import dash
 import dash_mantine_components as dmc
 
 # Relative
-
+from components.data_access import DF_INGREDIENTS
 
 #%% Boilerplate
 if __name__ != '__main__':
@@ -42,10 +42,10 @@ alchemy_tools = dmc.Group([
     wrap="nowrap",)
 
 ingredients = dmc.Group([
-    dmc.Select("hi"),
-    dmc.Select("hi"),
-    dmc.Select("hi"),
-    dmc.Select("hi"),
+    dmc.Select("Ingredient 1", data = DF_INGREDIENTS["Ingredient"]),
+    dmc.Select("Ingredient 2", data = DF_INGREDIENTS["Ingredient"]),
+    dmc.Select("Ingredient 3", data = DF_INGREDIENTS["Ingredient"]),
+    dmc.Select("Ingredient 4", data = DF_INGREDIENTS["Ingredient"]),
     ],
     grow=True,
     wrap="nowrap",)
