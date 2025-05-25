@@ -3,6 +3,9 @@
 Created on Wed May 21 20:51:51 2025
 
 @author: Cameron-n
+
+Entrypoint for the dash app. Sets up some boilerplate code and
+creates the AppShell: the header, navbar, and main content area.
 """
 
 #%% Imports
