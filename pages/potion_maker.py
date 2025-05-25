@@ -111,6 +111,8 @@ layout = dmc.Stack([
     Input("ing_1","children"),
 )
 def update_effect_1_list(child):
+    if child == None:
+        return
     # Get list of up to 4 effects from DF_INGREDIENTS
     ingredient_row = DF_INGREDIENTS[DF_INGREDIENTS["Ingredient"]==child]
     ingredient_row_not_nan = ingredient_row.notna().iloc[0]
@@ -128,6 +130,8 @@ def update_effect_1_list(child):
     Input("ing_2","children"),
 )
 def update_effect_2_list(child):
+    if child == None:
+        return
     # Get list of up to 4 effects from DF_INGREDIENTS
     ingredient_row = DF_INGREDIENTS[DF_INGREDIENTS["Ingredient"]==child]
     ingredient_row_not_nan = ingredient_row.notna().iloc[0]
@@ -145,6 +149,8 @@ def update_effect_2_list(child):
     Input("ing_3","children"),
 )
 def update_effect_3_list(child):
+    if child == None:
+        return
     # Get list of up to 4 effects from DF_INGREDIENTS
     ingredient_row = DF_INGREDIENTS[DF_INGREDIENTS["Ingredient"]==child]
     ingredient_row_not_nan = ingredient_row.notna().iloc[0]
@@ -162,6 +168,8 @@ def update_effect_3_list(child):
     Input("ing_4","children"),
 )
 def update_effect_4_list(child):
+    if child == None:
+        return
     # Get list of up to 4 effects from DF_INGREDIENTS
     ingredient_row = DF_INGREDIENTS[DF_INGREDIENTS["Ingredient"]==child]
     ingredient_row_not_nan = ingredient_row.notna().iloc[0]
