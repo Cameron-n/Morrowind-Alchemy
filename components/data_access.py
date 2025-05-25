@@ -3,42 +3,61 @@
 Created on Wed May 21 22:05:03 2025
 
 @author: camer
+
+Functions to load and save database from and to the database.
 """
 # Consider Flask-SQL-Alchemy
 
-import pandas as pd
 import os
+import pandas as pd
 from dotenv import load_dotenv
 import MySQLdb
 
 path = os.path.join(os.path.dirname(__file__), "../.env")
 load_dotenv(path)
 database_password = os.environ.get('PA_DATABASE_PASSWORD')
-papassword = os.environ.get('PA_PASSWORD')
 username = os.environ.get('PA_USER')
 
-def databaseQuery(sql_text):
+def database_connection():
+    """ Connect to database."""
     connection = MySQLdb.connect(
         user=username,
         passwd=database_password,
         host=f'{username}.mysql.eu.pythonanywhere-services.com',
         db=f'{username}$default',
     )
-    
+    return connection
+
+def database_execute(sql_text):
+    """ Execute SQL query. Does not return anything.
+    Use for UPDATE/DELETE queries."""
+    connection = database_connection()
+
     connection.cursor().execute(
         sql_text
         )
     connection.commit()
     connection.close()
-    
-    # connection.query(
-    #     query
-    #     )
-    # r=connection.store_result()
-    
-    # dummy_data = []
-    # for row in r.fetch_row(0):
-    #     dummy_data.append(row)
-    # df = pd.DataFrame(dummy_data)
-    
-    # connection.close()
+
+def database_fetch(sql_text):
+    """ Execute SQL query. Returns results.
+    Use for SELECT queries."""
+    connection = database_connection()
+
+    connection.query(
+        sql_text
+        )
+    r=connection.store_result()
+
+    dummy_data = []
+    for row in r.fetch_row(0):
+        dummy_data.append(row)
+    df = pd.DataFrame(dummy_data)
+
+    connection.close()
+
+    return df
+
+# %% Data download
+
+DF_INGREDIENTS = database_fetch("SELECT * FROM Ingredient")
