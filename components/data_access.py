@@ -61,3 +61,5 @@ def database_fetch(sql_text):
 # %% Data download
 
 DF_INGREDIENTS = database_fetch("SELECT * FROM Ingredient")
+DF_COLUMN_NAMES = database_fetch("DESCRIBE Ingredient")[0]
+DF_INGREDIENTS.columns = DF_COLUMN_NAMES
