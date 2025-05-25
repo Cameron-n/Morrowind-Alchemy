@@ -19,7 +19,7 @@ from dash import callback, Input, State
 import dash_mantine_components as dmc
 
 # Relative
-from components.data_access import databaseQuery
+from components.data_access import database_execute
 
 #%% Boilerplate
 if __name__ != '__main__':
@@ -94,4 +94,4 @@ def on_add_ingredient_button_clicked(
     	);
     """
 
-    databaseQuery(sql_text)
+    database_execute(sql_text)
