@@ -22,6 +22,7 @@ Outputs:
 
 # Dash
 import dash
+from dash import callback, Input, Output
 import dash_mantine_components as dmc
 
 # Relative
@@ -42,39 +43,31 @@ alchemy_tools = dmc.Group([
     wrap="nowrap",)
 
 ingredients = dmc.Group([
-    dmc.Select("Ingredient 1", data = DF_INGREDIENTS["Ingredient"]),
-    dmc.Select("Ingredient 2", data = DF_INGREDIENTS["Ingredient"]),
-    dmc.Select("Ingredient 3", data = DF_INGREDIENTS["Ingredient"]),
-    dmc.Select("Ingredient 4", data = DF_INGREDIENTS["Ingredient"]),
+    dmc.Select(label = "Ingredient 1",
+               data = DF_INGREDIENTS["Ingredient"],
+               searchable = True,
+               id="ing_1"),
+    dmc.Select(label = "Ingredient 2",
+               data = DF_INGREDIENTS["Ingredient"],
+               searchable = True,
+               id="ing_2"),
+    dmc.Select(lable = "Ingredient 3",
+               data = DF_INGREDIENTS["Ingredient"],
+               searchable = True,
+               id="ing_3"),
+    dmc.Select(label = "Ingredient 4",
+               data = DF_INGREDIENTS["Ingredient"],
+               searchable = True,
+               id="ing_4"),
     ],
     grow=True,
     wrap="nowrap",)
 
 ingredient_effect_boxes = dmc.Group([
-    dmc.Container([
-        dmc.Text("Hi"),
-        dmc.Text("Hi"),
-        dmc.Text("Hi"),
-        dmc.Text("Hi"),
-        ]),
-    dmc.Container([
-        dmc.Text("Hi"),
-        dmc.Text("Hi"),
-        dmc.Text("Hi"),
-        dmc.Text("Hi"),
-        ]),
-    dmc.Container([
-        dmc.Text("Hi"),
-        dmc.Text("Hi"),
-        dmc.Text("Hi"),
-        dmc.Text("Hi"),
-        ]),
-    dmc.Container([
-        dmc.Text("Hi"),
-        dmc.Text("Hi"),
-        dmc.Text("Hi"),
-        dmc.Text("Hi"),
-        ]),
+    dmc.Container(id="ing_1_effects"),
+    dmc.Container(id="ing_2_effects"),
+    dmc.Container(id="ing_3_effects"),
+    dmc.Container(id="ing_4_effects"),
     ],
     #grow=True,
     wrap="nowrap",)
@@ -113,3 +106,70 @@ layout = dmc.Stack([
     ])
 
 #%% Callbacks
+@callback (
+    Output("ing_1_effects","children"),
+    Input("ing_1","children"),
+)
+def update_effect_1_list(child):
+    # Get list of up to 4 effects from DF_INGREDIENTS
+    ingredient_row = DF_INGREDIENTS[DF_INGREDIENTS["Ingredient"]==child]
+    ingredient_row_not_nan = ingredient_row.notna().iloc[0]
+    columns_not_nan = DF_INGREDIENTS.columns[ingredient_row_not_nan]
+    
+    effects = [i for i in columns_not_nan]
+    
+    # Add components
+    content = [dmc.Text(i) for i in effects]
+    
+    return content
+
+@callback (
+    Output("ing_2_effects","children"),
+    Input("ing_2","children"),
+)
+def update_effect_2_list(child):
+    # Get list of up to 4 effects from DF_INGREDIENTS
+    ingredient_row = DF_INGREDIENTS[DF_INGREDIENTS["Ingredient"]==child]
+    ingredient_row_not_nan = ingredient_row.notna().iloc[0]
+    columns_not_nan = DF_INGREDIENTS.columns[ingredient_row_not_nan]
+    
+    effects = [i for i in columns_not_nan]
+    
+    # Add components
+    content = [dmc.Text(i) for i in effects]
+    
+    return content
+
+@callback (
+    Output("ing_3_effects","children"),
+    Input("ing_3","children"),
+)
+def update_effect_3_list(child):
+    # Get list of up to 4 effects from DF_INGREDIENTS
+    ingredient_row = DF_INGREDIENTS[DF_INGREDIENTS["Ingredient"]==child]
+    ingredient_row_not_nan = ingredient_row.notna().iloc[0]
+    columns_not_nan = DF_INGREDIENTS.columns[ingredient_row_not_nan]
+    
+    effects = [i for i in columns_not_nan]
+    
+    # Add components
+    content = [dmc.Text(i) for i in effects]
+    
+    return content
+
+@callback (
+    Output("ing_4_effects","children"),
+    Input("ing_4","children"),
+)
+def update_effect_4_list(child):
+    # Get list of up to 4 effects from DF_INGREDIENTS
+    ingredient_row = DF_INGREDIENTS[DF_INGREDIENTS["Ingredient"]==child]
+    ingredient_row_not_nan = ingredient_row.notna().iloc[0]
+    columns_not_nan = DF_INGREDIENTS.columns[ingredient_row_not_nan]
+    
+    effects = [i for i in columns_not_nan]
+    
+    # Add components
+    content = [dmc.Text(i) for i in effects]
+    
+    return content
