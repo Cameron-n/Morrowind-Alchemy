@@ -17,6 +17,7 @@ Created on Wed May 21 21:41:23 2025
 import dash
 from dash import callback, Input, State
 import dash_mantine_components as dmc
+
 # Relative
 from components.data_access import databaseQuery
 

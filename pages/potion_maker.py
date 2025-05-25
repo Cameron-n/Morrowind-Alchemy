@@ -3,6 +3,16 @@
 Created on Thu May 22 20:16:47 2025
 
 @author: camer
+
+Dash page for simulating Morrowinds potion making window.
+Allows selection of:
+    - Stats (Alchemy, Intelligence, and Luck)
+    - Apparatuses (Mortal and Pestle, Alembic, Retort, and Calcinator)
+    - Ingredients (Up to 4)
+    
+Outputs:
+    - Potion Effect(s)
+    - Magnitude and Duration
 """
 
 # TODO
@@ -13,6 +23,7 @@ Created on Thu May 22 20:16:47 2025
 # Dash
 import dash
 import dash_mantine_components as dmc
+
 # Relative
 
 
