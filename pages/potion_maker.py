@@ -212,16 +212,16 @@ def update_effect_list_final(ing_1, ing_2, ing_3, ing_4):
     
     return content
 
-@callback(
-    Output("","children"),
-    Input("",""), # alchemy
-    Input("",""), # Intelligence
-    Input("",""), # luck
-    Input("",""), # mortar
-    Input("",""), # alembic
-    Input("",""), # retort
-    Input("",""), # calcinator
-    Input("potion_maker_effects","children")
-)
-def update_potion_mag_and_dur():
-    pass
+# @callback(
+#     Output("","children"),
+#     Input("",""), # alchemy
+#     Input("",""), # Intelligence
+#     Input("",""), # luck
+#     Input("",""), # mortar
+#     Input("",""), # alembic
+#     Input("",""), # retort
+#     Input("",""), # calcinator
+#     Input("potion_maker_effects","children")
+# )
+# def update_potion_mag_and_dur():
+#     pass
