@@ -17,9 +17,10 @@ Outputs:
 
 # TODO
 # Remove ability to select same ingredient more than once
-# Add alchemy tools table to database
-# Add effects table (base cost)
-# Add space for duration and magnitude
+# Tools table specify tool type and weight, value
+# Effect table specify +ve, -ve
+# Ingredients table specify origin [base, bloodmoon, tribunal, tamriel data, other]
+# Account for if inputs are empty
 
 #%% Imports
 # Standard
@@ -31,18 +32,34 @@ from dash import callback, Input, Output
 import dash_mantine_components as dmc
 
 # Relative
-from components.data_access import DF_INGREDIENTS
+from components.data_access import DF_INGREDIENTS, DF_EFFECTS, DF_TOOLS
 
 #%% Boilerplate
 if __name__ != '__main__':
-    dash.register_page(__name__)
+    dash.register_page(__name__, path='/')
 
 #%% Layout
 alchemy_tools = dmc.Group([
-    dmc.Select("hi"),
-    dmc.Select("hi"),
-    dmc.Select("hi"),
-    dmc.Select("hi"),
+    dmc.Select(label = "Mortar and Pestle",
+               data = [i for i in DF_TOOLS["Name"] if i[-17:]=="Mortar and Pestle"],
+               value = DF_TOOLS["Name"][2],
+               allowDeselect=False,
+               id="mortar"),
+    dmc.Select(label = "Alembic",
+               data = [i for i in DF_TOOLS["Name"] if i[-7:]=="Alembic"],
+               value = DF_TOOLS["Name"][0],
+               allowDeselect=False,
+               id="alembic"),
+    dmc.Select(label = "Calcinator",
+               data = [i for i in DF_TOOLS["Name"] if i[-10:]=="Calcinator"],
+               value = DF_TOOLS["Name"][1],
+               allowDeselect=False,
+               id="calcinator"),
+    dmc.Select(label = "Retort",
+               data = [i for i in DF_TOOLS["Name"] if i[-6:]=="Retort"],
+               value = DF_TOOLS["Name"][3],
+               allowDeselect=False,
+               id="retort"),
     ],
     grow=True,
     wrap="nowrap",)
@@ -73,12 +90,12 @@ ingredients = dmc.Group([
     wrap="nowrap",)
 
 ingredient_effect_boxes = dmc.Group([
-    dmc.Container(id="ing_1_effects"),
-    dmc.Container(id="ing_2_effects"),
-    dmc.Container(id="ing_3_effects"),
-    dmc.Container(id="ing_4_effects"),
+    dmc.Card(id="ing_1_effects"),
+    dmc.Card(id="ing_2_effects"),
+    dmc.Card(id="ing_3_effects"),
+    dmc.Card(id="ing_4_effects"),
     ],
-    #grow=True,
+    grow=True,
     wrap="nowrap",)
 
 left_items = dmc.Stack([
@@ -87,7 +104,14 @@ left_items = dmc.Stack([
     ingredient_effect_boxes
     ])
 
-right_items = dmc.Container(id="potion_maker_effects")
+potion_effects_stack = dmc.Card(id="potion_maker_effects")
+
+magnitude_and_duration = dmc.Card(id="mag_and_dur")
+
+right_items = dmc.Group([
+    potion_effects_stack,
+    magnitude_and_duration,
+    ])
 
 whole_thing = dmc.Group([
     left_items,
@@ -95,9 +119,24 @@ whole_thing = dmc.Group([
     ])
 
 stats = dmc.Container([
-    dmc.NumberInput(label="Alchemy", min=0,max=100, allowDecimal=False),
-    dmc.NumberInput(label="Intelligence", min=0,max=100, allowDecimal=False),
-    dmc.NumberInput(label="Luck", min=0,max=100, allowDecimal=False),
+    dmc.NumberInput(label="Alchemy",
+                    value=50,
+                    min=0,
+                    max=100,
+                    allowDecimal=False,
+                    id="alchemy"),
+    dmc.NumberInput(label="Intelligence",
+                    value=50,
+                    min=0,
+                    max=100,
+                    allowDecimal=False,
+                    id="intelligence"),
+    dmc.NumberInput(label="Luck",
+                    value=40,
+                    min=0,
+                    max=100,
+                    allowDecimal=False,
+                    id="luck"),
     ])
 
 layout = dmc.Stack([
@@ -106,20 +145,41 @@ layout = dmc.Stack([
     ])
 
 #%% Functions
-def potion_magnitude_and_duration():
+def potion_magnitude_and_duration(
+            alchemy, 
+            intelligence, 
+            luck,
+            mortar, 
+            alembic,
+            retort,
+            calcinator,
+            base_cost,
+            positive=True
+            ):
     
-    m_quality = 0
-    alchemy = 0
-    intelligence = 0
-    luck = 0
-    base_cost = 0
-    
-    magnitude_base = m_quality*(alchemy+intelligence/5+luck/10)/(3*base_cost)
+    magnitude_base = mortar*(alchemy+intelligence/5+luck/10)/(3*base_cost)
     duration_base = 3*magnitude_base
     
-    magnitude = magnitude_base # + stuff
-    duration = duration_base # + stuff
-    
+    extras = 0
+    mult = 1
+    if positive:
+        if retort and calcinator:
+            extras = round(calcinator) + 2*(round(retort))
+        elif retort:
+            extras = round(retort)
+        elif calcinator:
+            extras = round(calcinator)
+    else:
+        if alembic and calcinator:
+            mult = (48/120)/(alembic + calcinator)
+        elif alembic:
+            mult = 1/(alembic + 1)
+        elif calcinator:
+            extras = round(calcinator)
+
+    magnitude = magnitude_base*mult + extras
+    duration = duration_base*mult + extras
+
     return magnitude, duration
 
 def potion_effects(list_of_effect_lists):
@@ -151,7 +211,7 @@ def update_effect_list(value):
     effects.remove("Ingredient")
     
     # Add components
-    content = [dmc.Text(i) for i in effects]
+    content = [dmc.Text(i, truncate="end") for i in effects]
     
     return content
 
@@ -212,16 +272,56 @@ def update_effect_list_final(ing_1, ing_2, ing_3, ing_4):
     
     return content
 
-# @callback(
-#     Output("","children"),
-#     Input("",""), # alchemy
-#     Input("",""), # Intelligence
-#     Input("",""), # luck
-#     Input("",""), # mortar
-#     Input("",""), # alembic
-#     Input("",""), # retort
-#     Input("",""), # calcinator
-#     Input("potion_maker_effects","children")
-# )
-# def update_potion_mag_and_dur():
-#     pass
+@callback(
+    Output("mag_and_dur","children"),
+    Input("alchemy","value"),
+    Input("intelligence","value"),
+    Input("luck","value"),
+    Input("mortar","value"),
+    Input("alembic","value"),
+    Input("retort","value"),
+    Input("calcinator","value"),
+    Input("potion_maker_effects","children")
+)
+def update_potion_mag_and_dur(
+        alchemy, 
+        intelligence, 
+        luck, 
+        mortar, 
+        alembic,
+        retort,
+        calcinator,
+        children
+        ):
+    # get effect names
+    if not children:
+        return None
+    
+    effect_names = [i['props']['children'] for i in children]
+    
+    # get effect costs from names
+    effect_costs = [DF_EFFECTS["Base Cost"][DF_EFFECTS["Spell Effects"]==i].iloc[0] for i in effect_names]
+    
+    # get tool quality
+    mortar = DF_TOOLS["Quality"][DF_TOOLS["Name"]==mortar].iloc[0]
+    alembic = DF_TOOLS["Quality"][DF_TOOLS["Name"]==alembic].iloc[0]
+    retort = DF_TOOLS["Quality"][DF_TOOLS["Name"]==retort].iloc[0]
+    calcinator = DF_TOOLS["Quality"][DF_TOOLS["Name"]==calcinator].iloc[0]
+    
+    # calculate mag and duration
+    stack_list = []
+    for cost in effect_costs:
+        mag, dur = potion_magnitude_and_duration(
+            alchemy, 
+            intelligence, 
+            luck,
+            mortar, 
+            alembic,
+            retort,
+            calcinator,
+            cost
+            )
+        text = f"{round(mag)} points for {round(dur)} seconds"
+        stack_list.append(dmc.Text(text))  
+    
+    return stack_list

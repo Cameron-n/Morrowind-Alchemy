@@ -65,3 +65,11 @@ def database_fetch(sql_text):
 DF_INGREDIENTS = database_fetch("SELECT * FROM Ingredient")
 DF_COLUMN_NAMES = database_fetch("DESCRIBE Ingredient")[0]
 DF_INGREDIENTS.columns = DF_COLUMN_NAMES
+
+DF_EFFECTS = database_fetch("SELECT * FROM Effect")
+DF_COLUMN_NAMES = database_fetch("DESCRIBE Effect")[0]
+DF_EFFECTS.columns = DF_COLUMN_NAMES
+
+DF_TOOLS = database_fetch("SELECT * FROM Tool")
+DF_COLUMN_NAMES = database_fetch("DESCRIBE Tool")[0]
+DF_TOOLS.columns = DF_COLUMN_NAMES

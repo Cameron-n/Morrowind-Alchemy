@@ -44,7 +44,7 @@ properties = dmc.Group([
     wrap="nowrap")
 
 
-button = dmc.Button("Add Ingredient", id="button_add_ingredient")
+button = dmc.Button("Add Ingredient", c="myColors.9", id="button_add_ingredient")
 
 layout = dmc.Stack([
     first_three,
