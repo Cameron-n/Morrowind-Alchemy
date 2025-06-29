@@ -69,22 +69,34 @@ ingredients = dmc.Group([
                data = DF_INGREDIENTS["Ingredient"],
                searchable = True,
                clearable=True,
-               id="ing_1"),
+               id="ing_1",
+               styles={
+                   "dropdown":{"background":"blue"}
+                   }),
     dmc.Select(label = "Ingredient 2",
                data = DF_INGREDIENTS["Ingredient"],
                searchable = True,
                clearable=True,
-               id="ing_2"),
+               id="ing_2",
+               styles={
+                   "dropdown":{"background":"blue"}
+                   }),
     dmc.Select(label = "Ingredient 3",
                data = DF_INGREDIENTS["Ingredient"],
                searchable = True,
                clearable=True,
-               id="ing_3"),
+               id="ing_3",
+               styles={
+                   "dropdown":{"background":"blue"}
+                   }),
     dmc.Select(label = "Ingredient 4",
                data = DF_INGREDIENTS["Ingredient"],
                searchable = True,
                clearable=True,
-               id="ing_4"),
+               id="ing_4",
+               styles={
+                   "dropdown":{"background":"blue"}
+                   }),
     ],
     grow=True,
     wrap="nowrap",)

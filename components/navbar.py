@@ -9,7 +9,6 @@ Created on Sun May 25 20:40:32 2025
 # Standard
 
 # Dash
-import dash
 import dash_mantine_components as dmc
 
 # Relative
@@ -17,6 +16,14 @@ import dash_mantine_components as dmc
 #%% Layout
 def navbar():
     layout = dmc.Stack([
+        dmc.Button(
+            dmc.Anchor(
+                "Potion Database", 
+                href="/potion-database",
+                underline="never",
+                c="myColors.9"
+                )
+            ),
         dmc.Button(
             dmc.Anchor(
                 "Potion Maker", 
@@ -32,7 +39,7 @@ def navbar():
                 underline="never",
                 c="myColors.9"
                 )
-            )
+            ),
         ])
     
     return layout
