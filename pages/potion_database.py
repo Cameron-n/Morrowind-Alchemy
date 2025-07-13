@@ -6,22 +6,25 @@ Created on Thu May 22 20:17:48 2025
 """
 
 #%% Imports
+
 # Standard
-from collections import Counter
 
 # Dash
 import dash
-from dash import callback, Input, Output
 import dash_mantine_components as dmc
 
 # Relative
-from components.data_access import DF_INGREDIENTS, DF_EFFECTS, DF_TOOLS
+from components.data_access import DF_INGREDIENTS
+
 
 #%% Boilerplate
+
 if __name__ != '__main__':
     dash.register_page(__name__)
 
+
 #%% Layout
+
 effects_list = DF_INGREDIENTS.columns[3:] # Removes: Value, Weight, Ingredient
 effects_list = ["+", "-"] + list(effects_list)
 
@@ -98,6 +101,11 @@ layout=dmc.Stack([
     potions_table,
     ])
 
+
 #%% Functions
 
+
+
+
 #%% Callbacks
+

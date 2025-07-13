@@ -4,8 +4,8 @@ Created on Thu May 22 20:16:47 2025
 
 @author: camer
 
-Dash page for simulating Morrowinds potion making window.
-Allows selection of:
+Page for simulating Morrowind's potion making window.
+Inputs:
     - Stats (Alchemy, Intelligence, and Luck)
     - Apparatuses (Mortal and Pestle, Alembic, Retort, and Calcinator)
     - Ingredients (Up to 4)
@@ -23,6 +23,7 @@ Outputs:
 # Account for if inputs are empty
 
 #%% Imports
+
 # Standard
 from collections import Counter
 
@@ -34,11 +35,15 @@ import dash_mantine_components as dmc
 # Relative
 from components.data_access import DF_INGREDIENTS, DF_EFFECTS, DF_TOOLS
 
+
 #%% Boilerplate
+
 if __name__ != '__main__':
     dash.register_page(__name__, path='/')
 
+
 #%% Layout
+
 alchemy_tools = dmc.Group([
     dmc.Select(label = "Mortar and Pestle",
                data = [i for i in DF_TOOLS["Name"] if i[-17:]=="Mortar and Pestle"],
@@ -156,7 +161,9 @@ layout = dmc.Stack([
     whole_thing,
     ])
 
+
 #%% Functions
+
 def potion_magnitude_and_duration(
             alchemy, 
             intelligence, 
@@ -227,7 +234,9 @@ def update_effect_list(value):
     
     return content
 
+
 #%% Callbacks
+
 @callback(
     Output("ing_1_effects","children"),
     Input("ing_1","value"),

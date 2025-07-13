@@ -3,10 +3,11 @@
 Created on Wed May 21 21:41:23 2025
 
 @author: camer
+
+Page to add ingredients to the database. Password protected
 """
 
 # TODO
-# Change sql access to stored procedure.
 # Not all ingredients have 4 effects.
 # Add column for source? e.g. base/bloodmoon/tamriel_rebuilt etc
 

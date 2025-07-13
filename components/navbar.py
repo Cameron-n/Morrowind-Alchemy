@@ -3,15 +3,19 @@
 Created on Sun May 25 20:40:32 2025
 
 @author: camer
+
+Contains the layout for the navbar used in app.py
 """
 
 #%% Imports
+
 # Standard
 
 # Dash
 import dash_mantine_components as dmc
 
 # Relative
+
 
 #%% Layout
 def navbar():
