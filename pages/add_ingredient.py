@@ -5,27 +5,54 @@ Created on Wed May 21 21:41:23 2025
 @author: camer
 """
 
+# TODO
+# Change sql access to stored procedure.
+# Not all ingredients have 4 effects.
+# Add column for source? e.g. base/bloodmoon/tamriel_rebuilt etc
+
+#%% Imports
+# Standard
+
+# Dash
 import dash
 from dash import callback, Input, State
 import dash_mantine_components as dmc
 
-from components.data_access import databaseQuery
+# Relative
+from components.data_access import database_execute
 
+#%% Boilerplate
 if __name__ != '__main__':
     dash.register_page(__name__)
 
-layout = dmc.Group([
+#%% Layout
+first_three = dmc.Group([
         dmc.TextInput(label="Value", id="textinput_value"),
         dmc.TextInput(label="Weight", id="textinput_weight"),
         dmc.TextInput(label="Ingredient", id="textinput_ingredient"),
+        ],
+    grow=True,
+    wrap="nowrap")
+
+properties = dmc.Group([
         dmc.TextInput(label="Property 1", id="textinput_property_1"),
         dmc.TextInput(label="Property 2", id="textinput_property_2"),
         dmc.TextInput(label="Property 3", id="textinput_property_3"),
         dmc.TextInput(label="Property 4", id="textinput_property_4"),
-        dmc.Button("Add Ingredient", id="button_add_ingredient"),
         ],
-    )
+    grow=True,
+    wrap="nowrap")
 
+
+button = dmc.Button("Add Ingredient", c="myColors.9", id="button_add_ingredient")
+
+layout = dmc.Stack([
+    first_three,
+    properties,
+    button,
+    ])
+
+#%% Callbacks
 @callback(
     State("textinput_value", "value"),
     State("textinput_weight", "value"),
@@ -67,4 +94,4 @@ def on_add_ingredient_button_clicked(
     	);
     """
 
-    databaseQuery(sql_text)
+    database_execute(sql_text)

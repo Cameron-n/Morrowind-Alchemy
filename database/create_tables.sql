@@ -74,3 +74,7 @@ CREATE TABLE `Ingredient` (
   `Water Walking` int DEFAULT NULL,
   PRIMARY KEY (`Ingredient`)
 );
+CREATE TABLE `Effect`(
+   `Spell Effects` VARCHAR(50) NOT NULL PRIMARY KEY
+  ,`Base Cost`     Float NOT NULL
+);
