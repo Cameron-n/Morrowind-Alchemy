@@ -3,6 +3,11 @@
 Created on Thu May 22 20:17:48 2025
 
 @author: camer
+
+Page to search through all potion combinations
+
+Features:
+    - Test
 """
 
 #%% Imports
