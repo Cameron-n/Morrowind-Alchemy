@@ -126,7 +126,9 @@ def potion_combinations(ingredients):
 
 # Notes on step-by-step process to calculate potion combos
 # 1. User selects effects
+    # Callback
 # 2. Ingredients with those effects identified
+    # e.g. a[a["Poison"]==1][a["Burden"]==1]
     # Need all ingredients with AT LEAST one effect from selection
 # 3. Calculate all 2-potions
     # More than 4 effects => skip
@@ -138,6 +140,7 @@ def potion_combinations(ingredients):
     # Calculate all minimal quads by extending triplets
     # Calculate disjoint pairwise pairs by joining pairwise
 # 6. Order potions by number of positive effects
+# 7. Extend button. Adds more ingredient to minimal set based on +ve effects
 
 
 #%% Callbacks
