@@ -110,19 +110,34 @@ layout=dmc.Stack([
 
 #%% Functions
 
-def potion_combinations(ingredients):
+def potion_combinations(ingredients, restrictions):
+    """
+    Find all 2 ingredient potion combinations with the particular effects
+    chosen, i.e. the restrictions.
 
+    """
+
+    # Remove irrelevant columns. Store Ingredient names to add back later
     drop_columns = ["Value", "Weight", "Ingredient", "Origin"]
     ingredients_names = ingredients["Ingredient"]
     ingredients_matrix = ingredients.drop(drop_columns, axis=1)
-    for i in ingredients:
-        i_matrix = i.drop(drop_columns)
-        combos = ingredients_matrix@i_matrix
+    for j in restrictions:
+        ingredients_matrix = ingredients_matrix[ingredients_matrix[j]==1]
+
+    #TODO Remove duplicates. Currently, does AB BA | should do AB
+    for i in ingredients_matrix.to_numpy():
+        combos = ingredients_matrix*i
         combos = combos.dropna(how="all")
         combos = combos.dropna(how="all", axis=1)
         combos = combos.join(ingredients_names)
+        print(combos)
 
     return combos
+
+# ERROR
+# Heartwood is labelled as "Resist Magicka" but should be "Restore Magicka"
+# Deadra's Heart is labelled as "Resist Magicka" but should be "Restore Magicka"
+# Wolf Pelt is labelled as "Burden" "Poison" "Restore Magicka" "Reflect" but is "Drain Fatigue" "Fortify Speed" "Resist Common Disease" "Night Eye"
 
 # Notes on step-by-step process to calculate potion combos
 # 1. User selects effects
