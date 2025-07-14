@@ -13,6 +13,7 @@ Features:
 #%% Imports
 
 # Standard
+import pandas as pd
 
 # Dash
 import dash
@@ -109,7 +110,34 @@ layout=dmc.Stack([
 
 #%% Functions
 
+def potion_combinations(ingredients):
 
+    drop_columns = ["Value", "Weight", "Ingredient", "Origin"]
+    ingredients_names = ingredients["Ingredient"]
+    ingredients_matrix = ingredients.drop(drop_columns, axis=1)
+    for i in ingredients:
+        i_matrix = i.drop(drop_columns)
+        combos = ingredients_matrix@i_matrix
+        combos = combos.dropna(how="all")
+        combos = combos.dropna(how="all", axis=1)
+        combos = combos.join(ingredients_names)
+
+    return combos
+
+# Notes on step-by-step process to calculate potion combos
+# 1. User selects effects
+# 2. Ingredients with those effects identified
+    # Need all ingredients with AT LEAST one effect from selection
+# 3. Calculate all 2-potions
+    # More than 4 effects => skip
+    # Calculate all pairwise combos (use potion_combinations)
+# 4. Calculate all 3-potions
+    # More than 6 effects => skip
+    # Calculate all minimal triplets by extending pairwise.
+# 5. Calculate all 4-potions
+    # Calculate all minimal quads by extending triplets
+    # Calculate disjoint pairwise pairs by joining pairwise
+# 6. Order potions by number of positive effects
 
 
 #%% Callbacks
