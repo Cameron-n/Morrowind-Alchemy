@@ -74,7 +74,15 @@ CREATE TABLE `Ingredient` (
   `Water Walking` int DEFAULT NULL,
   PRIMARY KEY (`Ingredient`)
 );
-CREATE TABLE `Effect`(
-   `Spell Effects` VARCHAR(50) NOT NULL PRIMARY KEY
-  ,`Base Cost`     Float NOT NULL
+CREATE TABLE `Effect` (
+  `Spell Effects` varchar(50) NOT NULL,
+  `Base Cost` float NOT NULL,
+  `Positive` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`Spell Effects`)
+);
+CREATE TABLE `Tool` (
+  `Name` varchar(50) NOT NULL,
+  `Quality` float NOT NULL,
+  `Type` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`Name`)
 );
