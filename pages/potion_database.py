@@ -120,19 +120,23 @@ def potion_combinations(ingredients, restrictions):
     # Remove irrelevant columns. Store Ingredient names to add back later
     drop_columns = ["Value", "Weight", "Ingredient", "Origin"]
     ingredients_names = ingredients["Ingredient"]
-    ingredients_matrix = ingredients.drop(drop_columns, axis=1)
-    for j in restrictions:
-        ingredients_matrix = ingredients_matrix[ingredients_matrix[j]==1]
 
-    #TODO Remove duplicates. Currently, does AB BA | should do AB
-    for i in ingredients_matrix.to_numpy():
-        combos = ingredients_matrix*i
+    potions = pd.DataFrame()
+
+    for j in restrictions:
+        ingredients = ingredients[ingredients[j]==1]
+
+    #TODO remove hardcoded column positions
+    for i in ingredients.to_numpy():
+        combos = ingredients[ingredients["Ingredient"]>i[2]].drop(drop_columns, axis=1)*i[3:-1]
         combos = combos.dropna(how="all")
         combos = combos.dropna(how="all", axis=1)
         combos = combos.join(ingredients_names)
-        print(combos)
+        combos["Ingredient 2"] = i[2]
 
-    return combos
+        potions = pd.concat([potions, combos])
+
+    return potions
 
 # ERROR
 # Heartwood is labelled as "Resist Magicka" but should be "Restore Magicka"
@@ -154,7 +158,7 @@ def potion_combinations(ingredients, restrictions):
 # 5. Calculate all 4-potions
     # Calculate all minimal quads by extending triplets
     # Calculate disjoint pairwise pairs by joining pairwise
-# 6. Order potions by number of positive effects
+# 6. Order potions by number of positive effects DESC, number of negative effects ASC
 # 7. Extend button. Adds more ingredient to minimal set based on +ve effects
 
 
