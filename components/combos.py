@@ -19,14 +19,19 @@ def potion_combinations(ingredients=DF_INGREDIENTS, restrictions=None):
 
     potions = pd.DataFrame()
 
-    for index, row in ingredients.iterrows():
+    for index, row in DF_INGREDIENTS.iterrows():
 
         # Removes duplicates and self-combinations
         # e.g. for combos of A and B it removes BA and AA. Only AB is valid.
         temp_ingredients = ingredients.copy()
-        for name in ["Ingredient", "Ingredient 2", "Ingredient 3", "Ingredient 4"]:
-            if name in ingredients_columns:
-                temp_ingredients = temp_ingredients[temp_ingredients[name] > row[name]]
+        if "Ingredient 4" in temp_ingredients.columns:
+            temp_ingredients = temp_ingredients[temp_ingredients["Ingredient 4"] < row["Ingredient"]]
+        elif "Ingredient 3" in temp_ingredients.columns:
+            temp_ingredients = temp_ingredients[temp_ingredients["Ingredient 3"] < row["Ingredient"]]
+        elif "Ingredient 2" in temp_ingredients.columns:
+            temp_ingredients = temp_ingredients[temp_ingredients["Ingredient 2"] < row["Ingredient"]]
+        elif "Ingredient" in temp_ingredients.columns:
+            temp_ingredients = temp_ingredients[temp_ingredients["Ingredient"] < row["Ingredient"]]
 
         # Creates all possible potion combos AB, AC, DFH, etc.
         # If a row has all NaNs, the ingredients share no effects.
@@ -50,4 +55,17 @@ def potion_combinations(ingredients=DF_INGREDIENTS, restrictions=None):
 potions_1 = DF_INGREDIENTS
 potions_2 = potion_combinations(potions_1)
 potions_3 = potion_combinations(potions_2)
-potions_4 = potion_combinations(potions_3)
+#potions_4 = potion_combinations(potions_3)
+
+"""
+ABCD
+
+ABC
+ABD
+ACD
+BCD
+
+
+
+"""
+
