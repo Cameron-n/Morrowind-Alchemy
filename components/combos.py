@@ -1,6 +1,9 @@
 import pandas as pd
 from components.data_access import DF_INGREDIENTS
 
+DF_INGREDIENTS = DF_INGREDIENTS[0:10]
+DF_INGREDIENTS = DF_INGREDIENTS.fillna(0)
+
 def potion_combinations(ingredients=DF_INGREDIENTS, restrictions=None):
 
     # Remove non-effect columns. Ingredient names need to be stored so they can be added back
@@ -35,8 +38,9 @@ def potion_combinations(ingredients=DF_INGREDIENTS, restrictions=None):
 
         # Creates all possible potion combos AB, AC, DFH, etc.
         # If a row has all NaNs, the ingredients share no effects.
-        combos = temp_ingredients.drop(drop_columns, axis=1, errors="ignore")*row.drop(drop_columns, errors="ignore")
-        combos = combos.dropna(how="all")
+        #TODO Bug. Currently, does not remove ingredients that add no new effects to existing potions
+        combos = temp_ingredients.drop(drop_columns, axis=1, errors="ignore") + row.drop(drop_columns, errors="ignore")
+        combos = combos.loc[(combos!=0).any(axis=1)]
         combos = combos.join(ingredient_names)
 
         if "Ingredient 2" not in ingredients_columns:
@@ -48,6 +52,8 @@ def potion_combinations(ingredients=DF_INGREDIENTS, restrictions=None):
 
         potions = pd.concat([potions, combos])
 
+    #potions = potions.replace(1, 0)
+    potions = potions.loc[(potions.drop(drop_columns, axis=1, errors="ignore")!=0).any(axis=1)]
     potions = potions.reset_index().drop("index", axis=1)
 
     return potions
@@ -56,16 +62,3 @@ potions_1 = DF_INGREDIENTS
 potions_2 = potion_combinations(potions_1)
 potions_3 = potion_combinations(potions_2)
 #potions_4 = potion_combinations(potions_3)
-
-"""
-ABCD
-
-ABC
-ABD
-ACD
-BCD
-
-
-
-"""
-
