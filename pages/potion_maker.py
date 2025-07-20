@@ -2,12 +2,12 @@
 """
 Created on Thu May 22 20:16:47 2025
 
-@author: camer
+@author: Cameron-n
 
 Page for simulating Morrowind's potion making window.
 Inputs:
     - Stats (Alchemy, Intelligence, and Luck)
-    - Apparatuses (Mortal and Pestle, Alembic, Retort, and Calcinator)
+    - Apparatuses (Mortar and Pestle, Alembic, Retort, and Calcinator)
     - Ingredients (Up to 4)
     
 Outputs:
@@ -17,8 +17,6 @@ Outputs:
 
 # TODO
 # Remove ability to select same ingredient more than once
-# Tools table specify tool type and weight, value
-# Effect table specify +ve, -ve
 # Account for if inputs are empty
 
 #%% Imports
@@ -45,23 +43,23 @@ if __name__ != '__main__':
 
 alchemy_tools = dmc.Group([
     dmc.Select(label = "Mortar and Pestle",
-               data = [i for i in DF_TOOLS["Name"] if i[-17:]=="Mortar and Pestle"],
-               value = DF_TOOLS["Name"][2],
+               data = [i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Mortar and Pestle"]],
+               value = DF_TOOLS[DF_TOOLS["Type"]=="Mortar and Pestle"][DF_TOOLS["Quality"]==0.5]["Name"],
                allowDeselect=False,
                id="mortar"),
     dmc.Select(label = "Alembic",
-               data = [i for i in DF_TOOLS["Name"] if i[-7:]=="Alembic"],
-               value = DF_TOOLS["Name"][0],
+               data = [i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Alembic"]],
+               value = DF_TOOLS[DF_TOOLS["Type"]=="Alembic"][DF_TOOLS["Quality"]==0.5]["Name"],
                allowDeselect=False,
                id="alembic"),
     dmc.Select(label = "Calcinator",
-               data = [i for i in DF_TOOLS["Name"] if i[-10:]=="Calcinator"],
-               value = DF_TOOLS["Name"][1],
+               data = [i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Calcinator"]],
+               value = DF_TOOLS[DF_TOOLS["Type"]=="Calcinator"][DF_TOOLS["Quality"]==0.5]["Name"],
                allowDeselect=False,
                id="calcinator"),
     dmc.Select(label = "Retort",
-               data = [i for i in DF_TOOLS["Name"] if i[-6:]=="Retort"],
-               value = DF_TOOLS["Name"][3],
+               data = [i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Retort"]],
+               value = DF_TOOLS[DF_TOOLS["Type"]=="Retort"][DF_TOOLS["Quality"]==0.5]["Name"],
                allowDeselect=False,
                id="retort"),
     ],
@@ -227,6 +225,8 @@ def update_effect_list(value):
     effects.remove("Value")
     effects.remove("Weight")
     effects.remove("Ingredient")
+    effects.remove("Origin")
+    effects.remove("First Effect")
     
     # Add components
     content = [dmc.Text(i, truncate="end") for i in effects]
