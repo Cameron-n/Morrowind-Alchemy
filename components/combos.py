@@ -1,8 +1,8 @@
 import pandas as pd
 from components.data_access import DF_INGREDIENTS
 
-DF_INGREDIENTS = DF_INGREDIENTS[0:10]
-DF_INGREDIENTS = DF_INGREDIENTS.fillna(0)
+#DF_INGREDIENTS = DF_INGREDIENTS[0:10]
+DF_INGREDIENTS = DF_INGREDIENTS.fillna(0) # move to data_access.py?
 
 def potion_combinations(ingredients=DF_INGREDIENTS, restrictions=None):
 
@@ -39,7 +39,18 @@ def potion_combinations(ingredients=DF_INGREDIENTS, restrictions=None):
         # Creates all possible potion combos AB, AC, DFH, etc.
         # If a row has all NaNs, the ingredients share no effects.
         #TODO Bug. Currently, does not remove ingredients that add no new effects to existing potions
-        combos = temp_ingredients.drop(drop_columns, axis=1, errors="ignore") + row.drop(drop_columns, errors="ignore")
+        temp_ingredients = temp_ingredients.drop(drop_columns, axis=1, errors="ignore")
+
+        number_of_twos_before = temp_ingredients[temp_ingredients==2].sum(axis=1)
+
+        combos = temp_ingredients + row.drop(drop_columns, errors="ignore")
+
+        number_of_twos_after = combos[combos==2].sum(axis=1)
+
+        combos["Number of Two's"] = number_of_twos_after - number_of_twos_before
+        combos = combos[combos["Number of Two's"] > 0]
+        combos = combos.drop("Number of Two's", axis=1)
+
         combos = combos.loc[(combos!=0).any(axis=1)]
         combos = combos.join(ingredient_names)
 
@@ -61,4 +72,10 @@ def potion_combinations(ingredients=DF_INGREDIENTS, restrictions=None):
 potions_1 = DF_INGREDIENTS
 potions_2 = potion_combinations(potions_1)
 potions_3 = potion_combinations(potions_2)
-#potions_4 = potion_combinations(potions_3)
+potions_4 = potion_combinations(potions_3)
+
+# Function for 2 disjoint pairs
+# Combines potions_2
+# Only valid if the pairs share NO effects with each other, including unmatched
+# ingredient effects.
+# Extend for arbitary disjoint i.e. 5 = 3+2, 6=4+2=3+3?
