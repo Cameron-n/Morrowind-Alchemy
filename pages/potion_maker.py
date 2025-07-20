@@ -19,7 +19,6 @@ Outputs:
 # Remove ability to select same ingredient more than once
 # Tools table specify tool type and weight, value
 # Effect table specify +ve, -ve
-# Ingredients table specify origin [base, bloodmoon, tribunal, tamriel data, other]
 # Account for if inputs are empty
 
 #%% Imports

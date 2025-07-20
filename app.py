@@ -11,19 +11,16 @@ creates the AppShell: the header, navbar, and main content area.
 #%% Imports
 
 # Standard
-import os
-from dotenv import load_dotenv
 
 # Dash
 import dash
 from dash import Dash
 import dash_mantine_components as dmc
-from flask import Flask
 
 # Relative
 from components.navbar import navbar
 from components.config import theme
-from components.data_access import server, db, Ingredient, Effect, Tool
+from components.data_access import server
 
 
 #%% Boilerplate
