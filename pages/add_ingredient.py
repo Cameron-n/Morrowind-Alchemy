@@ -2,13 +2,20 @@
 """
 Created on Wed May 21 21:41:23 2025
 
-@author: camer
+@author: Cameron-n
 
 Page to add ingredients to the database. Password protected
 """
 
 # TODO
-# Not all ingredients have 4 effects.
+# Error handling:
+    # Property 1 empty
+    # Any cells empty
+    # Duplicate ingredient name (overwrite?)
+    # Other database errors
+# Password protect on server
+# Feedback on success
+# Boxes to dropdown/limit input type
 
 #%% Imports
 
@@ -35,6 +42,7 @@ first_three = dmc.Group([
         dmc.TextInput(label="Value", id="textinput_value"),
         dmc.TextInput(label="Weight", id="textinput_weight"),
         dmc.TextInput(label="Ingredient", id="textinput_ingredient"),
+        dmc.TextInput(label="Origin", id="textinput_origin"),
         ],
     grow=True,
     wrap="nowrap")
@@ -64,6 +72,7 @@ layout = dmc.Stack([
     State("textinput_value", "value"),
     State("textinput_weight", "value"),
     State("textinput_ingredient", "value"),
+    State("textinput_origin", "value"),
     State("textinput_property_1", "value"),
     State("textinput_property_2", "value"),
     State("textinput_property_3", "value"),
@@ -74,6 +83,7 @@ def on_add_ingredient_button_clicked(
         value_value, 
         value_weight, 
         value_ingredient,
+        value_origin,
         value_property_1, 
         value_property_2, 
         value_property_3, 
@@ -83,18 +93,18 @@ def on_add_ingredient_button_clicked(
     """
     Adds ingredient and properties to database
     """
-
-    effects = {
-        value_property_1.replace(" ","_") : '1',
-        value_property_2.replace(" ","_") : '1',
-        value_property_3.replace(" ","_") : '1',
-        value_property_4.replace(" ","_") : '1',
-        }
+    
+    properties = [value_property_1, value_property_2, 
+                  value_property_3 , value_property_4]
+  
+    effects = {i.replace(" ","_") : '1' for i in properties if i is not None}
 
     new_ingredient = Ingredient(
         Value=value_value,
         Weight=value_weight,
         Ingredient=value_ingredient,
+        Origin=value_origin,
+        First_Effect=value_property_1,
         **effects,
         )
     
