@@ -11,11 +11,14 @@ creates the AppShell: the header, navbar, and main content area.
 #%% Imports
 
 # Standard
+import os
+from dotenv import load_dotenv
 
 # Dash
 import dash
 from dash import Dash
 import dash_mantine_components as dmc
+from flask import Flask
 
 # Relative
 from components.navbar import navbar
@@ -27,7 +30,12 @@ from components.config import theme
 # Needed for dmc to work
 dash._dash_renderer._set_react_version("18.2.0")
 
-app = Dash(__name__, use_pages=True)
+server = Flask(__name__)
+app = Dash(__name__, server=server, use_pages=True)
+
+path = os.path.join(os.path.dirname(__file__), "../.env")
+load_dotenv(path)
+server.config["SQLALCHEMY_DATABASE_URI"]=os.environ.get('DATABASE_URI')
 
 
 #%% Layout
