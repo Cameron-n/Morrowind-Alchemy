@@ -16,23 +16,17 @@ import dash_mantine_components as dmc
 #%% Layout
 def navbar():
     layout = dmc.Stack([
-        dmc.Button(
-            dmc.Anchor(
-                "Potion Database", href="/potion-database",
-                underline="never", c="myColors.9"
-                )
+        dmc.Anchor(
+            dmc.Button("Potion Database"), 
+            href="/potion-database", underline="never", c="myColors.9"
             ),
-        dmc.Button(
-            dmc.Anchor(
-                "Potion Maker", href="/",
-                underline="never", c="myColors.9"
-                )
+        dmc.Anchor(
+            dmc.Button("Potion Maker"), 
+            href="/", underline="never", c="myColors.9"
             ),
-        dmc.Button(
-            dmc.Anchor(
-                "Add Ingredient", href="/add-ingredient",
-                underline="never", c="myColors.9"
-                )
+        dmc.Anchor(
+            dmc.Button("Add Ingredient"), 
+            href="/add-ingredient", underline="never", c="myColors.9"
             ),
         ])
     
