@@ -23,6 +23,7 @@ from flask import Flask
 # Relative
 from components.navbar import navbar
 from components.config import theme
+from components.data_access import server, db, Ingredient, Effect, Tool
 
 
 #%% Boilerplate
@@ -30,12 +31,7 @@ from components.config import theme
 # Needed for dmc to work
 dash._dash_renderer._set_react_version("18.2.0")
 
-server = Flask(__name__)
 app = Dash(__name__, server=server, use_pages=True)
-
-path = os.path.join(os.path.dirname(__file__), "../.env")
-load_dotenv(path)
-server.config["SQLALCHEMY_DATABASE_URI"]=os.environ.get('DATABASE_URI')
 
 
 #%% Layout
@@ -62,10 +58,7 @@ layout = dmc.AppShell([
     bg="myColors.0"
     )
 
-app.layout = dmc.MantineProvider(
-    layout,
-    theme=theme
-    )
+app.layout = dmc.MantineProvider(layout, theme=theme)
 
 
 #%% Boilerplate

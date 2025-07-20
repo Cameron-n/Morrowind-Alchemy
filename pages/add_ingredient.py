@@ -9,9 +9,9 @@ Page to add ingredients to the database. Password protected
 
 # TODO
 # Not all ingredients have 4 effects.
-# Add column for source? e.g. base/bloodmoon/tamriel_rebuilt etc
 
 #%% Imports
+
 # Standard
 
 # Dash
@@ -20,13 +20,17 @@ from dash import callback, Input, State
 import dash_mantine_components as dmc
 
 # Relative
-from components.data_access import database_execute
+from components.data_access import db, Ingredient
+
 
 #%% Boilerplate
+
 if __name__ != '__main__':
     dash.register_page(__name__)
 
+
 #%% Layout
+
 first_three = dmc.Group([
         dmc.TextInput(label="Value", id="textinput_value"),
         dmc.TextInput(label="Weight", id="textinput_weight"),
@@ -53,7 +57,9 @@ layout = dmc.Stack([
     button,
     ])
 
+
 #%% Callbacks
+
 @callback(
     State("textinput_value", "value"),
     State("textinput_weight", "value"),
@@ -74,25 +80,23 @@ def on_add_ingredient_button_clicked(
         value_property_4,
         n_clicks
         ):
-    sql_text = f"""
-    INSERT INTO Ingredient (
-    	`Value`, 
-    	`Weight`, 
-    	`Ingredient`, 
-    	`{value_property_1}`, 
-    	`{value_property_2}`, 
-    	`{value_property_3}`, 
-    	`{value_property_4}`
-    	)
-    VALUES (
-    	"{value_value}", 
-    	"{value_weight}", 
-    	"{value_ingredient}", 
-    	1, 
-    	1, 
-    	1, 
-    	1
-    	);
+    """
+    Adds ingredient and properties to database
     """
 
-    database_execute(sql_text)
+    effects = {
+        value_property_1.replace(" ","_") : '1',
+        value_property_2.replace(" ","_") : '1',
+        value_property_3.replace(" ","_") : '1',
+        value_property_4.replace(" ","_") : '1',
+        }
+
+    new_ingredient = Ingredient(
+        Value=value_value,
+        Weight=value_weight,
+        Ingredient=value_ingredient,
+        **effects,
+        )
+    
+    db.session.add(new_ingredient)
+    db.session.commit()
