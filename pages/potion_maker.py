@@ -23,10 +23,11 @@ Outputs:
 
 # Standard
 from collections import Counter
+from copy import deepcopy
 
 # Dash
 import dash
-from dash import callback, Input, Output
+from dash import dcc, callback, Input, Output, State
 import dash_mantine_components as dmc
 
 # Relative
@@ -44,22 +45,22 @@ if __name__ != '__main__':
 alchemy_tools = dmc.Group([
     dmc.Select(label = "Mortar and Pestle",
                data = [i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Mortar and Pestle"]],
-               value = DF_TOOLS[DF_TOOLS["Type"]=="Mortar and Pestle"][DF_TOOLS["Quality"]==0.5]["Name"],
+               value = DF_TOOLS[DF_TOOLS["Type"]=="Mortar and Pestle"][DF_TOOLS["Quality"]==0.5]["Name"].iloc[0],
                allowDeselect=False,
                id="mortar"),
     dmc.Select(label = "Alembic",
                data = [i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Alembic"]],
-               value = DF_TOOLS[DF_TOOLS["Type"]=="Alembic"][DF_TOOLS["Quality"]==0.5]["Name"],
+               value = DF_TOOLS[DF_TOOLS["Type"]=="Alembic"][DF_TOOLS["Quality"]==0.5]["Name"].iloc[0],
                allowDeselect=False,
                id="alembic"),
     dmc.Select(label = "Calcinator",
                data = [i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Calcinator"]],
-               value = DF_TOOLS[DF_TOOLS["Type"]=="Calcinator"][DF_TOOLS["Quality"]==0.5]["Name"],
+               value = DF_TOOLS[DF_TOOLS["Type"]=="Calcinator"][DF_TOOLS["Quality"]==0.5]["Name"].iloc[0],
                allowDeselect=False,
                id="calcinator"),
     dmc.Select(label = "Retort",
                data = [i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Retort"]],
-               value = DF_TOOLS[DF_TOOLS["Type"]=="Retort"][DF_TOOLS["Quality"]==0.5]["Name"],
+               value = DF_TOOLS[DF_TOOLS["Type"]=="Retort"][DF_TOOLS["Quality"]==0.5]["Name"].iloc[0],
                allowDeselect=False,
                id="retort"),
     ],
@@ -68,6 +69,7 @@ alchemy_tools = dmc.Group([
 
 ingredients = dmc.Group([
     dmc.Select(label = "Ingredient 1",
+               value=None,
                data = DF_INGREDIENTS["Ingredient"],
                searchable = True,
                clearable=True,
@@ -76,6 +78,7 @@ ingredients = dmc.Group([
                    "dropdown":{"background":"blue"}
                    }),
     dmc.Select(label = "Ingredient 2",
+               value=None,
                data = DF_INGREDIENTS["Ingredient"],
                searchable = True,
                clearable=True,
@@ -84,6 +87,7 @@ ingredients = dmc.Group([
                    "dropdown":{"background":"blue"}
                    }),
     dmc.Select(label = "Ingredient 3",
+               value=None,
                data = DF_INGREDIENTS["Ingredient"],
                searchable = True,
                clearable=True,
@@ -92,6 +96,7 @@ ingredients = dmc.Group([
                    "dropdown":{"background":"blue"}
                    }),
     dmc.Select(label = "Ingredient 4",
+               value=None,
                data = DF_INGREDIENTS["Ingredient"],
                searchable = True,
                clearable=True,
@@ -156,6 +161,7 @@ stats = dmc.Container([
 layout = dmc.Stack([
     stats,
     whole_thing,
+    dcc.Store(id="repeats_store")
     ])
 
 
@@ -238,31 +244,64 @@ def update_effect_list(value):
 
 @callback(
     Output("ing_1_effects","children"),
-    Input("ing_1","value"),
-)
-def update_effect_1_list(value):
-    return update_effect_list(value)
-
-@callback(
     Output("ing_2_effects","children"),
-    Input("ing_2","value"),
-)
-def update_effect_2_list(value):
-    return update_effect_list(value)
-
-@callback(
     Output("ing_3_effects","children"),
-    Input("ing_3","value"),
-)
-def update_effect_3_list(value):
-    return update_effect_list(value)
-
-@callback(
     Output("ing_4_effects","children"),
+    Output("ing_1","data"),
+    Output("ing_2","data"),
+    Output("ing_3","data"),
+    Output("ing_4","data"),
+    Input("ing_1","value"),
+    Input("ing_2","value"),
+    Input("ing_3","value"),
     Input("ing_4","value"),
+    prevent_initial_call=True
 )
-def update_effect_4_list(value):
-    return update_effect_list(value)
+def update_effect_dropdowns(value_1, value_2, value_3, value_4):
+    
+    data_1 = deepcopy(DF_INGREDIENTS["Ingredient"])
+    data_2 = deepcopy(DF_INGREDIENTS["Ingredient"])
+    data_3 = deepcopy(DF_INGREDIENTS["Ingredient"])
+    data_4 = deepcopy(DF_INGREDIENTS["Ingredient"])
+
+    if dash.callback_context.triggered_id == "ing_1":
+        value = value_1
+        name = "ing_1"
+    elif dash.callback_context.triggered_id == "ing_2":
+        value = value_2
+        name = "ing_2"
+    elif dash.callback_context.triggered_id == "ing_3":
+        value = value_3
+        name = "ing_3"
+    elif dash.callback_context.triggered_id == "ing_4":
+        value = value_4
+        name = "ing_4"
+
+    for i in [value_2,value_3,value_4]:
+        if i:
+            data_1 = data_1[data_1!=i]
+    for i in [value_1,value_3,value_4]:
+        if i:
+            data_2 = data_2[data_2!=i]
+    for i in [value_2,value_1,value_4]:
+        if i:
+            data_3 = data_3[data_3!=i]
+    for i in [value_2,value_3,value_1]:
+        if i:
+            data_4 = data_4[data_4!=i]
+    
+    if name == "ing_1":
+        return update_effect_list(value), dash.no_update, dash.no_update, dash.no_update, \
+               data_1, data_2, data_3, data_4
+    elif name == "ing_2":
+        return dash.no_update, update_effect_list(value), dash.no_update, dash.no_update, \
+               data_1, data_2, data_3, data_4
+    elif name == "ing_3":
+        return dash.no_update, dash.no_update, update_effect_list(value), dash.no_update, \
+               data_1, data_2, data_3, data_4
+    elif name == "ing_4":
+        return dash.no_update, dash.no_update, dash.no_update, update_effect_list(value), \
+               data_1, data_2, data_3, data_4
 
 @callback(
     Output("potion_maker_effects","children"),
