@@ -31,6 +31,7 @@ if __name__ != '__main__':
 
 #%% Layout
 
+# Add drop_columns to data_access
 drop_columns = ["Value", "Weight", "Ingredient", "Origin", "First Effect"]
 effects_list = DF_INGREDIENTS.drop(drop_columns, axis=1).columns
 effects_list = ["+", "-"] + list(effects_list)

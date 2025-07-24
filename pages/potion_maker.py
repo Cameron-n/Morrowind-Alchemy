@@ -15,9 +15,9 @@ Outputs:
     - Magnitude and Duration
 """
 
-# TODO
-# Remove ability to select same ingredient more than once
-# Account for if inputs are empty
+#TODO
+# order tools by quality instead of alphabetically
+# calculation for negative and single ingredients
 
 #%% Imports
 
@@ -27,7 +27,7 @@ from copy import deepcopy
 
 # Dash
 import dash
-from dash import dcc, callback, Input, Output, State
+from dash import dcc, callback, Input, Output
 import dash_mantine_components as dmc
 
 # Relative
@@ -161,7 +161,6 @@ stats = dmc.Container([
 layout = dmc.Stack([
     stats,
     whole_thing,
-    dcc.Store(id="repeats_store")
     ])
 
 
@@ -206,7 +205,7 @@ def potion_magnitude_and_duration(
 
 def potion_effects(list_of_effect_lists):
     """
-    WARNING: Code adapted from Chat GPT.
+    WARNING: Code adapted from ChatGPT.
     Finds what effects are shared between the input ingredients.
     These are the effects a potion will have.
     """
@@ -258,24 +257,17 @@ def update_effect_list(value):
     prevent_initial_call=True
 )
 def update_effect_dropdowns(value_1, value_2, value_3, value_4):
+    """
+    Removes shared effects from dropdowns.
+    
+    E.g. if ingredient 1 is "adamantium ore", the other dropdowns
+    will no longer show that ingredient
+    """
     
     data_1 = deepcopy(DF_INGREDIENTS["Ingredient"])
     data_2 = deepcopy(DF_INGREDIENTS["Ingredient"])
     data_3 = deepcopy(DF_INGREDIENTS["Ingredient"])
     data_4 = deepcopy(DF_INGREDIENTS["Ingredient"])
-
-    if dash.callback_context.triggered_id == "ing_1":
-        value = value_1
-        name = "ing_1"
-    elif dash.callback_context.triggered_id == "ing_2":
-        value = value_2
-        name = "ing_2"
-    elif dash.callback_context.triggered_id == "ing_3":
-        value = value_3
-        name = "ing_3"
-    elif dash.callback_context.triggered_id == "ing_4":
-        value = value_4
-        name = "ing_4"
 
     for i in [value_2,value_3,value_4]:
         if i:
@@ -290,17 +282,17 @@ def update_effect_dropdowns(value_1, value_2, value_3, value_4):
         if i:
             data_4 = data_4[data_4!=i]
     
-    if name == "ing_1":
-        return update_effect_list(value), dash.no_update, dash.no_update, dash.no_update, \
+    if dash.callback_context.triggered_id == "ing_1":
+        return update_effect_list(value_1), dash.no_update, dash.no_update, dash.no_update, \
                data_1, data_2, data_3, data_4
-    elif name == "ing_2":
-        return dash.no_update, update_effect_list(value), dash.no_update, dash.no_update, \
+    elif dash.callback_context.triggered_id == "ing_2":
+        return dash.no_update, update_effect_list(value_2), dash.no_update, dash.no_update, \
                data_1, data_2, data_3, data_4
-    elif name == "ing_3":
-        return dash.no_update, dash.no_update, update_effect_list(value), dash.no_update, \
+    elif dash.callback_context.triggered_id == "ing_3":
+        return dash.no_update, dash.no_update, update_effect_list(value_3), dash.no_update, \
                data_1, data_2, data_3, data_4
-    elif name == "ing_4":
-        return dash.no_update, dash.no_update, dash.no_update, update_effect_list(value), \
+    elif dash.callback_context.triggered_id == "ing_4":
+        return dash.no_update, dash.no_update, dash.no_update, update_effect_list(value_4), \
                data_1, data_2, data_3, data_4
 
 @callback(

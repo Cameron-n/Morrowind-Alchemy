@@ -27,8 +27,7 @@ from dash import callback, Input, State
 import dash_mantine_components as dmc
 
 # Relative
-from components.data_access import db, Ingredient
-
+from components.data_access import db, Ingredient, DF_INGREDIENTS
 
 #%% Boilerplate
 
@@ -39,19 +38,23 @@ if __name__ != '__main__':
 #%% Layout
 
 first_three = dmc.Group([
-        dmc.TextInput(label="Value", id="textinput_value"),
-        dmc.TextInput(label="Weight", id="textinput_weight"),
-        dmc.TextInput(label="Ingredient", id="textinput_ingredient"),
-        dmc.TextInput(label="Origin", id="textinput_origin"),
+        dmc.NumberInput(label="Value", min=0, required=True, id="textinput_value"),
+        dmc.NumberInput(label="Weight", min=0, required=True, id="textinput_weight"),
+        dmc.TextInput(label="Ingredient", required=True, id="textinput_ingredient"),
+        dmc.TextInput(label="Origin", required=True, id="textinput_origin"),
         ],
     grow=True,
     wrap="nowrap")
 
+# Add drop_columns to data_access
+drop_columns = ["Value", "Weight", "Ingredient", "Origin", "First Effect"]
+data = DF_INGREDIENTS.drop(drop_columns, axis=1).columns
+
 properties = dmc.Group([
-        dmc.TextInput(label="Property 1", id="textinput_property_1"),
-        dmc.TextInput(label="Property 2", id="textinput_property_2"),
-        dmc.TextInput(label="Property 3", id="textinput_property_3"),
-        dmc.TextInput(label="Property 4", id="textinput_property_4"),
+        dmc.Select(label="Property 1", data=data, clearable=False, required=True, id="textinput_property_1"),
+        dmc.Select(label="Property 2", data=data, clearable=True, id="textinput_property_2"),
+        dmc.Select(label="Property 3", data=data, clearable=True, id="textinput_property_3"),
+        dmc.Select(label="Property 4", data=data, clearable=True, id="textinput_property_4"),
         ],
     grow=True,
     wrap="nowrap")
@@ -93,10 +96,10 @@ def on_add_ingredient_button_clicked(
     """
     Adds ingredient and properties to database
     """
-    
+
     properties = [value_property_1, value_property_2, 
                   value_property_3 , value_property_4]
-  
+
     effects = {i.replace(" ","_") : '1' for i in properties if i is not None}
 
     new_ingredient = Ingredient(

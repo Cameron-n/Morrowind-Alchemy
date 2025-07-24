@@ -119,9 +119,9 @@ potions_2 = potions_2.drop(["Ingredient", "Ingredient 2"], axis=1)
 potions_2 = potions_2.where(potions_2 != 2, potions_2.columns.to_series(), axis=1)
 potions_2 = potions_2.to_numpy()
 
-for index, i in enumerate(potions_2):
-    a=i[i!=0]
-    print(a[a!=1][0], [i for i in potions_2_ingredients.iloc[index]])
+# for index, i in enumerate(potions_2):
+#     a=i[i!=0]
+#     print(a[a!=1][0], [i for i in potions_2_ingredients.iloc[index]])
 
 # Function for 2 disjoint pairs
 # Combines potions_2
