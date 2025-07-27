@@ -158,15 +158,35 @@ def calculate_potions(
     #TODO make it list all effects and work for any number of ingredients
     for index, i in enumerate(potions_2):
         a=i[i!=0]
+
+        b = a[a!=1]
+
+        c = b[0]
+
+        try:
+            d=b[1]
+        except IndexError:
+            d=''
+        
+        try:
+            e=b[2]
+        except IndexError:
+            e=''
+
+        try:
+            f=b[3]
+        except IndexError:
+            f=''
+
         new_row = {
             "Ingredient 1":potions_2_ingredients.iloc[index][0],
             "Ingredient 2":potions_2_ingredients.iloc[index][1],
             "Ingredient 3":"",
             "Ingredient 4":"",
-            "Effect 1":a[a!=1][0],
-            "Effect 2":"",
-            "Effect 3":"",
-            "Effect 4":"",
+            "Effect 1":c,
+            "Effect 2":d,
+            "Effect 3":e,
+            "Effect 4":f,
             "Effect 5":"",
             "Effect 6":"",
             "Effect 7":"",
