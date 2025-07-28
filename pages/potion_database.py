@@ -150,47 +150,49 @@ def calculate_potions(
     
     potions_2 = potion_combinations(DF_INGREDIENTS.fillna(0))
     
-    potions_2_ingredients = potions_2[["Ingredient", "Ingredient 2"]]
-    potions_2 = potions_2.drop(["Ingredient", "Ingredient 2"], axis=1)
+    ingredients_columns = ["Ingredient", "Ingredient 2", "Ingredient 3", "Ingredient 4"]
+    potions_2_ingredients = potions_2[potions_2.columns.intersection(ingredients_columns)]
+    potions_2 = potions_2.drop([ingredients_columns], axis=1, errors='ignore')
+
+    # A potion has an effect if at least 2 ingredients share that effect
     potions_2 = potions_2.where(potions_2 != 2, potions_2.columns.to_series(), axis=1)
     potions_2 = potions_2.to_numpy()
 
-    #TODO make it list all effects and work for any number of ingredients
-    for index, i in enumerate(potions_2):
-        a=i[i!=0]
+    
+    for index, potion in enumerate(potions_2):
 
-        b = a[a!=1]
+        # Remove effects not part of the ingredients (0)
+        # or in only an ingredient but not the other (1)
+        potion = potion[potion!=0]
+        potion = potion[potion!=1]
 
-        c = b[0]
+        table_ingredients = []
+        for j in range(4):
+            try:
+                table_ingredients.append(potions_2_ingredients.iloc[index][j])
+            except IndexError:
+                table_ingredients.append('')
 
-        try:
-            d=b[1]
-        except IndexError:
-            d=''
+        table_effects = []
+        for j in range(8):
+            try:
+                table_effects.append(potion[j])
+            except IndexError:
+                table_effects.append('')
         
-        try:
-            e=b[2]
-        except IndexError:
-            e=''
-
-        try:
-            f=b[3]
-        except IndexError:
-            f=''
-
         new_row = {
-            "Ingredient 1":potions_2_ingredients.iloc[index][0],
-            "Ingredient 2":potions_2_ingredients.iloc[index][1],
-            "Ingredient 3":"",
-            "Ingredient 4":"",
-            "Effect 1":c,
-            "Effect 2":d,
-            "Effect 3":e,
-            "Effect 4":f,
-            "Effect 5":"",
-            "Effect 6":"",
-            "Effect 7":"",
-            "Effect 8":"",
+            "Ingredient 1":table_ingredients[0],
+            "Ingredient 2":table_ingredients[1],
+            "Ingredient 3":table_ingredients[2],
+            "Ingredient 4":table_ingredients[3],
+            "Effect 1":table_effects[0],
+            "Effect 2":table_effects[1],
+            "Effect 3":table_effects[2],
+            "Effect 4":table_effects[3],
+            "Effect 5":table_effects[4],
+            "Effect 6":table_effects[5],
+            "Effect 7":table_effects[6],
+            "Effect 8":table_effects[7],
             }
         potion_data.append(new_row)
     
