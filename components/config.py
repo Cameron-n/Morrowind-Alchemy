@@ -7,32 +7,34 @@ Created on Sun Jul 13 15:47:51 2025
 Contains the styling for the app
 """
 
+myColors = [
+    "#fff8e7",
+    "#fbefd5",
+    "#f5dda7",
+    "#f0c976",
+    "#ecb94e",
+    "#eaaf34",
+    "#e9aa26",
+    "#cf941a",
+    "#b88312",
+    "#9f7102",
+]
+
 theme = {
         "colors" : {
-            "myColors" : [
-                "#fff8e7",
-                "#fbefd5",
-                "#f5dda7",
-                "#f0c976",
-                "#ecb94e",
-                "#eaaf34",
-                "#e9aa26",
-                "#cf941a",
-                "#b88312",
-                "#9f7102",
-                ],
+            "myColors" : myColors,
             },
         "primaryColor" : "myColors",
         "primaryShade" : 3,
         "components" : {
             "Select" : {
                 "styles" : {
-                    "dropdown":{"background":"grey"},
+                    "dropdown":{"background":myColors[4]},
                 }
             },
             "TagsInput" : {
                 "styles" : {
-                    "dropdown":{"background":"grey"},
+                    "dropdown":{"background":myColors[4]},
                 }
             }
         }
