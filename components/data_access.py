@@ -53,8 +53,8 @@ db.init_app(server)
 class Ingredient(db.Model):
     __tablename__ = "Ingredient"
     
-    Weight = mapped_column(Float)
     Value = mapped_column(Float)
+    Weight = mapped_column(Float)
     Ingredient = mapped_column(String(50), primary_key=True)
     Weakness_to_Fire = mapped_column("Weakness to Fire", Integer)
     Blind = mapped_column(Integer)
@@ -128,6 +128,7 @@ class Ingredient(db.Model):
     Water_Walking = mapped_column("Water Walking", Integer)
     Origin = mapped_column("Origin", String(50))
     First_Effect = mapped_column("First Effect", String(50))
+    Sound = mapped_column(Integer)
     
 class Effect(db.Model):
     __tablename__ = "Effect"
@@ -145,15 +146,15 @@ class Tool(db.Model):
 
 # %% Data download
 
+# BUG
+# All columns are selected from the database, then the column names
+# are added. The order of the columns is dependant on the order in
+# the database. Nothing matches the correct columns name to the
+# correct column. So, the table definitions have to define the columns
+# in the order in the database. Ideally, the order shouldn't matter.
 with server.app_context():
     DF_INGREDIENTS = pd.DataFrame(db.session.execute(db.select(*Ingredient.__table__.columns)))
-    DF_COLUMN_NAMES = list(db.session.execute(text("DESCRIBE Ingredient")).scalars())
-    DF_INGREDIENTS.columns = DF_COLUMN_NAMES
     
     DF_EFFECTS = pd.DataFrame(db.session.execute(db.select(*Effect.__table__.columns)))
-    DF_COLUMN_NAMES = list(db.session.execute(text("DESCRIBE Effect")).scalars())
-    DF_EFFECTS.columns = DF_COLUMN_NAMES
     
     DF_TOOLS = pd.DataFrame(db.session.execute(db.select(*Tool.__table__.columns)))
-    DF_COLUMN_NAMES = list(db.session.execute(text("DESCRIBE Tool")).scalars())
-    DF_TOOLS.columns = DF_COLUMN_NAMES
