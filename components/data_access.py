@@ -4,7 +4,7 @@ Created on Wed May 21 22:05:03 2025
 
 @author: Cameron-n
 
-Functions to load and save database from and to the database.
+Functions to load and save data to and from the database.
 """
 
 #%% Imports
@@ -21,7 +21,7 @@ from flask import Flask
 
 # SQLAlchemy
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import text, Integer, String, Float
+from sqlalchemy import Integer, String, Float
 from sqlalchemy.orm import DeclarativeBase, mapped_column
 
 
@@ -29,6 +29,8 @@ from sqlalchemy.orm import DeclarativeBase, mapped_column
 
 path = os.path.join(os.path.dirname(__file__), "../.env")
 load_dotenv(path)
+
+# Seemingly used. Could replace URI with these components 
 database_password = os.environ.get('PA_DATABASE_PASSWORD')
 username = os.environ.get('PA_USER')
 host_name = os.environ.get('PA_HOST')
@@ -50,6 +52,10 @@ db.init_app(server)
 
 #%% Classes
 
+# For new effects, add them:
+    # Here
+    # In `Ingredient` in the database
+    # In `Effects` in the database
 class Ingredient(db.Model):
     __tablename__ = "Ingredient"
     
@@ -126,9 +132,9 @@ class Ingredient(db.Model):
     Swift_Swim = mapped_column("Swift Swim", Integer)
     Water_Breathing = mapped_column("Water Breathing", Integer)
     Water_Walking = mapped_column("Water Walking", Integer)
+    Sound = mapped_column(Integer)
     Origin = mapped_column("Origin", String(50))
     First_Effect = mapped_column("First Effect", String(50))
-    Sound = mapped_column(Integer)
     
 class Effect(db.Model):
     __tablename__ = "Effect"
@@ -146,15 +152,9 @@ class Tool(db.Model):
 
 # %% Data download
 
-# BUG
-# All columns are selected from the database, then the column names
-# are added. The order of the columns is dependant on the order in
-# the database. Nothing matches the correct columns name to the
-# correct column. So, the table definitions have to define the columns
-# in the order in the database. Ideally, the order shouldn't matter.
 with server.app_context():
+    # Don't use `db.select(Ingredient)`. This returns sqlalchemy objects instead 
+    # of the raw database columns
     DF_INGREDIENTS = pd.DataFrame(db.session.execute(db.select(*Ingredient.__table__.columns)))
-    
     DF_EFFECTS = pd.DataFrame(db.session.execute(db.select(*Effect.__table__.columns)))
-    
     DF_TOOLS = pd.DataFrame(db.session.execute(db.select(*Tool.__table__.columns)))
