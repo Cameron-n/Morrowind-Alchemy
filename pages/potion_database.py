@@ -117,7 +117,7 @@ layout=dmc.Stack([
 #%% Callbacks
 
 @callback(
-    Output("Effect Table","children"),
+    Output("Effect Table", "children"),
     Input("Effect Button", "n_clicks"),
     State("Effect 1", "value"),
     State("Effect 2", "value"),
@@ -148,18 +148,17 @@ def calculate_potions(
     # Test data for table appearance
     potion_data = []
     
-    potions_2 = potion_combinations(DF_INGREDIENTS.fillna(0))
+    potions = potion_combinations(DF_INGREDIENTS.fillna(0))
     
     ingredients_columns = ["Ingredient", "Ingredient 2", "Ingredient 3", "Ingredient 4"]
-    potions_2_ingredients = potions_2[potions_2.columns.intersection(ingredients_columns)]
-    potions_2 = potions_2.drop([ingredients_columns], axis=1, errors='ignore')
+    potions_ingredients = potions[potions.columns.intersection(ingredients_columns)]
+    potions = potions.drop(ingredients_columns, axis=1, errors='ignore')
 
     # A potion has an effect if at least 2 ingredients share that effect
-    potions_2 = potions_2.where(potions_2 != 2, potions_2.columns.to_series(), axis=1)
-    potions_2 = potions_2.to_numpy()
+    potions = potions.where(potions != 2, potions.columns.to_series(), axis=1)
+    potions = potions.to_numpy()
 
-    
-    for index, potion in enumerate(potions_2):
+    for index, potion in enumerate(potions):
 
         # Remove effects not part of the ingredients (0)
         # or in only an ingredient but not the other (1)
@@ -169,7 +168,7 @@ def calculate_potions(
         table_ingredients = []
         for j in range(4):
             try:
-                table_ingredients.append(potions_2_ingredients.iloc[index][j])
+                table_ingredients.append(potions_ingredients.iloc[index][j])
             except IndexError:
                 table_ingredients.append('')
 
