@@ -4,7 +4,8 @@ Created on Wed May 21 21:41:23 2025
 
 @author: Cameron-n
 
-Page to add ingredients to the database. Password protected
+Page to add ingredients to the database. Password protected and
+not on navigation bar to stop it being publically accessible
 """
 
 # TODO
@@ -17,16 +18,17 @@ Page to add ingredients to the database. Password protected
 
 #%% Imports
 
-# Standard
-
 # Dash
 import dash
 from dash import callback, Input, Output, State
 import dash_mantine_components as dmc
+
+# SQLAlchemy
 from sqlalchemy.exc import IntegrityError, OperationalError
 
 # Relative
 from components.data_access import db, Ingredient, DF_INGREDIENTS, DF_EFFECTS
+
 
 #%% Boilerplate
 
@@ -36,9 +38,12 @@ if __name__ != '__main__':
 
 #%% Layout
 
+success_fail_alert = dmc.Alert(hide=True, variant='outline',
+                               withCloseButton=True, id="alert-success-fail")
+
 data_origin = DF_INGREDIENTS["Origin"].unique()
 
-first_three = dmc.Group([
+attributes = dmc.Group([
         dmc.NumberInput(label="Value", min=0, required=True, id="textinput_value"),
         dmc.NumberInput(label="Weight", min=0, required=True, id="textinput_weight"),
         dmc.TextInput(label="Ingredient", required=True, id="textinput_ingredient"),
@@ -61,12 +66,9 @@ properties = dmc.Group([
 
 button = dmc.Button("Add Ingredient", c="myColors.9", id="button_add_ingredient")
 
-success_fail_alert = dmc.Alert(hide=True, variant='outline',
-                               withCloseButton=True, id="alert-success-fail")
-
 layout = dmc.Stack([
     success_fail_alert,
-    first_three,
+    attributes,
     properties,
     button,
     ])
@@ -107,14 +109,17 @@ def on_add_ingredient_button_clicked(
     Adds ingredient and properties to database
     """
 
+    # Check if all required values are not empty
     starred = [value_value, value_weight, value_ingredient,
                value_origin, value_property_1]
     if True in [i in [None, [], ""] for i in starred]:
         return f"Missing required inputs.", "Failed!", "red", False
 
     properties = [value_property_1, value_property_2, 
-                  value_property_3 , value_property_4]
+                  value_property_3, value_property_4]
 
+    # Need to replace spaces with underscores as the flask-sqlalchemy columns
+    # are defined as variables. E.g. "Resist Magicka" -> "Resist_Magicka"
     effects = {i.replace(" ","_") : '1' for i in properties if i is not None}
 
     new_ingredient = Ingredient(
