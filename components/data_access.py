@@ -157,4 +157,4 @@ with server.app_context():
     # of the raw database columns
     DF_INGREDIENTS = pd.DataFrame(db.session.execute(db.select(*Ingredient.__table__.columns)))
     DF_EFFECTS = pd.DataFrame(db.session.execute(db.select(*Effect.__table__.columns)))
-    DF_TOOLS = pd.DataFrame(db.session.execute(db.select(*Tool.__table__.columns)))
+    DF_TOOLS = pd.DataFrame(db.session.execute(db.select(*Tool.__table__.columns).order_by(Tool.Quality)))
