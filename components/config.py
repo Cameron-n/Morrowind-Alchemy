@@ -24,4 +24,16 @@ theme = {
             },
         "primaryColor" : "myColors",
         "primaryShade" : 3,
+        "components" : {
+            "Select" : {
+                "styles" : {
+                    "dropdown":{"background":"grey"},
+                }
+            },
+            "TagsInput" : {
+                "styles" : {
+                    "dropdown":{"background":"grey"},
+                }
+            }
+        }
         }

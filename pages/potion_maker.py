@@ -75,7 +75,6 @@ ingredients = dmc.Group([
                clearable=True,
                id="ing_1",
                styles={
-                   "dropdown":{"background":"blue"}
                    }),
     dmc.Select(label = "Ingredient 2",
                value=None,
@@ -84,7 +83,6 @@ ingredients = dmc.Group([
                clearable=True,
                id="ing_2",
                styles={
-                   "dropdown":{"background":"blue"}
                    }),
     dmc.Select(label = "Ingredient 3",
                value=None,
@@ -93,7 +91,6 @@ ingredients = dmc.Group([
                clearable=True,
                id="ing_3",
                styles={
-                   "dropdown":{"background":"blue"}
                    }),
     dmc.Select(label = "Ingredient 4",
                value=None,
@@ -102,7 +99,6 @@ ingredients = dmc.Group([
                clearable=True,
                id="ing_4",
                styles={
-                   "dropdown":{"background":"blue"}
                    }),
     ],
     grow=True,
