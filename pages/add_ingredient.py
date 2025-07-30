@@ -50,10 +50,10 @@ first_three = dmc.Group([
 data_effects = DF_EFFECTS["Spell Effects"]
 
 properties = dmc.Group([
-        dmc.Select(label="Property 1", data=data_effects, clearable=False, required=True, id="textinput_property_1"),
-        dmc.Select(label="Property 2", data=data_effects, clearable=True, id="textinput_property_2"),
-        dmc.Select(label="Property 3", data=data_effects, clearable=True, id="textinput_property_3"),
-        dmc.Select(label="Property 4", data=data_effects, clearable=True, id="textinput_property_4"),
+        dmc.Select(label="Property 1", data=data_effects, clearable=False, required=True, searchable=True, id="textinput_property_1"),
+        dmc.Select(label="Property 2", data=data_effects, clearable=True, searchable=True, id="textinput_property_2"),
+        dmc.Select(label="Property 3", data=data_effects, clearable=True, searchable=True, id="textinput_property_3"),
+        dmc.Select(label="Property 4", data=data_effects, clearable=True, searchable=True, id="textinput_property_4"),
         ],
     grow=True,
     wrap="nowrap")
