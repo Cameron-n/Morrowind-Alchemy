@@ -18,6 +18,8 @@ Outputs:
 #TODO
 # order tools by quality instead of alphabetically
 # calculation for negative and single ingredients
+# don't include magnitude/duration if effect not have
+# verify math in-game cause wiki conflicts with openmw research
 
 #%% Imports
 
@@ -174,7 +176,7 @@ def potion_magnitude_and_duration(
             positive=True
             ):
     
-    magnitude_base = mortar*(alchemy+intelligence/5+luck/10)/(3*base_cost)
+    magnitude_base = mortar*(alchemy+intelligence/10+luck/10)/(3*base_cost)
     duration_base = 3*magnitude_base
     
     extras = 0
@@ -188,7 +190,7 @@ def potion_magnitude_and_duration(
             extras = round(calcinator)
     else:
         if alembic and calcinator:
-            mult = (48/120)/(alembic + calcinator)
+            mult = 1/(2*alembic + 3*calcinator)
         elif alembic:
             mult = 1/(alembic + 1)
         elif calcinator:
