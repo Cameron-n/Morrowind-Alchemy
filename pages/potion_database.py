@@ -145,10 +145,16 @@ def calculate_potions(
     formats the data for this page's table
     """
 
-    # Test data for table appearance
     potion_data = []
+
+    restrictions = []
+    for i in [value_1, value_2, value_3, value_4,
+              value_5, value_6, value_7, value_8]:
+        if i not in [None, "", []]:
+            restrictions.append(i)
     
-    potions = potion_combinations(DF_INGREDIENTS.fillna(0))
+    # Test data for table appearance
+    potions = potion_combinations(DF_INGREDIENTS.fillna(0), restrictions)
     
     ingredients_columns = ["Ingredient", "Ingredient 2", "Ingredient 3", "Ingredient 4"]
     potions_ingredients = potions[potions.columns.intersection(ingredients_columns)]

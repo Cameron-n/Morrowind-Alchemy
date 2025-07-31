@@ -12,6 +12,12 @@ Contains the logic to calculate ingredient combinations
     # Deadra's Heart is labelled as "Resist Magicka" but should be "Restore Magicka"
     # Wolf Pelt is labelled as "Burden" "Poison" "Restore Magicka" "Reflect" but is "Drain Fatigue" "Fortify Speed" "Resist Common Disease" "Night Eye"
 
+# Function for 2 disjoint pairs
+# Combines potions_2
+# Only valid if the pairs share NO effects with each other, including unmatched
+# ingredient effects.
+# Extend for arbitary disjoint i.e. 5 = 3+2, 6=4+2=3+3?
+
 #%% Imports
 
 # Standard
@@ -22,9 +28,6 @@ from components.data_access import DF_INGREDIENTS
 
 
 #%% Functions
-
-#DF_INGREDIENTS = DF_INGREDIENTS[0:10]
-DF_INGREDIENTS = DF_INGREDIENTS.fillna(0)
 
 # Notes on step-by-step process to calculate potion combos
     # 1. User selects effects
@@ -44,21 +47,20 @@ DF_INGREDIENTS = DF_INGREDIENTS.fillna(0)
     # 6. Order potions by number of positive effects DESC, number of negative effects ASC
     # 7. Extend button. Adds more ingredient to minimal set based on +ve effects
 
-def potion_combinations(ingredients=DF_INGREDIENTS, restrictions=None):
+DF_INGREDIENTS = DF_INGREDIENTS.fillna(0)
 
-    # Remove non-effect columns. Ingredient names need to be stored so they can be added back
-    # after row multiplication.
+def potion_combinations(ingredients, restrictions=[]):
+
+    # Remove non-effect columns. Ingredient names need to be stored so they can be
+    # added back after row multiplication.
     drop_columns = ["Value", "Weight", "Ingredient", "Ingredient 2", "Ingredient 3", "Ingredient 4", "Origin", "First Effect"]
 
-    ingredients_columns = ingredients.columns
     ingredient_names = ingredients[ingredients.columns.intersection(["Ingredient", "Ingredient 2", "Ingredient 3", "Ingredient 4"])]
 
-    # Unsure on how this will work. Part of optimising by removing unneeded ingredients/columns
-    # if not restrictions:
-    #     restrictions = [i for i in DF_INGREDIENTS.drop(drop_columns, axis=1, errors="ignore").columns]
-    #
-    # ingredients=ingredients[["Ingredient"] + restrictions]
-    # ingredients.dropna(how="all", axis=1)
+    ingredients_restrictions = pd.Series([False for _ in range(len(ingredients))])
+    for i in restrictions:
+        ingredients_restrictions = ingredients_restrictions | ingredients[i]!=0 
+    ingredients = ingredients[ingredients_restrictions]
 
     potions = pd.DataFrame()
 
@@ -94,37 +96,16 @@ def potion_combinations(ingredients=DF_INGREDIENTS, restrictions=None):
         combos = combos.loc[(combos!=0).any(axis=1)]
         combos = combos.join(ingredient_names)
 
-        if "Ingredient 2" not in ingredients_columns:
+        if "Ingredient 2" not in ingredients.columns:
             combos["Ingredient 2"] = row["Ingredient"]
-        elif "Ingredient 3" not in ingredients_columns:
+        elif "Ingredient 3" not in ingredients.columns:
             combos["Ingredient 3"] = row["Ingredient"]
-        elif "Ingredient 4" not in ingredients_columns: # Optimisation: change to "else"
+        elif "Ingredient 4" not in ingredients.columns: # Optimisation: change to "else"
             combos["Ingredient 4"] = row["Ingredient"]
 
         potions = pd.concat([potions, combos])
 
-    #potions = potions.replace(1, 0)
     potions = potions.loc[(potions.drop(drop_columns, axis=1, errors="ignore")!=0).any(axis=1)]
     potions = potions.reset_index().drop("index", axis=1)
 
     return potions
-
-potions_1 = DF_INGREDIENTS
-potions_2 = potion_combinations(potions_1)
-#potions_3 = potion_combinations(potions_2)
-#potions_4 = potion_combinations(potions_3)
-
-potions_2_ingredients = potions_2[["Ingredient", "Ingredient 2"]]
-potions_2 = potions_2.drop(["Ingredient", "Ingredient 2"], axis=1)
-potions_2 = potions_2.where(potions_2 != 2, potions_2.columns.to_series(), axis=1)
-potions_2 = potions_2.to_numpy()
-
-# for index, i in enumerate(potions_2):
-#     a=i[i!=0]
-#     print(a[a!=1][0], [i for i in potions_2_ingredients.iloc[index]])
-
-# Function for 2 disjoint pairs
-# Combines potions_2
-# Only valid if the pairs share NO effects with each other, including unmatched
-# ingredient effects.
-# Extend for arbitary disjoint i.e. 5 = 3+2, 6=4+2=3+3?
