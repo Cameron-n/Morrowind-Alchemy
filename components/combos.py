@@ -68,14 +68,12 @@ def potion_combinations(ingredients, restrictions=[]):
 
         # Removes duplicates and self-combinations
         # e.g. for combos of A and B it removes BA and AA. Only AB is valid.
-        temp_ingredients = ingredients.copy()
-        if "Ingredient 4" in temp_ingredients.columns:
-            temp_ingredients = temp_ingredients[temp_ingredients["Ingredient 4"] < row["Ingredient"]]
-        elif "Ingredient 3" in temp_ingredients.columns:
+        temp_ingredients = ingredients.copy() # Unneeded?
+        if "Ingredient 3" in temp_ingredients.columns:
             temp_ingredients = temp_ingredients[temp_ingredients["Ingredient 3"] < row["Ingredient"]]
         elif "Ingredient 2" in temp_ingredients.columns:
             temp_ingredients = temp_ingredients[temp_ingredients["Ingredient 2"] < row["Ingredient"]]
-        elif "Ingredient" in temp_ingredients.columns:
+        elif "Ingredient" in temp_ingredients.columns: # else
             temp_ingredients = temp_ingredients[temp_ingredients["Ingredient"] < row["Ingredient"]]
 
         # Creates all possible potion combos AB, AC, DFH, etc.

@@ -63,7 +63,6 @@ properties = dmc.Group([
     grow=True,
     wrap="nowrap")
 
-
 button = dmc.Button("Add Ingredient", c="myColors.9", id="button_add_ingredient")
 
 layout = dmc.Stack([
@@ -113,14 +112,14 @@ def on_add_ingredient_button_clicked(
     starred = [value_value, value_weight, value_ingredient,
                value_origin, value_property_1]
     if True in [i in [None, [], ""] for i in starred]:
-        return f"Missing required inputs.", "Failed!", "red", False
+        return "Missing required inputs.", "Failed!", "red", False
 
     properties = [value_property_1, value_property_2, 
                   value_property_3, value_property_4]
 
     # Need to replace spaces with underscores as the flask-sqlalchemy columns
     # are defined as variables. E.g. "Resist Magicka" -> "Resist_Magicka"
-    effects = {i.replace(" ","_") : '1' for i in properties if i is not None}
+    effects = {i.replace(" ","_") : '1' for i in properties if i not in [None, [], ""]}
 
     new_ingredient = Ingredient(
         Value=value_value,

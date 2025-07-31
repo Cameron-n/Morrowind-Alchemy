@@ -16,8 +16,7 @@ Outputs:
 """
 
 #TODO
-# order tools by quality instead of alphabetically
-# calculation for negative and single ingredients
+# calculation for and single ingredients
 # don't include magnitude/duration if effect not have
 # verify math in-game cause wiki conflicts with openmw research
 
@@ -39,7 +38,7 @@ from components.data_access import DF_INGREDIENTS, DF_EFFECTS, DF_TOOLS
 #%% Boilerplate
 
 if __name__ != '__main__':
-    dash.register_page(__name__, path='/')
+    dash.register_page(__name__)
 
 
 #%% Layout

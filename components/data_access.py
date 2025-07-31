@@ -62,6 +62,8 @@ class Ingredient(db.Model):
     Value = mapped_column(Float)
     Weight = mapped_column(Float)
     Ingredient = mapped_column(String(50), primary_key=True)
+    Origin = mapped_column("Origin", String(50))
+    First_Effect = mapped_column("First Effect", String(50))
     Weakness_to_Fire = mapped_column("Weakness to Fire", Integer)
     Blind = mapped_column(Integer)
     Burden = mapped_column(Integer)
@@ -133,8 +135,6 @@ class Ingredient(db.Model):
     Water_Breathing = mapped_column("Water Breathing", Integer)
     Water_Walking = mapped_column("Water Walking", Integer)
     Sound = mapped_column(Integer)
-    Origin = mapped_column("Origin", String(50))
-    First_Effect = mapped_column("First Effect", String(50))
     
 class Effect(db.Model):
     __tablename__ = "Effect"
@@ -150,7 +150,7 @@ class Tool(db.Model):
     Quality = mapped_column(Float)
     Type = mapped_column(String(50))
 
-# %% Data download
+#%% Data download
 
 with server.app_context():
     # Don't use `db.select(Ingredient)`. This returns sqlalchemy objects instead 

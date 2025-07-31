@@ -36,6 +36,7 @@ app = Dash(__name__, server=server, use_pages=True)
 layout = dmc.AppShell([
     dmc.AppShellHeader(
         dmc.Text("Morrowind Alchemy", c="myColors.9"),
+        p="md",
         bg="myColors.2"
         ),
     dmc.AppShellNavbar(
@@ -51,7 +52,7 @@ layout = dmc.AppShell([
         "breakpoint":"sm",
         "collapsed": {"mobile": True},
         },
-    padding="md",
+    p="md",
     bg="myColors.0"
     )
 

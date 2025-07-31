@@ -26,7 +26,7 @@ from components.combos import potion_combinations
 #%% Boilerplate
 
 if __name__ != '__main__':
-    dash.register_page(__name__)
+    dash.register_page(__name__, path="/")
 
 
 #%% Layout
@@ -155,6 +155,9 @@ def calculate_potions(
     
     # Test data for table appearance
     potions = potion_combinations(DF_INGREDIENTS.fillna(0), restrictions)
+    # append potions_3
+    # append potions_4
+    # append Potions_2_2
     
     ingredients_columns = ["Ingredient", "Ingredient 2", "Ingredient 3", "Ingredient 4"]
     potions_ingredients = potions[potions.columns.intersection(ingredients_columns)]
