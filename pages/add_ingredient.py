@@ -15,6 +15,7 @@ not on navigation bar to stop it being publically accessible
 # Boxes to dropdown/limit input type
     # make properties not share the same properties
     # List of missing inputs if input is missing. Turn boxes red
+# Update origins list after new ingredient is added
 
 #%% Imports
 
@@ -139,4 +140,4 @@ def on_add_ingredient_button_clicked(
     except OperationalError:
        return "Database Error. Try again later.", "Failed!", "red", False
 
-    return "Data successfully added!", "Success!", "green", False
+    return f"Ingredient '{value_ingredient}' successfully added!", "Success!", "green", False

@@ -11,7 +11,12 @@ Features:
       number of +ve effects DESC, then number of -ve effects ASC
 """
 
+# Maybe use dcc.datatable?
+
 #%% Imports
+
+# Standard
+import pandas as pd
 
 # Dash
 import dash
@@ -31,7 +36,7 @@ if __name__ != '__main__':
 
 #%% Layout
 
-# Add drop_columns to data_access
+# Add drop_columns to data_access?
 drop_columns = ["Value", "Weight", "Ingredient", "Origin", "First Effect"]
 effects_list = DF_INGREDIENTS.drop(drop_columns, axis=1).columns
 effects_list = ["+", "-"] + list(effects_list)
@@ -145,28 +150,45 @@ def calculate_potions(
     formats the data for this page's table
     """
 
-    potion_data = []
-
     restrictions = []
     for i in [value_1, value_2, value_3, value_4,
               value_5, value_6, value_7, value_8]:
         if i not in [None, "", []]:
             restrictions.append(i)
     
-    # Test data for table appearance
-    potions = potion_combinations(DF_INGREDIENTS.fillna(0), restrictions)
-    # append potions_3
-    # append potions_4
-    # append Potions_2_2
+    # Get all possible potion combinations
+    potions_1 = DF_INGREDIENTS.fillna(0)
+    potions_2 = potion_combinations(potions_1, restrictions) # pairs
+    potions_3 = potion_combinations(potions_2, restrictions) # triplets
+    potions_4 = potion_combinations(potions_3, restrictions) # linked quads
+    #potions_2_2 = potion_quads(potions_2, restrictions) # 2 unlinked pairs
+    potions = pd.concat([potions_2, potions_3, potions_4])
+    potions = potions.reset_index().drop("index", axis=1)
     
-    ingredients_columns = ["Ingredient", "Ingredient 2", "Ingredient 3", "Ingredient 4"]
+    # We remove the ingredients columns to do maths on
+    # the effect columns. We'll save the ingredients to
+    # add them back on later
+    ingredients_columns = ["Ingredient", "Ingredient 2",
+                           "Ingredient 3", "Ingredient 4"]
     potions_ingredients = potions[potions.columns.intersection(ingredients_columns)]
     potions = potions.drop(ingredients_columns, axis=1, errors='ignore')
 
-    # A potion has an effect if at least 2 ingredients share that effect
+    # potion_combinations returns all combinations where each 
+    # ingredient has at least one of the restrictions. We need
+    # to further limit this to combinations where every restriction
+    # is included
+    ingredients_restrictions = pd.Series([True for _ in range(len(potions))])
+    for i in restrictions:
+        ingredients_restrictions = ingredients_restrictions & (potions[i] == 2) 
+    potions = potions[ingredients_restrictions]
+
+    # A potion has an effect if at least 2 ingredients share that effect.
+    # Here we replace the '2's in the dataframe with the actual effect names
     potions = potions.where(potions != 2, potions.columns.to_series(), axis=1)
     potions = potions.to_numpy()
 
+    # Add the potion data to the dmc table
+    potion_data = []
     for index, potion in enumerate(potions):
 
         # Remove effects not part of the ingredients (0)
@@ -181,6 +203,9 @@ def calculate_potions(
             except IndexError:
                 table_ingredients.append('')
 
+        # We don't know ahead of time how many effects a
+        # potion has. So, we have to act like all 8 are
+        # possible and ignore if there are less
         table_effects = []
         for j in range(8):
             try:
@@ -204,7 +229,7 @@ def calculate_potions(
             }
         potion_data.append(new_row)
     
-    row = [
+    rows = [
            dmc.TableTr([
                dmc.TableTd(potion_datum["Ingredient 1"]),
                dmc.TableTd(potion_datum["Ingredient 2"]),
@@ -222,4 +247,4 @@ def calculate_potions(
            for potion_datum in potion_data
            ]
     
-    return row
+    return rows

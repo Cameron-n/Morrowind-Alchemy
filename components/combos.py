@@ -53,18 +53,21 @@ def potion_combinations(ingredients, restrictions=[]):
 
     # Remove non-effect columns. Ingredient names need to be stored so they can be
     # added back after row multiplication.
-    drop_columns = ["Value", "Weight", "Ingredient", "Ingredient 2", "Ingredient 3", "Ingredient 4", "Origin", "First Effect"]
+    drop_columns = ["Value", "Weight", "Ingredient", "Ingredient 2",
+                    "Ingredient 3", "Ingredient 4", "Origin", "First Effect"]
 
     ingredient_names = ingredients[ingredients.columns.intersection(["Ingredient", "Ingredient 2", "Ingredient 3", "Ingredient 4"])]
 
     ingredients_restrictions = pd.Series([False for _ in range(len(ingredients))])
-    for i in restrictions:
-        ingredients_restrictions = ingredients_restrictions | ingredients[i]!=0 
+    df_restrictions = pd.Series([False for _ in range(len(DF_INGREDIENTS))])
+    for i in restrictions: # Brackets needed due to | coming before != or ==
+        ingredients_restrictions = ingredients_restrictions | (ingredients[i] != 0)
+        df_restrictions = df_restrictions | (DF_INGREDIENTS[i] != 0)
     ingredients = ingredients[ingredients_restrictions]
 
     potions = pd.DataFrame()
 
-    for index, row in DF_INGREDIENTS.iterrows():
+    for index, row in DF_INGREDIENTS[df_restrictions].iterrows():
 
         # Removes duplicates and self-combinations
         # e.g. for combos of A and B it removes BA and AA. Only AB is valid.
