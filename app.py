@@ -9,6 +9,7 @@ creates the AppShell: the header, navbar, and main content area.
 """
 
 #%% Imports
+
 # Standard
 
 # Dash
@@ -18,17 +19,24 @@ import dash_mantine_components as dmc
 
 # Relative
 from components.navbar import navbar
+from components.config import theme
+from components.data_access import server
+
 
 #%% Boilerplate
+
+# Needed for dmc to work
 dash._dash_renderer._set_react_version("18.2.0")
 
-app = Dash(__name__, use_pages=True)
+app = Dash(__name__, server=server, use_pages=True)
+
 
 #%% Layout
 
 layout = dmc.AppShell([
     dmc.AppShellHeader(
         dmc.Text("Morrowind Alchemy", c="myColors.9"),
+        p="md",
         bg="myColors.2"
         ),
     dmc.AppShellNavbar(
@@ -44,33 +52,17 @@ layout = dmc.AppShell([
         "breakpoint":"sm",
         "collapsed": {"mobile": True},
         },
-    padding="md",
+    p="md",
     bg="myColors.0"
     )
 
-app.layout = dmc.MantineProvider(
-    layout,
-    theme={
-        "colors" : {
-            "myColors" : [
-                "#fff8e7",
-                "#fbefd5",
-                "#f5dda7",
-                "#f0c976",
-                "#ecb94e",
-                "#eaaf34",
-                "#e9aa26",
-                "#cf941a",
-                "#b88312",
-                "#9f7102",
-                ],
-            },
-        "primaryColor" : "myColors",
-        "primaryShade" : 3,
-        },
-    )
+app.layout = dmc.MantineProvider(layout, theme=theme)
 
 
 #%% Boilerplate
 if __name__ == '__main__':
     app.run(debug=True)
+
+# 2-2 potions
+# fix incorrect potion combos
+# postive vs negative vs all

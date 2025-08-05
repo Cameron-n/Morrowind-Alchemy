@@ -2,43 +2,27 @@
 """
 Created on Sun May 25 20:40:32 2025
 
-@author: camer
+@author: Cameron-n
+
+Contains the layout for the navbar used in app.py
 """
 
 #%% Imports
-# Standard
 
 # Dash
 import dash_mantine_components as dmc
 
-# Relative
 
 #%% Layout
 def navbar():
     layout = dmc.Stack([
-        dmc.Button(
-            dmc.Anchor(
-                "Potion Database", 
-                href="/potion-database",
-                underline="never",
-                c="myColors.9"
-                )
+        dmc.Anchor(
+            dmc.Button("Potion Database", fullWidth=True), 
+            href="/", underline="never", c="myColors.9"
             ),
-        dmc.Button(
-            dmc.Anchor(
-                "Potion Maker", 
-                href="/",
-                underline="never",
-                c="myColors.9"
-                )
-            ),
-        dmc.Button(
-            dmc.Anchor(
-                "Add Ingredient", 
-                href="/add-ingredient",
-                underline="never",
-                c="myColors.9"
-                )
+        dmc.Anchor(
+            dmc.Button("Potion Maker", fullWidth=True), 
+            href="/potion-maker", underline="never", c="myColors.9"
             ),
         ])
     

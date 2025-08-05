@@ -2,6 +2,8 @@ CREATE TABLE `Ingredient` (
   `Value` int NOT NULL,
   `Weight` float NOT NULL,
   `Ingredient` varchar(50) NOT NULL,
+  `Origin` varchar(20) DEFAULT NULL,
+  `First Effect` varchar(20) DEFAULT NULL,
   `Weakness to Fire` int DEFAULT NULL,
   `Blind` int DEFAULT NULL,
   `Burden` int DEFAULT NULL,
@@ -72,9 +74,18 @@ CREATE TABLE `Ingredient` (
   `Swift Swim` int DEFAULT NULL,
   `Water Breathing` int DEFAULT NULL,
   `Water Walking` int DEFAULT NULL,
+  `Sound` int DEFAULT NULL,
   PRIMARY KEY (`Ingredient`)
 );
-CREATE TABLE `Effect`(
-   `Spell Effects` VARCHAR(50) NOT NULL PRIMARY KEY
-  ,`Base Cost`     Float NOT NULL
+CREATE TABLE `Effect` (
+  `Spell Effects` varchar(50) NOT NULL,
+  `Base Cost` float NOT NULL,
+  `Positive` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`Spell Effects`)
+);
+CREATE TABLE `Tool` (
+  `Name` varchar(50) NOT NULL,
+  `Quality` float NOT NULL,
+  `Type` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`Name`)
 );
