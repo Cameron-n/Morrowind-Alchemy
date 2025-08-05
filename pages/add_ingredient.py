@@ -19,6 +19,10 @@ not on navigation bar to stop it being publically accessible
 
 #%% Imports
 
+# Standard
+import os
+from dotenv import load_dotenv
+
 # Dash
 import dash
 from dash import callback, Input, Output, State
@@ -35,6 +39,9 @@ from components.data_access import db, Ingredient, DF_INGREDIENTS, DF_EFFECTS
 
 if __name__ != '__main__':
     dash.register_page(__name__)
+
+path = os.path.join(os.path.dirname(__file__), "../.env")
+load_dotenv(path)
 
 
 #%% Layout
@@ -64,12 +71,15 @@ properties = dmc.Group([
     grow=True,
     wrap="nowrap")
 
+auth_check = dmc.TextInput(label="Token", required=True, id="textinput_auth")
+
 button = dmc.Button("Add Ingredient", c="myColors.9", id="button_add_ingredient")
 
 layout = dmc.Stack([
     success_fail_alert,
     attributes,
     properties,
+    auth_check,
     button,
     ])
 
@@ -90,6 +100,7 @@ layout = dmc.Stack([
     State("textinput_property_2", "value"),
     State("textinput_property_3", "value"),
     State("textinput_property_4", "value"),
+    State("textinput_auth", "value"),
     Input("button_add_ingredient","n_clicks"),
     prevent_initial_call=True
     )
@@ -103,11 +114,16 @@ def on_add_ingredient_button_clicked(
         value_property_2, 
         value_property_3, 
         value_property_4,
+        auth,
         n_clicks
         ):
     """
     Adds ingredient and properties to database
     """
+
+    TOKEN = os.environ.get("ADD_INGREDIENT_TOKEN")
+    if auth != TOKEN:
+        return "Access Denied.", "Failed!", "red", False
 
     # Check if all required values are not empty
     starred = [value_value, value_weight, value_ingredient,
@@ -132,9 +148,8 @@ def on_add_ingredient_button_clicked(
         )
 
     try:
-        # db.session.add(new_ingredient)
-        # db.session.commit()
-        1+1
+        db.session.add(new_ingredient)
+        db.session.commit()
     except IntegrityError:
         return "Duplicate ingredient name.", "Failed!", "red", False
     except OperationalError:
