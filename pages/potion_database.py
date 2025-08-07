@@ -170,7 +170,8 @@ def calculate_potions(
     # add them back on later
     ingredients_columns = ["Ingredient", "Ingredient 2",
                            "Ingredient 3", "Ingredient 4"]
-    potions_ingredients = potions[potions.columns.intersection(ingredients_columns)]
+    shared_columns = potions.columns.intersection(ingredients_columns)
+    potions_ingredients = potions[shared_columns]
     potions = potions.drop(ingredients_columns, axis=1, errors='ignore')
 
     # potion_combinations returns all combinations where each 
@@ -185,6 +186,9 @@ def calculate_potions(
     # A potion has an effect if at least 2 ingredients share that effect.
     # Here we replace the '2's in the dataframe with the actual effect names
     potions = potions.where(potions != 2, potions.columns.to_series(), axis=1)
+    
+    # Get the ingredient names indexed correctly after the .where operation
+    potions_ingredients = potions.join(potions_ingredients)[shared_columns]
     potions = potions.to_numpy()
 
     # Add the potion data to the dmc table
