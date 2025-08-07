@@ -71,6 +71,8 @@ def potion_combinations(ingredients, restrictions=[]):
 
         # Removes duplicates and self-combinations
         # e.g. for combos of A and B it removes BA and AA. Only AB is valid.
+        #TODO Bug. This misses e.g. A-C, B-C, so A-C-B. But this needs to be
+        # ABC to be alphabetical but A-B is not valid
         temp_ingredients = ingredients.copy() # Unneeded?
         if "Ingredient 3" in temp_ingredients.columns:
             temp_ingredients = temp_ingredients[temp_ingredients["Ingredient 3"] < row["Ingredient"]]

@@ -64,5 +64,4 @@ if __name__ == '__main__':
     app.run(debug=True)
 
 # 2-2 potions
-# fix incorrect potion combos
 # postive vs negative vs all

@@ -16,10 +16,10 @@ Outputs:
 """
 
 #TODO
-# calculation for and single ingredients
-# don't include magnitude/duration if effect not have
-# verify math in-game cause wiki conflicts with openmw research
-# Group selects by origin
+# calculation for single ingredients [low-reward, high-effort]
+# don't include magnitude/duration if effect not have [mid-reward, mid-effort]
+# verify math in-game cause wiki conflicts with openmw research [high-reward, high-effort]
+# Group selects by origin [mid-reward, low-effort]
 
 #%% Imports
 
