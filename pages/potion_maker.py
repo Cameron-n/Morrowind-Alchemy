@@ -19,6 +19,7 @@ Outputs:
 # calculation for and single ingredients
 # don't include magnitude/duration if effect not have
 # verify math in-game cause wiki conflicts with openmw research
+# Group selects by origin
 
 #%% Imports
 
