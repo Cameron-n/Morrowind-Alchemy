@@ -82,7 +82,10 @@ This project is built on:
 - [SQLAlchemy](https://www.sqlalchemy.org/) - A database ORM
     - See also [Flask-SQLAlchemy](https://flask-sqlalchemy.readthedocs.io/en/stable/quickstart/)
 
-The original data is taken from [this spreadsheet.](https://docs.google.com/spreadsheets/d/1JQ391ET9lkKRoAdzQnkyIly7XCg2fNmtJqhpqmJitaM/edit?gid=1565250262#gid=1565250262)
+The original data is taken from [this spreadsheet](https://docs.google.com/spreadsheets/d/1JQ391ET9lkKRoAdzQnkyIly7XCg2fNmtJqhpqmJitaM/edit?gid=1565250262#gid=1565250262).
 - Data cleaning steps:
     - Add columns
-    - Correct incorrect info
+    - The original source has these errors
+        - Heartwood is labelled as "Resist Magicka" but should be "Restore Magicka"
+        - Deadra's Heart is labelled as "Resist Magicka" but should be "Restore Magicka"
+        - Wolf Pelt is labelled as "Burden" "Poison" "Restore Magicka" "Reflect" but is "Drain Fatigue" "Fortify Speed" "Resist Common Disease" "Night Eye"
