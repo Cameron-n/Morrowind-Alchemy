@@ -185,7 +185,7 @@ def calculate_potions(
 
     # A potion has an effect if at least 2 ingredients share that effect.
     # Here we replace the '2's in the dataframe with the actual effect names
-    potions = potions.where(potions != 2, potions.columns.to_series(), axis=1)
+    potions = potions.where(potions < 2, potions.columns.to_series(), axis=1)
     
     # Get the ingredient names indexed correctly after the .where operation
     potions_ingredients = potions.join(potions_ingredients)[shared_columns]
