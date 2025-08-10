@@ -49,6 +49,7 @@ from components.data_access import DF_INGREDIENTS
 
 DF_INGREDIENTS = DF_INGREDIENTS.fillna(0)
 
+
 def potion_combinations(ingredients, restrictions=[]):
 
     # Remove non-effect columns. Ingredient names need to be stored so they can be
