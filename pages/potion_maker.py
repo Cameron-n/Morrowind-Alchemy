@@ -29,7 +29,7 @@ from copy import deepcopy
 
 # Dash
 import dash
-from dash import dcc, callback, Input, Output
+from dash import callback, Input, Output
 import dash_mantine_components as dmc
 
 # Relative
