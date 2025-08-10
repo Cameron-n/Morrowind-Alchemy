@@ -13,6 +13,7 @@ Features:
 
 # Maybe use dcc.datatable?
 # Add drop_columns to data_access?
+# Sort potion output by +ve/-ve/total effects
 
 #%% Imports
 
@@ -190,6 +191,7 @@ def calculate_potions(
     # Get the ingredient names indexed correctly after the .where operation
     potions_ingredients = potions.join(potions_ingredients)[shared_columns]
     potions = potions.to_numpy()
+    print(potions)
 
     # Add the potion data to the dmc table
     potion_data = []

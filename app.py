@@ -62,6 +62,3 @@ app.layout = dmc.MantineProvider(layout, theme=theme)
 #%% Boilerplate
 if __name__ == '__main__':
     app.run(debug=True)
-
-# 2-2 potions
-# postive vs negative vs all

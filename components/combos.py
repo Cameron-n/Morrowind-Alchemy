@@ -122,7 +122,7 @@ def potion_combinations(ingredients, restrictions=[]):
     potion_columns = potions.columns.intersection(potion_columns)
     duplicates = np.sort(potions[potion_columns].to_numpy())
     potions[potion_columns] = duplicates
-    potions = potions.drop_duplicates(ingredient_columns)
+    potions = potions.drop_duplicates(potion_columns)
 
     #potions = potions.loc[(potions.drop(drop_columns, axis=1, errors="ignore")!=0).any(axis=1)] # ???
     potions = potions.reset_index().drop("index", axis=1)
