@@ -25,6 +25,30 @@ The app is hosted on [PythonAnywhere](https://eu.pythonanywhere.com/).
 To view the app, navigate to:
 - <https://cameronn.eu.pythonanywhere.com/>
 
+### Self-setup
+
+If you want to host a copy of the app yourself, here's how to do so:
+
+Clone the repository:
+`git clone https://github.com/Cameron-n/Morrowind-Alchemy.git`
+
+Create a database and load the data. Note, I am using MySQL:
+Run `create_tables.sql` to create the tables.
+Run `effect_data.sql`, `ingredient_data.sql`, and `tool.sql` to populate the tables.
+
+Create a .env file in the root folder with the following information:
+```
+DATABASE_URI="mysql+mysqldb://<user>:<password>@<host>:<port>/<database name>"
+ADD_INGREDIENT_TOKEN="<A secure token>"
+```
+The DATABASE_URI contains the connection string to your database. If you don't
+want to use MySQL, here is where you need to change that.
+
+The ADD_INGREDIENT_TOKEN is used to stop anyone adding ingredients to the database
+using the `add-ingredient` page. You can set it to any valid string you like and
+will need it for that page. You can navigate to this page by explicitly stating
+the URL, e.g. `http://localhost:8050/add-ingredient`.
+
 ### Source code
 
 If you want to look at the code, here's how it works.
@@ -32,11 +56,11 @@ If you want to look at the code, here's how it works.
 1. The app starts from the `app.py` file. This contains the main layout, including the `dash.page_container`, and some 
 setup. 
 2. It is then divided into `page`'s. Each file contains its layout and logic.
-3. The `database` folder contains sql for database construction, and the file containing the `Flask-SQLAlchemy` logic.
+3. The `database` folder contains sql for database construction.
 4. The `assets` folder contains non-code assets such as pictures. It also contains `.css` files which Dash loads 
 automatically.
-5. The `components` folder contains additional layouts/logic. It contains the config file for the theming, and the
-navbar's layout.
+5. The `components` folder contains additional layouts/logic. It contains the config file for the theming, the
+navbar's layout, and the `Flask-SQLAlchemy` logic.
 
 #### Guidelines
 
@@ -47,7 +71,7 @@ readers!
 IDs and it's very easy to lose track of the names.
 - Test
 
-## External Docs
+## External Docs and Credits
 
 This project is built on:
 
@@ -57,3 +81,11 @@ This project is built on:
 - [Flask](https://flask.palletsprojects.com/en/stable/) - For the underlying server
 - [SQLAlchemy](https://www.sqlalchemy.org/) - A database ORM
     - See also [Flask-SQLAlchemy](https://flask-sqlalchemy.readthedocs.io/en/stable/quickstart/)
+
+The original data is taken from [this spreadsheet](https://docs.google.com/spreadsheets/d/1JQ391ET9lkKRoAdzQnkyIly7XCg2fNmtJqhpqmJitaM/edit?gid=1565250262#gid=1565250262).
+- Data cleaning steps:
+    - Add columns
+    - The original source has these errors
+        - Heartwood is labelled as "Resist Magicka" but should be "Restore Magicka"
+        - Deadra's Heart is labelled as "Resist Magicka" but should be "Restore Magicka"
+        - Wolf Pelt is labelled as "Burden" "Poison" "Restore Magicka" "Reflect" but is "Drain Fatigue" "Fortify Speed" "Resist Common Disease" "Night Eye"

@@ -38,23 +38,23 @@ layout = dmc.AppShell([
         dmc.Text("Morrowind Alchemy", c="myColors.9"),
         p="md",
         bg="myColors.2"
-        ),
+    ),
     dmc.AppShellNavbar(
         navbar(),
         p="md",
         bg="myColors.1"
-        ),
+    ),
     dmc.AppShellMain(dash.page_container)
-    ],
-    header={"height":60},
+],
+    header={"height": 60},
     navbar={
-        "width":200,
-        "breakpoint":"sm",
+        "width": 200,
+        "breakpoint": "sm",
         "collapsed": {"mobile": True},
-        },
+},
     p="md",
     bg="myColors.0"
-    )
+)
 
 app.layout = dmc.MantineProvider(layout, theme=theme)
 
@@ -62,7 +62,3 @@ app.layout = dmc.MantineProvider(layout, theme=theme)
 #%% Boilerplate
 if __name__ == '__main__':
     app.run(debug=True)
-
-# 2-2 potions
-# fix incorrect potion combos
-# postive vs negative vs all

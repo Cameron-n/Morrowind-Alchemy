@@ -11,11 +11,10 @@ not on navigation bar to stop it being publically accessible
 # TODO
 # Error handling:
     # Duplicate ingredient name (overwrite?, remove if values empty?)
-# Password protect on server
 # Boxes to dropdown/limit input type
     # make properties not share the same properties
     # List of missing inputs if input is missing. Turn boxes red
-# Update origins list after new ingredient is added
+# Update origins list after new ingredient is added [high-reward, mid-effort]
 
 #%% Imports
 
