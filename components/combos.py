@@ -25,8 +25,6 @@ from components.data_access import DF_INGREDIENTS
 
 #%% Functions
 
-DF_INGREDIENTS = DF_INGREDIENTS.fillna(0)
-
 
 def potion_combinations(ingredients, restrictions=[]):
     """

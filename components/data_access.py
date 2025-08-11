@@ -158,3 +158,6 @@ with server.app_context():
     DF_INGREDIENTS = pd.DataFrame(db.session.execute(db.select(*Ingredient.__table__.columns)))
     DF_EFFECTS = pd.DataFrame(db.session.execute(db.select(*Effect.__table__.columns)))
     DF_TOOLS = pd.DataFrame(db.session.execute(db.select(*Tool.__table__.columns).order_by(Tool.Quality)))
+    
+    DF_INGREDIENTS = DF_INGREDIENTS.fillna(0)
+    DF_EFFECTS = DF_EFFECTS.fillna(0)
