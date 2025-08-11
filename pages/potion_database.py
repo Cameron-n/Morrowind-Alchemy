@@ -31,6 +31,9 @@ import dash_mantine_components as dmc
 from components.data_access import DF_INGREDIENTS, DF_EFFECTS
 from components.combos import potion_combinations
 
+DF_INGREDIENTS = DF_INGREDIENTS.fillna(0)
+DF_EFFECTS = DF_EFFECTS.fillna(0)
+
 
 #%% Boilerplate
 
@@ -238,6 +241,7 @@ def calculate_potions(
         potion_as_words.append(potion)
     
     # Sort by +ve effects descending, -ve effects ascending
+    # BUG -> Does not reorder the ingredients
     potion_sorted = []
     for i in potion_as_words:
         total = len(i)
@@ -308,28 +312,3 @@ def calculate_potions(
     ]
 
     return rows
-
-# TEMP TEST AREA
-from components.data_access import DF_INGREDIENTS
-from components.combos import potion_combinations
-import pandas as pd
-restrictions=["Water Walking"]
-potions = potion_combinations(DF_INGREDIENTS, restrictions)
-ingredients_columns = ["Ingredient", "Ingredient 2",
-                       "Ingredient 3", "Ingredient 4"]
-shared_columns = potions.columns.intersection(ingredients_columns)
-potions_ingredients = potions[shared_columns]
-potions = potions.drop(ingredients_columns, axis=1, errors='ignore')
-
-ingredients_restrictions = pd.Series([True for _ in range(len(potions))])
-for i in restrictions:
-    ingredients_restrictions = ingredients_restrictions & (potions[i] == 2)
-potions = potions[ingredients_restrictions]
-
-potions["Number of Effects"]=potions[potions==2].sum(axis=1)/2
-potions.sort_values(by="Number of Effects", ascending=False, inplace=True)
-potions.drop(["Number of Effects"], axis=1, inplace=True)
-
-potions = potions.where(potions < 2, potions.columns.to_series(), axis=1)
-
-potions_ingredients = potions.join(potions_ingredients)[shared_columns]
