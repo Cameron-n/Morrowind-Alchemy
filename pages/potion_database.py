@@ -228,6 +228,7 @@ def calculate_potions(
 
     # Get the ingredient names indexed correctly after the .where operation
     potions_ingredients = potions.join(potions_ingredients)[shared_columns]
+    potions_ingredients = potions_ingredients.fillna('')
     potions = potions.to_numpy()
 
     # Add the potion data to the dmc table
@@ -241,7 +242,6 @@ def calculate_potions(
         potion_as_words.append(potion)
     
     # Sort by +ve effects descending, -ve effects ascending
-    # BUG -> Does not reorder the ingredients
     potion_sorted = []
     for i in potion_as_words:
         total = len(i)
@@ -252,8 +252,22 @@ def calculate_potions(
             i=np.append(i, '')
         part_one = np.append(total+num_pos, i)
         potion_sorted.append(np.append(num_pos, part_one))
+        
+    ingredients_sorted = []
+    potions_ingredients = potions_ingredients.to_numpy()
+    for i in potions_ingredients:
+        for j in range(4-len(i)):
+            i = np.append(i, '')
+        ingredients_sorted.append(i)
     
-    dtype = [('pos', float),
+    # What if effects are empty?
+    potion_sorted = np.append(ingredients_sorted, potion_sorted, axis=1)
+    
+    dtype = [('ing 1', object),
+             ('ing 2', object),
+             ('ing 3', object),
+             ('ing 4', object),
+             ('pos', float),
              ('neg', float),
              ('e1', object),
              ('e2', object),
@@ -269,27 +283,19 @@ def calculate_potions(
     
     potion_data = []
     for index, potion in enumerate(potion_sorted):
-
-        table_ingredients = []
-        for j in range(4):
-            try:
-                table_ingredients.append(potions_ingredients.iloc[index][j])
-            except IndexError:
-                table_ingredients.append('')
-
         new_row = {
-            "Ingredient 1": table_ingredients[0],
-            "Ingredient 2": table_ingredients[1],
-            "Ingredient 3": table_ingredients[2],
-            "Ingredient 4": table_ingredients[3],
-            "Effect 1": potion[0+2],
-            "Effect 2": potion[1+2],
-            "Effect 3": potion[2+2],
-            "Effect 4": potion[3+2],
-            "Effect 5": potion[4+2],
-            "Effect 6": potion[5+2],
-            "Effect 7": potion[6+2],
-            "Effect 8": potion[7+2],
+            "Ingredient 1": potion[0],
+            "Ingredient 2": potion[1],
+            "Ingredient 3": potion[2],
+            "Ingredient 4": potion[3],
+            "Effect 1": potion[4+2],
+            "Effect 2": potion[5+2],
+            "Effect 3": potion[6+2],
+            "Effect 4": potion[7+2],
+            "Effect 5": potion[8+2],
+            "Effect 6": potion[9+2],
+            "Effect 7": potion[10+2],
+            "Effect 8": potion[11+2],
         }
         potion_data.append(new_row)
 
