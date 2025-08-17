@@ -260,8 +260,8 @@ def calculate_potions(
             i = np.append(i, '')
         ingredients_sorted.append(i)
     
-    # What if effects are empty?
-    potion_sorted = np.append(ingredients_sorted, potion_sorted, axis=1)
+    if potion_sorted != []:
+        potion_sorted = np.append(ingredients_sorted, potion_sorted, axis=1)
     
     dtype = [('ing 1', object),
              ('ing 2', object),
