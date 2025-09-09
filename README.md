@@ -49,6 +49,12 @@ using the `add-ingredient` page. You can set it to any valid string you like and
 will need it for that page. You can navigate to this page by explicitly stating
 the URL, e.g. `http://localhost:8050/add-ingredient`.
 
+In case you want to add new spell effects, these must be added in three places:
+
+1. create_tables.sql - In the `Ingredient` table in the format ``` `effect name` int DEFAULT NULL ```
+2. effect_data.sql - In the format ``` ... VALUES ('effect name', 'base cost', 1 (if positive) or 0 (if negative) ) ```
+3. data_access.py - In the format ``` effect_name = mapped_column("name without underscores", Integer) ```
+
 ### Source code
 
 If you want to look at the code, here's how it works.
