@@ -14,7 +14,7 @@ creates the AppShell: the header, navbar, and main content area.
 
 # Dash
 import dash
-from dash import Dash
+from dash import Dash, callback, Input, Output, State
 import dash_mantine_components as dmc
 
 # Relative
@@ -35,7 +35,10 @@ app = Dash(__name__, server=server, use_pages=True)
 
 layout = dmc.AppShell([
     dmc.AppShellHeader(
-        dmc.Text("Morrowind Alchemy", c="myColors.9"),
+        dmc.Group([
+            dmc.Burger(id="burger", size="sm", hiddenFrom="sm", opened=False),
+            dmc.Title("Morrowind Alchemy", order=5, c="myColors.9"),
+        ]),
         p="md",
         bg="myColors.2"
     ),
@@ -53,12 +56,43 @@ layout = dmc.AppShell([
         "collapsed": {"mobile": True},
 },
     p="md",
-    bg="myColors.0"
+    bg="myColors.0",
+    id="appshell"
 )
 
 app.layout = dmc.MantineProvider(layout, theme=theme)
 
 
+#%% Callbacks
+
+@callback(
+    Output("appshell", "navbar"),
+    Input("burger", "opened"),
+    State("appshell", "navbar"),
+)
+def toggle_navbar(opened, navbar):
+    """Toggle navbar opened or closed on mobile using burger"""
+    navbar["collapsed"] = {"mobile": not opened}
+    return navbar
+
+
+@callback(
+    Output("appshell", "navbar", allow_duplicate=True),
+    Output("burger", "opened"),
+    Input("nav-btn-home", "n_clicks"),
+    Input("nav-btn-data", "n_clicks"),
+    Input("nav-btn-maker", "n_clicks"),
+    Input("nav-btn-info", "n_clicks"),
+    State("appshell", "navbar"),
+    prevent_initial_call=True
+)
+def close_navbar_on_click(btn_one, btn_two, btn_three, btn_four, navbar):
+    """Close navbar after selection is made on mobile"""
+    navbar["collapsed"] = {"mobile": True}
+    return navbar, False
+
+
 #%% Boilerplate
+
 if __name__ == '__main__':
     app.run(debug=True)
