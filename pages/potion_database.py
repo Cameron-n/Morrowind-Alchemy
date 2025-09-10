@@ -12,7 +12,6 @@ Features:
 """
 
 # Maybe use dcc.datatable?
-# green if +ve, red if -ve ?
 # Limit by origin
 # Send output to potion_maker?
 
@@ -49,55 +48,65 @@ effects_list = list(effects_list)
 
 effects = dmc.Stack([
     dmc.Group([
-        dmc.Select(label="Effect 1",
-                   data=effects_list,
-                   value="",
-                   searchable=True,
-                   id="Effect 1"),
-        dmc.Select(label="Effect 2",
-                   data=effects_list,
-                   value="",
-                   searchable=True,
-                   id="Effect 2"),
-        dmc.Select(label="Effect 3",
-                   data=effects_list,
-                   value="",
-                   searchable=True,
-                   id="Effect 3"),
-        dmc.Select(label="Effect 4",
-                   data=effects_list,
-                   value="",
-                   searchable=True,
-                   id="Effect 4"),
-    ]),
+        dmc.Group([
+            dmc.Select(label="Effect 1",
+                       data=effects_list,
+                       value="",
+                       searchable=True,
+                       id="Effect 1"),
+            dmc.Select(label="Effect 2",
+                       data=effects_list,
+                       value="",
+                       searchable=True,
+                       id="Effect 2"),
+        ], justify="center"),
+        dmc.Group([
+            dmc.Select(label="Effect 3",
+                       data=effects_list,
+                       value="",
+                       searchable=True,
+                       id="Effect 3"),
+            dmc.Select(label="Effect 4",
+                       data=effects_list,
+                       value="",
+                       searchable=True,
+                       id="Effect 4"),
+        ], justify="center"),
+    ], justify="center"),
     dmc.Group([
-        dmc.Select(label="Effect 5",
-                   data=effects_list,
-                   value="",
-                   searchable=True,
-                   id="Effect 5"),
-        dmc.Select(label="Effect 6",
-                   data=effects_list,
-                   value="",
-                   searchable=True,
-                   id="Effect 6"),
-        dmc.Select(label="Effect 7",
-                   data=effects_list,
-                   value="",
-                   searchable=True,
-                   id="Effect 7"),
-        dmc.Select(label="Effect 8",
-                   data=effects_list,
-                   value="",
-                   searchable=True,
-                   id="Effect 8"),
-    ])
+        dmc.Group([
+            dmc.Select(label="Effect 5",
+                       data=effects_list,
+                       value="",
+                       searchable=True,
+                       id="Effect 5"),
+            dmc.Select(label="Effect 6",
+                       data=effects_list,
+                       value="",
+                       searchable=True,
+                       id="Effect 6"),
+        ], justify="center"),
+        dmc.Group([
+            dmc.Select(label="Effect 7",
+                       data=effects_list,
+                       value="",
+                       searchable=True,
+                       id="Effect 7"),
+            dmc.Select(label="Effect 8",
+                       data=effects_list,
+                       value="",
+                       searchable=True,
+                       id="Effect 8"),
+        ], justify="center")
+    ], justify="center")
 ])
 
-effects_with_button = dmc.Group([
+effects_with_button = dmc.Stack([
     effects,
     dmc.Button("Calculate", id="Effect Button")
-])
+],
+    align="center"
+)
 
 head = dmc.TableThead(
     dmc.TableTr(
