@@ -38,7 +38,7 @@ DF_EFFECTS = DF_EFFECTS.fillna(0)
 #%% Boilerplate
 
 if __name__ != '__main__':
-    dash.register_page(__name__, path="/")
+    dash.register_page(__name__)
 
 
 #%% Layout

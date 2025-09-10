@@ -27,12 +27,20 @@ def navbar():
     """
     layout = dmc.Stack([
         dmc.Anchor(
-            dmc.Button("Potion Database", fullWidth=True),
+            dmc.Button("Home", fullWidth=True),
             href="/", underline="never", c="myColors.9"
+        ),
+        dmc.Anchor(
+            dmc.Button("Potion Database", fullWidth=True),
+            href="/potion-database", underline="never", c="myColors.9"
         ),
         dmc.Anchor(
             dmc.Button("Potion Maker", fullWidth=True),
             href="/potion-maker", underline="never", c="myColors.9"
+        ),
+        dmc.Anchor(
+            dmc.Button("Ingredient Info", fullWidth=True),
+            href="/ingredient-info", underline="never", c="myColors.9"
         ),
     ])
 
