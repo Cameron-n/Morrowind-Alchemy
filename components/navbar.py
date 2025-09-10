@@ -14,7 +14,7 @@ import dash_mantine_components as dmc
 
 
 #%% Layout
-def navbar():
+def Navbar():
     """
     Navbar component for the app shell.
 

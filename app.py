@@ -18,7 +18,8 @@ from dash import Dash, callback, Input, Output, State
 import dash_mantine_components as dmc
 
 # Relative
-from components.navbar import navbar
+from components.navbar import Navbar
+from components.header import Header
 from components.config import theme
 from components.data_access import server
 
@@ -35,15 +36,12 @@ app = Dash(__name__, server=server, use_pages=True)
 
 layout = dmc.AppShell([
     dmc.AppShellHeader(
-        dmc.Group([
-            dmc.Burger(id="burger", size="sm", hiddenFrom="sm", opened=False),
-            dmc.Title("Morrowind Alchemy", order=5, c="myColors.9"),
-        ]),
+        Header(),
         p="md",
         bg="myColors.2"
     ),
     dmc.AppShellNavbar(
-        navbar(),
+        Navbar(),
         p="md",
         bg="myColors.1"
     ),
