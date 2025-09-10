@@ -21,21 +21,28 @@ myColors = [
 ]
 
 theme = {
-        "colors" : {
-            "myColors" : myColors,
-            },
-        "primaryColor" : "myColors",
-        "primaryShade" : 3,
-        "components" : {
-            "Select" : {
-                "styles" : {
-                    "dropdown":{"background":myColors[4]},
-                }
-            },
-            "TagsInput" : {
-                "styles" : {
-                    "dropdown":{"background":myColors[4]},
-                }
+    "colors": {
+        "myColors": myColors,
+    },
+    "primaryColor": "myColors",
+    "primaryShade": 3,
+    "breakpoints": {
+        "xs": '30em',  # Default values for reference
+        "sm": '48em',
+        "md": '64em',
+        "lg": '74em',
+        "xl": '90em',
+    },
+    "components": {
+        "Select": {
+            "styles": {
+                "dropdown": {"background": myColors[4]},
+            }
+        },
+        "TagsInput": {
+            "styles": {
+                "dropdown": {"background": myColors[4]},
             }
         }
-        }
+    },
+}

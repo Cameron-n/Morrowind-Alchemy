@@ -1,0 +1,15 @@
+.media-navbar-anchor {
+    height: 15%;
+
+    @media (min-width: 48em) {
+        height: 5%;
+    }
+}
+
+.media-navbar-button {
+    height: 100%;
+    
+    @media (max-width: 48em) {
+        font-size: 1rem;
+    }
+}
