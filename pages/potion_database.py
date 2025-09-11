@@ -18,6 +18,7 @@ Features:
 #%% Imports
 
 # Standard
+import time
 import numpy as np
 import pandas as pd
 
@@ -42,6 +43,25 @@ if __name__ != '__main__':
 
 #%% Layout
 
+text = """
+1. Select the effects you want to include in the resulting potions.
+2. Press Calculate to find these potions.
+3. Limit the origins of the ingredients to include or exclude mods, dlcs, or base game ingredients.
+"""
+
+explain_title = dmc.Title("Instructions", order=3)
+explain_text = dmc.Text(text, style={"white-space": "pre-wrap"})
+explain_stack = dmc.Stack([
+    explain_title,
+    explain_text,
+],
+    gap=0
+)
+
+data_origin = DF_INGREDIENTS["Origin"].unique()
+origin_selecter = dmc.MultiSelect(label="Origins", data=data_origin,
+                                  w=200, id="data-origins")
+
 drop_columns = ["Value", "Weight", "Ingredient", "Origin", "First Effect"]
 effects_list = DF_INGREDIENTS.drop(drop_columns, axis=1).columns
 effects_list = list(effects_list)
@@ -59,7 +79,7 @@ effects = dmc.Stack([
                        value="",
                        searchable=True,
                        id="Effect 2"),
-        ], justify="center"),
+        ], justify="center", wrap="nowrap"),
         dmc.Group([
             dmc.Select(label="Effect 3",
                        data=effects_list,
@@ -71,7 +91,7 @@ effects = dmc.Stack([
                        value="",
                        searchable=True,
                        id="Effect 4"),
-        ], justify="center"),
+        ], justify="center", wrap="nowrap"),
     ], justify="center"),
     dmc.Group([
         dmc.Group([
@@ -85,7 +105,7 @@ effects = dmc.Stack([
                        value="",
                        searchable=True,
                        id="Effect 6"),
-        ], justify="center"),
+        ], justify="center", wrap="nowrap"),
         dmc.Group([
             dmc.Select(label="Effect 7",
                        data=effects_list,
@@ -97,13 +117,17 @@ effects = dmc.Stack([
                        value="",
                        searchable=True,
                        id="Effect 8"),
-        ], justify="center")
+        ], justify="center", wrap="nowrap")
     ], justify="center")
 ])
 
+calc_button = dmc.Button("Calculate", id="Effect Button")
+
 effects_with_button = dmc.Stack([
+    explain_stack,
+    origin_selecter,
     effects,
-    dmc.Button("Calculate", id="Effect Button")
+    calc_button,
 ],
     align="center"
 )
@@ -129,12 +153,24 @@ head = dmc.TableThead(
 
 body = dmc.TableTbody(id="Effect Table")
 
-caption = dmc.TableCaption("Testing test alchemy 123")
+caption = dmc.TableCaption("End of Table")
 
-potions_table = dmc.Table([head, body, caption])
+potions_table = dmc.Table([head, body, caption],
+                          withTableBorder=True,
+                          highlightOnHover=True,
+                          highlightOnHoverColor="myColors.8",
+                          striped=True,
+                          )
 potions_table = dmc.TableScrollContainer(
-    potions_table, minWidth=600, maxHeight=425
+    potions_table, minWidth=0, maxHeight=425, type="native"
 )
+
+loading_overlay = dmc.LoadingOverlay(id="data-loader-overlay")
+
+potions_table = dmc.Box([
+    loading_overlay,
+    potions_table,
+], pos="relative")
 
 layout = dmc.Stack([
     effects_with_button,
@@ -145,8 +181,20 @@ layout = dmc.Stack([
 #%% Callbacks
 
 @callback(
-    Output("Effect Table", "children"),
+    Output("data-loader-overlay", "visible"),
     Input("Effect Button", "n_clicks"),
+    prevent_initial_call=True
+)
+def enable_loader(n_clicks):
+    """Enable loader on Calculate button click"""
+    return True
+
+
+@callback(
+    Output("Effect Table", "children"),
+    Output("data-loader-overlay", "visible", allow_duplicate=True),
+    Input("Effect Button", "n_clicks"),
+    State("data-origins", "value"),
     State("Effect 1", "value"),
     State("Effect 2", "value"),
     State("Effect 3", "value"),
@@ -155,10 +203,11 @@ layout = dmc.Stack([
     State("Effect 6", "value"),
     State("Effect 7", "value"),
     State("Effect 8", "value"),
-    suppress_inital_callback=True
+    prevent_initial_call=True
 )
 def calculate_potions(
         n_clicks,
+        origins,
         value_1,
         value_2,
         value_3,
@@ -198,14 +247,31 @@ def calculate_potions(
         DESCRIPTION.
 
     """
+    # Used to cause the callback to trigger *after* the
+    # loader is set to visible. Otherwise, the loader may
+    # be set to False here, *then* set to True afterwards.
+    time.sleep(0.1)
+
+    if (not value_1 and not value_2 and not value_3 and not value_4 and
+        not value_5 and not value_6 and not value_7 and not value_8):
+        return [], False
+
     restrictions = []
     for i in [value_1, value_2, value_3, value_4,
               value_5, value_6, value_7, value_8]:
         if i not in [None, "", []]:
             restrictions.append(i)
 
+    # Limit to selected origins
+    # BUG: see "Bloodmoon" -> "Weakness to Fire"
+    origin_limited = DF_INGREDIENTS.copy()
+    if origins:
+        origin_limited = origin_limited[origin_limited["Origin"].isin(origins)]
+        #origin_limited = origin_limited.reset_index()
+        print(origin_limited["Ingredient"])
+
     # Get all possible potion combinations
-    potions_1 = DF_INGREDIENTS
+    potions_1 = origin_limited
     potions_2 = potion_combinations(potions_1, restrictions)  # pairs
     potions_3 = potion_combinations(potions_2, restrictions)  # triplets
     potions_4 = potion_combinations(potions_3, restrictions)  # linked quads
@@ -256,9 +322,9 @@ def calculate_potions(
         total = len(i)
         num_pos = 0
         for j in i:
-            num_pos -= DF_EFFECTS[DF_EFFECTS["Spell Effects"]==j]["Positive"].iloc[0]
-        for j in range(8-len(i)):
-            i=np.append(i, '')
+            num_pos -= DF_EFFECTS[DF_EFFECTS["Spell Effects"] == j]["Positive"].iloc[0]
+        for j in range(8 - len(i)):
+            i = np.append(i, '')
         part_one = np.append(total+num_pos, i)
         potion_sorted.append(np.append(num_pos, part_one))
         
@@ -326,4 +392,4 @@ def calculate_potions(
         for potion_datum in potion_data
     ]
 
-    return rows
+    return rows, False

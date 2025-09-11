@@ -51,7 +51,7 @@ def Navbar():
             className="media-navbar-anchor"
         ),
     ],
-        style={"height": "100%"},
+        className="media-navbar"
     )
 
     return layout

@@ -24,7 +24,10 @@ def Header():
 
     """
     layout = dmc.Group([
-        dmc.Burger(id="burger", size="sm", hiddenFrom="sm", opened=False),
+        dmc.Burger(id="burger-mobile", size="sm",
+                   hiddenFrom="xs", opened=False),
+        dmc.Burger(id="burger-tablet", size="sm", visibleFrom="xs",
+                   hiddenFrom="md", opened=False),
         dmc.Anchor(
             dmc.Title("Morrowind Alchemy", order=5, c="myColors.9"),
             href="/", underline="never", c="myColors.9"

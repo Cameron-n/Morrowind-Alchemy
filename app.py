@@ -14,7 +14,7 @@ creates the AppShell: the header, navbar, and main content area.
 
 # Dash
 import dash
-from dash import Dash, callback, Input, Output, State
+from dash import Dash, callback, Input, Output, State, ctx
 import dash_mantine_components as dmc
 
 # Relative
@@ -25,9 +25,6 @@ from components.data_access import server
 
 
 #%% Boilerplate
-
-# Needed for dmc to work
-dash._dash_renderer._set_react_version("18.2.0")
 
 app = Dash(__name__, server=server, use_pages=True)
 
@@ -50,8 +47,8 @@ layout = dmc.AppShell([
     header={"height": 60},
     navbar={
         "width": 200,
-        "breakpoint": "sm",
-        "collapsed": {"mobile": True},
+        "breakpoint": "xs",
+        "collapsed": {"mobile": True, "desktop": False},
 },
     p="md",
     bg="myColors.0",
@@ -65,18 +62,23 @@ app.layout = dmc.MantineProvider(layout, theme=theme)
 
 @callback(
     Output("appshell", "navbar"),
-    Input("burger", "opened"),
+    Input("burger-mobile", "opened"),
+    Input("burger-tablet", "opened"),
     State("appshell", "navbar"),
+    prevent_initial_call=True
 )
-def toggle_navbar(opened, navbar):
+def toggle_navbar(opened_mobile, opened_tablet, navbar):
     """Toggle navbar opened or closed on mobile using burger"""
-    navbar["collapsed"] = {"mobile": not opened}
+    if ctx.triggered_id == "burger-mobile":
+        navbar["collapsed"]["mobile"] = not opened_mobile
+    elif ctx.triggered_id == "burger-tablet":
+        navbar["collapsed"]["desktop"] = not opened_tablet
     return navbar
 
 
 @callback(
     Output("appshell", "navbar", allow_duplicate=True),
-    Output("burger", "opened"),
+    Output("burger-mobile", "opened"),
     Input("nav-btn-home", "n_clicks"),
     Input("nav-btn-data", "n_clicks"),
     Input("nav-btn-maker", "n_clicks"),
@@ -86,7 +88,7 @@ def toggle_navbar(opened, navbar):
 )
 def close_navbar_on_click(btn_one, btn_two, btn_three, btn_four, navbar):
     """Close navbar after selection is made on mobile"""
-    navbar["collapsed"] = {"mobile": True}
+    navbar["collapsed"] = {"mobile": True, "desktop": False}
     return navbar, False
 
 

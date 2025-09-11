@@ -43,6 +43,11 @@ theme = {
             "styles": {
                 "dropdown": {"background": myColors[4]},
             }
-        }
+        },
+        "MultiSelect": {
+            "styles": {
+                "dropdown": {"background": myColors[4]},
+            }
+        },
     },
 }
