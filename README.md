@@ -1,5 +1,7 @@
 # Morrowind-Alchemy
 
+**Note: See >[this](https://cameron-n.github.io/Alchemy/Python-Webapp/)< post for a more detailed look at this project.**
+
 ## Overview
 
 A [Dash](https://dash.plotly.com/) app to display information about potions that can be created using alchemy in the 
