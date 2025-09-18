@@ -27,12 +27,21 @@ To view the app, navigate to:
 
 ### Self-setup
 
+**Note: This assumes some familiarity with Python and SQL.**
+
 If you want to host a copy of the app yourself, here's how to do so:
 
-Clone the repository:
-`git clone https://github.com/Cameron-n/Morrowind-Alchemy.git`
+Create a Python environment and install the modules in the `requirements.txt`.
 
-Create a database and load the data. Note, I am using MySQL:
+```pip install -r requirements.txt```
+
+Clone the repository:
+
+```git clone https://github.com/Cameron-n/Morrowind-Alchemy.git```
+
+Run the app by running `app.py` and navitgating to `localhost:8050` on a browser. The app should run but will not display any data as we have not loaded any in yet.
+
+Create a database and load the data. Note, I am using MySQL so e.g. the backticks may need to be replaced:
 Run `create_tables.sql` to create the tables.
 Run `effect_data.sql`, `ingredient_data.sql`, and `tool.sql` to populate the tables.
 
