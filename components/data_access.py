@@ -30,7 +30,7 @@ from sqlalchemy.orm import DeclarativeBase, mapped_column
 path = os.path.join(os.path.dirname(__file__), "../.env")
 load_dotenv(path)
 
-# Seemingly used. Could replace URI with these components 
+# Seemingly used. Could replace URI with these components
 database_password = os.environ.get('PA_DATABASE_PASSWORD')
 username = os.environ.get('PA_USER')
 host_name = os.environ.get('PA_HOST')
@@ -42,11 +42,12 @@ database_name = os.environ.get('PA_DATABASE_NAME')
 class Base(DeclarativeBase):
     pass
 
+
 db = SQLAlchemy(model_class=Base)
 
 server = Flask(__name__)
-server.config["SQLALCHEMY_DATABASE_URI"]=os.environ.get('DATABASE_URI')
-server.config['SQLALCHEMY_ENGINE_OPTIONS'] = {'pool_recycle' : 280}
+server.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get('DATABASE_URI')
+server.config['SQLALCHEMY_ENGINE_OPTIONS'] = {'pool_recycle': 280}
 db.init_app(server)
 
 
@@ -58,7 +59,7 @@ db.init_app(server)
     # In `Effects` in the database
 class Ingredient(db.Model):
     __tablename__ = "Ingredient"
-    
+
     Value = mapped_column(Float)
     Weight = mapped_column(Float)
     Ingredient = mapped_column(String(50), primary_key=True)

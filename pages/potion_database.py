@@ -62,10 +62,7 @@ data_origin = DF_INGREDIENTS["Origin"].unique()
 origin_selecter = dmc.MultiSelect(label="Origins", data=data_origin,
                                   w=200, id="data-origins")
 
-drop_columns = ["Value", "Weight", "Ingredient", "Origin", "First Effect"]
-effects_list = DF_INGREDIENTS.drop(drop_columns, axis=1).columns
-effects_list = list(effects_list)
-
+effects_list = list(DF_EFFECTS["Spell Effects"])
 effects = dmc.Stack([
     dmc.Group([
         dmc.Group([
@@ -252,8 +249,8 @@ def calculate_potions(
     # be set to False here, *then* set to True afterwards.
     time.sleep(0.1)
 
-    if (not value_1 and not value_2 and not value_3 and not value_4 and
-        not value_5 and not value_6 and not value_7 and not value_8):
+    if not (value_1 or value_2 or value_3 or value_4 or
+            value_5 or value_6 or value_7 or value_8):
         return [], False
 
     restrictions = []
@@ -315,7 +312,7 @@ def calculate_potions(
         potion = potion[potion != 0]
         potion = potion[potion != 1]
         potion_as_words.append(potion)
-    
+
     # Sort by +ve effects descending, -ve effects ascending
     potion_sorted = []
     for i in potion_as_words:
@@ -327,17 +324,17 @@ def calculate_potions(
             i = np.append(i, '')
         part_one = np.append(total+num_pos, i)
         potion_sorted.append(np.append(num_pos, part_one))
-        
+
     ingredients_sorted = []
     potions_ingredients = potions_ingredients.to_numpy()
     for i in potions_ingredients:
         for j in range(4-len(i)):
             i = np.append(i, '')
         ingredients_sorted.append(i)
-    
+
     if potion_sorted != []:
         potion_sorted = np.append(ingredients_sorted, potion_sorted, axis=1)
-    
+
     dtype = [('ing 1', object),
              ('ing 2', object),
              ('ing 3', object),
@@ -355,7 +352,7 @@ def calculate_potions(
     potion_sorted = [tuple(i) for i in potion_sorted]
     potion_sorted = np.array(potion_sorted, dtype=dtype)
     potion_sorted = np.sort(potion_sorted, order=['pos', 'neg'])
-    
+
     potion_data = []
     for index, potion in enumerate(potion_sorted):
         new_row = {
