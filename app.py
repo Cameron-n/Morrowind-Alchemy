@@ -8,6 +8,8 @@ Entrypoint for the dash app. Sets up some boilerplate code and
 creates the AppShell: the header, navbar, and main content area.
 """
 
+# Rewrite code with lists of components instead of many variables
+
 #%% Imports
 
 # Standard

@@ -11,9 +11,8 @@ Features:
       number of +ve effects DESC, then number of -ve effects ASC
 """
 
-# Maybe use dcc.datatable?
-# Limit by origin
-# Send output to potion_maker?
+# Limit by origin [fix]
+# Send output to potion_maker? [high-reward, mid-effort]
 
 #%% Imports
 
@@ -49,7 +48,7 @@ text = """
 3. Limit the origins of the ingredients to include or exclude mods, dlcs, or base game ingredients.
 """
 
-explain_title = dmc.Title("Instructions", order=3)
+explain_title = dmc.Title("Potion Database", order=3)
 explain_text = dmc.Text(text, style={"white-space": "pre-wrap"})
 explain_stack = dmc.Stack([
     explain_title,

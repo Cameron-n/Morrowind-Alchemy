@@ -23,3 +23,9 @@
 .mantine-Table-thead {
     background-color: var(--mantine-color-myColors-2);
 }
+
+.potionmaker-border {
+    border-style: groove;
+    border-width: thick;
+    border-color: var(--mantine-color-myColors-2);
+}

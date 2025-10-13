@@ -9,7 +9,7 @@ Inputs:
     - Stats (Alchemy, Intelligence, and Luck)
     - Apparatuses (Mortar and Pestle, Alembic, Retort, and Calcinator)
     - Ingredients (Up to 4)
-    
+
 Outputs:
     - Potion Effect(s)
     - Magnitude and Duration
@@ -19,7 +19,10 @@ Outputs:
 # calculation for single ingredients [low-reward, high-effort]
 # don't include magnitude/duration if effect not have [mid-reward, mid-effort]
 # verify math in-game cause wiki conflicts with openmw research [high-reward, high-effort]
-# Group selects by origin [mid-reward, low-effort]
+# Figure out how to expand Created Effects border box [mid-reward, mid-effort]
+# Add images? [high-reward, high-effort]
+# Fix ingredient groupings [high-reward, low-effort]
+
 
 #%% Imports
 
@@ -35,6 +38,17 @@ import dash_mantine_components as dmc
 # Relative
 from components.data_access import DF_INGREDIENTS, DF_EFFECTS, DF_TOOLS
 
+DF_EFFECTS.fillna(0, inplace=True)
+
+data_origins = DF_INGREDIENTS["Origin"].unique()
+
+grouped_data = [
+    {
+        "group": name,
+        "items": DF_INGREDIENTS["Ingredient"][DF_INGREDIENTS["Origin"] == name]
+    } for name in data_origins
+]
+
 
 #%% Boilerplate
 
@@ -44,60 +58,59 @@ if __name__ != '__main__':
 
 #%% Layout
 
+alchemy_tools_title = dmc.Text("Apparatus")
+
 alchemy_tools = dmc.Group([
-    dmc.Select(label = "Mortar and Pestle",
-               data = [i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Mortar and Pestle"]],
-               value = DF_TOOLS[DF_TOOLS["Type"]=="Mortar and Pestle"][DF_TOOLS["Quality"]==0.5]["Name"].iloc[0],
+    dmc.Select(label="Mortar and Pestle",
+               data=[i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Mortar and Pestle"]],
+               value=DF_TOOLS[DF_TOOLS["Type"]=="Mortar and Pestle"][DF_TOOLS["Quality"]==0.5]["Name"].iloc[0],
                allowDeselect=False,
                id="mortar"),
-    dmc.Select(label = "Alembic",
-               data = [i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Alembic"]],
-               value = DF_TOOLS[DF_TOOLS["Type"]=="Alembic"][DF_TOOLS["Quality"]==0.5]["Name"].iloc[0],
-               allowDeselect=False,
+    dmc.Select(label="Alembic",
+               data=[i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Alembic"]],
                id="alembic"),
-    dmc.Select(label = "Calcinator",
-               data = [i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Calcinator"]],
-               value = DF_TOOLS[DF_TOOLS["Type"]=="Calcinator"][DF_TOOLS["Quality"]==0.5]["Name"].iloc[0],
-               allowDeselect=False,
+    dmc.Select(label="Calcinator",
+               data=[i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Calcinator"]],
                id="calcinator"),
-    dmc.Select(label = "Retort",
-               data = [i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Retort"]],
-               value = DF_TOOLS[DF_TOOLS["Type"]=="Retort"][DF_TOOLS["Quality"]==0.5]["Name"].iloc[0],
-               allowDeselect=False,
+    dmc.Select(label="Retort",
+               data=[i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Retort"]],
                id="retort"),
     ],
     grow=True,
     wrap="nowrap",)
 
+alchemy_tools = dmc.Stack([
+    alchemy_tools_title,
+    alchemy_tools,
+    ], gap=0)
+
+ingredients_title = dmc.Text("Ingredients")
+
 ingredients = dmc.Group([
-    dmc.Select(label = "Ingredient 1",
-               value=None,
-               data = DF_INGREDIENTS["Ingredient"],
-               searchable = True,
+    dmc.Select(value=None,
+               data=grouped_data,
+               searchable=True,
                clearable=True,
                id="ing_1",
                styles={
                    }),
-    dmc.Select(label = "Ingredient 2",
-               value=None,
-               data = DF_INGREDIENTS["Ingredient"],
-               searchable = True,
+    dmc.Select(value=None,
+               data=grouped_data,
+               searchable=True,
                clearable=True,
                id="ing_2",
                styles={
                    }),
-    dmc.Select(label = "Ingredient 3",
-               value=None,
-               data = DF_INGREDIENTS["Ingredient"],
-               searchable = True,
+    dmc.Select(value=None,
+               data=grouped_data,
+               searchable=True,
                clearable=True,
                id="ing_3",
                styles={
                    }),
-    dmc.Select(label = "Ingredient 4",
-               value=None,
-               data = DF_INGREDIENTS["Ingredient"],
-               searchable = True,
+    dmc.Select(value=None,
+               data=grouped_data,
+               searchable=True,
                clearable=True,
                id="ing_4",
                styles={
@@ -105,6 +118,11 @@ ingredients = dmc.Group([
     ],
     grow=True,
     wrap="nowrap",)
+
+ingredients = dmc.Stack([
+    ingredients_title,
+    ingredients,
+    ], gap=0)
 
 ingredient_effect_boxes = dmc.Group([
     dmc.Card(id="ing_1_effects"),
@@ -121,6 +139,8 @@ left_items = dmc.Stack([
     ingredient_effect_boxes
     ])
 
+potion_effects_title = dmc.Text("Created Effects")
+
 potion_effects_stack = dmc.Card(id="potion_maker_effects")
 
 magnitude_and_duration = dmc.Card(id="mag_and_dur")
@@ -128,14 +148,44 @@ magnitude_and_duration = dmc.Card(id="mag_and_dur")
 right_items = dmc.Group([
     potion_effects_stack,
     magnitude_and_duration,
-    ])
+],
+    align="stretch",
+    grow=True,
+    className="potionmaker-border",
+    style={"height": "100%"}
+)
+
+right_items = dmc.Stack([
+    potion_effects_title,
+    right_items,
+],
+    style={"height": "200px", "width": "530px"})
 
 whole_thing = dmc.Group([
     left_items,
     right_items,
-    ])
+],
+    align="flex-start",
+    p="md",
+    className="potionmaker-border"
+)
 
-stats = dmc.Container([
+text = """
+1. Set the stats to see the effects on the magnitude and duration of potion effects
+2. Select the appartuses. These also alter the magnitude and duration. Note, only a Mortar and Pestle is *required*
+3. Select the ingredients. These determine the outcome of the potion
+"""
+
+explain_title = dmc.Title("Potion Maker", order=3)
+explain_text = dmc.Text(text, style={"white-space": "pre-wrap"})
+explain_stack = dmc.Stack([
+    explain_title,
+    explain_text,
+],
+    gap=0
+)
+
+stats = dmc.Group([
     dmc.NumberInput(label="Alchemy",
                     value=50,
                     min=0,
@@ -154,7 +204,12 @@ stats = dmc.Container([
                     max=100,
                     allowDecimal=False,
                     id="luck"),
-    ])
+    ], wrap="nowrap")
+
+stats = dmc.Stack([
+    explain_stack,
+    stats,
+    ], align="center")
 
 layout = dmc.Stack([
     stats,
@@ -220,7 +275,7 @@ def update_effect_list(value):
     if value is None:
         return None
     # Get list of up to 4 effects from DF_INGREDIENTS
-    ingredient_row = DF_INGREDIENTS[DF_INGREDIENTS["Ingredient"]==value]
+    ingredient_row = DF_INGREDIENTS[DF_INGREDIENTS["Ingredient"] == value]
     ingredient_row_not_nan = ingredient_row.notna().iloc[0]
     columns_not_nan = DF_INGREDIENTS.columns[ingredient_row_not_nan]
     
@@ -345,32 +400,39 @@ def update_potion_mag_and_dur(
     # get effect names
     if not children:
         return None
-    
+
     effect_names = [i['props']['children'] for i in children]
-    
+
     # get effect costs from names
-    effect_costs = [DF_EFFECTS["Base Cost"][DF_EFFECTS["Spell Effects"]==i].iloc[0] for i in effect_names]
-    
+    effect_costs = [DF_EFFECTS["Base Cost"][DF_EFFECTS["Spell Effects"] == i].iloc[0] for i in effect_names]
+
+    # get positive or negative
+    pos_neg = [DF_EFFECTS["Positive"][DF_EFFECTS["Spell Effects"] == i].iloc[0] for i in effect_names]
+
     # get tool quality
     mortar = DF_TOOLS["Quality"][DF_TOOLS["Name"]==mortar].iloc[0]
-    alembic = DF_TOOLS["Quality"][DF_TOOLS["Name"]==alembic].iloc[0]
-    retort = DF_TOOLS["Quality"][DF_TOOLS["Name"]==retort].iloc[0]
-    calcinator = DF_TOOLS["Quality"][DF_TOOLS["Name"]==calcinator].iloc[0]
+    if alembic:
+        alembic = DF_TOOLS["Quality"][DF_TOOLS["Name"]==alembic].iloc[0]
+    if retort:
+        retort = DF_TOOLS["Quality"][DF_TOOLS["Name"]==retort].iloc[0]
+    if calcinator:
+        calcinator = DF_TOOLS["Quality"][DF_TOOLS["Name"]==calcinator].iloc[0]
     
     # calculate mag and duration
     stack_list = []
-    for cost in effect_costs:
+    for cost, pos in zip(effect_costs, pos_neg):
         mag, dur = potion_magnitude_and_duration(
-            alchemy, 
-            intelligence, 
+            alchemy,
+            intelligence,
             luck,
-            mortar, 
+            mortar,
             alembic,
             retort,
             calcinator,
-            cost
+            cost,
+            positive=pos
             )
         text = f"{round(mag)} points for {round(dur)} seconds"
-        stack_list.append(dmc.Text(text))  
+        stack_list.append(dmc.Text(text))
     
     return stack_list
