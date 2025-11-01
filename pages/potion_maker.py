@@ -20,7 +20,7 @@ Outputs:
 # don't include magnitude/duration if effect not have [mid-reward, mid-effort]
 # verify math in-game cause wiki conflicts with openmw research [high-reward, high-effort]
 # Figure out how to expand Created Effects border box [mid-reward, mid-effort]
-# Add images? [high-reward, high-effort]
+# Add ingredient images? (See render_option_select.js)
 # Fix ingredient groupings [high-reward, low-effort]
 
 
@@ -65,15 +65,19 @@ alchemy_tools = dmc.Group([
                data=[i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Mortar and Pestle"]],
                value=DF_TOOLS[DF_TOOLS["Type"]=="Mortar and Pestle"][DF_TOOLS["Quality"]==0.5]["Name"].iloc[0],
                allowDeselect=False,
+               renderOption={"function": "renderOptionSelect"},
                id="mortar"),
     dmc.Select(label="Alembic",
                data=[i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Alembic"]],
+               renderOption={"function": "renderOptionSelect"},
                id="alembic"),
     dmc.Select(label="Calcinator",
                data=[i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Calcinator"]],
+               renderOption={"function": "renderOptionSelect"},
                id="calcinator"),
     dmc.Select(label="Retort",
                data=[i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Retort"]],
+               renderOption={"function": "renderOptionSelect"},
                id="retort"),
     ],
     grow=True,
