@@ -21,7 +21,6 @@ Outputs:
 # verify math in-game cause wiki conflicts with openmw research [high-reward, high-effort]
 # Figure out how to expand Created Effects border box [mid-reward, mid-effort]
 # Add ingredient images? (See render_option_select.js)
-# Fix ingredient groupings [high-reward, low-effort]
 
 
 #%% Imports
@@ -234,29 +233,29 @@ def potion_magnitude_and_duration(
             base_cost,
             positive=True
             ):
-    
+
     magnitude_base = mortar*(alchemy+intelligence/10+luck/10)/(3*base_cost)
-    duration_base = 3*magnitude_base
-    
+    duration_base = 3 * magnitude_base
+
     extras = 0
     mult = 1
     if positive:
         if retort and calcinator:
-            extras = round(calcinator) + 2*(round(retort))
+            extras = round(calcinator) + 2 * (round(retort))
         elif retort:
             extras = round(retort)
         elif calcinator:
             extras = round(calcinator)
     else:
         if alembic and calcinator:
-            mult = 1/(2*alembic + 3*calcinator)
+            mult = 1 / (2 * alembic + 3 * calcinator)
         elif alembic:
-            mult = 1/(alembic + 1)
+            mult = 1 / (alembic + 1)
         elif calcinator:
             extras = round(calcinator)
 
-    magnitude = magnitude_base*mult + extras
-    duration = duration_base*mult + extras
+    magnitude = magnitude_base * mult + extras
+    duration = duration_base * mult + extras
 
     return magnitude, duration
 
@@ -266,13 +265,13 @@ def potion_effects(list_of_effect_lists):
     Finds what effects are shared between the input ingredients.
     These are the effects a potion will have.
     """
-    
+
     counter = Counter()
     for i in list_of_effect_lists:
         counter.update(i)
-        
-    effects = [string for string, count in counter.items() if count>=2]
-    
+
+    effects = [string for string, count in counter.items() if count >= 2]
+
     return effects
 
 def update_effect_list(value):
@@ -282,63 +281,82 @@ def update_effect_list(value):
     ingredient_row = DF_INGREDIENTS[DF_INGREDIENTS["Ingredient"] == value]
     ingredient_row_not_nan = ingredient_row.notna().iloc[0]
     columns_not_nan = DF_INGREDIENTS.columns[ingredient_row_not_nan]
-    
+
     effects = list(columns_not_nan)
     effects.remove("Value")
     effects.remove("Weight")
     effects.remove("Ingredient")
     effects.remove("Origin")
     effects.remove("First Effect")
-    
+
     # Add components
     content = [dmc.Text(i, truncate="end") for i in effects]
-    
+
     return content
 
 
 #%% Callbacks
 
 @callback(
-    Output("ing_1_effects","children"),
-    Output("ing_2_effects","children"),
-    Output("ing_3_effects","children"),
-    Output("ing_4_effects","children"),
-    Output("ing_1","data"),
-    Output("ing_2","data"),
-    Output("ing_3","data"),
-    Output("ing_4","data"),
-    Input("ing_1","value"),
-    Input("ing_2","value"),
-    Input("ing_3","value"),
-    Input("ing_4","value"),
+    Output("ing_1_effects", "children"),
+    Output("ing_2_effects", "children"),
+    Output("ing_3_effects", "children"),
+    Output("ing_4_effects", "children"),
+    Output("ing_1", "data"),
+    Output("ing_2", "data"),
+    Output("ing_3", "data"),
+    Output("ing_4", "data"),
+    Input("ing_1", "value"),
+    Input("ing_2", "value"),
+    Input("ing_3", "value"),
+    Input("ing_4", "value"),
     prevent_initial_call=True
 )
 def update_effect_dropdowns(value_1, value_2, value_3, value_4):
     """
-    Removes shared effects from dropdowns.
-    
+    Remove shared effects from dropdowns.
+
     E.g. if ingredient 1 is "adamantium ore", the other dropdowns
     will no longer show that ingredient
     """
-    
-    data_1 = deepcopy(DF_INGREDIENTS["Ingredient"])
-    data_2 = deepcopy(DF_INGREDIENTS["Ingredient"])
-    data_3 = deepcopy(DF_INGREDIENTS["Ingredient"])
-    data_4 = deepcopy(DF_INGREDIENTS["Ingredient"])
+    data_1 = deepcopy(grouped_data)
+    data_2 = deepcopy(grouped_data)
+    data_3 = deepcopy(grouped_data)
+    data_4 = deepcopy(grouped_data)
 
-    for i in [value_2,value_3,value_4]:
+    for i in [value_2, value_3, value_4]:
         if i:
-            data_1 = data_1[data_1!=i]
-    for i in [value_1,value_3,value_4]:
+            if i in list(data_1[0]["items"]):
+                data_1[0]["items"] = data_1[0]["items"][data_1[0]["items"] != i]
+            elif i in list(data_1[1]["items"]):
+                data_1[1]["items"] = data_1[1]["items"][data_1[1]["items"] != i]
+            elif i in list(data_1[2]["items"]):
+                data_1[2]["items"] = data_1[2]["items"][data_1[2]["items"] != i]
+    for i in [value_1, value_3, value_4]:
         if i:
-            data_2 = data_2[data_2!=i]
-    for i in [value_2,value_1,value_4]:
+            if i in list(data_2[0]["items"]):
+                data_2[0]["items"] = data_2[0]["items"][data_2[0]["items"] != i]
+            elif i in list(data_2[1]["items"]):
+                data_2[1]["items"] = data_2[1]["items"][data_2[1]["items"] != i]
+            elif i in list(data_2[2]["items"]):
+                data_2[2]["items"] = data_2[2]["items"][data_2[2]["items"] != i]
+    for i in [value_2, value_1, value_4]:
         if i:
-            data_3 = data_3[data_3!=i]
-    for i in [value_2,value_3,value_1]:
+            if i in list(data_3[0]["items"]):
+                data_3[0]["items"] = data_3[0]["items"][data_3[0]["items"] != i]
+            elif i in list(data_3[1]["items"]):
+                data_3[1]["items"] = data_3[1]["items"][data_3[1]["items"] != i]
+            elif i in list(data_3[2]["items"]):
+                data_3[2]["items"] = data_3[2]["items"][data_3[2]["items"] != i]
+    for i in [value_2, value_3, value_1]:
         if i:
-            data_4 = data_4[data_4!=i]
-    
+            if i in list(data_4[0]["items"]):
+                data_4[0]["items"] = data_4[0]["items"][data_4[0]["items"] != i]
+            elif i in list(data_4[1]["items"]):
+                data_4[1]["items"] = data_4[1]["items"][data_4[1]["items"] != i]
+            elif i in list(data_4[2]["items"]):
+                data_4[2]["items"] = data_4[2]["items"][data_4[2]["items"] != i]
+
     if dash.callback_context.triggered_id == "ing_1":
         return update_effect_list(value_1), dash.no_update, dash.no_update, dash.no_update, \
                data_1, data_2, data_3, data_4
