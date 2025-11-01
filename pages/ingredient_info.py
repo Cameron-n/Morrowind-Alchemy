@@ -5,6 +5,7 @@ Created on Thu May 22 20:17:00 2025
 @author: camer
 """
 
+# ingredients name icon location effects price weight
 
 #%% Imports
 

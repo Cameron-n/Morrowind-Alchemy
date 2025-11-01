@@ -5,18 +5,14 @@ Created on Wed Sep 10 14:24:33 2025
 @author: Cameron-n
 """
 
-
 #%% Imports
 
 # Standard
+import os
 
 # Dash
 import dash
-from dash import callback, Input, Output
 import dash_mantine_components as dmc
-
-# Relative
-from components.data_access import DF_INGREDIENTS, DF_EFFECTS, DF_TOOLS
 
 
 #%% Boilerplate
@@ -27,43 +23,56 @@ if __name__ != '__main__':
 
 #%% Layout
 
+relative_loc = "../assets/home-txt.txt"
+home_text_loc = os.path.join(os.path.dirname(__file__), relative_loc)
+
+with open(home_text_loc) as f:
+    home_text = [line for line in f]
+
 layout = dmc.Stack([
     dmc.Title("Morrowind Alchemy Calculator", order=3),
-    dmc.Text([
-        "Hello and welcome to this webapp! It is designed to explore Morrowind's ",
-        "alchemy system. The game has hundreds of thousands of possible potions, ",
-        "so exploring them all manually is not reasonable."
-        ],
-    ),
+    dmc.Text(home_text[0]),
+    dmc.AspectRatio(
+        dmc.Image(
+            src="assets/home-1.jpg",
+            radius="md",
+            ),
+        ratio=16 / 9,
+        style={"max-width": "500px"}
+        ),
     dmc.Stack([
-        dmc.Text("With this webapp, you can:"),
-        dmc.Text("1. Potion Database - Search through all possible potion combinations by selecting the desired effects"),
-        dmc.Text("2. Potion Maker - Emulate the alchemy process in-game, with the addition of more detailed stats on magnitude and duration"),
-        dmc.Text("3. Ingredient Info - See each ingredients name, icon, location, effects, price, and weight"),
+        dmc.Title("With this webapp, you can:", order=3),
+        dmc.Text([
+            dmc.Anchor(dmc.Button("Potion Database"), href="/potion-database"),
+            " - Search through all possible potion combinations"
+            ]),
+        dmc.Text([
+            dmc.Anchor(dmc.Button("Potion Maker"), href="/potion-maker"),
+            " - Emulate the alchemy process in-game"
+            ]),
+        dmc.Text([
+            dmc.Anchor(dmc.Button("Ingredient Info"), href="/ingredient-info"),
+            " - Contains names, icons, locations, effects, prices, and weights"
+            ]),
         ],
     ),
     dmc.Title("How Alchemy Works", order=3),
     dmc.Stack([
-        dmc.Text([
-            "In Morrowind, there are magical effects. Ingredients have a list ",
-            "up to four effects associated with them. Potions are mixtures of ",
-            "up to four ingredients. If two of more ingredients in a potion share ",
-            "the same effect, the potion has that effect. Note, eating ingredients ",
-            "directly is possible but you only get the first effect in the list ",
-            "and the magnitude (strength) and duration are very low. Also ",
-            "alchemy requires a 'Mortar and Pestle', and can additionally have ",
-            "an 'alembic', 'calcinator', and 'retort' added. Lastly, a players ",
-            "skills in Alchemy, Intelligence, and Luck affect the final result."
-            ]),
+        dmc.Text(home_text[1]),
         ],
     ),
+    dmc.Title("Credits", order=3),
+    dmc.Stack([
+        dmc.Text([
+            "- The game Morrowind belongs to Bethesda Studios\n",
+            "- The original data is available ",
+            dmc.Anchor("here", href="https://docs.google.com/spreadsheets/d/1JQ391ET9lkKRoAdzQnkyIly7XCg2fNmtJqhpqmJitaM/edit?gid=1565250262#gid=1565250262"),
+            "\n- This application was made by ",
+            dmc.Anchor("Cameron-n", href="https://github.com/Cameron-n"),
+            dmc.Anchor(
+                "\nhttps://github.com/Cameron-n/Morrowind-Alchemy",
+                href="https://github.com/Cameron-n/Morrowind-Alchemy"
+                )
+            ], style={"white-space": "pre-wrap"}),
+        ]),
 ])
-
-
-#%% Functions
-
-
-#%% Callbacks
-
-
-
