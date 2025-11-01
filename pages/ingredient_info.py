@@ -30,7 +30,7 @@ if __name__ != '__main__':
 
 #%% Layout
 
-layout = dmc.Text("Ingredient/Location Page")
+layout = dmc.Text("Ingredient/Location Page [Under Construction]")
 
 
 #%% Functions

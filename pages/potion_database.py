@@ -11,7 +11,6 @@ Features:
       number of +ve effects DESC, then number of -ve effects ASC
 """
 
-# Limit by origin [fix]
 # Send output to potion_maker? [high-reward, mid-effort]
 
 #%% Imports
@@ -263,8 +262,7 @@ def calculate_potions(
     origin_limited = DF_INGREDIENTS.copy()
     if origins:
         origin_limited = origin_limited[origin_limited["Origin"].isin(origins)]
-        #origin_limited = origin_limited.reset_index()
-        print(origin_limited["Ingredient"])
+        origin_limited = origin_limited.reset_index().drop("index", axis=1)
 
     # Get all possible potion combinations
     potions_1 = origin_limited
