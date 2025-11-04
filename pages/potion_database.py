@@ -12,6 +12,7 @@ Features:
 """
 
 # Send output to potion_maker? [high-reward, mid-effort]
+# Sometimes loading overlay doesn't disappear
 
 #%% Imports
 
@@ -22,7 +23,7 @@ import pandas as pd
 
 # Dash
 import dash
-from dash import callback, Input, Output, State
+from dash import callback, Input, Output, State, dcc, clientside_callback
 import dash_mantine_components as dmc
 
 # Relative
@@ -117,12 +118,19 @@ effects = dmc.Stack([
 ])
 
 calc_button = dmc.Button("Calculate", id="Effect Button")
+down_button = dmc.Button("Download", id="Download Button")
+buttons = dmc.Group([
+    calc_button,
+    down_button,
+    dcc.Store(id="potion-database-store"),
+    dcc.Download(id="potion-database-download"),
+    ], wrap="nowrap")
 
 effects_with_button = dmc.Stack([
     explain_stack,
     origin_selecter,
     effects,
-    calc_button,
+    buttons,
 ],
     align="center"
 )
@@ -175,19 +183,22 @@ layout = dmc.Stack([
 
 #%% Callbacks
 
-@callback(
+clientside_callback(
+    """
+    function updateLoadingState(n_clicks) {
+        return true
+    }
+    """,
     Output("data-loader-overlay", "visible"),
     Input("Effect Button", "n_clicks"),
-    prevent_initial_call=True
+    prevent_initial_call=True,
 )
-def enable_loader(n_clicks):
-    """Enable loader on Calculate button click"""
-    return True
 
 
 @callback(
     Output("Effect Table", "children"),
     Output("data-loader-overlay", "visible", allow_duplicate=True),
+    Output("potion-database-store", "data"),
     Input("Effect Button", "n_clicks"),
     State("data-origins", "value"),
     State("Effect 1", "value"),
@@ -249,7 +260,7 @@ def calculate_potions(
 
     if not (value_1 or value_2 or value_3 or value_4 or
             value_5 or value_6 or value_7 or value_8):
-        return [], False
+        return [], False, dash.no_update
 
     restrictions = []
     for i in [value_1, value_2, value_3, value_4,
@@ -386,4 +397,20 @@ def calculate_potions(
         for potion_datum in potion_data
     ]
 
-    return rows, False
+    potion_data = pd.DataFrame(potion_data).to_json(date_format='iso', orient='split')
+
+    return rows, False, potion_data
+
+
+@callback(
+    Output("potion-database-download", "data"),
+    State("potion-database-store", "data"),
+    Input("Download Button", "n_clicks"),
+    prevent_initial_call=True
+    )
+def download_table(data, n_clicks):
+    if not data:
+        data = pd.DataFrame([])
+    else:
+        data = pd.read_json(data, orient='split')
+    return dcc.send_data_frame(data.to_csv, "morrowind-potions.csv", index=False)
