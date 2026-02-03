@@ -199,7 +199,7 @@ right_items = dmc.Stack([
     potion_effects_title,
     right_items,
 ],
-    style={"height": "200px", "width": "530px"})
+    style={"height": "300px", "width": "530px"})
 
 whole_thing = dmc.Group([
     left_items,
