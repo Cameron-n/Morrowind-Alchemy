@@ -30,7 +30,7 @@ from components.data_access import DF_INGREDIENTS
 DF_INGREDIENTS=DF_INGREDIENTS.fillna(0)
 
 
-def potion_combinations(ingredients, restrictions=[]):
+def potion_combinations(ingredients, origins_limited, restrictions=[]):
     """
     Create all minimal valid potion combinations that are NOT disjoint.
     
@@ -58,10 +58,15 @@ def potion_combinations(ingredients, restrictions=[]):
         The potions.
 
     """
+    # If potion pair or triplet returns no potions, we know further
+    # combinations (triplets/quadrupletes) will also be empty
+    if ingredients.empty:
+        return pd.DataFrame()
+
     drop_columns = ["Value", "Weight", "Ingredient", "Ingredient 2",
                     "Ingredient 3", "Ingredient 4", "Origin", "First Effect"]
     potions = pd.DataFrame()
-    
+
     # Store the ingredient names columns
     ingredient_columns = ["Ingredient", "Ingredient 2", 
                           "Ingredient 3", "Ingredient 4"]
@@ -70,14 +75,14 @@ def potion_combinations(ingredients, restrictions=[]):
 
     # Restrict ingredients based on `restrictions`
     ingredients_restrictions = pd.Series([False for _ in range(len(ingredients))])
-    df_restrictions = pd.Series([False for _ in range(len(DF_INGREDIENTS))])
+    df_restrictions = pd.Series([False for _ in range(len(origins_limited))])
     for i in restrictions: # Brackets needed due to | coming before != or ==
         ingredients_restrictions = ingredients_restrictions | (ingredients[i] != 0)
-        df_restrictions = df_restrictions | (DF_INGREDIENTS[i] != 0)
+        df_restrictions = df_restrictions | (origins_limited[i] != 0)
     ingredients = ingredients[ingredients_restrictions]
 
     # Calculate potions ingredient-wise
-    for index, row in DF_INGREDIENTS[df_restrictions].iterrows():
+    for index, row in origins_limited[df_restrictions].iterrows():
 
         # Remove Self-combinations
         temp_ingredients = ingredients.copy() # ??? Unneeded?

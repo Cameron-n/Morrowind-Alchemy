@@ -277,10 +277,10 @@ def calculate_potions(
 
     # Get all possible potion combinations
     potions_1 = origin_limited
-    potions_2 = potion_combinations(potions_1, restrictions)  # pairs
-    potions_3 = potion_combinations(potions_2, restrictions)  # triplets
-    potions_4 = potion_combinations(potions_3, restrictions)  # linked quads
-    #potions_2_2 = potion_quads(potions_2, restrictions) # 2 unlinked pairs
+    potions_2 = potion_combinations(potions_1, origin_limited, restrictions)  # pairs
+    potions_3 = potion_combinations(potions_2, origin_limited, restrictions)  # triplets
+    potions_4 = potion_combinations(potions_3, origin_limited, restrictions)  # linked quads
+    #potions_2_2 = potion_quads(potions_2, origins, restrictions) # 2 unlinked pairs
     potions = pd.concat([potions_2, potions_3, potions_4])
     potions = potions.reset_index().drop("index", axis=1)
 
@@ -297,10 +297,11 @@ def calculate_potions(
     # ingredient has at least one of the restrictions. We need
     # to further limit this to combinations where every restriction
     # is included
-    ingredients_restrictions = pd.Series([True for _ in range(len(potions))])
-    for i in restrictions:
-        ingredients_restrictions = ingredients_restrictions & (potions[i] == 2)
-    potions = potions[ingredients_restrictions]
+    if not potions.empty:
+        ingredients_restrictions = pd.Series([True for _ in range(len(potions))])
+        for i in restrictions:
+            ingredients_restrictions = ingredients_restrictions & (potions[i] == 2)
+        potions = potions[ingredients_restrictions]
 
     # A potion has an effect if at least 2 ingredients share that effect.
     # Here we replace the '2's in the dataframe with the actual effect names
