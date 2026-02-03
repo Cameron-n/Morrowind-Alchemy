@@ -59,7 +59,7 @@ def potion_combinations(ingredients, origins_limited, restrictions=[]):
 
     """
     # If potion pair or triplet returns no potions, we know further
-    # combinations (triplets/quadrupletes) will also be empty
+    # combinations (triplets/quadruplets) will also be empty
     if ingredients.empty:
         return pd.DataFrame()
 
@@ -137,5 +137,65 @@ def potion_combinations(ingredients, origins_limited, restrictions=[]):
     return potions
 
 
-def potion_quads():
-    pass
+def potion_quads(ingredients):
+    # If potion pair returns no potions, we know further
+    # combinations (quadruplets) will also be empty
+    if ingredients.empty:
+        return pd.DataFrame()
+
+    drop_columns = ["Value", "Weight", "Ingredient", "Ingredient 2",
+                    "Ingredient 3", "Ingredient 4", "Origin", "First Effect"]
+    potions = pd.DataFrame()
+
+    # Store the ingredient names columns
+    ingredient_names = ingredients[["Ingredient","Ingredient 2"]]
+
+    # Calculate potions ingredient-wise
+    for index, row in ingredients.iterrows():
+
+        # Remove linked ingredient pairs
+        temp_ingredients = ingredients.copy() # ??? Unneeded?
+        row_effects = row.drop(drop_columns, errors="ignore")
+        row_effects = row_effects[row_effects!=0].keys()
+        for i in row_effects:
+            temp_ingredients = temp_ingredients[
+                temp_ingredients[i] == 0
+                ]
+
+        temp_ingredients = temp_ingredients.drop(drop_columns, axis=1, errors="ignore")
+        row_effects = row.drop(drop_columns, errors="ignore")
+
+        # Track which ingredients add *new* effects
+        number_of_twos_before = temp_ingredients[temp_ingredients==2].sum(axis=1)
+
+        # Combine ingredients
+        combos = temp_ingredients + row_effects
+
+        number_of_twos_after = combos[combos==2].sum(axis=1)
+
+        # New effects are those that increase a '1' to a '2'
+        combos["Number of Two's"] = number_of_twos_after - number_of_twos_before
+        combos = combos[combos["Number of Two's"] > 0]
+        combos = combos.drop("Number of Two's", axis=1)
+
+        combos = combos.loc[(combos!=0).any(axis=1)] # ???
+        
+        # Add back in ingredient names
+        combos = combos.join(ingredient_names)
+        
+        combos["Ingredient 3"] = row["Ingredient"]
+        combos["Ingredient 4"] = row["Ingredient 2"]
+
+        potions = pd.concat([potions, combos])
+
+    # Remove duplicates
+    potion_columns = ["Ingredient", "Ingredient 2", 
+                          "Ingredient 3", "Ingredient 4"]
+    duplicates = np.sort(potions[potion_columns].to_numpy())
+    potions[potion_columns] = duplicates
+    potions = potions.drop_duplicates(potion_columns)
+
+    #potions = potions.loc[(potions.drop(drop_columns, axis=1, errors="ignore")!=0).any(axis=1)] # ???
+    potions = potions.reset_index().drop("index", axis=1)
+
+    return potions

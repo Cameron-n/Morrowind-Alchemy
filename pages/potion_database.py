@@ -28,7 +28,7 @@ import dash_mantine_components as dmc
 
 # Relative
 from components.data_access import DF_INGREDIENTS, DF_EFFECTS
-from components.combos import potion_combinations
+from components.combos import potion_combinations, potion_quads
 
 DF_INGREDIENTS = DF_INGREDIENTS.fillna(0)
 DF_EFFECTS = DF_EFFECTS.fillna(0)
@@ -280,8 +280,8 @@ def calculate_potions(
     potions_2 = potion_combinations(potions_1, origin_limited, restrictions)  # pairs
     potions_3 = potion_combinations(potions_2, origin_limited, restrictions)  # triplets
     potions_4 = potion_combinations(potions_3, origin_limited, restrictions)  # linked quads
-    #potions_2_2 = potion_quads(potions_2, origins, restrictions) # 2 unlinked pairs
-    potions = pd.concat([potions_2, potions_3, potions_4])
+    potions_2_2 = potion_quads(potions_2) # 2 unlinked pairs
+    potions = pd.concat([potions_2, potions_3, potions_4, potions_2_2])
     potions = potions.reset_index().drop("index", axis=1)
 
     # We remove the ingredients columns to do maths on
