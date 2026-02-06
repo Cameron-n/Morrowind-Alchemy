@@ -10,8 +10,6 @@ Created on Thu May 22 20:17:00 2025
 #%% Imports
 
 # Standard
-from collections import Counter
-from copy import deepcopy
 
 # Dash
 import dash
@@ -19,7 +17,7 @@ from dash import callback, Input, Output
 import dash_mantine_components as dmc
 
 # Relative
-from components.data_access import DF_INGREDIENTS, DF_EFFECTS, DF_TOOLS
+from components.data_access import DF_INGREDIENTS, DF_EFFECTS
 
 
 #%% Boilerplate
@@ -30,20 +28,35 @@ if __name__ != '__main__':
 
 #%% Layout
 
+DF_EFFECTS.fillna(0, inplace=True)
+
+data_origins = DF_INGREDIENTS["Origin"].unique()
+
+grouped_data = [
+    {
+        "group": name,
+        "items": DF_INGREDIENTS["Ingredient"][DF_INGREDIENTS["Origin"] == name]
+    } for name in data_origins
+]
+
 layout = dmc.Stack([
     dmc.Text(">>> Under Construction <<<"),
-    dmc.Select("Placeholder", w=250),
+    dmc.Select(
+        value="",
+        data=grouped_data,
+        searchable=True,
+        clearable=True,
+        w=250,
+        id="ingredient_info_select_ing",
+        ),
     dmc.Image(src="Placeholder", w=100),
     dmc.Group([
-        dmc.Group([dmc.Image(src="placeholder", w=10), "price"]),
-        dmc.Group([dmc.Image(src="placeholder", w=10), "weight"]),
+        dmc.Group([dmc.Text(id="ingredient_info_price"), "price"]),
+        dmc.Group([dmc.Text(id="ingredient_info_weight"), "weight"]),
         ]),
     dmc.Stack([
         dmc.Title("Effects", order=4),
-        dmc.Text("effect 1"),
-        dmc.Text("effect 2"),
-        dmc.Text("effect 3"),
-        dmc.Text("effect 4"),
+        dmc.Box(id="ingredient_info_effects"),
         ]),
     dmc.Stack([
         dmc.Title("Locations", order=4),
@@ -51,7 +64,7 @@ layout = dmc.Stack([
         dmc.Text("of"),
         dmc.Text("locations"),
         ]),
-    ])
+    ], align="center")
 
 
 #%% Functions
@@ -59,5 +72,32 @@ layout = dmc.Stack([
 
 #%% Callbacks
 
+@callback(
+    Output("ingredient_info_effects", "children"),
+    Output("ingredient_info_price", "children"),
+    Output("ingredient_info_weight", "children"),
+    Input("ingredient_info_select_ing", "value")
+)
+def update_effect_list(value):
+    """Get an ingredient's effects and return a list of dmc.Text objects"""
+    if value in [None,"",[]]:
+        return None, dmc.Image(src="placeholder"), dmc.Image(src="placeholder")
+    # Get list of up to 4 effects from DF_INGREDIENTS
+    ingredient_row = DF_INGREDIENTS[DF_INGREDIENTS["Ingredient"] == value]
+    ingredient_row_not_nan = ingredient_row.notna().iloc[0]
+    columns_not_nan = DF_INGREDIENTS.columns[ingredient_row_not_nan]
+    
+    price = ingredient_row["Value"].iloc[0]
+    weight = ingredient_row["Weight"].iloc[0]
 
+    effects = list(columns_not_nan)
+    effects.remove("Value")
+    effects.remove("Weight")
+    effects.remove("Ingredient")
+    effects.remove("Origin")
+    effects.remove("First Effect")
 
+    # Add components
+    content = [dmc.Text(i, truncate="end") for i in effects]
+
+    return content, price, weight
