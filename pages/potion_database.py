@@ -163,6 +163,7 @@ potions_table = dmc.Table([head, body, caption],
                           highlightOnHover=True,
                           highlightOnHoverColor="myColors.8",
                           striped=True,
+                          stickyHeader=True,
                           )
 potions_table = dmc.TableScrollContainer(
     potions_table, minWidth=0, maxHeight=425, type="native"

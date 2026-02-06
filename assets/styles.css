@@ -20,7 +20,7 @@
     overflow-y: scroll;
 }
 
-.mantine-Table-thead {
+.mantine-Table-th {
     background-color: var(--mantine-color-myColors-2);
 }
 
