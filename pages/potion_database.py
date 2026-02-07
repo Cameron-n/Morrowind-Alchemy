@@ -11,13 +11,11 @@ Features:
       number of +ve effects DESC, then number of -ve effects ASC
 """
 
-# Send output to potion_maker? [high-reward, mid-effort]
-# Sometimes loading overlay doesn't disappear
+# Send output to potion_maker? [high-reward, mid-effort, stretch-goal]
 
 #%% Imports
 
 # Standard
-import time
 import numpy as np
 import pandas as pd
 
@@ -48,18 +46,23 @@ text = """
 3. Limit the origins of the ingredients to include or exclude mods, dlcs, or base game ingredients.
 """
 
-explain_title = dmc.Title("Potion Database", order=3)
-explain_text = dmc.Text(text, style={"white-space": "pre-wrap"})
 explain_stack = dmc.Stack([
-    explain_title,
-    explain_text,
+    dmc.Title("Potion Database", order=3),
+    dmc.Text(text, style={"white-space": "pre-wrap"}),
 ],
     gap=0
 )
 
 data_origin = DF_INGREDIENTS["Origin"].unique()
-origin_selecter = dmc.MultiSelect(label="Origins", data=data_origin,
-                                  w=200, id="data-origins")
+origin_selecter = dmc.Container(
+    dmc.MultiSelect(
+        label="Origins",
+        value=["Base", "Tribunal", "Bloodmoon"],
+        data=data_origin,
+        w=200,
+        id="data-origins",
+        )
+    )
 
 effects_list = list(DF_EFFECTS["Spell Effects"])
 effects = dmc.Stack([
@@ -75,7 +78,7 @@ effects = dmc.Stack([
                        value="",
                        searchable=True,
                        id="Effect 2"),
-        ], justify="center", wrap="nowrap"),
+        ], wrap="nowrap"),
         dmc.Group([
             dmc.Select(label="Effect 3",
                        data=effects_list,
@@ -87,7 +90,7 @@ effects = dmc.Stack([
                        value="",
                        searchable=True,
                        id="Effect 4"),
-        ], justify="center", wrap="nowrap"),
+        ], wrap="nowrap"),
     ], justify="center"),
     dmc.Group([
         dmc.Group([
@@ -101,7 +104,7 @@ effects = dmc.Stack([
                        value="",
                        searchable=True,
                        id="Effect 6"),
-        ], justify="center", wrap="nowrap"),
+        ], wrap="nowrap"),
         dmc.Group([
             dmc.Select(label="Effect 7",
                        data=effects_list,
@@ -113,7 +116,7 @@ effects = dmc.Stack([
                        value="",
                        searchable=True,
                        id="Effect 8"),
-        ], justify="center", wrap="nowrap")
+        ], wrap="nowrap")
     ], justify="center")
 ])
 
@@ -122,18 +125,16 @@ down_button = dmc.Button("Download", id="Download Button")
 buttons = dmc.Group([
     calc_button,
     down_button,
-    dcc.Store(id="potion-database-store"),
+    dcc.Store(id="potion-database-store", storage_type='session'),
     dcc.Download(id="potion-database-download"),
-    ], wrap="nowrap")
+    ], justify="center", wrap="nowrap")
 
 effects_with_button = dmc.Stack([
     explain_stack,
     origin_selecter,
     effects,
     buttons,
-],
-    align="center"
-)
+], align="center")
 
 head = dmc.TableThead(
     dmc.TableTr(
@@ -179,7 +180,8 @@ potions_table = dmc.Box([
 layout = dmc.Stack([
     effects_with_button,
     potions_table,
-])
+    dmc.Box(id="dummy-input"),
+], style={"margin": "auto", "max-width": "1500px"})
 
 
 #%% Callbacks
@@ -254,11 +256,6 @@ def calculate_potions(
         DESCRIPTION.
 
     """
-    # Used to cause the callback to trigger *after* the
-    # loader is set to visible. Otherwise, the loader may
-    # be set to False here, *then* set to True afterwards.
-    time.sleep(0.1)
-
     if not (value_1 or value_2 or value_3 or value_4 or
             value_5 or value_6 or value_7 or value_8):
         return [], False, dash.no_update
@@ -270,7 +267,6 @@ def calculate_potions(
             restrictions.append(i)
 
     # Limit to selected origins
-    # BUG: see "Bloodmoon" -> "Weakness to Fire"
     origin_limited = DF_INGREDIENTS.copy()
     if origins:
         origin_limited = origin_limited[origin_limited["Origin"].isin(origins)]
@@ -416,3 +412,37 @@ def download_table(data, n_clicks):
     else:
         data = pd.read_json(data, orient='split')
     return dcc.send_data_frame(data.to_csv, "morrowind-potions.csv", index=False)
+
+
+@callback(
+    Output("Effect Table", "children", allow_duplicate=True),
+    State("potion-database-store", "data"),
+    Input("dummy-input", "children"),
+    prevent_initial_call="initial duplicate"
+    )
+def load_last_table(data, n_clicks):
+
+    if data:
+        data = pd.read_json(data, orient='split')
+        data = [data.iloc[i].to_dict() for i in range(len(data))]
+        
+        rows = [dmc.TableTr([
+                dmc.TableTd(potion_datum["Ingredient 1"]),
+                dmc.TableTd(potion_datum["Ingredient 2"]),
+                dmc.TableTd(potion_datum["Ingredient 3"]),
+                dmc.TableTd(potion_datum["Ingredient 4"]),
+                dmc.TableTd(dmc.Text(potion_datum["Effect 1"], c="red" if DF_EFFECTS[DF_EFFECTS["Spell Effects"]==(potion_datum["Effect 1"] or "Drain Fatigue")]["Positive"].iloc[0]==0 else "green")),
+                dmc.TableTd(dmc.Text(potion_datum["Effect 2"], c="red" if DF_EFFECTS[DF_EFFECTS["Spell Effects"]==(potion_datum["Effect 2"] or "Drain Fatigue")]["Positive"].iloc[0]==0 else "green")),
+                dmc.TableTd(dmc.Text(potion_datum["Effect 3"], c="red" if DF_EFFECTS[DF_EFFECTS["Spell Effects"]==(potion_datum["Effect 3"] or "Drain Fatigue")]["Positive"].iloc[0]==0 else "green")),
+                dmc.TableTd(dmc.Text(potion_datum["Effect 4"], c="red" if DF_EFFECTS[DF_EFFECTS["Spell Effects"]==(potion_datum["Effect 4"] or "Drain Fatigue")]["Positive"].iloc[0]==0 else "green")),
+                dmc.TableTd(dmc.Text(potion_datum["Effect 5"], c="red" if DF_EFFECTS[DF_EFFECTS["Spell Effects"]==(potion_datum["Effect 5"] or "Drain Fatigue")]["Positive"].iloc[0]==0 else "green")),
+                dmc.TableTd(dmc.Text(potion_datum["Effect 6"], c="red" if DF_EFFECTS[DF_EFFECTS["Spell Effects"]==(potion_datum["Effect 6"] or "Drain Fatigue")]["Positive"].iloc[0]==0 else "green")),
+                dmc.TableTd(dmc.Text(potion_datum["Effect 7"], c="red" if DF_EFFECTS[DF_EFFECTS["Spell Effects"]==(potion_datum["Effect 7"] or "Drain Fatigue")]["Positive"].iloc[0]==0 else "green")),
+                dmc.TableTd(dmc.Text(potion_datum["Effect 8"], c="red" if DF_EFFECTS[DF_EFFECTS["Spell Effects"]==(potion_datum["Effect 8"] or "Drain Fatigue")]["Positive"].iloc[0]==0 else "green")),
+            ])
+            for potion_datum in data
+            ]
+        
+        return rows
+    else:
+        return dash.no_update

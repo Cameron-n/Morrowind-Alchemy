@@ -13,8 +13,6 @@ Contains the logic to calculate ingredient combinations (i.e. potions)
 # ingredient effects.
 # Extend for arbitary disjoint i.e. 5 = 3+2, 6=4+2=3+3?
 
-# Needs to limit by origin for potion_database to work
-
 #%% Imports
 
 # Standard
