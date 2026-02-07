@@ -31,48 +31,39 @@ with open(home_text_loc) as f:
 
 layout = dmc.Stack([
     dmc.Title("Morrowind Alchemy Calculator", order=3),
+    dmc.Title("Why does this webapp exist?", order=4),
     dmc.Text(home_text[0]),
-    dmc.AspectRatio(
-        dmc.Image(
-            src="assets/home-1.jpg",
-            radius="md",
+    dmc.Container(
+        dmc.AspectRatio(
+            dmc.Image(
+                src="assets/home-1.png",
+                radius="md",
+                ),
+            ratio=16 / 9,
+            style={"max-width": "500px"}
             ),
-        ratio=16 / 9,
-        style={"max-width": "500px"}
-        ),
-    dmc.Stack([
-        dmc.Title("With this webapp, you can:", order=3),
-        dmc.Text([
-            dmc.Anchor(dmc.Button("Potion Database"), href="/potion-database"),
-            " - Search through all possible potion combinations"
-            ]),
-        dmc.Text([
-            dmc.Anchor(dmc.Button("Potion Maker"), href="/potion-maker"),
-            " - Emulate the alchemy process in-game"
-            ]),
-        dmc.Text([
-            dmc.Anchor(dmc.Button("Ingredient Info"), href="/ingredient-info"),
-            " - Contains names, icons, locations, effects, prices, and weights"
-            ]),
-        ],
     ),
-    dmc.Title("How Alchemy Works", order=3),
-    dmc.Stack([
-        dmc.Text(home_text[1]),
-        ],
-    ),
-    dmc.Title("Credits", order=3),
-    dmc.Stack([
-        dmc.Text([
-            "- The game Morrowind belongs to Bethesda Studios\n",
-            "- The original data is available ",
-            dmc.Anchor("here", href="https://docs.google.com/spreadsheets/d/1JQ391ET9lkKRoAdzQnkyIly7XCg2fNmtJqhpqmJitaM/edit?gid=1565250262#gid=1565250262"),
-            "\n- This application was made by ",
-            dmc.Anchor("Cameron-n", href="https://github.com/Cameron-n"),
-            dmc.Anchor(
-                "\nhttps://github.com/Cameron-n/Morrowind-Alchemy",
-                href="https://github.com/Cameron-n/Morrowind-Alchemy"
-                )
-            ], style={"white-space": "pre-wrap"}),
-        ]),
-])
+    dmc.Title("How Alchemy Works", order=4),
+    dmc.Text(home_text[1]),
+    dmc.Title("Potion Database", order=4),
+    dmc.Text(home_text[2]),
+    dmc.Title("Potion Maker", order=4),
+    dmc.Text(home_text[3]),
+    dmc.Title("Ingredient Info", order=4),
+    dmc.Text(home_text[4]),
+    dmc.Title("Credits", order=4),
+    dmc.Text([
+        "- The game Morrowind belongs to Bethesda Studios\n",
+        "- The original data is available ",
+        dmc.Anchor("here", href="https://docs.google.com/spreadsheets/d/1JQ391ET9lkKRoAdzQnkyIly7XCg2fNmtJqhpqmJitaM/edit?gid=1565250262#gid=1565250262"),
+        "\n- A big thank you to the ",
+        dmc.Anchor("UESP", href="https://en.uesp.net/wiki/Morrowind:Morrowind"),
+        " for compiling lots of useful information"
+        "\n- This application was made by ",
+        dmc.Anchor("Cameron-n", href="https://github.com/Cameron-n"),
+        dmc.Anchor(
+            "\nhttps://github.com/Cameron-n/Morrowind-Alchemy",
+            href="https://github.com/Cameron-n/Morrowind-Alchemy"
+            )
+        ], style={"white-space": "pre-wrap"}),
+], style={"margin": "auto", "max-width": "750px"})
