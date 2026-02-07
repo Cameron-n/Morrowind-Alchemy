@@ -213,7 +213,7 @@ whole_thing = dmc.Group([
 layout = dmc.Stack([
     stats,
     whole_thing,
-    ])
+    ], style={"margin": "auto", "max-width": "1500px"})
 
 
 #%% Functions

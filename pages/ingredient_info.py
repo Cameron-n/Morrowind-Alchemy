@@ -40,19 +40,29 @@ grouped_data = [
 ]
 
 layout = dmc.Stack([
-    dmc.Text(">>> Under Construction <<<"),
-    dmc.Select(
-        value="",
-        data=grouped_data,
-        searchable=True,
-        clearable=True,
-        w=250,
-        id="ingredient_info_select_ing",
-        ),
-    dmc.Image(src="Placeholder", w=100),
     dmc.Group([
-        dmc.Group([dmc.Text(id="ingredient_info_price"), "price"]),
-        dmc.Group([dmc.Text(id="ingredient_info_weight"), "weight"]),
+        dmc.Stack([
+            dmc.Title("Ingredient Info", order=3),
+            dmc.Select(
+                value="",
+                data=grouped_data,
+                searchable=True,
+                clearable=True,
+                w=250,
+                id="ingredient_info_select_ing",
+                ),
+            ]),
+        dmc.Image(src="Placeholder", w=100),
+        ], justify="space-between"),
+    dmc.Group([
+        dmc.Group([
+            dmc.Text(id="ingredient_info_price"),
+            dmc.Text("price")
+            ]),
+        dmc.Group([
+            dmc.Text(id="ingredient_info_weight"),
+            dmc.Text("weight")
+            ]),
         ]),
     dmc.Stack([
         dmc.Title("Effects", order=4),
@@ -64,7 +74,7 @@ layout = dmc.Stack([
         dmc.Text("of"),
         dmc.Text("locations"),
         ]),
-    ], align="center")
+    ], style={"margin": "auto", "max-width": "500px"})
 
 
 #%% Functions
@@ -88,7 +98,9 @@ def update_effect_list(value):
     columns_not_nan = DF_INGREDIENTS.columns[ingredient_row_not_nan]
     
     price = ingredient_row["Value"].iloc[0]
+    price = f"{str(price):<6}" # Doesn't work (pad with spaces)
     weight = ingredient_row["Weight"].iloc[0]
+    weight = f"{str(weight):<6}"
 
     effects = list(columns_not_nan)
     effects.remove("Value")
