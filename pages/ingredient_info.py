@@ -15,6 +15,7 @@ Created on Thu May 22 20:17:00 2025
 import dash
 from dash import callback, Input, Output
 import dash_mantine_components as dmc
+import dash_leaflet as dl
 
 # Relative
 from components.data_access import DF_INGREDIENTS, DF_EFFECTS
@@ -27,6 +28,8 @@ if __name__ != '__main__':
 
 
 #%% Layout
+
+url = "https://github.com/Cameron-n/Cameron-n.github.io/raw/main/maps/TD25.05TR25.05Cyr21.21aSky24.12b/{z}/{x}/{y}.png"
 
 DF_EFFECTS.fillna(0, inplace=True)
 
@@ -70,9 +73,10 @@ layout = dmc.Stack([
         ]),
     dmc.Stack([
         dmc.Title("Locations", order=4),
-        dmc.Text("list"),
-        dmc.Text("of"),
-        dmc.Text("locations"),
+        dl.Map(
+            dl.TileLayer(url=url, maxZoom=7, minZoom=0, noWrap=True),
+            center=[70, -50], zoom=1, style={"height": "50vh", "background-color": "rgba(33,32,28,1.0)"}
+            )
         ]),
     ], style={"margin": "auto", "max-width": "500px"})
 
