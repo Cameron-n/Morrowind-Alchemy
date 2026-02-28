@@ -52,16 +52,16 @@ layout = dmc.Stack([
                 id="ingredient_info_select_ing",
                 ),
             ]),
-        dmc.Image(src="Placeholder", w=100),
+        dmc.Image(w=100, id="ingredient_info_image"),
         ], justify="space-between"),
     dmc.Group([
         dmc.Group([
             dmc.Text(id="ingredient_info_price"),
-            dmc.Text("price")
+            dmc.AspectRatio(dmc.Image(src="assets/misc_icons/MW-icon-Gold.png"), ratio=1/1),
             ]),
         dmc.Group([
             dmc.Text(id="ingredient_info_weight"),
-            dmc.Text("weight")
+            dmc.AspectRatio(dmc.Image(src="assets/misc_icons/MW-icon-Weight.png"), ratio=1/1),
             ]),
         ]),
     dmc.Stack([
@@ -113,3 +113,17 @@ def update_effect_list(value):
     content = [dmc.Text(i, truncate="end") for i in effects]
 
     return content, price, weight
+
+
+@callback(
+    Output("ingredient_info_image", "src"),
+    Input("ingredient_info_select_ing", "value")
+)
+def update_image(value):
+    if value:
+        value = value.replace(" ", "_")
+        src = f"assets/ingredient_icons/MW-icon-ingredient-{value}.png"
+    else:
+        src= ""
+
+    return src

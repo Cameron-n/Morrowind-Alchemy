@@ -12,6 +12,8 @@ Features:
 """
 
 # Send output to potion_maker? [high-reward, mid-effort, stretch-goal]
+# Reverse order (for poisons)
+# Indicate if further effects are possible (no 4th ingredient in at least one column)
 
 #%% Imports
 
@@ -204,14 +206,7 @@ clientside_callback(
     Output("potion-database-store", "data"),
     Input("Effect Button", "n_clicks"),
     State("data-origins", "value"),
-    State("Effect 1", "value"),
-    State("Effect 2", "value"),
-    State("Effect 3", "value"),
-    State("Effect 4", "value"),
-    State("Effect 5", "value"),
-    State("Effect 6", "value"),
-    State("Effect 7", "value"),
-    State("Effect 8", "value"),
+    [State(f"Effect {i+1}", "value") for i in range(8)],
     prevent_initial_call=True
 )
 def calculate_potions(
@@ -403,14 +398,18 @@ def calculate_potions(
 @callback(
     Output("potion-database-download", "data"),
     State("potion-database-store", "data"),
+    [State(f"Effect {i+1}", "value") for i in range(8)],
     Input("Download Button", "n_clicks"),
     prevent_initial_call=True
     )
-def download_table(data, n_clicks):
+def download_table(data, value_1, value_2, value_3, value_4, value_5, value_6, value_7, value_8, n_clicks):
     if not data:
         data = pd.DataFrame([])
     else:
         data = pd.read_json(data, orient='split')
+        data.loc[-1] = ['Selected Effects', '', '', '', value_1, value_2, value_3, value_4, value_5, value_6, value_7, value_8]
+        data.index = data.index + 1
+        data = data.sort_index()
     return dcc.send_data_frame(data.to_csv, "morrowind-potions.csv", index=False)
 
 

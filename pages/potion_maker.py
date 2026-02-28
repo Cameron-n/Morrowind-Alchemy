@@ -21,6 +21,7 @@ Outputs:
 # verify math in-game cause wiki conflicts with openmw research [high-reward, high-effort]
 # Figure out how to expand Created Effects border box [mid-reward, mid-effort]
 # Add ingredient images? (See render_option_select.js)
+# Save state of page change
 
 
 #%% Imports
