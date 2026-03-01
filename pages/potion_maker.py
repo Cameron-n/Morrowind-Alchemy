@@ -49,6 +49,9 @@ grouped_data = [
     } for name in data_origins
 ]
 
+appa_ids = {
+        name: ids for name, ids in zip(DF_TOOLS["Name"], DF_TOOLS["Name"])
+    }
 
 #%% Boilerplate
 
@@ -106,19 +109,19 @@ alchemy_tools = dmc.Group([
                data=[i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Mortar and Pestle"]],
                value=DF_TOOLS[DF_TOOLS["Type"]=="Mortar and Pestle"][DF_TOOLS["Quality"]==0.5]["Name"].iloc[0],
                allowDeselect=False,
-               renderOption={"function": "renderOptionSelect"},
+               renderOption={"function": "renderOptionSelect", "options": {"appa_ids": appa_ids}},
                id="mortar"),
     dmc.Select(label="Alembic",
                data=[i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Alembic"]],
-               renderOption={"function": "renderOptionSelect"},
+               renderOption={"function": "renderOptionSelect", "options": {"appa_ids": appa_ids}},
                id="alembic"),
     dmc.Select(label="Calcinator",
                data=[i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Calcinator"]],
-               renderOption={"function": "renderOptionSelect"},
+               renderOption={"function": "renderOptionSelect", "options": {"appa_ids": appa_ids}},
                id="calcinator"),
     dmc.Select(label="Retort",
                data=[i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Retort"]],
-               renderOption={"function": "renderOptionSelect"},
+               renderOption={"function": "renderOptionSelect", "options": {"appa_ids": appa_ids}},
                id="retort"),
     ],
     grow=True,
