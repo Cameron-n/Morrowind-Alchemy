@@ -31,6 +31,8 @@ from components.data_access import DF_INGREDIENTS, DF_EFFECTS
 from components.combos import potion_combinations, potion_quads
 
 DF_INGREDIENTS = DF_INGREDIENTS.fillna(0)
+DF_INGREDIENTS = DF_INGREDIENTS.replace(-1, 1)
+DF_INGREDIENTS = DF_INGREDIENTS.replace(-2, 0)
 DF_EFFECTS = DF_EFFECTS.fillna(0)
 
 

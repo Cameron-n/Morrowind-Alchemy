@@ -63,7 +63,7 @@ def potion_combinations(ingredients, origins_limited, restrictions=[]):
     if ingredients.empty:
         return pd.DataFrame()
 
-    drop_columns = ["Value", "Weight", "Ingredient", "Ingredient 2",
+    drop_columns = ["ID", "Icon", "Value", "Weight", "Ingredient", "Ingredient 2",
                     "Ingredient 3", "Ingredient 4", "Origin", "First Effect"]
     potions = pd.DataFrame()
 
@@ -143,7 +143,7 @@ def potion_quads(ingredients):
     if ingredients.empty:
         return pd.DataFrame()
 
-    drop_columns = ["Value", "Weight", "Ingredient", "Ingredient 2",
+    drop_columns = ["ID", "Icon", "Value", "Weight", "Ingredient", "Ingredient 2",
                     "Ingredient 3", "Ingredient 4", "Origin", "First Effect"]
     potions = pd.DataFrame()
 

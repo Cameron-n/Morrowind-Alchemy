@@ -22,6 +22,7 @@ Outputs:
 # Figure out how to expand Created Effects border box [mid-reward, mid-effort]
 # Add ingredient images? (See render_option_select.js)
 # Save state of page change
+# Display quality of tools
 
 
 #%% Imports
@@ -39,6 +40,8 @@ import dash_mantine_components as dmc
 from components.data_access import DF_INGREDIENTS, DF_EFFECTS, DF_TOOLS
 
 DF_EFFECTS.fillna(0, inplace=True)
+DF_INGREDIENTS = DF_INGREDIENTS.replace(-1, 1)
+DF_INGREDIENTS = DF_INGREDIENTS.replace(-2, 0)
 
 data_origins = DF_INGREDIENTS["Origin"].unique()
 
@@ -50,8 +53,20 @@ grouped_data = [
 ]
 
 appa_ids = {
-        name: ids for name, ids in zip(DF_TOOLS["Name"], DF_TOOLS["Name"])
+        name: icon for name, icon in zip(DF_TOOLS["Name"], DF_TOOLS["Icon"])
     }
+
+ing_ids = {
+        name: icon for name, icon in zip(DF_INGREDIENTS["Ingredient"], DF_INGREDIENTS["Icon"])
+    }
+
+def tools_grouped(types):
+    return [
+        {
+            "group": name,
+            "items": DF_TOOLS["Name"][DF_TOOLS["Type"] == types][DF_TOOLS["Origin"] == name]
+        } for name in DF_TOOLS["Origin"].unique()
+    ]
 
 #%% Boilerplate
 
@@ -104,24 +119,34 @@ stats = dmc.Stack([
 
 alchemy_tools_title = dmc.Text("Apparatus")
 
+renderOptionAppa = {
+    "function": "renderOptionSelect",
+    "options": {"appa_ids": appa_ids}
+    }
+
+renderOptionIng = {
+    "function": "renderOptionSelect",
+    "options": {"appa_ids": ing_ids}
+    }
+
 alchemy_tools = dmc.Group([
     dmc.Select(label="Mortar and Pestle",
-               data=[i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Mortar and Pestle"]],
+               data=tools_grouped("Mortar and Pestle"),
                value=DF_TOOLS[DF_TOOLS["Type"]=="Mortar and Pestle"][DF_TOOLS["Quality"]==0.5]["Name"].iloc[0],
                allowDeselect=False,
-               renderOption={"function": "renderOptionSelect", "options": {"appa_ids": appa_ids}},
+               renderOption=renderOptionAppa,
                id="mortar"),
     dmc.Select(label="Alembic",
-               data=[i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Alembic"]],
-               renderOption={"function": "renderOptionSelect", "options": {"appa_ids": appa_ids}},
+               data=tools_grouped("Alembic"),
+               renderOption=renderOptionAppa,
                id="alembic"),
     dmc.Select(label="Calcinator",
-               data=[i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Calcinator"]],
-               renderOption={"function": "renderOptionSelect", "options": {"appa_ids": appa_ids}},
+               data=tools_grouped("Calcinator"),
+               renderOption=renderOptionAppa,
                id="calcinator"),
     dmc.Select(label="Retort",
-               data=[i for i in DF_TOOLS["Name"][DF_TOOLS["Type"]=="Retort"]],
-               renderOption={"function": "renderOptionSelect", "options": {"appa_ids": appa_ids}},
+               data=tools_grouped("Retort"),
+               renderOption=renderOptionAppa,
                id="retort"),
     ],
     grow=True,
@@ -139,24 +164,28 @@ ingredients = dmc.Group([
                data=grouped_data,
                searchable=True,
                clearable=True,
+               #renderOption=renderOptionIng,
                id="ing_1",
                ),
     dmc.Select(value=None,
                data=grouped_data,
                searchable=True,
                clearable=True,
+               #renderOption=renderOptionIng,
                id="ing_2",
                ),
     dmc.Select(value=None,
                data=grouped_data,
                searchable=True,
                clearable=True,
+               #renderOption=renderOptionIng,
                id="ing_3",
                ),
     dmc.Select(value=None,
                data=grouped_data,
                searchable=True,
                clearable=True,
+               #renderOption=renderOptionIng,
                id="ing_4",
                ),
     ],
@@ -282,15 +311,23 @@ def update_effect_list(value):
         return None
     # Get list of up to 4 effects from DF_INGREDIENTS
     ingredient_row = DF_INGREDIENTS[DF_INGREDIENTS["Ingredient"] == value]
-    ingredient_row_not_nan = ingredient_row.notna().iloc[0]
+    ingredient_row_not_nan = ingredient_row[ingredient_row != 0].notna().iloc[0]
     columns_not_nan = DF_INGREDIENTS.columns[ingredient_row_not_nan]
 
     effects = list(columns_not_nan)
-    effects.remove("Value")
-    effects.remove("Weight")
+    try:
+        effects.remove("Value")
+    except ValueError:
+        pass
+    try:
+        effects.remove("Weight")
+    except ValueError:
+        pass
     effects.remove("Ingredient")
     effects.remove("Origin")
     effects.remove("First Effect")
+    effects.remove("ID")
+    effects.remove("Icon")
 
     # Add components
     content = [dmc.Text(i, truncate="end") for i in effects]
