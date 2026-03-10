@@ -160,7 +160,7 @@ def update_markers(value):
     ids = ids.scalar()
     
     if not ids:
-        return dash.no_update
+        return dl.TileLayer(url=url, maxZoom=8, minZoom=0, noWrap=True)
 
     df_npc = pd.DataFrame(db.session.execute(db.select(
         NPCtoCell.Name, NPCtoCell.CellX, NPCtoCell.CellY)
