@@ -168,3 +168,43 @@ CREATE TABLE IngtoNPC(
   ,`Count`   INTEGER  NOT NULL
   ,PRIMARY KEY(`Name`,`NPCName`)
 );
+CREATE TABLE IngtoLoose(
+   `ID`         VARCHAR(31) NOT NULL
+  ,`Origin`     VARCHAR(15) NOT NULL
+  ,`CellName`   VARCHAR(57) NOT NULL
+  ,`CellX`      FLOAT NOT NULL
+  ,`CellY`      FLOAT NOT NULL
+  ,`IsInterior` BOOL
+  ,`Count`      INTEGER  NOT NULL
+  ,PRIMARY KEY(`ID`,`CellName`,`CellX`,`CellY`)
+);
+CREATE TABLE ContainertoCell(
+   `ID`         VARCHAR(24) NOT NULL
+  ,`Origin`     VARCHAR(20) NOT NULL
+  ,`CellName`   VARCHAR(57) NOT NULL
+  ,`CellX`      FLOAT NOT NULL
+  ,`CellY`      FLOAT NOT NULL
+  ,`IsInterior` BOOL
+  ,`Count`      INTEGER  NOT NULL
+  ,PRIMARY KEY(`ID`,`CellName`,`CellX`,`CellY`)
+);
+CREATE TABLE FloratoCell(
+   `ID`         VARCHAR(23) NOT NULL
+  ,`Origin`     VARCHAR(16) NOT NULL
+  ,`CellName`   VARCHAR(56) NOT NULL
+  ,`CellX`      FLOAT NOT NULL
+  ,`CellY`      FLOAT NOT NULL
+  ,`IsInterior` BOOL
+  ,`Count`      INTEGER  NOT NULL
+  ,PRIMARY KEY(`ID`,`CellName`,`CellX`,`CellY`)
+);
+CREATE TABLE LvlcretoCell(
+   `ID`         VARCHAR(24) NOT NULL
+  ,`Origin`     VARCHAR(15) NOT NULL
+  ,`CellName`   VARCHAR(54) NOT NULL
+  ,`CellX`      FLOAT NOT NULL
+  ,`CellY`      FLOAT NOT NULL
+  ,`IsInterior` BOOL
+  ,`Count`      INTEGER  NOT NULL
+  ,PRIMARY KEY(`ID`,`CellName`,`CellX`,`CellY`)
+);
