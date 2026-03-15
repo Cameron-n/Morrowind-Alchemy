@@ -208,3 +208,24 @@ CREATE TABLE LvlcretoCell(
   ,`Count`      INTEGER  NOT NULL
   ,PRIMARY KEY(`ID`,`CellName`,`CellX`,`CellY`)
 );
+CREATE TABLE IngtoContainer(
+   `ID`         VARCHAR(24) NOT NULL
+  ,`Name`       VARCHAR(34) NOT NULL
+  ,`Ingredient` VARCHAR(31) NOT NULL
+  ,`Count`      INTEGER  NOT NULL
+  ,PRIMARY KEY(`ID`,`Ingredient`)
+);
+CREATE TABLE IngtoFauna(
+   `ID`         VARCHAR(23) NOT NULL
+  ,`Name`       VARCHAR(31) NOT NULL
+  ,`Ingredient` VARCHAR(31) NOT NULL
+  ,`Count`      INTEGER  NOT NULL
+  ,PRIMARY KEY(`ID`,`Ingredient`)
+);
+CREATE TABLE IngtoFlora(
+   `ID`         VARCHAR(23) NOT NULL
+  ,`Name`       VARCHAR(28)
+  ,`Ingredient` VARCHAR(31) NOT NULL
+  ,`Count`      INTEGER  NOT NULL
+  ,PRIMARY KEY(`ID`,`Ingredient`)
+);
