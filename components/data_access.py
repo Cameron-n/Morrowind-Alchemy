@@ -239,6 +239,74 @@ class IngtoNPC(db.Model):
     NPCName = mapped_column(String(50), primary_key=True)
     Count = mapped_column(Integer)
 
+class ContainertoCell(db.Model):
+    __tablename__ = "ContainertoCell"
+    
+    ID = mapped_column(String(50), primary_key=True)
+    Origin = mapped_column(String(50))
+    CellName = mapped_column(String(50), primary_key=True)
+    CellX = mapped_column(Float, primary_key=True)
+    CellY = mapped_column(Float, primary_key=True)
+    IsInterior = mapped_column(Integer)
+    Count = mapped_column(Integer)
+
+class FloratoCell(db.Model):
+    __tablename__ = "FloratoCell"
+    
+    ID = mapped_column(String(50), primary_key=True)
+    Origin = mapped_column(String(50))
+    CellName = mapped_column(String(60), primary_key=True)
+    CellX = mapped_column(Float, primary_key=True)
+    CellY = mapped_column(Float, primary_key=True)
+    IsInterior = mapped_column(Integer)
+    Count = mapped_column(Integer)
+
+class IngtoContainer(db.Model):
+    __tablename__ = "IngtoContainer"
+    
+    ID = mapped_column(String(50), primary_key=True)
+    Name = mapped_column(String(50))
+    Ingredient = mapped_column(String(50), primary_key=True)
+    Count = mapped_column(Integer)
+
+class IngtoFauna(db.Model):
+    __tablename__ = "IngtoFauna"
+    
+    ID = mapped_column(String(50), primary_key=True)
+    Name = mapped_column(String(50))
+    Ingredient = mapped_column(String(50), primary_key=True)
+    Count = mapped_column(Integer)
+
+class IngtoFlora(db.Model):
+    __tablename__ = "IngtoFlora"
+    
+    ID = mapped_column(String(50), primary_key=True)
+    Name = mapped_column(String(50))
+    Ingredient = mapped_column(String(50), primary_key=True)
+    Count = mapped_column(Integer)
+
+class IngtoLoose(db.Model):
+    __tablename__ = "IngtoLoose"
+    
+    ID = mapped_column(String(50), primary_key=True)
+    Origin = mapped_column(String(50))
+    CellName = mapped_column(String(60), primary_key=True)
+    CellX = mapped_column(Float, primary_key=True)
+    CellY = mapped_column(Float, primary_key=True)
+    IsInterior = mapped_column(Integer)
+    Count = mapped_column(Integer)
+
+class LvlcretoCell(db.Model):
+    __tablename__ = "LvlcretoCell"
+    
+    ID = mapped_column(String(50), primary_key=True)
+    Origin = mapped_column(String(50))
+    CellName = mapped_column(String(60), primary_key=True)
+    CellX = mapped_column(Float, primary_key=True)
+    CellY = mapped_column(Float, primary_key=True)
+    IsInterior = mapped_column(Integer)
+    Count = mapped_column(Integer)
+
 #%% Data download
 
 with server.app_context():
