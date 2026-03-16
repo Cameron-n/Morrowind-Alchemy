@@ -1,35 +1,36 @@
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Apprentice''s Alembic',0.5,'Alembic','Base','m\\tx_alembic_01');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Good Skooma Pipe',0.15,'Alembic','Base','m\\tx_spipe_01');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Grandmaster''s Alembic',1.5,'Alembic','Base','m\\tx_alembic_04');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Journeyman''s Alembic',1,'Alembic','Base','m\\tx_alembic_02');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Master''s Alembic',1.2,'Alembic','Base','m\\tx_alembic_03');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('SecretMaster''s Alembic',2,'Alembic','Base','m\\tx_alembic_05');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Tsiya''s Skooma Pipe',0.15,'Alembic','Base','m\\tx_spipe_01');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Aegrotat Lamp',0.9,'Alembic','Cyrodiil','pc\\m\\pc_misc_aegrotatlamp');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Skooma Pipe',0.15,'Alembic','Cyrodiil','pc\\m\\pc_misc_skoomapipe');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Direnni Alembic',1.2,'Alembic','Skyrim','sky\\m\\tx_app_dalembic_01');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Ebony Alembic',1.75,'Alembic','Tamriel Rebuilt','tr\\m\\tr_app_e_alembic');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Flavored Hookah',0.75,'Alembic','Tamriel Rebuilt','tr\\m\\tr_hookah');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Hookah',0.45,'Alembic','Tamriel Rebuilt','tr\\m\\tr_hookah');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Punavit Communal Cup',1.6,'Alembic','Tamriel Rebuilt','tr\\m\\tr_ind_velk_comcup01');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Apprentice''s Calcinator',0.5,'Calcinator','Base','m\\tx_calcinator_01');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Grandmaster''s Calcinator',1.5,'Calcinator','Base','m\\tx_calcinator_04');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Journeyman''s Calcinator',1,'Calcinator','Base','m\\tx_calcinator_01');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Master''s Calcinator',1.2,'Calcinator','Base','m\\tx_calcinator_03');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('SecretMaster''s Calcinator',2,'Calcinator','Base','m\\tx_calcinator_05');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Ebony Calcinator',1.75,'Calcinator','Tamriel Rebuilt','tr\\m\\tr_app_e_calcinator');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Punavit Samovar',1.6,'Calcinator','Tamriel Rebuilt','tr\\m\\tr_ind_velk_samovar01');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Apprentice''s Mortar and Pestle',0.5,'Mortar and Pestle','Base','m\\tx_mortarpestle_01');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Grandmaster''s Mortar and Pestle',1.5,'Mortar and Pestle','Base','m\\tx_mortarpestle_g_01');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Journeyman''s Mortar and Pestle',1,'Mortar and Pestle','Base','m\\tx_mortarpestle_01');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Master''s Mortar and Pestle',1.2,'Mortar and Pestle','Base','m\\tx_mortarpestle_m_01');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('SecretMaster''s Mortar and Pestl',2,'Mortar and Pestle','Base','m\\tx_mortarpestle_s_01');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Grinder',1,'Mortar and Pestle','Cyrodiil','pc\\m\\pc_tx_grinder');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Direnni Mortar and Pestle',1.2,'Mortar and Pestle','Skyrim','sky\\m\\tx_app_dmortar_01');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Ebony Mortar and Pestle',1.75,'Mortar and Pestle','Tamriel Rebuilt','tr\\m\\tr_app_e_mortarpestle');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Apprentice''s Retort',0.5,'Retort','Base','m\\tx_retort_01');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Grandmaster''s Retort',1.5,'Retort','Base','m\\tx_retort_04');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Journeyman''s Retort',1,'Retort','Base','m\\tx_retort_02');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Master''s Retort',1.2,'Retort','Base','m\\tx_retort_03');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('SecretMaster''s Retort',2,'Retort','Base','m\\tx_retort_05');
-INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES ('Ebony Retort',1.75,'Retort','Tamriel Rebuilt','tr\\m\\tr_app_e_retort');
+INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES
+ ('Apprentice''s Alembic',0.5,'Alembic','Base','m\\tx_alembic_01')
+,('Good Skooma Pipe',0.15,'Alembic','Base','m\\tx_spipe_01')
+,('Grandmaster''s Alembic',1.5,'Alembic','Base','m\\tx_alembic_04')
+,('Journeyman''s Alembic',1,'Alembic','Base','m\\tx_alembic_02')
+,('Master''s Alembic',1.2,'Alembic','Base','m\\tx_alembic_03')
+,('SecretMaster''s Alembic',2,'Alembic','Base','m\\tx_alembic_05')
+,('Tsiya''s Skooma Pipe',0.15,'Alembic','Base','m\\tx_spipe_01')
+,('Aegrotat Lamp',0.9,'Alembic','Cyrodiil','pc\\m\\pc_misc_aegrotatlamp')
+,('Skooma Pipe',0.15,'Alembic','Cyrodiil','pc\\m\\pc_misc_skoomapipe')
+,('Direnni Alembic',1.2,'Alembic','Skyrim','sky\\m\\tx_app_dalembic_01')
+,('Ebony Alembic',1.75,'Alembic','Tamriel Rebuilt','tr\\m\\tr_app_e_alembic')
+,('Flavored Hookah',0.75,'Alembic','Tamriel Rebuilt','tr\\m\\tr_hookah')
+,('Hookah',0.45,'Alembic','Tamriel Rebuilt','tr\\m\\tr_hookah')
+,('Punavit Communal Cup',1.6,'Alembic','Tamriel Rebuilt','tr\\m\\tr_ind_velk_comcup01')
+,('Apprentice''s Calcinator',0.5,'Calcinator','Base','m\\tx_calcinator_01')
+,('Grandmaster''s Calcinator',1.5,'Calcinator','Base','m\\tx_calcinator_04')
+,('Journeyman''s Calcinator',1,'Calcinator','Base','m\\tx_calcinator_01')
+,('Master''s Calcinator',1.2,'Calcinator','Base','m\\tx_calcinator_03')
+,('SecretMaster''s Calcinator',2,'Calcinator','Base','m\\tx_calcinator_05')
+,('Ebony Calcinator',1.75,'Calcinator','Tamriel Rebuilt','tr\\m\\tr_app_e_calcinator')
+,('Punavit Samovar',1.6,'Calcinator','Tamriel Rebuilt','tr\\m\\tr_ind_velk_samovar01')
+,('Apprentice''s Mortar and Pestle',0.5,'Mortar and Pestle','Base','m\\tx_mortarpestle_01')
+,('Grandmaster''s Mortar and Pestle',1.5,'Mortar and Pestle','Base','m\\tx_mortarpestle_g_01')
+,('Journeyman''s Mortar and Pestle',1,'Mortar and Pestle','Base','m\\tx_mortarpestle_01')
+,('Master''s Mortar and Pestle',1.2,'Mortar and Pestle','Base','m\\tx_mortarpestle_m_01')
+,('SecretMaster''s Mortar and Pestl',2,'Mortar and Pestle','Base','m\\tx_mortarpestle_s_01')
+,('Grinder',1,'Mortar and Pestle','Cyrodiil','pc\\m\\pc_tx_grinder')
+,('Direnni Mortar and Pestle',1.2,'Mortar and Pestle','Skyrim','sky\\m\\tx_app_dmortar_01')
+,('Ebony Mortar and Pestle',1.75,'Mortar and Pestle','Tamriel Rebuilt','tr\\m\\tr_app_e_mortarpestle')
+,('Apprentice''s Retort',0.5,'Retort','Base','m\\tx_retort_01')
+,('Grandmaster''s Retort',1.5,'Retort','Base','m\\tx_retort_04')
+,('Journeyman''s Retort',1,'Retort','Base','m\\tx_retort_02')
+,('Master''s Retort',1.2,'Retort','Base','m\\tx_retort_03')
+,('SecretMaster''s Retort',2,'Retort','Base','m\\tx_retort_05')
+,('Ebony Retort',1.75,'Retort','Tamriel Rebuilt','tr\\m\\tr_app_e_retort');

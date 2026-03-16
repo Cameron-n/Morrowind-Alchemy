@@ -1,1471 +1,1473 @@
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('Flora_BC_Fern_04_Chuck','Charles the Plant','ingred_scrib_jelly_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('Flora_BC_podplant_04','Draggle-Tail','ingred_bc_coda_flower',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('Flora_BM_belladonna_01','Unripened Belladonna','ingred_belladonna_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('Flora_BM_belladonna_02','Unripened Belladonna','ingred_belladonna_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('Flora_BM_belladonna_03','Ripened Belladonna','ingred_belladonna_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('Flora_BM_holly_01','Holly Bush','ingred_holly_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('Flora_BM_holly_02','Holly Bush','ingred_holly_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('Flora_BM_holly_04','Holly Bush','ingred_holly_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('Flora_BM_holly_05','Holly Bush','ingred_holly_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('Flora_BM_wolfsbane_01','Wolfsbane','ingred_wolfsbane_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('Flora_plant_01','Horn Lily','Ingred_horn_lily_bulb_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('PC_m1_Cha_DanFireFern','Fire Fern','ingred_fire_petal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('PC_m1_Cha_DanInkwood','Inkwood','T_IngFlor_InkCone_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('PC_m1_Cha_DanPrimrose','Primrose','T_IngFlor_Primrose_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('PC_m1_Cha_DanWormwood','Wormwood','T_IngFlor_Wormwood_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('PC_m1_IP_Lki1_CoalPile','Coal Pile','T_IngMine_Coal_01',20);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_AimrahIC6_DreughEgg1','Dreugh Cocoon','ingred_dreugh_wax_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_AimrahIC6_DreughEgg2','Dreugh Cocoon','ingred_dreugh_wax_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_AimrahIC6_DreughEgg3','Dreugh Cocoon','ingred_dreugh_wax_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_FM_Stage8_corpse10','Corpse','ingred_bonemeal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_M3_i395_sack_local1','Sack','Ingred_horn_lily_bulb_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_M3_i395_sack_local1','Sack','Ingred_nirthfly_stalks_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_M3_i395_sack_local1','Sack','Ingred_scrib_cabbage_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_M3_i395_sack_local1','Sack','Ingred_timsa-come-by_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_M3_i395_sack_local1','Sack','T_IngFlor_Hamumroot_01',7);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_M3_i395_sack_local1','Sack','ingred_black_anther_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_M3_i395_sack_local1','Sack','ingred_comberry_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_M3_i395_sack_local1','Sack','ingred_scales_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_M3_i395_sack_local1','Sack','ingred_wickwheat_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_M3_i395_sack_local1','Sack','ingred_willow_anther_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_com_sack_02_i501_mry','Cloth Sack','Ingred_meadow_rye_01',-5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_flora_m3-798_debra','Diana the Plant','ingred_scrib_jelly_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','Ingred_golden_sedge_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','Ingred_horn_lily_bulb_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','Ingred_lloramor_spines_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','Ingred_meadow_rye_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','Ingred_nirthfly_stalks_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','Ingred_noble_sedge_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','Ingred_scrib_cabbage_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','Ingred_sweetpulp_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','Ingred_timsa-come-by_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','T_IngFlor_AloeVeraPulp_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','T_IngMine_OreGold_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','T_IngMine_OreIron_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','T_IngMine_OreLead_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','T_IngMine_OreSilver_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','food_kwama_egg_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','food_kwama_egg_02',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_adamantium_ore_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_alit_hide_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_ash_salts_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_ash_yam_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_bc_ampoule_pod',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_bc_bungler''s_bane',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_bc_coda_flower',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_bc_hypha_facia',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_bc_spore_pod',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_bear_pelt',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_belladonna_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_belladonna_02',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_bittergreen_petals_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_black_anther_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_black_lichen_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_bloat_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_boar_leather',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_bonemeal_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_bread_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_chokeweed_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_comberry_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_coprinus_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_corkbulb_root_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_crab_meat_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_daedra_skin_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_daedras_heart_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_diamond_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_dreugh_wax_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_ectoplasm_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_emerald_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_eyeball',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_fire_petal_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_fire_salts_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_frost_salts_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_ghoul_heart_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_gold_kanet_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_gravedust_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_gravetar_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_green_lichen_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_guar_hide_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_hackle-lo_leaf_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_heather_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_holly_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_horker_tusk_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_hound_meat_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_kagouti_hide_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_kresh_fiber_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_kwama_cuttle_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_marshmerrow_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_muck_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_netch_leather_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_pearl_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_racer_plumes_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_rat_meat_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_raw_ebony_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_raw_glass_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_red_lichen_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_resin_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_roobrush_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_ruby_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_russula_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_saltrice_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_scales_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_scamp_skin_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_scathecraw_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_scrap_metal_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_scrib_jelly_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_scrib_jerky_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_scuttle_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_shalk_resin_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_sload_soap_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_stoneflower_petals_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_trama_root_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_vampire_dust_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_void_salts_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_wickwheat_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_willow_anther_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_wolf_pelt',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m1_FW_LadysMantle','Lady''s Mantle','T_IngFlor_LadysMantle_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m1_molecrab_egg','Mole Crab Egg Clutch','T_IngFood_EggMolecrab_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m2_com_sack_i501_bg','Sack','ingred_bittergreen_petals_01',-5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m2_com_sack_i501_sl','Sack','ingred_saltrice_01',-6);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m2_com_sack_i501_ww','Sack','ingred_wickwheat_01',-8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m2_q_30_hornlily1MG','Horn Lily','Ingred_horn_lily_bulb_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m2_q_30_hornlily2MG','Horn Lily','Ingred_horn_lily_bulb_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m2_q_30_hornlily3MG','Horn Lily','Ingred_horn_lily_bulb_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m2_q_30_hornlily4MG','Horn Lily','Ingred_horn_lily_bulb_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m2_q_30_hornlilyMG','Horn Lily','Ingred_horn_lily_bulb_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m2_q_30_timsa1MG','Timsa-Come-By flowers','Ingred_timsa-come-by_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m2_q_30_timsa2MG','Timsa-Come-By flowers','Ingred_timsa-come-by_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m2_q_30_timsa3MG','Timsa-Come-By flowers','Ingred_timsa-come-by_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m2_q_30_timsa4MG','Timsa-Come-By flowers','Ingred_timsa-come-by_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m2_q_30_timsaMG','Timsa-Come-By flowers','Ingred_timsa-come-by_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ Dreugh_candle_UN','Dreugh Wax Candle','ingred_dreugh_wax_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_OE_Anjzhirra_Sack','Sack','T_IngMine_OreGold_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','Ingred_golden_sedge_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','Ingred_horn_lily_bulb_01',9);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','Ingred_lloramor_spines_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','Ingred_meadow_rye_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','Ingred_nirthfly_stalks_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','Ingred_noble_sedge_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','Ingred_scrib_cabbage_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','Ingred_timsa-come-by_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','T_IngFlor_Hamumroot_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','T_IngFlor_WhitePoppyPod_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','ingred_ash_yam_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','ingred_bc_ampoule_pod',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','ingred_bc_coda_flower',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','ingred_bc_spore_pod',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','ingred_black_anther_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','ingred_black_lichen_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','ingred_comberry_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','ingred_corkbulb_root_01',6);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','ingred_fire_petal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','ingred_green_lichen_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','ingred_kresh_fiber_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','ingred_marshmerrow_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','ingred_roobrush_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','ingred_saltrice_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','ingred_stoneflower_petals_01',7);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m3_ingchest_i3-390-i','Chest','ingred_willow_anther_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m4_AndothDweRuinBF01','Bluefoot','T_IngFlor_Bluefoot_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m4_AndothDweRuinLR01','Luminous Russula','ingred_russula_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m4_AndothDweRuinLR02','Luminous Russula','ingred_russula_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m4_AndothDweRuinSS01','Sheggo''s Shelf','T_IngFlor_SheggoShelf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m4_AndothDweRuinVC01','Violet Coprinus','ingred_coprinus_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m4_AndothDweRuinWL01','Thirrine Water Lily','T_IngFlor_ThirrineLily_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m4_UshuKur_OreCo_01a','Raw Iron','T_IngMine_OreIron_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m4_UshuKur_OreCo_02a','Raw Iron','T_IngMine_OreIron_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m4_UshuKur_OreCo_03a','Raw Iron','T_IngMine_OreIron_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m7_LA4_egg_sack_1','Kwama Egg Sack','food_kwama_egg_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m7_LA4_egg_sack_2','Kwama Egg Sack','food_kwama_egg_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m7_LA4_egg_sack_3','Kwama Egg Sack','food_kwama_egg_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m7_NVA2_0_Uracia_02','Pyrous Uracia','T_IngFlor_PyrousUracia',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m7_NVA6_Meadowrye01','Meadow Rye','Ingred_meadow_rye_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m7_NVA6_Meadowrye03','Meadow Rye','Ingred_meadow_rye_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m7_NVA6_OranMoss02','Orange Moss','T_IngFlor_OrangeMoss_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m7_NVA6_Uracia_01','Pyrous Uracia','T_IngFlor_PyrousUracia',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m7_NVA6_Uracia_02','Pyrous Uracia','T_IngFlor_PyrousUracia',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m7_NVA6_hackle-lo_01','Hackle-lo','ingred_hackle-lo_leaf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m7_NVA6_hackle-lo_02','Hackle-lo','ingred_hackle-lo_leaf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m7_TV5_Cave_3_Moss01','Orange Moss','T_IngFlor_OrangeMoss_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m7_TV5_Cave_3_Moss02','Orange Moss','T_IngFlor_OrangeMoss_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('TR_m7_TV5_Cave_3_Moss03','Orange Moss','T_IngFlor_OrangeMoss_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Bkm_Flora_SomnFern01','Somnalius','T_IngFlor_SomnaliusFrond_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_FishChrys01','Chrysophant','T_IngFood_FishChrysophant_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_FishChrys02','Chrysophant','T_IngFood_FishChrysophant_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_FishLeap01','Fringed Leaper','T_IngFood_FishLeaperTail_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_FishLeap02','Fringed Leaper','T_IngFood_FishLeaperTail_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_FishLongf01','Abecean Longfin','T_IngFood_FishLongfinFilet_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_FishLongf02','Abecean Longfin','T_IngFood_FishLongfinFilet_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_FishLongf03','Abecean Longfin','T_IngFood_FishLongfinFilet_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_FishSlRst01','Roasted Fish','T_IngFood_FishSlaughterDried_03',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_FishSlRst01','Roasted Fish','ingred_scales_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_FishSlRst02','Roasted Fish','T_IngFood_FishSlaughterDried_03',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_FishSlRst02','Roasted Fish','ingred_scales_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_FishSlRst03','Roasted Fish','T_IngFood_FishSlaughterDried_03',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_FishSlRst03','Roasted Fish','ingred_scales_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_FishSpr01','Spearmouth','T_IngFood_FishSpr_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_FishSpr02','Spearmouth','T_IngFood_FishSpr_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_FishStr01','Stridfish','T_IngFood_FishStrid_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_FishStr02','Stridfish','T_IngFood_FishStrid_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_NestTant_01','Tantha Nest','T_IngCrea_TanthaEgg_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_NestTant_02','Tantha Nest','T_IngCrea_TanthaEgg_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_NestTant_03','Tantha Nest','T_IngCrea_TanthaEgg_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Fauna_NestTant_04','Tantha Nest','T_IngCrea_TanthaEgg_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Alkanet01','Alkanet','T_IngFlor_Alkanet_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_AloeVera01','Aloe Vera','T_IngFlor_AloeVeraPulp_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_AloeVera02','Aloe Vera','T_IngFlor_AloeVeraPulp_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_AloeVera03','Aloe Vera','T_IngFlor_AloeVeraPulp_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Apple01','Apple Tree','T_IngFood_Apple_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Apple02','Apple Tree','T_IngFood_Apple_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Apple03','Apple Tree','T_IngFood_Apple_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Aquilegia01','Aquilegia','T_IngFlor_Aquilegia_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Bloodlill01','Blood Lily','T_IngFlor_BloodlilyFlower_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Bloodlill01','Blood Lily','T_IngFlor_BloodlilyPod_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_BogBeac01','Bog Beacon','T_IngFlor_BogBeacon_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_BogBeac02','Bog Beacon','T_IngFlor_BogBeacon_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_BogBeac03','Bog Beacon','T_IngFlor_BogBeacon_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_CairnBol01','Cairn Bolete','T_IngFlor_CairnBolete_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_CairnBol02','Cairn Bolete','T_IngFlor_CairnBolete_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_CairnBol03','Cairn Bolete','T_IngFlor_CairnBolete_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Chokeberr01','Chokeberry Vine','T_IngFlor_Chokeberry_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_CinnaPoly01','Cinnabar Polypore Red Cap','T_IngFlor_CinnabarPolypore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_CinnaPoly02','Cinnabar Polypore Yellow Cap','T_IngFlor_CinnabarPolypore_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_CloudedFn01','Clouded Funnel','T_IngFlor_CloudedFunnel_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_CloudedFn02','Clouded Funnel','T_IngFlor_CloudedFunnel_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_CloudedFn03','Clouded Funnel','T_IngFlor_CloudedFunnel_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_DryadSad01','Dryad''s Saddle Polypore','T_IngFlor_DryadSaddle_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_DryadSad02','Dryad''s Saddle Polypore','T_IngFlor_DryadSaddle_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_DryadSad03','Dryad''s Saddle Polypore','T_IngFlor_DryadSaddle_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_DryadSad04','Dryad''s Saddle Polypore','T_IngFlor_DryadSaddle_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Elfcup01','Elf Cup','T_IngFlor_Elfcup_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_EmeticRus01','Emetic Russula','T_IngFlor_EmeticRussula_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_EmeticRus02','Emetic Russula','T_IngFlor_EmeticRussula_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Fig01','Fig Tree','T_IngFood_Fig_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Fig02','Fig Tree','T_IngFood_Fig_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Fig03','Fig Tree','T_IngFood_Fig_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Ginseng01','Ginseng','T_IngFlor_Ginseng_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Ginseng02','Ginseng','T_IngFlor_Ginseng_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Goldenrod01','Goldenrod','T_IngFlor_GoldenRod_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Goldenrod02','Goldenrod','T_IngFlor_GoldenRod_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Goldenrod03','Goldenrod','T_IngFlor_GoldenRod_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Grape01','Grapevine','T_IngFood_Grape_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Grape02','Grapevine','T_IngFood_Grape_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Grape03','Grapevine','T_IngFood_Grape_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_GreenstCp01','Green Stain Cup','T_IngFlor_Greenstain_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_GreenstSh01','Green Stain Shelf','T_IngFlor_Greenstain_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Indureta01','Durata Stalk','T_IngFood_Indureta_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Inkwood01','Inkwood','T_IngFlor_InkCone_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Inkwood02','Inkwood','T_IngFlor_InkCone_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Inkwood03','Inkwood','T_IngFlor_InkCone_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Inkwood04','Inkwood','T_IngFlor_InkCone_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Ironrye01','Ironrye','T_IngFood_Ironrye_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Ironrye02','Ironrye','T_IngFood_Ironrye_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Ladysmck01','Lady''s Smock','T_IngFlor_LadysSmock_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Ladysmnt01','Lady''s Mantle','T_IngFlor_LadysMantle_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_LillyVall01','Lily of the Valley','T_IngFlor_TigerlilyNectar_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_LillyVall02','Lily of the Valley','T_IngFlor_TigerlilyNectar_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_LillyVall03','Lily of the Valley','T_IngFlor_TigerlilyNectar_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_LillyVall04','Lily of the Valley','T_IngFlor_TigerlilyNectar_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Lotus01','Perrif''s Lotus','T_IngFlor_PLotusLeaf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Lycovine01','Lycovine','T_IngFood_Lyco_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Mandrake01','Mandrake','T_IngFlor_MandrakeRoot_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_MarasBead01','Mara''s Beads','T_IngFlor_MarasBeads_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_MarshStlk01','Marsh Stalk','T_IngFlor_MarshStalk_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Monarda01','Monarda Flower','T_IngFlor_MonardaSeed_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Monkshood01','Monkshood','T_IngFlor_MonkshoodRootPulp_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Monkshood01','Monkshood','T_IngFlor_Monkshood_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_MorningGl01','Morning Glory','T_IngFlor_MorningGlory_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_MorningGl02','Morning Glory','T_IngFlor_MorningGlory_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_MorningGl03','Morning Glory','T_IngFlor_MorningGlory_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Motherw01','Motherwort','T_IngFlor_Motherwort_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Peony01','Peony','T_IngFlor_Peony_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Peony02','Peony','T_IngFlor_Peony_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Pitcher_01','Pitcher','T_IngFlor_Pitcher_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Pitcher_02','Pitcher','T_IngFlor_Pitcher_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Poppad01','Poppad Gourd','T_IngFood_PoppadGourd_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Primrose01','Primrose','T_IngFlor_Primrose_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Primrose02','Primrose','T_IngFlor_Primrose_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Primrose03','Primrose','T_IngFlor_Primrose_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Siyat01','Siyat','T_IngFlor_Siyat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Socrata01','Socatra Plant','T_IngFlor_SocrataNectar_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Socrata02','Socatra Plant','T_IngFlor_SocrataNectar_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Socrata03','Young Socatra Plant','T_IngFlor_SocrataNectar_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Spikerice01','Spike Rice','T_IngFood_Rice_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Spikerice02','Spike Rice','T_IngFood_Rice_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Spikerice03','Spike Rice','T_IngFood_Rice_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Steelblue01','Steel Blue Entoloma','T_IngFlor_Steelblue_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Steelblue02','Steel Blue Entoloma','T_IngFlor_Steelblue_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Stinkhorn01','Stinkhorn','T_IngFlor_Stinkhorn_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Stinkhorn02','Stinkhorn','T_IngFlor_Stinkhorn_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_StjahnsWr01','St. Jahn''s Wort','T_IngFlor_StJahnsWort_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_SummerBol01','Summer Bolete','T_IngFlor_SummerBolete_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_SummerBol02','Summer Bolete','T_IngFlor_SummerBolete_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Tacca01','Tacca','T_IngFlor_Tacca_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Tacca02','Tacca','T_IngFlor_Tacca_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Thunglew01','Thungleweed','T_IngFlor_Thungleweed_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Tigerlill01','Tiger Lily','T_IngFlor_TigerlilyNectar_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Tigerlill02','Tiger Lily','T_IngFlor_TigerlilyNectar_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_TindPoly01','Tinder Polypore','T_IngFlor_TinderPolypore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_TindPoly02','Tinder Polypore','T_IngFlor_TinderPolypore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_TindPoly03','Tinder Polypore','T_IngFlor_TinderPolypore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_TindPoly04','Tinder Polypore','T_IngFlor_TinderPolypore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_TindPoly05','Tinder Polypore','T_IngFlor_TinderPolypore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_TrinityPl01','Trinity Plant','T_IngFood_TrinityFruit_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_ViperBugl01','Viper''s Bugloss','T_IngFlor_ViperBugloss_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Wheat01','Plainwheat','T_IngFood_Wheat_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Wheat02','Plainwheat','T_IngFood_Wheat_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Wheat03','Plainwheat','T_IngFood_Wheat_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Wispstalk01','Wisp Stalk','T_IngFlor_WispStalk_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Wispstalk02','Wisp Stalk','T_IngFlor_WispStalk_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Wispstalk03','Wisp Stalk','T_IngFlor_WispStalk_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Wispstalk04','Wisp Stalk','T_IngFlor_WispStalk_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Flora_Wispstalk05','Wisp Stalk','T_IngFlor_WispStalk_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHAdam01','Raw Adamantium','ingred_adamantium_ore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHAdam02','Raw Adamantium','ingred_adamantium_ore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHAdam03','Raw Adamantium','ingred_adamantium_ore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHAdam04','Raw Adamantium','ingred_adamantium_ore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHAdam05','Raw Adamantium','ingred_adamantium_ore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHAdam06','Raw Adamantium','ingred_adamantium_ore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHAdam07','Raw Adamantium','ingred_adamantium_ore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHCopp01','Raw Copper','T_IngMine_OreCopper_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHCopp02','Raw Copper','T_IngMine_OreCopper_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHCopp03','Raw Copper','T_IngMine_OreCopper_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHCopp04','Raw Copper','T_IngMine_OreCopper_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHCopp05','Raw Copper','T_IngMine_OreCopper_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHCopp06','Raw Copper','T_IngMine_OreCopper_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHCopp07','Raw Copper','T_IngMine_OreCopper_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHIron01','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHIron02','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHIron03','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHIron04','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHIron05','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHIron06','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHIron07','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHRuby01','Raw Ruby','ingred_ruby_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHRuby02','Raw Ruby','ingred_ruby_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHRuby03','Raw Ruby','ingred_ruby_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHRuby04','Raw Ruby','ingred_ruby_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHRuby05','Raw Ruby','ingred_ruby_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHRuby06','Raw Ruby','ingred_ruby_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHSpinl01','Raw Spinel','T_IngMine_Spinel_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHSpinl02','Raw Spinel','T_IngMine_Spinel_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHSpinl03','Raw Spinel','T_IngMine_Spinel_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHSpinl04','Raw Spinel','T_IngMine_Spinel_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHSpinl05','Raw Spinel','T_IngMine_Spinel_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHSpinl06','Raw Spinel','T_IngMine_Spinel_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHTopaz01','Raw Topaz','T_IngMine_Topaz_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHTopaz02','Raw Topaz','T_IngMine_Topaz_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHTopaz03','Raw Topaz','T_IngMine_Topaz_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHTopaz04','Raw Topaz','T_IngMine_Topaz_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHTopaz05','Raw Topaz','T_IngMine_Topaz_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreCHTopaz06','Raw Topaz','T_IngMine_Topaz_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCAdam01','Raw Adamantium','ingred_adamantium_ore_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCAdam02','Raw Adamantium','ingred_adamantium_ore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCAdam03','Raw Adamantium','ingred_adamantium_ore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCAdam04','Raw Adamantium','ingred_adamantium_ore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCAdam05','Raw Adamantium','ingred_adamantium_ore_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCAdam06','Raw Adamantium','ingred_adamantium_ore_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCAdam07','Raw Adamantium','ingred_adamantium_ore_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCGold01','Raw Gold','T_IngMine_OreGold_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCGold02','Raw Gold','T_IngMine_OreGold_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCGold03','Raw Gold','T_IngMine_OreGold_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCGold04','Raw Gold','T_IngMine_OreGold_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCGold05','Raw Gold','T_IngMine_OreGold_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCGold06','Raw Gold','T_IngMine_OreGold_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCGold07','Raw Gold','T_IngMine_OreGold_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCIron01','Raw Iron','T_IngMine_OreIron_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCIron02','Raw Iron','T_IngMine_OreIron_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCIron03','Raw Iron','T_IngMine_OreIron_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCIron04','Raw Iron','T_IngMine_OreIron_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCIron05','Raw Iron','T_IngMine_OreIron_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCIron06','Raw Iron','T_IngMine_OreIron_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCIron07','Raw Iron','T_IngMine_OreIron_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCSalt_01','Rock Salt','T_IngMine_Salt_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCSalt_02','Rock Salt','T_IngMine_Salt_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCSalt_03','Rock Salt','T_IngMine_Salt_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCSilv01','Raw Silver','T_IngMine_OreSilver_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCSilv02','Raw Silver','T_IngMine_OreSilver_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCSilv03','Raw Silver','T_IngMine_OreSilver_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCSilv04','Raw Silver','T_IngMine_OreSilver_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCSilv05','Raw Silver','T_IngMine_OreSilver_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCSilv06','Raw Silver','T_IngMine_OreSilver_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGCSilv07','Raw Silver','T_IngMine_OreSilver_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGHSalt_01','Rock Salt','T_IngMine_Salt_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGHSalt_02','Rock Salt','T_IngMine_Salt_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreGHSalt_03','Rock Salt','T_IngMine_Salt_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreWWIron01','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreWWIron02','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreWWIron03','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreWWIron04','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreWWIron05','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Cyr_Mine_OreWWIron06','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Els_Flora_Hibiscus01','Hibiscus','T_IngFlor_Hibiscus_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Els_Flora_Nightsh01','Nightshade','T_IngFlor_Nightshade_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Els_Flora_Oleander01','Nerium Rose','T_IngFlor_Oleander_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Els_Flora_Sugarcane01','Sweetgrass','T_IngFlor_Sugarcane_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Els_Flora_Sugarcane02','Sweetgrass','T_IngFlor_Sugarcane_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Els_Flora_Sugarcane03','Sweetgrass','T_IngFlor_Sugarcane_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Els_Flora_Sugarcane04','Sweetgrass','T_IngFlor_Sugarcane_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Els_Flora_Thornt_01','Thorntail','T_IngFlor_ThorntailFlower_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Els_Flora_Thornt_03','Thorntail','T_IngFlor_ThorntailBerry_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_GlbDreu_Furn_SaArg1','Food Sac','ingred_bonemeal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_GlbDreu_Furn_SaFsh1','Food Sac','ingred_bonemeal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_GlbDreu_Furn_SaFsh2','Food Sac','ingred_bonemeal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_GlbDreu_Furn_SaHum1','Food Sac','ingred_bonemeal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_GlbDreu_Furn_SaHum2','Food Sac','ingred_bonemeal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_GlbDreu_Furn_SaHum3','Food Sac','ingred_bonemeal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_GlbDreu_Furn_SaKha1','Food Sac','ingred_bonemeal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_GlbDreu_Furn_SaOrc1','Food Sac','ingred_bonemeal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_ChickHang01','Chicken','T_IngFood_MeatChicken_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_01','Clam','T_IngCrea_ClamMeat',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_01','Clam','T_IngMine_PearlBlack_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_01','Clam','T_IngMine_PearlBlue_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_01','Clam','T_IngMine_PearlPink_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_01','Clam','ingred_pearl_01',48);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_02a','Clam','T_IngCrea_ClamMeat',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_02a','Clam','T_IngMine_PearlBlack_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_02a','Clam','T_IngMine_PearlBlue_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_02a','Clam','T_IngMine_PearlPink_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_02a','Clam','ingred_pearl_01',48);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_02b','Clam','T_IngCrea_ClamMeat',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_02b','Clam','T_IngMine_PearlBlack_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_02b','Clam','T_IngMine_PearlBlue_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_02b','Clam','T_IngMine_PearlPink_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_02b','Clam','ingred_pearl_01',48);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_03a','Giant Clam','T_IngCrea_ClamMeat',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_03a','Giant Clam','T_IngMine_PearlBlack_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_03a','Giant Clam','T_IngMine_PearlBlue_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_03a','Giant Clam','T_IngMine_PearlPink_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_03a','Giant Clam','ingred_pearl_01',48);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_03b','Giant Clam','T_IngCrea_ClamMeat',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_03b','Giant Clam','T_IngMine_PearlBlack_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_03b','Giant Clam','T_IngMine_PearlBlue_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_03b','Giant Clam','T_IngMine_PearlPink_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Clam_03b','Giant Clam','ingred_pearl_01',48);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_FishSch_Anf','Angelfish','T_IngCrea_Angelfish_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_FishSch_Dpf','Dusky Parrotfish','T_IngCrea_DuskyParrotfish_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_FishSch_Jly','Astral Jellyfish','T_IngCrea_AstralJellyfish_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_FishSlRst01','Roasted Fish','T_IngFood_FishSlaughterDried_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_FishSlRst01','Roasted Fish','ingred_scales_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_FishSlRst02','Roasted Fish','T_IngFood_FishSlaughterDried_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_FishSlRst02','Roasted Fish','ingred_scales_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_FishSlRst03','Roasted Fish','T_IngFood_FishSlaughterDried_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_FishSlRst03','Roasted Fish','ingred_scales_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_OystGrp_01a','Oysters','T_IngCrea_OysterMeat_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_OystGrp_01a','Oysters','ingred_pearl_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_OystGrp_01b','Oysters','T_IngCrea_OysterMeat_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_OystGrp_01b','Oysters','ingred_pearl_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_OystGrp_01c','Oysters','T_IngCrea_OysterMeat_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_OystGrp_01c','Oysters','ingred_pearl_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_OystGrp_02a','Oysters','T_IngCrea_OysterMeat_02',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_OystGrp_02a','Oysters','ingred_pearl_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_OystGrp_02b','Oysters','T_IngCrea_OysterMeat_02',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_OystGrp_02b','Oysters','ingred_pearl_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_OystGrp_02c','Oysters','T_IngCrea_OysterMeat_02',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_OystGrp_02c','Oysters','ingred_pearl_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Oyster_01a','Oyster','T_IngCrea_OysterMeat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Oyster_01a','Oyster','ingred_pearl_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Oyster_01b','Oyster','T_IngCrea_OysterMeat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Oyster_01b','Oyster','ingred_pearl_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Oyster_01c','Oyster','T_IngCrea_OysterMeat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Oyster_01c','Oyster','ingred_pearl_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Oyster_02a','Oyster','T_IngCrea_OysterMeat_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Oyster_02a','Oyster','ingred_pearl_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Oyster_02b','Oyster','T_IngCrea_OysterMeat_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Oyster_02b','Oyster','ingred_pearl_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Oyster_02c','Oyster','T_IngCrea_OysterMeat_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_Oyster_02c','Oyster','ingred_pearl_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_RatRst01','Roasted Rat','ingred_rat_meat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_RatRst02','Roasted Rat','ingred_rat_meat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_SeaUrch01a','Sea Urchin','T_IngCrea_SeaUrchinMeat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_SeaUrch01b','Sea Urchin','T_IngCrea_SeaUrchinMeat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_SeaUrch01c','Sea Urchin','T_IngCrea_SeaUrchinMeat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_SeaUrch01d','Sea Urchin','T_IngCrea_SeaUrchinMeat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_SeaUrch02a','Sea Urchin','T_IngCrea_SeaUrchinMeat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_SeaUrch02b','Sea Urchin','T_IngCrea_SeaUrchinMeat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_SeaUrch02c','Sea Urchin','T_IngCrea_SeaUrchinMeat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_SeaUrch02d','Sea Urchin','T_IngCrea_SeaUrchinMeat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_SeaUrch02e','Sea Urchin','T_IngCrea_SeaUrchinMeat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_SeaUrch02f','Sea Urchin','T_IngCrea_SeaUrchinMeat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_StarF_01a','Starfish','T_IngCrea_Starfish_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_StarF_01b','Starfish','T_IngCrea_Starfish_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_StarF_01c','Starfish','T_IngCrea_Starfish_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_StarF_02a','Starfish','T_IngCrea_Starfish_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_StarF_02b','Starfish','T_IngCrea_Starfish_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_StarF_03a','Starfish','T_IngCrea_Starfish_03',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_StarF_03b','Starfish','T_IngCrea_Starfish_03',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Fauna_StarF_03c','Starfish','T_IngCrea_Starfish_03',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Blackberr01','Blackberry Bush','T_IngFood_Blackberry_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Blackberr02','Blackberry Bush','T_IngFood_Blackberry_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Blackberr03','Blackberry Bush','T_IngFood_Blackberry_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Cabbage01','Cabbage','T_IngFlor_Cabbage_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Cabbage01','Cabbage','T_IngFlor_Cabbage_02',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Carrot01','Carrot Plant','T_IngFood_Carrot_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Coconut01','Coconut','T_IngFlor_Coconut_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_CoconutCls1','Coconuts','T_IngFlor_Coconut_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_CoconutCls2','Coconuts','T_IngFlor_Coconut_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Fennel01','Fennel','T_IngFlor_FennelSeed_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_FlAmanita01','Fly Amanita','T_IngFlor_FlyAmanita_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_FlAmanita02','Fly Amanita','T_IngFlor_FlyAmanita_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Flax01','Flax','T_IngFlor_FlaxFlower_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Flax02','Flax','T_IngFlor_FlaxFlower_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Flax03','Flax','T_IngFlor_FlaxFlower_03',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Foxglove01','Foxglove','T_IngFlor_FoxgloveNectar_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Garlic01','Garlic','T_IngFood_Garlic_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Garlic02','Garlic','T_IngFood_Garlic_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_GarlicHan01','Bundle of Garlic','T_IngFood_Garlic_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_GarlicHan02','Bundled Garlic','T_IngFood_Garlic_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Gooseb01','Gooseberry Bush','T_IngFood_Gooseb01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Hemlock01','Hemlock','T_IngFlor_Hemlock_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Hemlock02','Hemlock','T_IngFlor_Hemlock_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Hemlock03','Hemlock','T_IngFlor_Hemlock_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Lavender01','Lavender','T_IngFlor_Lavender_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Leek01','Leek','T_IngFood_Leek_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Lotus01','Sacred Lotus','T_IngFlor_LotusSeed_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Milkthist01','Milk Thistle','T_IngFlor_Milkthistle_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Milkthist02','Milk Thistle','T_IngFlor_Milkthistle_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Nirnroot01','Nirnroot','T_IngFlor_Nirnroot_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Onion01','Onion','T_IngFood_Onion_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Onion02','Onion','T_IngFood_Onion_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_OnionHang01','Onion Bundle','T_IngFood_Onion_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Potato01','Potato','T_IngFood_Potato_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Radish01','Radish','T_IngFood_Radish_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Strawberr01','Strawberry','T_IngFood_Strawberry_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Tobacco01','Tobacco','T_IngFlor_Tobacco_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Tomato01','Tomato Plant','T_IngFood_Tomato_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Wasabi_01','Wasabi','T_IngFood_WasabiRoot_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_Wasabi_02','Wasabi','T_IngFood_WasabiRoot_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_WtHyacint01','Water Hyacinth','T_IngFlor_HyacinthNectar_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_WtHyacint02','Water Hyacinth','T_IngFlor_HyacinthNectar_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_WtHyacint03','Water Hyacinth','T_IngFlor_HyacinthNectar_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_WtHyacint04','Water Hyacinth','T_IngFlor_HyacinthNectar_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_WtLilyPnk01','Water Lilly','T_IngFlor_WtLillyPink_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_WtLilyPrp01','Water Lilly','T_IngFlor_WtLillyPurple_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_WtLilyWht01','Water Lilly','T_IngFlor_WtLillyWhite_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Flora_WtLilyYlw01','Water Lilly','T_IngFlor_WtLillyYellow_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Mine_OreCoal_01','Coal Pile','T_IngMine_Coal_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Mine_RedCoral01','Red Coral','T_IngFlor_RedCoral_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Mine_RedCoral02','Red Coral','T_IngFlor_RedCoral_01',10);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Mine_RedCoral03','Red Coral','T_IngFlor_RedCoral_01',15);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Mine_Spellstone01','Spellstone','T_IngMine_Spellstone_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Mine_Spellstone02','Spellstone','T_IngMine_Spellstone_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Glb_Mine_Spellstone03','Spellstone','T_IngMine_Spellstone_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Fauna_TermHill_01','Termite Hill','T_IngCrea_Termite_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Fauna_TermHill_02','Termite Hill','T_IngCrea_Termite_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Fauna_TermHill_03','Termite Hill','T_IngCrea_Termite_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Fauna_TermHill_04','Termite Hill','T_IngCrea_Termite_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Fauna_TermHill_05','Termite Hill','T_IngCrea_Termite_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Fauna_TermHill_06','Termite Hill','T_IngCrea_Termite_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Fauna_TermHill_07','Termite Hill','T_IngCrea_Termite_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_Asteria01','Asteria','T_IngFlor_Asteria_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_Asteria02','Asteria','T_IngFlor_Asteria_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_GoldWatc01A','Golden Watcher','T_IngFlor_GoldWatcSeed_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_GoldWatc01B','Golden Watcher','T_IngFlor_GoldWatcSeed_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_GoldWatc02A','Golden Watcher','T_IngFlor_GoldWatcSeed_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_GoldWatc02B','Golden Watcher','T_IngFlor_GoldWatcSeed_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_GoldWatc03A','Golden Watcher','T_IngFlor_GoldWatcSeed_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_GoldWatc03B','Golden Watcher','T_IngFlor_GoldWatcSeed_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_MaceShrub01','Mace Shrub','T_IngFlor_MaceFruit_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_MaceShrub02','Mace Shrub','T_IngFlor_MaceFruit_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_MaceShrub03','Mace Shrub','T_IngFlor_MaceFruit_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_MaceShrub04','Mace Shrub','T_IngFlor_MaceFruit_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_Opuntia01',NULL,'T_IngFlor_PricklyPear_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_Opuntia02',NULL,'T_IngFlor_PricklyPear_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_Opuntia03',NULL,'T_IngFlor_PricklyPear_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_Persarine01','Persarine','T_IngFlor_Persarine_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_Persarine02','Persarine','T_IngFlor_Persarine_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_PersarineH1','Dried Persarine','T_IngFlor_Persarine_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_Prickspice1','Pricklespice Tree','T_IngSpice_Pricklespice_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_Rustbloss01','Rustblossom Aloe','T_IngFlor_RustblossomSeed_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_Rustbloss02','Rustblossom Aloe','T_IngFlor_RustblossomSeed_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_Rustbloss03','Rustblossom Aloe','T_IngFlor_RustblossomSeed_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_Silverplm01','Silver Palm','T_IngFood_SilverPalmfruit_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_Silverplm02','Silver Palm','T_IngFood_SilverPalmfruit_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_Silverplm03','Silver Palm','T_IngFood_SilverPalmfruit_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_Silverplm04','Silver Palm','T_IngFood_SilverPalmfruit_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_Tigara01','Tigara','T_IngFlor_TigaraFruit_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_Tigara02','Tigara','T_IngFlor_TigaraFruit_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Ham_Flora_Tigara03','Tigara','T_IngFlor_TigaraFruit_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_FloraDF_DrakTail01','Draketail','T_IngFlor_Draketail_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_FloraDF_DrakTail02','Draketail','T_IngFlor_Draketail_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_FloraDF_Draktail03','Draketail','T_IngFlor_Draketail_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Bitterstar01','Bitterstar','T_IngFlor_Bitterstar_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Bitterstar02','Bitterstar','T_IngFlor_Bitterstar_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_BjoulsRose01','Bjoulsae Rose','T_IngFlor_BjoulsaeRose_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_BjoulsRose02','Bjoulsae Rose','T_IngFlor_BjoulsaeRose_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Bleakstar_01','Bleakstar','T_IngFlor_Bleakstar_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Bleakstar_02','Bleakstar','T_IngFlor_Bleakstar_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Cornflo01','Cornflower','T_IngFlor_Cornflower_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Dragynia01','Dragynia','T_IngFlor_Dragynia_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Dragynia02','Dragynia','T_IngFlor_Dragynia_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Gloomtear_01','Gloomtear','T_IngFlor_Gloomtear_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Gloomtear_02','Gloomtear','T_IngFlor_Gloomtear_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Maidenhair01','Maidenhair','T_IngFlor_Maidenhair_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Maidenhair02','Maidenhair','T_IngFlor_Maidenhair_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Maidenhair03','Maidenhair','T_IngFlor_Maidenhair_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Mindcap01','Mindcap','T_IngFlor_Mindcap_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Mindcap02','Mindcap','T_IngFlor_Mindcap_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Mindcap03','Mindcap','T_IngFlor_Mindcap_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_MistleDry','Dried Mistletoe','T_IngFlor_Mistletoe_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Mistletoe01','Mistletoe','T_IngFlor_Mistletoe_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Redpoppy01','Red Poppy','T_IngFlor_Redpoppy_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Shadowfly01','Shadowfly','T_IngFlor_Shadowfly_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Shadowfly01','Shadowfly','T_IngFlor_Shadowfly_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Shadowfly02','Shadowfly','T_IngFlor_Shadowfly_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Shadowfly02','Shadowfly','T_IngFlor_Shadowfly_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Shadowfly03','Shadowfly','T_IngFlor_Shadowfly_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Shadowfly03','Shadowfly','T_IngFlor_Shadowfly_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Shadowfly04','Shadowfly','T_IngFlor_Shadowfly_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Shadowfly04','Shadowfly','T_IngFlor_Shadowfly_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Shadowfly05','Shadowfly','T_IngFlor_Shadowfly_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Shadowfly05','Shadowfly','T_IngFlor_Shadowfly_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Shadowfly06','Shadowfly','T_IngFlor_Shadowfly_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_ShadowflyH01','Dried Shadowfly','T_IngFlor_Shadowfly_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_ShadowflyH01','Dried Shadowfly','T_IngFlor_Shadowfly_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_SnowBlossom1','Snow Blossom','T_IngFlor_SnowBlossom_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Trefoil_01','Gloomtear','T_IngFlor_Trefoil_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_WormWh01','Worm Wheat','T_IngFlor_WormWh01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_WormWh02','Worm Wheat','T_IngFlor_WormWh01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_WormWh03','Worm Wheat','T_IngFlor_WormWh02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_WrothgGrap01','Wrothgarian Grape','T_IngFood_GrapeWrothgarian_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Flora_Yuin01','Yuin','T_IngFlor_YuinRoot_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Food_CheeseWheel01','Cheese Wheel','T_IngFood_CheeseBreton_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Hr_Food_CheeseWheel02','Cheese Wheel','T_IngFood_CheeseBreton_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_BeeHvVM_01','Bee Hole','T_IngFood_Honey_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_BeeHvVM_02','Bee Hole','T_IngFood_Honey_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_BeeHvVM_03','Bee Hole','T_IngFood_Honey_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','T_IngFood_MeatAlit_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','T_IngFood_MeatCliffracer_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','T_IngFood_MeatGuar_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','T_IngFood_MeatKagouti_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','T_IngFood_MeatKwama_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','T_IngFood_MeatMutton_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','T_IngFood_MeatOrnada_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','T_IngFood_MeatParastylus_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','ingred_crab_meat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','ingred_hound_meat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','ingred_rat_meat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','ingred_scrib_jelly_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','ingred_scrib_jerky_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','ingred_scuttle_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_EyestarCnt01','Eyestar','T_IngCrea_Eyestar_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_HoomEggs_01','Hoom Eggs','T_IngCrea_HoomEgg_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_HoomEggs_02','Hoom Eggs','T_IngCrea_HoomEgg_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_HoomEggs_03','Hoom Eggs','T_IngCrea_HoomEgg_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_HoomEggs_04','Hoom Eggs','T_IngCrea_HoomEgg_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_KwoomEggs_01','Kwoom Eggs','T_IngCrea_KwoomEgg_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_KwoomEggs_02','Kwoom Eggs','T_IngCrea_KwoomEgg_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_KwoomEggs_03','Kwoom Eggs','T_IngCrea_KwoomEgg_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_KwoomEggs_04','Kwoom Eggs','T_IngCrea_KwoomEgg_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_MeatHoney_01','Meat Honey','T_IngCrea_MeatHoney_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_MeatHoney_01','Meat Honey','ingred_bonemeal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_MeatHoney_02','Meat Honey','T_IngCrea_MeatHoney_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_MolecrEggs01','Mole Crab Egg Clutch','T_IngFood_EggMolecrab_01',15);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_MolecrEggs02','Mole Crab Egg Clutch','T_IngFood_EggMolecrab_01',15);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_OrnadaEggs01','Ornada Egg Clutch','T_IngFood_EggOrnada_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_OrnadaEggs02','Ornada Egg Clutch','T_IngFood_EggOrnada_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_RiversEggs01','Waterstrider Eggs','T_IngFood_RiverstriderEgg_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_RiversEggs02','Waterstrider Eggs','T_IngFood_RiverstriderEgg_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_RiversEggs03','Waterstrider Eggs','T_IngFood_RiverstriderEgg_01',6);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_RiversEggs04','Waterstrider Eggs','T_IngFood_RiverstriderEgg_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_RiversEggs05','Waterstrider Eggs','T_IngFood_RiverstriderEgg_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_SkyrendPupa1','Skyrender Pupa','T_IngCrea_SkyrendSlumgum_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_VentWorm_01','Vent Worm','T_IngMine_OreSulfur_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_VentWorm_02','Vent Worm','T_IngMine_OreSulfur_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_VentWorm_03','Vent Worm','T_IngMine_OreSulfur_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Fauna_VentWorm_04','Vent Worm','T_IngMine_OreSulfur_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraAT_Lily_01','Thirrine Water Lily','T_IngFlor_ThirrineLily_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraAT_OranMoss01','Orange Moss','T_IngFlor_OrangeMoss_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraAT_OranMoss02','Orange Moss','T_IngFlor_OrangeMoss_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraAT_OranMoss03','Orange Moss','T_IngFlor_OrangeMoss_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraAT_Uracia_01','Pyrous Uracia','T_IngFlor_PyrousUracia',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraAT_Uracia_02','Pyrous Uracia','T_IngFlor_PyrousUracia',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraCM_Shutag_01','Shutag Pod','T_IngFlor_ShutagJelly_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraCM_Shutag_02','Shutag Pod','T_IngFlor_ShutagJelly_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraCM_Shutag_03','Shutag Pod','T_IngFlor_ShutagJelly_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraCM_Shutag_04','Shutag Pod','T_IngFlor_ShutagJelly_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraCM_Shutag_05','Shutag Pod','T_IngFlor_ShutagJelly_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDP_SStrLeaf01','Saltstrap Leaf','T_IngFlor_SaltstrapLeaf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDP_SStrLeaf02','Saltstrap Leaf','T_IngFlor_SaltstrapLeaf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDP_SStrLeaf03','Saltstrap Leaf','T_IngFlor_SaltstrapLeaf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDP_SStrLeaf04','Saltstrap Leaf','T_IngFlor_SaltstrapLeaf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDP_SStrLeaf05','Saltstrap Leaf','T_IngFlor_SaltstrapLeaf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDP_SStrLeaf06','Saltstrap Leaf','T_IngFlor_SaltstrapLeaf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDP_SStrLeaf07','Saltstrap Leaf','T_IngFlor_SaltstrapLeaf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDP_SStrLeaf08','Saltstrap Leaf','T_IngFlor_SaltstrapLeaf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDP_SStrLeaf09','Saltstrap Leaf','T_IngFlor_SaltstrapLeaf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDP_SStrLeaf10','Saltstrap Leaf','T_IngFlor_SaltstrapLeaf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDP_SStrap01','Saltstrap','T_IngFlor_SaltstrapPollen_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDP_SStrap02','Saltstrap','T_IngFlor_SaltstrapPollen_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDP_SStrap03','Saltstrap','T_IngFlor_SaltstrapPollen_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDP_SStrap04','Saltstrap','T_IngFlor_SaltstrapPollen_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDP_SaltCroc01','Salt Crocus','T_IngFlor_SaltCrocusPetal_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDP_Saltrice01','Saltrice','ingred_saltrice_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDP_Saltrice02','Saltrice','ingred_saltrice_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDP_Saltrice03','Saltrice','ingred_saltrice_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDS_SStrap01','Saltstrap','T_IngFlor_SaltstrapLeaf_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDS_SStrap01','Saltstrap','T_IngFlor_SaltstrapPollen_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDS_SStrap02','Saltstrap','T_IngFlor_SaltstrapLeaf_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraDS_SStrap02','Saltstrap','T_IngFlor_SaltstrapPollen_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraGM_AnemTwin01','Anemic Twinstipe','T_IngFlor_AnemicTwinstipe_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraGM_GrTkPoly01','Grey Tick Polypore','T_IngFlor_GreyTickPowder_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraGM_GrTkPoly02','Grey Tick Polypore','T_IngFlor_GreyTickPowder_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraGM_GrTkPoly03','Grey Tick Polypore','T_IngFlor_GreyTickPowder_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraGM_GrTkPoly04','Grey Tick Polypore','T_IngFlor_GreyTickPowder_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraGM_UmbMorch01','Umber Morchella','T_IngFlor_UmberMorchella_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraGM_VileMorc01','Vile Morchella','T_IngFlor_VileMorchella_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraJS_BrlHydnm01','Boreal Hydnum','T_IngFlor_BorealHydnum_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraJS_BrlHydnm02','Boreal Hydnum','T_IngFlor_BorealHydnum_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraJS_BrlHydnm03','Boreal Hydnum','T_IngFlor_BorealHydnum_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraJS_BrlHydnm04','Boreal Hydnum','T_IngFlor_BorealHydnum_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraJS_BrlHydnm05','Boreal Hydnum','T_IngFlor_BorealHydnum_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraJS_BrlHydnm06','Boreal Hydnum','T_IngFlor_BorealHydnum_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraJS_BrlHydnm07','Boreal Hydnum','T_IngFlor_BorealHydnum_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOR_LotusPo01','Lotus Poppy','T_IngFlor_LotusPoppyHead_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOR_LotusPo02','Lotus Poppy','T_IngFlor_LotusPoppyHead_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOR_LotusPo03','Lotus Poppy','T_IngFlor_LotusPoppyHead_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOR_Raflesia01','Lovers Rafflesia','T_IngFlor_LoversRaflesiaPistil',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_CFungus_01','Ramaria Formosa','T_IngFlor_CFungus_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_CFungus_02','Ramaria Formosa','T_IngFlor_CFungus_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_CFungus_03','Ramaria Formosa','T_IngFlor_CFungus_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_CFungus_04','Ramaria Formosa','T_IngFlor_CFungus_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_CFungus_05','Ramaria Formosa','T_IngFlor_CFungus_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_CFungus_06','Ramaria Formosa','T_IngFlor_CFungus_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_CFungus_07','Ramaria Formosa','T_IngFlor_CFungus_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_CFungus_08','Ramaria Formosa','T_IngFlor_CFungus_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_Cupling01','Widow''s Mortar','T_IngFlor_Cupling_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_Cupling02','Widow''s Mortar','T_IngFlor_Cupling_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_Cupling03','Widow''s Mortar','T_IngFlor_Cupling_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_Cupling04','Widow''s Mortar','T_IngFlor_Cupling_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_Cupling05','Widow''s Mortar','T_IngFlor_Cupling_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_Cupling06','Widow''s Mortar','T_IngFlor_Cupling_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_Glwshrm_01','Roridomyces Phyllostachydis','T_IngFlor_Glowshroom',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_Glwshrm_02','Roridomyces Phyllostachydis','T_IngFlor_Glowshroom',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_Glwshrm_03','Roridomyces Phyllostachydis','T_IngFlor_Glowshroom',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_Glwshrm_04','Roridomyces Phyllostachydis','T_IngFlor_Glowshroom',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_Glwshrm_05','Roridomyces Phyllostachydis','T_IngFlor_Glowshroom',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_PBloom01','Poison Bloom','T_IngFlor_PBloomBulb_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_PBloom02','Poison Bloom','T_IngFlor_PBloomBulb_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_PBloom03','Poison Bloom','T_IngFlor_PBloomBulb_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_PBloom04','Poison Bloom','T_IngFlor_PBloomBulb_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_PBloom05','Poison Bloom','T_IngFlor_PBloomBulb_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_Rockbrst01','Rockburst','T_IngFlor_RockburstClaw_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_Rockbrst02','Rockburst','T_IngFlor_RockburstClaw_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_Rockbrst03','Rockburst','T_IngFlor_RockburstClaw_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_Rockbrst04','Rockburst','T_IngFlor_RockburstClaw_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_Rockbrst05','Rockburst','T_IngFlor_RockburstClaw_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_ShlfFung01','Sweetbread Polypore','T_IngFlor_SweetbreadPolypore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_ShlfFung02','Sweetbread Polypore','T_IngFlor_SweetbreadPolypore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_ShlfFung03','Sweetbread Polypore','T_IngFlor_SweetbreadPolypore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_ShlfFung04','Sweetbread Polypore','T_IngFlor_SweetbreadPolypore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_SujPod01','Kuj Sprout','T_IngFlor_SujPod_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_SujPod02','Kuj Sprout','T_IngFlor_SujPod_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_SujPod03','Kuj Sprout','T_IngFlor_SujPod_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_SujPod04','Kuj Sprout','T_IngFlor_SujPod_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_SujPod05','Kuj Sprout','T_IngFlor_SujPod_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_SujPod06','Kuj Sprout','T_IngFlor_SujPod_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_WidMort01','Widow''s Mortar','T_IngFlor_Cupling_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_WidMort02','Widow''s Mortar','T_IngFlor_Cupling_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_WidMort03','Widow''s Mortar','T_IngFlor_Cupling_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_WidMort04','Widow''s Mortar','T_IngFlor_Cupling_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_WidMort05','Widow''s Mortar','T_IngFlor_Cupling_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraOW_WidMort06','Widow''s Mortar','T_IngFlor_Cupling_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSH_BlisFom01','Blistering Fomentarius','T_IngFlor_BlisteringFoment_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSH_BlisFom02','Blistering Fomentarius','T_IngFlor_BlisteringFoment_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSH_BlisFom03','Blistering Fomentarius','T_IngFlor_BlisteringFoment_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSH_Drumpear01','Drumpear','T_IngFlor_DrumpearSeeds_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSH_Drumpear02','Drumpear','T_IngFlor_DrumpearSeeds_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSH_Drumpear03','Drumpear','T_IngFlor_DrumpearSeeds_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSH_Drumpear04','Drumpear','T_IngFlor_DrumpearSeeds_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSH_Drumpear05','Drumpear','T_IngFlor_DrumpearSeeds_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSH_Drumpear06','Drumpear','T_IngFlor_DrumpearSeeds_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSH_Tanna01','Tanna','T_IngFlor_Tanna_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSH_Tanna02','Tanna','T_IngFlor_Tanna_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSH_Tanna03','Tanna','T_IngFlor_Tanna_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSH_Tanna04','Tanna','T_IngFlor_Tanna_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSH_VeilUrn01','Veiled Urnula','T_IngFlor_VeiledUrnula_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSH_VeilUrn02','Veiled Urnula','T_IngFlor_VeiledUrnula_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSH_VeilUrn03','Veiled Urnula','T_IngFlor_VeiledUrnula_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSS_AlchGlob01','Alchemist''s Globe','T_IngFlor_AlchemistsGlobe_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSS_AlchGlob02','Alchemist''s Globe','T_IngFlor_AlchemistsGlobe_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSS_AlchGlob03','Alchemist''s Globe','T_IngFlor_AlchemistsGlobe_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSS_AlchGlob04','Alchemist''s Globe','T_IngFlor_AlchemistsGlobe_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSS_AlchGlob05','Alchemist''s Globe','T_IngFlor_AlchemistsGlobe_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSS_RougeCam01','Rouge Camillea','T_IngFlor_RougeCamillea_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSS_RougeCam02','Rouge Camillea','T_IngFlor_RougeCamillea_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSS_RougeCam03','Rouge Camillea','T_IngFlor_RougeCamillea_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraSS_RougeCam04','Rouge Camillea','T_IngFlor_RougeCamillea_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraTV_SpoLotus01','Sponge Lotus','T_IngFlor_SpongeLotusSeed_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraTV_SpoLotus02','Sponge Lotus','T_IngFlor_SpongeLotusSeed_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraTV_Weepveil01','Weeping Veil','T_IngFlor_Weepveil_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraTV_Weepveil02','Weeping Veil','T_IngFlor_Weepveil_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_FloraTV_Weepveil03','Weeping Veil','T_IngFlor_Weepveil_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Ashdew','Ashdew','T_IngFlor_Ashdew_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Bertpod_01','Bertpod','T_IngFlor_BertpodSlice_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Blackrose01','Black Rose','T_IngFlor_BlackrosePetal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Blackrose02','Black Rose','T_IngFlor_BlackrosePetal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_BlisterSpr01','Blister Spore','T_IngFlor_BlisterSpore_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_BlisterSpr02','Blister Spore','T_IngFlor_BlisterSpore_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_BlisterSpr03','Blister Spore','T_IngFlor_BlisterSpore_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Bloatroot01','White Bloatroot','T_IngFlor_Bloatroot',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Bloatroot02','White Bloatroot','T_IngFlor_Bloatroot',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Bloatroot03','White Bloatroot','T_IngFlor_Bloatroot',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Bloatspore01','Bloatspore','ingred_bloat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_BlueKanet_01','Blue Kanet','T_IngFlor_BlueKanet_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_BlueKanet_02','Blue Kanet','T_IngFlor_BlueKanet_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Bluefoot01','Bluefoot','T_IngFlor_Bluefoot_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Bluefoot02','Bluefoot','T_IngFlor_Bluefoot_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Bluefoot03','Bluefoot','T_IngFlor_Bluefoot_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Bluefoot04','Bluefoot','T_IngFlor_Bluefoot_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_DesertRose01','Desert Rose','T_IngFlor_DesrosePetal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_DesertRose02','Desert Rose','T_IngFlor_DesrosePetal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_DesertRose03','Desert Rose','T_IngFlor_DesrosePetal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_GhostLaur01','Ghost Laurel','T_IngFlor_GhostLaurel',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_GhostLaur02','Ghost Laurel','T_IngFlor_GhostLaurel',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_GhostLaur03','Ghost Laurel','T_IngFlor_GhostLaurel',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_GhostLaur04','Ghost Laurel','T_IngFlor_GhostLaurel',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Glasswort01','Glasswort','T_IngFlor_Glasswort_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Glasswort02','Glasswort','T_IngFlor_Glasswort_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Glasswort03','Glasswort','T_IngFlor_Glasswort_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Gorapple01','Gorapples','T_IngFood_Gorapple_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Hackle-Lo_03','Hackle-lo','ingred_hackle-lo_leaf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Hackle-Lo_04','Hackle-lo','ingred_hackle-lo_leaf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Hackle-Lo_05','Hackle-lo','ingred_hackle-lo_leaf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Hamumroot01','Hamum Root','T_IngFlor_Hamumroot_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Hamumroot02','Hamum Root','T_IngFlor_Hamumroot_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Hornlilly01','Horn Lily','Ingred_horn_lily_bulb_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Hornlilly02','Horn Lily','Ingred_horn_lily_bulb_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Hornlilly03','Horn Lily','Ingred_horn_lily_bulb_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Hornlilly04','Horn Lily','Ingred_horn_lily_bulb_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Hornlilly05','Horn Lily','Ingred_horn_lily_bulb_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Lazarum01','Lazarum Lazandrum','T_IngFlor_Lazarum_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_LichenBk03','Black Lichen','ingred_black_lichen_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_LichenBl01','Blue Lichen','T_IngFlor_LichenBlue_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_LichenBl02','Blue Lichen','T_IngFlor_LichenBlue_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_LichenBl03','Blue Lichen','T_IngFlor_LichenBlue_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_LichenGn03','Green Lichen','ingred_green_lichen_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_LichenOr01','Orange Lichen','T_IngFlor_LichenOrange_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_LichenOr02','Orange Lichen','T_IngFlor_LichenOrange_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_LichenOr03','Orange Lichen','T_IngFlor_LichenOrange_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_LichenRd03','Red Lichen','ingred_red_lichen_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_LichenWt01','White Lichen','T_IngFlor_LichenWhite_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_LichenWt02','White Lichen','T_IngFlor_LichenWhite_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_LichenWt03','White Lichen','T_IngFlor_LichenWhite_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_LichenYw01','Yellow Lichen','T_IngFlor_LichenYellow_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_LichenYw02','Yellow Lichen','T_IngFlor_LichenYellow_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_LichenYw03','Yellow Lichen','T_IngFlor_LichenYellow_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Meadowrye01','Meadow Rye','Ingred_meadow_rye_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Meadowrye02','Meadow Rye','Ingred_meadow_rye_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Meadowrye03','Meadow Rye','Ingred_meadow_rye_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Meadowrye04','Meadow Rye','Ingred_meadow_rye_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_MountDama01','Mountain Damask','T_IngFlor_MountainDamask',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_MountDama02','Mountain Damask','T_IngFlor_MountainDamask',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_MountDama03','Mountain Damask','T_IngFlor_MountainDamask',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_MountDama04','Mountain Damask','T_IngFlor_MountainDamask',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Nirthfly01','Nirthfly Stalks','Ingred_nirthfly_stalks_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Nirthfly02','Nirthfly Stalks','Ingred_nirthfly_stalks_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Nirthfly03','Nirthfly Stalks','Ingred_nirthfly_stalks_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Nirthfly04','Nirthfly Stalks','Ingred_nirthfly_stalks_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Nirthfly05','Nirthfly Stalks','Ingred_nirthfly_stalks_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_NodStreak01','Nodding Streakwort','T_IngFlor_NoddingStreakwort',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_NodStreak02','Nodding Streakwort','T_IngFlor_NoddingStreakwort',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_NodStreak03','Nodding Streakwort','T_IngFlor_NoddingStreakwort',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_NodStreak04','Nodding Streakwort','T_IngFlor_NoddingStreakwort',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Orcscrown01','Orcscrown','T_IngFlor_Orcscrown',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Orcscrown02','Orcscrown','T_IngFlor_Orcscrown',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Orcscrown03','Orcscrown','T_IngFlor_Orcscrown',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Orcscrown04','Orcscrown','T_IngFlor_Orcscrown',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_PilgrimP01','Pilgrim''s Pillar','T_IngFlor_PilgrimGel_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_PilgrimP01','Pilgrim''s Pillar','T_IngFlor_PilgrimPetals_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_PilgrimP02','Pilgrim''s Pillar','T_IngFlor_PilgrimGel_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_PilgrimP03','Pilgrim''s Pillar','T_IngFlor_PilgrimGel_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_PilgrimP03','Pilgrim''s Pillar','T_IngFlor_PilgrimPetals_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_PilgrimP04','Pilgrim''s Pillar','T_IngFlor_PilgrimGel_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_PomTree01','Pomegranate Tree','T_IngFood_Pomegranate_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_PomTree02','Pomegranate Tree','T_IngFood_Pomegranate_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_PomTree03','Pomegranate Tree','T_IngFood_Pomegranate_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_PomTree_B','Bonsai Pomegranate Tree','T_IngFood_Pomegranate_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_RedCoral01','Red Coral','T_IngFlor_RedCoral_01',15);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_RedCoral02','Red Coral','T_IngFlor_RedCoral_01',20);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_RedCoral03','Red Coral','T_IngFlor_RedCoral_01',25);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Redfireflw01','Duskbell','T_IngFlor_Fireflower_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Redfireflw02','Duskbell','T_IngFlor_Fireflower_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Redfireflw03','Duskbell','T_IngFlor_Fireflower_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Redrose01','Rose','T_IngFlor_RedrosePetal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Redrose02','Rose','T_IngFlor_RedrosePetal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_ResinTap01','Resin Tap','ingred_resin_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Scathecraw03','Scathecraw Plant','ingred_scathecraw_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Scathecraw04','Scathecraw Plant','ingred_scathecraw_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Scathecraw05','Scathecraw Plant','ingred_scathecraw_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Scathecraw06','Scathecraw Plant','ingred_scathecraw_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Scathecraw07','Scathecraw Plant','ingred_scathecraw_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Scathecraw08','Scathecraw Plant','ingred_scathecraw_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Seacup_01','Spotted Gillsieve','T_IngFlor_SeaCup_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Seacup_02','Spotted Gillsieve','T_IngFlor_SeaCup_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Seacup_03','Spotted Gillsieve','T_IngFlor_SeaCup_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Seacup_04','Spotted Gillsieve','T_IngFlor_SeaCup_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_SheggShelf01','Sheggo''s Shelf','T_IngFlor_SheggoShelf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_SheggShelf02','Sheggo''s Shelf','T_IngFlor_SheggoShelf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_SheggShelf03','Sheggo''s Shelf','T_IngFlor_SheggoShelf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_SmearAlgae01','Smear Algae','T_IngFlor_SmearSpores_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_SmearAlgae02','Smear Algae','T_IngFlor_SmearSpores_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_SmearAlgae03','Smear Algae','T_IngFlor_SmearSpores_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_SpinyLlor01','Spiny Lloramor','Ingred_lloramor_spines_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_SpinyLlor02','Spiny Lloramor','Ingred_lloramor_spines_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_SpinyLlor03','Spiny Lloramor','Ingred_lloramor_spines_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_SpinyLlor04','Spiny Lloramor','Ingred_lloramor_spines_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_SpinyLlor05','Spiny Lloramor','Ingred_lloramor_spines_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Swtbarrel_01','Desert Sweetbarrel','Ingred_sweetpulp_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_Swtbarrel_02','Flowering Sweetbarrel','Ingred_sweetpulp_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_TempleDom01','Temple Dome','T_IngFlor_TempleDome_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_TempleDom02','Temple Dome','T_IngFlor_TempleDome_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_TimsaComeB01','Timsa-Come-By flowers','Ingred_timsa-come-by_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_TimsaComeB02','Timsa-Come-By flowers','Ingred_timsa-come-by_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_TimsaComeB03','Timsa-Come-By flowers','Ingred_timsa-come-by_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_TimsaComeB04','Timsa-Come-By flowers','Ingred_timsa-come-by_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_TimsaComeB05','Timsa-Come-By flowers','Ingred_timsa-come-by_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_YamOrb01','Yam Orb','T_IngFlor_YamOrb_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Flora_YamOrb02','Yam Orb','T_IngFlor_YamOrb_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_Amber01','Amber','T_IngMine_Amber_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_Amber01b','Amber','T_IngMine_Amber_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreAmethyst01','Raw Amethyst','T_IngMine_Amethyst_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreAmethyst02','Raw Amethyst','T_IngMine_Amethyst_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreAmethyst03','Raw Amethyst','T_IngMine_Amethyst_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreAmethyst04','Raw Amethyst','T_IngMine_Amethyst_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreAmethyst05','Raw Amethyst','T_IngMine_Amethyst_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreAmethyst06','Raw Amethyst','T_IngMine_Amethyst_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreEmerald01','Raw Emerald','ingred_emerald_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreEmerald02','Raw Emerald','ingred_emerald_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreEmerald03','Raw Emerald','ingred_emerald_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreEmerald04','Raw Emerald','ingred_emerald_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreEmerald05','Raw Emerald','ingred_emerald_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreEmerald06','Raw Emerald','ingred_emerald_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreGarnet01','Raw Garnet','T_IngMine_Garnet_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreGarnet01b','Raw Garnet','T_IngMine_Garnet_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreGarnet02','Raw Garnet','T_IngMine_Garnet_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreGarnet02b','Raw Garnet','T_IngMine_Garnet_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreGarnet03','Raw Garnet','T_IngMine_Garnet_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreGarnet03b','Raw Garnet','T_IngMine_Garnet_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreGarnet04','Raw Garnet','T_IngMine_Garnet_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreGarnet04b','Raw Garnet','T_IngMine_Garnet_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreGarnet05','Raw Garnet','T_IngMine_Garnet_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreGarnet05b','Raw Garnet','T_IngMine_Garnet_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreGarnet06','Raw Garnet','T_IngMine_Garnet_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreGarnet06b','Raw Garnet','T_IngMine_Garnet_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreGold01','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreGold02','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreGold03','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreGold04','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreGold05','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreGold06','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreGold07','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreIron01','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreIron02','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreIron03','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreIron04','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreIron05','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreIron06','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreIron07','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreOMAdam01','Raw Adamantium','ingred_adamantium_ore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreOMAdam02','Raw Adamantium','ingred_adamantium_ore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreOMAdam03','Raw Adamantium','ingred_adamantium_ore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreOMAdam04','Raw Adamantium','ingred_adamantium_ore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreOMAdam05','Raw Adamantium','ingred_adamantium_ore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreOMAdam06','Raw Adamantium','ingred_adamantium_ore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreOMAdam07','Raw Adamantium','ingred_adamantium_ore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OrePlatinum01','Raw Platinum','T_IngMine_OrePlatinum_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OrePlatinum02','Raw Platinum','T_IngMine_OrePlatinum_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OrePlatinum03','Raw Platinum','T_IngMine_OrePlatinum_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OrePlatinum04','Raw Platinum','T_IngMine_OrePlatinum_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OrePlatinum05','Raw Platinum','T_IngMine_OrePlatinum_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OrePlatinum06','Raw Platinum','T_IngMine_OrePlatinum_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OrePlatinum07','Raw Platinum','T_IngMine_OrePlatinum_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreRuby01','Raw Ruby','ingred_ruby_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreRuby02','Raw Ruby','ingred_ruby_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreRuby03','Raw Ruby','ingred_ruby_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreRuby04','Raw Ruby','ingred_ruby_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreRuby05','Raw Ruby','ingred_ruby_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreRuby06','Raw Ruby','ingred_ruby_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSHAthyst01','Raw Amethyst','T_IngMine_Amethyst_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSHAthyst02','Raw Amethyst','T_IngMine_Amethyst_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSHAthyst03','Raw Amethyst','T_IngMine_Amethyst_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSHAthyst04','Raw Amethyst','T_IngMine_Amethyst_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSHAthyst05','Raw Amethyst','T_IngMine_Amethyst_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSHAthyst06','Raw Amethyst','T_IngMine_Amethyst_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSHSaph01','Raw Sapphire','T_IngMine_Sapphire_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSHSaph02','Raw Sapphire','T_IngMine_Sapphire_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSHSaph03','Raw Sapphire','T_IngMine_Sapphire_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSHSaph04','Raw Sapphire','T_IngMine_Sapphire_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSHSaph05','Raw Sapphire','T_IngMine_Sapphire_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSHSaph06','Raw Sapphire','T_IngMine_Sapphire_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSapphire01','Raw Sapphire','T_IngMine_Sapphire_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSapphire02','Raw Sapphire','T_IngMine_Sapphire_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSapphire03','Raw Sapphire','T_IngMine_Sapphire_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSapphire04','Raw Sapphire','T_IngMine_Sapphire_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSapphire05','Raw Sapphire','T_IngMine_Sapphire_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSapphire06','Raw Sapphire','T_IngMine_Sapphire_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSlvr01','Raw Silver','T_IngMine_OreSilver_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSlvr02','Raw Silver','T_IngMine_OreSilver_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSlvr03','Raw Silver','T_IngMine_OreSilver_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSlvr04','Raw Silver','T_IngMine_OreSilver_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSlvr05','Raw Silver','T_IngMine_OreSilver_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSlvr06','Raw Silver','T_IngMine_OreSilver_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSlvr07','Raw Silver','T_IngMine_OreSilver_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSulfur01','Sulphur Deposit','T_IngMine_OreSulfur_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSulfur02','Sulphur Deposit','T_IngMine_OreSulfur_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreSulfur03','Sulphur Deposit','T_IngMine_OreSulfur_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreTopaz01','Raw Topaz','T_IngMine_Topaz_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreTopaz02','Raw Topaz','T_IngMine_Topaz_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreTopaz03','Raw Topaz','T_IngMine_Topaz_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreTopaz04','Raw Topaz','T_IngMine_Topaz_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreTopaz05','Raw Topaz','T_IngMine_Topaz_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Mw_Mine_OreTopaz06','Raw Topaz','T_IngMine_Topaz_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Obl_Flora_Bloodgras01','Bloodgrass','T_IngFlor_Bloodgrass_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Obl_Flora_Harrada01','Harrada Root','T_IngFlor_Harrada_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Obl_Flora_Spiddal01','Spiddal','T_IngFlor_Spiddal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Fauna_ClamGullWing','Gull Wing Clam','T_IngCrea_ClamMeat',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Fauna_ClamGullWing','Gull Wing Clam','T_IngMine_PearlBlack_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Fauna_ClamGullWing','Gull Wing Clam','T_IngMine_PearlBlue_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Fauna_ClamGullWing','Gull Wing Clam','T_IngMine_PearlPink_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Fauna_ClamGullWing','Gull Wing Clam','ingred_pearl_01',48);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Fauna_FishJdHrnfi1','Jade Hornfish','T_IngCrea_Jadescales_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Fauna_FishJdHrnfi2','Jade Hornfish','T_IngCrea_Jadescales_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Fauna_FishPadBar01','Padomaic Barracuda','T_IngCrea_BarracudaSteak_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Fauna_FishPadBar01','Padomaic Barracuda','T_IngCrea_BarracudaTailfin_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Fauna_FishPadBar02','Padomaic Barracuda','T_IngCrea_BarracudaSteak_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Fauna_FishPadBar02','Padomaic Barracuda','T_IngCrea_BarracudaTailfin_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Fauna_FishRdShrk01','Red Shark','T_IngCrea_RedSharkMeat_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Fauna_FishSlvSpd1','Silver Spade','T_IngCrea_SilverSpadeMeat_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Fauna_FishSlvSpd2','Silver Spade','T_IngCrea_SilverSpadeMeat_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Fauna_FishSlvSpd3','Silver Spade','T_IngCrea_SilverSpadeMeat_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_FloraCQ_DftPuff_01','Drift Puff','T_IngFlor_DriftPuff_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_FloraCQ_DftPuff_02','Drift Puff','T_IngFlor_DriftPuff_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_FloraCQ_DftPuff_03','Drift Puff','T_IngFlor_DriftPuff_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_FloraTm_Bugloss01','Temarin Bugloss','T_IngFlor_TemarinBugloss_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_FloraTm_Bugloss02','Temarin Bugloss','T_IngFlor_TemarinBugloss_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_FloraTm_Bugloss03','Temarin Bugloss','T_IngFlor_TemarinBugloss_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_FloraTm_SomberWido','Somber Widow','T_IngFlor_SomberWidow_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_FloraTm_Succulent','Embertip','T_IngFlor_SucculentPulp_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_FloraYN_Ginger_01','Bitter Ginger','T_IngFlor_GingerFlower',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_FloraYN_Ginger_01','Bitter Ginger','T_IngFlor_GingerRoot',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_FloraYN_Ginger_02','Bitter Ginger','T_IngFlor_GingerFlower',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_FloraYN_Ginger_02','Bitter Ginger','T_IngFlor_GingerRoot',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_FloraYN_Ginger_03','Bitter Ginger','T_IngFlor_GingerFlower',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_FloraYN_Ginger_03','Bitter Ginger','T_IngFlor_GingerRoot',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_FloraYN_Ginger_04','Bitter Ginger','T_IngFlor_GingerFlower',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_FloraYN_Ginger_04','Bitter Ginger','T_IngFlor_GingerRoot',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_FloraYN_ZukBlos01','Zukoma Blossom','T_IngFlor_ZukomaBlossom_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_FloraYN_ZukBlos02','Zukoma Blossom','T_IngFlor_ZukomaBlossom_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Flora_Sage01','Padomaic Sage','T_IngFlor_PadomaicSage_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Flora_Sage02','Padomaic Sage','T_IngFlor_PadomaicSage_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Flora_Sage03','Padomaic Sage','T_IngFlor_PadomaicSage_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreBitterst01','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreBitterst02','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreBitterst03','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreBitterst04','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreBitterst05','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreBitterst06','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQBitter01','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQBitter02','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQBitter03','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQBitter04','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQBitter05','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQBitter06','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQBitter07','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQDiamond1','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQDiamond2','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQDiamond3','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQDiamond4','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQDiamond5','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQDiamond6','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQIron01','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQIron02','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQIron03','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQIron04','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQIron05','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQIron06','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQIron07','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQLapis01','Raw Lapis Lazuli','T_IngMine_LapisLazuli_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQLapis02','Raw Lapis Lazuli','T_IngMine_LapisLazuli_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQLapis03','Raw Lapis Lazuli','T_IngMine_LapisLazuli_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQLapis04','Raw Lapis Lazuli','T_IngMine_LapisLazuli_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQLapis05','Raw Lapis Lazuli','T_IngMine_LapisLazuli_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQLapis06','Raw Lapis Lazuli','T_IngMine_LapisLazuli_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQTurquoi1','Raw Turquoise','T_IngMine_Turquoise_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQTurquoi2','Raw Turquoise','T_IngMine_Turquoise_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQTurquoi3','Raw Turquoise','T_IngMine_Turquoise_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQTurquoi4','Raw Turquoise','T_IngMine_Turquoise_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQTurquoi5','Raw Turquoise','T_IngMine_Turquoise_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreCQTurquoi6','Raw Turquoise','T_IngMine_Turquoise_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOBitter01','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOBitter02','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOBitter03','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOBitter04','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOBitter05','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOBitter06','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOBitter07','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOCobalt01','Raw Cobalt','T_IngMine_OreCobalt_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOCobalt02','Raw Cobalt','T_IngMine_OreCobalt_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOCobalt03','Raw Cobalt','T_IngMine_OreCobalt_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOCobalt04','Raw Cobalt','T_IngMine_OreCobalt_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOCobalt05','Raw Cobalt','T_IngMine_OreCobalt_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOCobalt06','Raw Cobalt','T_IngMine_OreCobalt_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOCobalt07','Raw Cobalt','T_IngMine_OreCobalt_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePODiamond1','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePODiamond2','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePODiamond3','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePODiamond4','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePODiamond5','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePODiamond6','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOGold01','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOGold02','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOGold03','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOGold04','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOGold05','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOGold06','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOGold07','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOPeridot1','Raw Peridot','T_IngMine_Peridot_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOPeridot2','Raw Peridot','T_IngMine_Peridot_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOPeridot3','Raw Peridot','T_IngMine_Peridot_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOPeridot4','Raw Peridot','T_IngMine_Peridot_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOPeridot5','Raw Peridot','T_IngMine_Peridot_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePOPeridot6','Raw Peridot','T_IngMine_Peridot_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePYBitter01','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePYBitter02','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePYBitter03','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePYBitter04','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePYBitter05','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePYBitter06','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePYBitter07','Raw Bitterstone','T_IngMine_OreBitterstone_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePYDiamond1','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePYDiamond2','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePYDiamond3','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePYDiamond4','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePYDiamond5','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePYDiamond6','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePYIron01','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePYIron02','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePYIron03','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePYIron04','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePYIron05','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePYIron06','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OrePYIron07','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNGold01','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNGold02','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNGold03','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNGold04','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNGold05','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNGold06','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNGold07','Raw Gold','T_IngMine_OreGold_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNIron01','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNIron02','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNIron03','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNIron04','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNIron05','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNIron06','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNIron07','Raw Iron','T_IngMine_OreIron_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNJade01','Raw Jade','T_IngMine_Jade_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNJade02','Raw Jade','T_IngMine_Jade_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNJade03','Raw Jade','T_IngMine_Jade_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNJade04','Raw Jade','T_IngMine_Jade_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNJade05','Raw Jade','T_IngMine_Jade_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNJade06','Raw Jade','T_IngMine_Jade_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNRuby01','Raw Ruby','ingred_ruby_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNRuby02','Raw Ruby','ingred_ruby_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNRuby03','Raw Ruby','ingred_ruby_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNRuby04','Raw Ruby','ingred_ruby_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNRuby05','Raw Ruby','ingred_ruby_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNRuby06','Raw Ruby','ingred_ruby_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNSaphire1','Raw Sapphire','T_IngMine_Sapphire_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNSaphire2','Raw Sapphire','T_IngMine_Sapphire_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNSaphire3','Raw Sapphire','T_IngMine_Sapphire_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNSaphire4','Raw Sapphire','T_IngMine_Sapphire_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNSaphire5','Raw Sapphire','T_IngMine_Sapphire_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_OreYNSaphire6','Raw Sapphire','T_IngMine_Sapphire_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_SandCQGlass01','Shards of Raw Glass','ingred_raw_glass_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_SandCQGlass02','Shards of Raw Glass','ingred_raw_glass_01',6);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_SandCQGlsBlk1','Shards of Raw Glass','ingred_raw_glass_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_SandCQGlsBlk2','Shards of Raw Glass','ingred_raw_glass_01',6);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_SandPOGlass01','Shards of Raw Glass','ingred_raw_glass_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_SandPOGlass02','Shards of Raw Glass','ingred_raw_glass_01',6);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_SandYNGlass01','Shards of Raw Glass','ingred_raw_glass_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Pi_Mine_SandYNGlass02','Shards of Raw Glass','ingred_raw_glass_01',6);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_SkyNor_Set_Beehive01','Bee Hive','T_IngFood_Honey_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_SkyNor_Set_Beehive02','Bee Hive','T_IngFood_Honey_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Fauna_BeeHvEart01','Bee Hole','T_IngFood_Honey_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Fauna_BeeHvEart02','Bee Hole','T_IngFood_Honey_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Fauna_BeeHvEart03','Bee Hole','T_IngFood_Honey_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Fauna_BrstlbRst01','Roasted Bristleback','T_IngFood_MeatBoar_02',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Fauna_FishBrwnt01','Browntrout','T_IngFood_FishBrowntrout_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Fauna_FishCod01','Cod','T_IngFood_FishCod_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Fauna_FishCod02','Dried Cod','T_IngFood_FishCodDried_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Fauna_FishPike01','Pike','T_IngFood_FishPike_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Fauna_FishPikeP01','Pikeperch','T_IngFood_FishPikeperch_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Fauna_FishSalm01','Salmon','T_IngFood_FishSalmon_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Fauna_SpkwrmRst01','Roasted Spikeworm','T_IngCrea_Spikeworm_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Apple01','Apple Tree','T_IngFood_AppleSkyrim_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Apple02','Apple Tree','T_IngFood_AppleSkyrim_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Apple03','Apple Tree','T_IngFood_AppleSkyrim_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_AspyrTea01','Aspyr Tea','T_IngFlor_AspyrTea_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_AspyrTea02','Aspyr Tea','T_IngFlor_AspyrTea_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_AspyrTeaH01','Dried Aspyr Tea Leaves','T_IngFlor_AspyrTea_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Bearclaw01','Bearclaw','T_IngFlor_Bearclaw_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Bearclaw02','Bearclaw','T_IngFlor_Bearclaw_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_BksporeCp01','Black Spore Cap','T_IngFlor_BlacksporeCap_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_BksporeCp02','Black Spore Cap','T_IngFlor_BlacksporeCap_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_BksporeCp03','Black Spore Cap','T_IngFlor_BlacksporeCap_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_BleakBlH01','Bleakbell Hay','T_IngFlor_Bleakbell_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_BleakBlH02','Bleakbell Hay','T_IngFlor_Bleakbell_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_BleakBlH03','Bleakbell Hay','T_IngFlor_Bleakbell_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_BleakBlH04','Bleakbell Hay','T_IngFlor_Bleakbell_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Blknet01','Blacknettle','T_IngFlor_Blknet_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Blknet02','Blacknettle','T_IngFlor_Blknet_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_BlknetD01','Blacknettle','T_IngFlor_Blknet_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_BlknetD02','Blacknettle','T_IngFlor_Blknet_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Bottomwee01','Bottomweed','T_IngFlor_Bottomweed_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Brideth01','Bridethorn','T_IngFood_BridethornBerry_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Brideth02','Bridethorn','T_IngFood_BridethornBerry_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Brideth03','Bridethorn','T_IngFood_BridethornBerry_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_BridethSn01','Bridethorn','T_IngFood_BridethornBerry_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_BridethSn02','Bridethorn','T_IngFood_BridethornBerry_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_BridethSn03','Bridethorn','T_IngFood_BridethornBerry_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_CanisR01','Canis Root','T_IngFlor_CanisRoot_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_CarlineTh01','Carline Thistle','T_IngFlor_CarlineTh_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_CloudyCrn01','Cloudy Corn','T_IngFood_CloudyCorn_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_CloudyCrn02','Cloudy Corn','T_IngFood_CloudyCorn_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_CloudyCrn03','Cloudy Corn','T_IngFood_CloudyCorn_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Comatus01','Comatus Corpinus','T_IngFlor_Comatus_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_CowBell01','Cow Bell','T_IngFlor_Cowbell_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_DarkSage01','Dark Sage','T_IngFlor_DarkSage_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_DarkSageD01','Dried Dark Sage','T_IngFlor_DarkSage_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_DeathBell01','Death Bell','T_IngFlor_Deathbell_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_ForsythTr01','Forsythia Tromja','T_IngFlor_ForsythiaTrRoots_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_FungalPod01','Fungal Pod','T_IngFlor_FungalPod_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_GrassPod01','Grass Pod','T_IngFlor_GrassPod01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_GrassPod02','Grass Pod','T_IngFlor_GrassPod01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Hellebore01','Hellebore','T_IngFlor_Hellebore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Hellebore02','Hellebore','T_IngFlor_Hellebore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Hellebore03','Hellebore','T_IngFlor_Hellebore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_HollyWrea01','Holly Wreath','ingred_holly_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_HoneyLill01','Honey Lily','T_IngFlor_HoneyLily_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_HoneyLill01','Honey Lily','T_IngFlor_HoneyLily_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_HoneyLill02','Honey Lily','T_IngFlor_HoneyLily_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_HoneyLill02','Honey Lily','T_IngFlor_HoneyLily_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_HoneyLill03','Honey Lily','T_IngFlor_HoneyLily_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_HoneyLill03','Honey Lily','T_IngFlor_HoneyLily_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_HoneyLill04','Honey Lily','T_IngFlor_HoneyLily_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_HoneyLill04','Honey Lily','T_IngFlor_HoneyLily_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_HoneyLill05','Honey Lily','T_IngFlor_HoneyLily_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_HoneyLill05','Honey Lily','T_IngFlor_HoneyLily_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_HoneyLill06','Honey Lily','T_IngFlor_HoneyLily_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_IcyShell01','Icy Shell Fungus','T_IngFlor_IcyShell01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Ironwood01','Ironwood Tree','T_IngFlor_IronwoodNut_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Ironwood02','Ironwood Tree','T_IngFlor_IronwoodNut_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Ironwood03','Ironwood Tree','T_IngFlor_IronwoodNut_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Jarmush01','Jarmush','T_IngFlor_Jarmush_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_KingBol01','King Bolete','T_IngFlor_KingBolete_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_KingBol02','King Bolete','T_IngFlor_KingBolete_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_KingBol03','King Bolete','T_IngFlor_KingBolete_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_KingBol04','King Bolete','T_IngFlor_KingBolete_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_KingBol05','King Bolete','T_IngFlor_KingBolete_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_KingBolSn01','King Bolete','T_IngFlor_KingBolete_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_KingBolSn02','King Bolete','T_IngFlor_KingBolete_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_KingBolSn03','King Bolete','T_IngFlor_KingBolete_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_KingBolSn04','King Bolete','T_IngFlor_KingBolete_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_KingBolSn05','King Bolete','T_IngFlor_KingBolete_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_KingThist01','King Thistle','T_IngFlor_KingThistle_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_KingThist02','King Thistle','T_IngFlor_KingThistle_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Lichen01','Lichen','ingred_green_lichen_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_LichenCav01','Cave Lichen','ingred_black_lichen_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Lizardf01','Lizards Foot','T_IngFlor_LizardFootExtract_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Lizardf02','Lizards Foot','T_IngFlor_LizardFootExtract_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Moosebite01','Moosebite Polyphore','T_IngFlor_Moosebite_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Moosebite02','Moosebite Polyphore','T_IngFlor_Moosebite_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Mustard01','Mustard','T_IngFlor_Mustard_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_RustRuss01','Rust Russula','T_IngFlor_RustRussula_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_RustRuss02','Rust Russula','T_IngFlor_RustRussula_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_RustRuss03','Rust Russula','T_IngFlor_RustRussula_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_RustRuss04','Rust Russula','T_IngFlor_RustRussula_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_RustRuss05','Rust Russula','T_IngFlor_RustRussula_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Snowberry01','Snow Berry','T_IngFood_Snowberry_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_SwmpChal01','Swamp Chalice','T_IngFlor_SwmpChal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Taragetis01','Taragetis','T_IngFlor_Taragetis_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Taragetis02','Taragetis','T_IngFlor_Taragetis_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Taragetis03','Taragetis','T_IngFlor_Taragetis_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Taragetis04','Taragetis','T_IngFlor_Taragetis_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Taragetis05','Taragetis','T_IngFlor_Taragetis_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_TawnFun01','Tawny Funnel Cap','T_IngFlor_TawnyFunnelCap_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_TawnFun02','Tawny Funnel Cap','T_IngFlor_TawnyFunnelCap_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_TawnFun03','Tawny Funnel Cap','T_IngFlor_TawnyFunnelCap_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_TawnFunSn01','Tawny Funnel Cap','T_IngFlor_TawnyFunnelCap_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_TawnFunSn02','Tawny Funnel Cap','T_IngFlor_TawnyFunnelCap_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_TawnFunSn03','Tawny Funnel Cap','T_IngFlor_TawnyFunnelCap_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Tremblwee01','Tremble Weed','T_IngFlor_TrembleWeedSap_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Trollroot01','Troll Root','T_IngFlor_Trollroot_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Trollroot02','Troll Root','T_IngFlor_Trollroot_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Turnip01','Turnip','T_IngFlor_Turnip_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_VicHerb01','Vicar Herb','T_IngFlor_VicarHerb_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_VicHerb02','Vicar Herb','T_IngFlor_VicarHerb_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_VicHerbH01','Dried Vicar Herb Leaves','T_IngFlor_VicarHerb_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_WidowkisD01','Dried Widow Kiss','T_IngFlor_WidowkissPowder_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Widowkiss01','Widow Kiss','T_IngFlor_WidowkissPowder_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_WithWheat01','Witherwheat','T_IngFood_Wheat_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_WithWheat02','Witherwheat','T_IngFood_Wheat_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_WithWheat03','Witherwheat','T_IngFood_Wheat_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Woadfl01','Woad Flower','T_IngFlor_Woadfl_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_Wormwood01','Wormwood','T_IngFlor_Wormwood_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Flora_WormwoodD01','Dried Wormwood','T_IngFlor_Wormwood_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Food_CheeseWhee01','Cheese Wheel','T_IngFood_CheeseNord_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Food_CheeseWhee02','Cheese Wheel','T_IngFood_CheeseNord_01',4);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_Amber01','Amber','T_IngMine_Amber_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreREIron01','Raw Iron','T_IngMine_OreIron_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreREIron02','Raw Iron','T_IngMine_OreIron_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreREIron03','Raw Iron','T_IngMine_OreIron_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreREIron04','Raw Iron','T_IngMine_OreIron_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreREIron05','Raw Iron','T_IngMine_OreIron_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreREIron06','Raw Iron','T_IngMine_OreIron_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreREIron07','Raw Iron','T_IngMine_OreIron_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreREOrich01','Raw Orichalcum','T_IngMine_OreOrichalcum_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreREOrich02','Raw Orichalcum','T_IngMine_OreOrichalcum_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreREOrich03','Raw Orichalcum','T_IngMine_OreOrichalcum_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreREOrich04','Raw Orichalcum','T_IngMine_OreOrichalcum_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreREOrich05','Raw Orichalcum','T_IngMine_OreOrichalcum_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreREOrich06','Raw Orichalcum','T_IngMine_OreOrichalcum_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreREOrich07','Raw Orichalcum','T_IngMine_OreOrichalcum_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreREQuiks01','Raw Quicksilver Ore','T_IngMine_OreQuicksilver_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreRESilv01','Raw Silver','T_IngMine_OreSilver_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreRESilv02','Raw Silver','T_IngMine_OreSilver_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreRESilv03','Raw Silver','T_IngMine_OreSilver_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreRESilv04','Raw Silver','T_IngMine_OreSilver_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreRESilv05','Raw Silver','T_IngMine_OreSilver_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreRESilv06','Raw Silver','T_IngMine_OreSilver_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Sky_Mine_OreRESilv07','Raw Silver','T_IngMine_OreSilver_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Val_Flora_Arrowroot01','Arrowroot','T_IngFlor_Arrowroot_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Val_Flora_Arrowroot02','Arrowroot','T_IngFlor_Arrowroot_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Val_Flora_Arrowroot03','Arrowroot','T_IngFlor_ArrowrootFlower_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Val_Flora_Arrowroot03','Arrowroot','T_IngFlor_Arrowroot_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('T_Val_Flora_DomicRedw01','Domica Redwort','T_IngFlor_DomicaRedwort_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('barrel_01_ahnassi_food','Wooden Barrel','food_kwama_egg_01',20);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('barrel_01_ahnassi_food','Wooden Barrel','food_kwama_egg_02',10);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('barrel_01_ahnassi_food','Wooden Barrel','ingred_hackle-lo_leaf_01',10);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('barrel_01_ahnassi_food','Wooden Barrel','ingred_hound_meat_01',10);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('barrel_01_ahnassi_food','Wooden Barrel','ingred_saltrice_01',20);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('barrel_01_ahnassi_food','Wooden Barrel','ingred_scuttle_01',20);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('cavern_spore00','Bloatspore','ingred_bloat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('contain_trama_shrub_01','Trama Shrub','ingred_trama_root_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('contain_trama_shrub_02','Trama Shrub','ingred_trama_root_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('contain_trama_shrub_03','Trama Shrub','ingred_trama_root_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('contain_trama_shrub_04','Trama Shrub','ingred_trama_root_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('contain_trama_shrub_05','Trama Shrub','ingred_trama_root_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('contain_trama_shrub_06','Trama Shrub','ingred_trama_root_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('egg_kwama00','Kwama Egg Sack','food_kwama_egg_02',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_ash_yam_01','Ash Yam','ingred_ash_yam_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_ash_yam_02','Ash Yam','ingred_ash_yam_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bc_fern_01','Slough Fern','ingred_bc_spore_pod',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bc_mushroom_01','Luminous Russula','ingred_russula_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bc_mushroom_02','Luminous Russula','ingred_russula_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bc_mushroom_03','Luminous Russula','ingred_russula_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bc_mushroom_04','Luminous Russula','ingred_russula_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bc_mushroom_05','Luminous Russula','ingred_russula_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bc_mushroom_06','Violet Coprinus','ingred_coprinus_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bc_mushroom_07','Violet Coprinus','ingred_coprinus_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bc_mushroom_08','Violet Coprinus','ingred_coprinus_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bc_podplant_01','Draggle-Tail','ingred_bc_ampoule_pod',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bc_podplant_02','Draggle-Tail','ingred_bc_ampoule_pod',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bc_podplant_03','Draggle-Tail','ingred_bc_coda_flower',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bc_shelffungus_01','Bungler''s Bane','ingred_bc_bungler''s_bane',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bc_shelffungus_02','Bungler''s Bane','ingred_bc_bungler''s_bane',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bc_shelffungus_03','Hypha Facia','ingred_bc_hypha_facia',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bc_shelffungus_04','Hypha Facia','ingred_bc_hypha_facia',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bittergreen_01','Bittergreen Plant','ingred_bittergreen_petals_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bittergreen_02','Bittergreen Plant','ingred_bittergreen_petals_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bittergreen_03','Bittergreen Plant','ingred_bittergreen_petals_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bittergreen_04','Bittergreen Plant','ingred_bittergreen_petals_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_bittergreen_05','Bittergreen Plant','ingred_bittergreen_petals_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_black_anther_01','Black Anther Plant','ingred_black_anther_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_black_anther_02','Black Anther Plant','ingred_black_anther_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_black_lichen_01','Black Lichen','ingred_black_lichen_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_black_lichen_02','Black Lichen','ingred_black_lichen_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_chokeweed_02','Chokeweed','ingred_chokeweed_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_comberry_01','Comberry','ingred_comberry_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_corkbulb','Corkbulb','ingred_corkbulb_root_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_fire_fern_01','Fire Fern','ingred_fire_petal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_fire_fern_02','Fire Fern','ingred_fire_petal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_fire_fern_03','Fire Fern','ingred_fire_petal_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_gold_kanet_01','Gold Kanet Flower','ingred_gold_kanet_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_gold_kanet_01_uni','Gold Kanet Flower','ingred_gold_kanet_unique',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_gold_kanet_02','Gold Kanet Flower','ingred_gold_kanet_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_gold_kanet_02_uni','Gold Kanet Flower','ingred_gold_kanet_unique',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_green_lichen_01','Green Lichen','ingred_green_lichen_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_green_lichen_02','Green Lichen','ingred_green_lichen_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_hackle-lo_01','Hackle-lo','ingred_hackle-lo_leaf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_hackle-lo_02','Hackle-lo','ingred_hackle-lo_leaf_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_heather_01','Heather','ingred_heather_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_kreshweed_01','Kreshweed','ingred_kresh_fiber_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_kreshweed_02','Kreshweed','ingred_kresh_fiber_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_kreshweed_03','Kreshweed','ingred_kresh_fiber_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_marshmerrow_01','Marshmerrow','ingred_marshmerrow_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_marshmerrow_02','Marshmerrow','ingred_marshmerrow_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_marshmerrow_03','Marshmerrow','ingred_marshmerrow_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_muckspunge_01','Muckspunge','ingred_muck_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_muckspunge_02','Muckspunge','ingred_muck_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_muckspunge_03','Muckspunge','ingred_muck_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_muckspunge_04','Muckspunge','ingred_muck_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_muckspunge_05','Muckspunge','ingred_muck_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_muckspunge_06','Muckspunge','ingred_muck_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_plant_02','Nirthfly Stalks','Ingred_nirthfly_stalks_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_plant_03','Timsa-Come-By flowers','Ingred_timsa-come-by_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_plant_04','Meadow Rye','Ingred_meadow_rye_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_plant_05','Flowering Sweetbarrel','Ingred_sweetpulp_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_plant_06','Desert Sweetbarrel','Ingred_sweetpulp_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_plant_07','Scrib Cabbage','Ingred_scrib_cabbage_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_plant_08','Spiny Lloramor','Ingred_lloramor_spines_01',2);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_red_lichen_01','Red Lichen','ingred_red_lichen_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_red_lichen_02','Red Lichen','ingred_red_lichen_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_rm_scathecraw_01','Scathecraw Plant','ingred_scathecraw_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_rm_scathecraw_02','Scathecraw Plant','ingred_scathecraw_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_roobrush_02','Roobrush','ingred_roobrush_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_saltrice_01','Saltrice','ingred_saltrice_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_saltrice_02','Saltrice','ingred_saltrice_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_sedge_01','Golden Sedge','Ingred_golden_sedge_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_sedge_02','Noble Sedge','Ingred_noble_sedge_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_stoneflower_01','Stoneflower','ingred_stoneflower_petals_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_stoneflower_02','Stoneflower','ingred_stoneflower_petals_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_wickwheat_01','Wickwheat','ingred_wickwheat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_wickwheat_02','Wickwheat','ingred_wickwheat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_wickwheat_03','Wickwheat','ingred_wickwheat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_wickwheat_04','Wickwheat','ingred_wickwheat_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_willow_flower_01','Willow Flower','ingred_willow_anther_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('flora_willow_flower_02','Willow Flower','ingred_willow_anther_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('kollop_01_pearl','Large Kollop','ingred_pearl_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('kollop_02_pearl','Kollop','ingred_pearl_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('kollop_03_pearl','Small Kollop','ingred_pearl_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_adam_py09','Raw Adamantium','ingred_adamantium_ore_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_diamond_01','Diamond','ingred_diamond_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_diamond_02','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_diamond_03','Diamond','ingred_diamond_01',5);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_diamond_04','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_diamond_05','Diamond','ingred_diamond_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_diamond_06','Diamond','ingred_diamond_01',10);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_diamond_07','Diamond','ingred_diamond_01',10);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_ebony_01','Raw Ebony','ingred_raw_ebony_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_ebony_02','Raw Ebony','ingred_raw_ebony_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_ebony_03','Raw Ebony','ingred_raw_ebony_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_ebony_04','Raw Ebony','ingred_raw_ebony_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_ebony_05','Raw Ebony','ingred_raw_ebony_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_ebony_06','Raw Ebony','ingred_raw_ebony_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_ebony_07','Raw Ebony','ingred_raw_ebony_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_glass_01','Raw Glass','ingred_raw_glass_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_glass_02','Raw Glass','ingred_raw_glass_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_glass_03','Raw Glass','ingred_raw_glass_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_glass_04','Raw Glass','ingred_raw_glass_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_glass_05','Raw Glass','ingred_raw_glass_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_glass_06','Raw Glass','ingred_raw_glass_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('rock_glass_07','Raw Glass','ingred_raw_glass_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('tr_m4_flora_bc_msh_king','Luminous Russula King','ingred_russula_01',8);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('tramaroot_01','Trama Root','ingred_trama_root_01',3);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('tramaroot_02','Trama Root','ingred_trama_root_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('tramaroot_03','Trama Root','ingred_trama_root_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('tramaroot_04','Trama Root','ingred_trama_root_01',1);
-INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES ('tramaroot_05','Trama Root','ingred_trama_root_01',1);
+INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES
+ ('Flora_BC_Fern_04_Chuck','Charles the Plant','ingred_scrib_jelly_02',1)
+,('Flora_BC_podplant_04','Draggle-Tail','ingred_bc_coda_flower',1)
+,('Flora_BM_belladonna_01','Unripened Belladonna','ingred_belladonna_02',1)
+,('Flora_BM_belladonna_02','Unripened Belladonna','ingred_belladonna_02',1)
+,('Flora_BM_belladonna_03','Ripened Belladonna','ingred_belladonna_01',1)
+,('Flora_BM_holly_01','Holly Bush','ingred_holly_01',1)
+,('Flora_BM_holly_02','Holly Bush','ingred_holly_01',1)
+,('Flora_BM_holly_04','Holly Bush','ingred_holly_01',1)
+,('Flora_BM_holly_05','Holly Bush','ingred_holly_01',1)
+,('Flora_BM_wolfsbane_01','Wolfsbane','ingred_wolfsbane_01',1)
+,('Flora_plant_01','Horn Lily','Ingred_horn_lily_bulb_01',2)
+,('PC_m1_Cha_DanFireFern','Fire Fern','ingred_fire_petal_01',1)
+,('PC_m1_Cha_DanInkwood','Inkwood','T_IngFlor_InkCone_01',1)
+,('PC_m1_Cha_DanPrimrose','Primrose','T_IngFlor_Primrose_01',1)
+,('PC_m1_Cha_DanWormwood','Wormwood','T_IngFlor_Wormwood_01',1)
+,('PC_m1_IP_Lki1_CoalPile','Coal Pile','T_IngMine_Coal_01',20)
+,('TR_AimrahIC6_DreughEgg1','Dreugh Cocoon','ingred_dreugh_wax_01',2)
+,('TR_AimrahIC6_DreughEgg2','Dreugh Cocoon','ingred_dreugh_wax_01',1)
+,('TR_AimrahIC6_DreughEgg3','Dreugh Cocoon','ingred_dreugh_wax_01',1)
+,('TR_FM_Stage8_corpse10','Corpse','ingred_bonemeal_01',1)
+,('TR_M3_i395_sack_local1','Sack','Ingred_horn_lily_bulb_01',4)
+,('TR_M3_i395_sack_local1','Sack','Ingred_nirthfly_stalks_01',1)
+,('TR_M3_i395_sack_local1','Sack','Ingred_scrib_cabbage_01',4)
+,('TR_M3_i395_sack_local1','Sack','Ingred_timsa-come-by_01',1)
+,('TR_M3_i395_sack_local1','Sack','T_IngFlor_Hamumroot_01',7)
+,('TR_M3_i395_sack_local1','Sack','ingred_black_anther_01',1)
+,('TR_M3_i395_sack_local1','Sack','ingred_comberry_01',5)
+,('TR_M3_i395_sack_local1','Sack','ingred_scales_01',8)
+,('TR_M3_i395_sack_local1','Sack','ingred_wickwheat_01',3)
+,('TR_M3_i395_sack_local1','Sack','ingred_willow_anther_01',1)
+,('TR_com_sack_02_i501_mry','Cloth Sack','Ingred_meadow_rye_01',-5)
+,('TR_flora_m3-798_debra','Diana the Plant','ingred_scrib_jelly_02',1)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','Ingred_golden_sedge_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','Ingred_horn_lily_bulb_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','Ingred_lloramor_spines_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','Ingred_meadow_rye_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','Ingred_nirthfly_stalks_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','Ingred_noble_sedge_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','Ingred_scrib_cabbage_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','Ingred_sweetpulp_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','Ingred_timsa-come-by_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','T_IngFlor_AloeVeraPulp_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','T_IngMine_OreGold_01',1)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','T_IngMine_OreIron_01',1)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','T_IngMine_OreLead_01',1)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','T_IngMine_OreSilver_01',1)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','food_kwama_egg_01',8)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','food_kwama_egg_02',8)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_adamantium_ore_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_alit_hide_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_ash_salts_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_ash_yam_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_bc_ampoule_pod',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_bc_bungler''s_bane',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_bc_coda_flower',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_bc_hypha_facia',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_bc_spore_pod',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_bear_pelt',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_belladonna_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_belladonna_02',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_bittergreen_petals_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_black_anther_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_black_lichen_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_bloat_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_boar_leather',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_bonemeal_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_bread_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_chokeweed_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_comberry_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_coprinus_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_corkbulb_root_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_crab_meat_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_daedra_skin_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_daedras_heart_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_diamond_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_dreugh_wax_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_ectoplasm_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_emerald_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_eyeball',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_fire_petal_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_fire_salts_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_frost_salts_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_ghoul_heart_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_gold_kanet_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_gravedust_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_gravetar_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_green_lichen_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_guar_hide_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_hackle-lo_leaf_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_heather_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_holly_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_horker_tusk_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_hound_meat_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_kagouti_hide_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_kresh_fiber_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_kwama_cuttle_01',8)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_marshmerrow_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_muck_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_netch_leather_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_pearl_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_racer_plumes_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_rat_meat_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_raw_ebony_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_raw_glass_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_red_lichen_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_resin_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_roobrush_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_ruby_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_russula_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_saltrice_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_scales_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_scamp_skin_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_scathecraw_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_scrap_metal_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_scrib_jelly_01',8)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_scrib_jerky_01',8)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_scuttle_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_shalk_resin_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_sload_soap_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_stoneflower_petals_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_trama_root_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_vampire_dust_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_void_salts_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_wickwheat_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_willow_anther_01',5)
+,('TR_i3-672_De_Rm_DeskAlc','Desk','ingred_wolf_pelt',5)
+,('TR_m1_FW_LadysMantle','Lady''s Mantle','T_IngFlor_LadysMantle_01',1)
+,('TR_m1_molecrab_egg','Mole Crab Egg Clutch','T_IngFood_EggMolecrab_01',3)
+,('TR_m2_com_sack_i501_bg','Sack','ingred_bittergreen_petals_01',-5)
+,('TR_m2_com_sack_i501_sl','Sack','ingred_saltrice_01',-6)
+,('TR_m2_com_sack_i501_ww','Sack','ingred_wickwheat_01',-8)
+,('TR_m2_q_30_hornlily1MG','Horn Lily','Ingred_horn_lily_bulb_01',1)
+,('TR_m2_q_30_hornlily2MG','Horn Lily','Ingred_horn_lily_bulb_01',1)
+,('TR_m2_q_30_hornlily3MG','Horn Lily','Ingred_horn_lily_bulb_01',1)
+,('TR_m2_q_30_hornlily4MG','Horn Lily','Ingred_horn_lily_bulb_01',1)
+,('TR_m2_q_30_hornlilyMG','Horn Lily','Ingred_horn_lily_bulb_01',2)
+,('TR_m2_q_30_timsa1MG','Timsa-Come-By flowers','Ingred_timsa-come-by_01',1)
+,('TR_m2_q_30_timsa2MG','Timsa-Come-By flowers','Ingred_timsa-come-by_01',1)
+,('TR_m2_q_30_timsa3MG','Timsa-Come-By flowers','Ingred_timsa-come-by_01',1)
+,('TR_m2_q_30_timsa4MG','Timsa-Come-By flowers','Ingred_timsa-come-by_01',1)
+,('TR_m2_q_30_timsaMG','Timsa-Come-By flowers','Ingred_timsa-come-by_01',2)
+,('TR_m3_ Dreugh_candle_UN','Dreugh Wax Candle','ingred_dreugh_wax_01',3)
+,('TR_m3_OE_Anjzhirra_Sack','Sack','T_IngMine_OreGold_01',4)
+,('TR_m3_ingchest_i3-390-i','Chest','Ingred_golden_sedge_01',1)
+,('TR_m3_ingchest_i3-390-i','Chest','Ingred_horn_lily_bulb_01',9)
+,('TR_m3_ingchest_i3-390-i','Chest','Ingred_lloramor_spines_01',1)
+,('TR_m3_ingchest_i3-390-i','Chest','Ingred_meadow_rye_01',1)
+,('TR_m3_ingchest_i3-390-i','Chest','Ingred_nirthfly_stalks_01',1)
+,('TR_m3_ingchest_i3-390-i','Chest','Ingred_noble_sedge_01',1)
+,('TR_m3_ingchest_i3-390-i','Chest','Ingred_scrib_cabbage_01',1)
+,('TR_m3_ingchest_i3-390-i','Chest','Ingred_timsa-come-by_01',4)
+,('TR_m3_ingchest_i3-390-i','Chest','T_IngFlor_Hamumroot_01',1)
+,('TR_m3_ingchest_i3-390-i','Chest','T_IngFlor_WhitePoppyPod_01',1)
+,('TR_m3_ingchest_i3-390-i','Chest','ingred_ash_yam_01',1)
+,('TR_m3_ingchest_i3-390-i','Chest','ingred_bc_ampoule_pod',1)
+,('TR_m3_ingchest_i3-390-i','Chest','ingred_bc_coda_flower',1)
+,('TR_m3_ingchest_i3-390-i','Chest','ingred_bc_spore_pod',1)
+,('TR_m3_ingchest_i3-390-i','Chest','ingred_black_anther_01',1)
+,('TR_m3_ingchest_i3-390-i','Chest','ingred_black_lichen_01',1)
+,('TR_m3_ingchest_i3-390-i','Chest','ingred_comberry_01',1)
+,('TR_m3_ingchest_i3-390-i','Chest','ingred_corkbulb_root_01',6)
+,('TR_m3_ingchest_i3-390-i','Chest','ingred_fire_petal_01',1)
+,('TR_m3_ingchest_i3-390-i','Chest','ingred_green_lichen_01',1)
+,('TR_m3_ingchest_i3-390-i','Chest','ingred_kresh_fiber_01',5)
+,('TR_m3_ingchest_i3-390-i','Chest','ingred_marshmerrow_01',4)
+,('TR_m3_ingchest_i3-390-i','Chest','ingred_roobrush_01',1)
+,('TR_m3_ingchest_i3-390-i','Chest','ingred_saltrice_01',1)
+,('TR_m3_ingchest_i3-390-i','Chest','ingred_stoneflower_petals_01',7)
+,('TR_m3_ingchest_i3-390-i','Chest','ingred_willow_anther_01',1)
+,('TR_m4_AndothDweRuinBF01','Bluefoot','T_IngFlor_Bluefoot_01',3)
+,('TR_m4_AndothDweRuinLR01','Luminous Russula','ingred_russula_01',1)
+,('TR_m4_AndothDweRuinLR02','Luminous Russula','ingred_russula_01',1)
+,('TR_m4_AndothDweRuinSS01','Sheggo''s Shelf','T_IngFlor_SheggoShelf_01',1)
+,('TR_m4_AndothDweRuinVC01','Violet Coprinus','ingred_coprinus_01',1)
+,('TR_m4_AndothDweRuinWL01','Thirrine Water Lily','T_IngFlor_ThirrineLily_01',1)
+,('TR_m4_UshuKur_OreCo_01a','Raw Iron','T_IngMine_OreIron_01',4)
+,('TR_m4_UshuKur_OreCo_02a','Raw Iron','T_IngMine_OreIron_01',4)
+,('TR_m4_UshuKur_OreCo_03a','Raw Iron','T_IngMine_OreIron_01',4)
+,('TR_m7_LA4_egg_sack_1','Kwama Egg Sack','food_kwama_egg_02',1)
+,('TR_m7_LA4_egg_sack_2','Kwama Egg Sack','food_kwama_egg_02',1)
+,('TR_m7_LA4_egg_sack_3','Kwama Egg Sack','food_kwama_egg_02',1)
+,('TR_m7_NVA2_0_Uracia_02','Pyrous Uracia','T_IngFlor_PyrousUracia',1)
+,('TR_m7_NVA6_Meadowrye01','Meadow Rye','Ingred_meadow_rye_01',1)
+,('TR_m7_NVA6_Meadowrye03','Meadow Rye','Ingred_meadow_rye_01',1)
+,('TR_m7_NVA6_OranMoss02','Orange Moss','T_IngFlor_OrangeMoss_01',1)
+,('TR_m7_NVA6_Uracia_01','Pyrous Uracia','T_IngFlor_PyrousUracia',1)
+,('TR_m7_NVA6_Uracia_02','Pyrous Uracia','T_IngFlor_PyrousUracia',1)
+,('TR_m7_NVA6_hackle-lo_01','Hackle-lo','ingred_hackle-lo_leaf_01',1)
+,('TR_m7_NVA6_hackle-lo_02','Hackle-lo','ingred_hackle-lo_leaf_01',1)
+,('TR_m7_TV5_Cave_3_Moss01','Orange Moss','T_IngFlor_OrangeMoss_01',1)
+,('TR_m7_TV5_Cave_3_Moss02','Orange Moss','T_IngFlor_OrangeMoss_01',1)
+,('TR_m7_TV5_Cave_3_Moss03','Orange Moss','T_IngFlor_OrangeMoss_01',1)
+,('T_Bkm_Flora_SomnFern01','Somnalius','T_IngFlor_SomnaliusFrond_01',1)
+,('T_Cyr_Fauna_FishChrys01','Chrysophant','T_IngFood_FishChrysophant_01',1)
+,('T_Cyr_Fauna_FishChrys02','Chrysophant','T_IngFood_FishChrysophant_01',1)
+,('T_Cyr_Fauna_FishLeap01','Fringed Leaper','T_IngFood_FishLeaperTail_01',1)
+,('T_Cyr_Fauna_FishLeap02','Fringed Leaper','T_IngFood_FishLeaperTail_01',1)
+,('T_Cyr_Fauna_FishLongf01','Abecean Longfin','T_IngFood_FishLongfinFilet_01',1)
+,('T_Cyr_Fauna_FishLongf02','Abecean Longfin','T_IngFood_FishLongfinFilet_01',1)
+,('T_Cyr_Fauna_FishLongf03','Abecean Longfin','T_IngFood_FishLongfinFilet_01',1)
+,('T_Cyr_Fauna_FishSlRst01','Roasted Fish','T_IngFood_FishSlaughterDried_03',2)
+,('T_Cyr_Fauna_FishSlRst01','Roasted Fish','ingred_scales_01',2)
+,('T_Cyr_Fauna_FishSlRst02','Roasted Fish','T_IngFood_FishSlaughterDried_03',4)
+,('T_Cyr_Fauna_FishSlRst02','Roasted Fish','ingred_scales_01',4)
+,('T_Cyr_Fauna_FishSlRst03','Roasted Fish','T_IngFood_FishSlaughterDried_03',1)
+,('T_Cyr_Fauna_FishSlRst03','Roasted Fish','ingred_scales_01',1)
+,('T_Cyr_Fauna_FishSpr01','Spearmouth','T_IngFood_FishSpr_01',1)
+,('T_Cyr_Fauna_FishSpr02','Spearmouth','T_IngFood_FishSpr_01',1)
+,('T_Cyr_Fauna_FishStr01','Stridfish','T_IngFood_FishStrid_01',1)
+,('T_Cyr_Fauna_FishStr02','Stridfish','T_IngFood_FishStrid_01',1)
+,('T_Cyr_Fauna_NestTant_01','Tantha Nest','T_IngCrea_TanthaEgg_01',3)
+,('T_Cyr_Fauna_NestTant_02','Tantha Nest','T_IngCrea_TanthaEgg_01',3)
+,('T_Cyr_Fauna_NestTant_03','Tantha Nest','T_IngCrea_TanthaEgg_01',2)
+,('T_Cyr_Fauna_NestTant_04','Tantha Nest','T_IngCrea_TanthaEgg_01',2)
+,('T_Cyr_Flora_Alkanet01','Alkanet','T_IngFlor_Alkanet_01',1)
+,('T_Cyr_Flora_AloeVera01','Aloe Vera','T_IngFlor_AloeVeraPulp_01',2)
+,('T_Cyr_Flora_AloeVera02','Aloe Vera','T_IngFlor_AloeVeraPulp_01',1)
+,('T_Cyr_Flora_AloeVera03','Aloe Vera','T_IngFlor_AloeVeraPulp_01',1)
+,('T_Cyr_Flora_Apple01','Apple Tree','T_IngFood_Apple_01',3)
+,('T_Cyr_Flora_Apple02','Apple Tree','T_IngFood_Apple_01',3)
+,('T_Cyr_Flora_Apple03','Apple Tree','T_IngFood_Apple_01',3)
+,('T_Cyr_Flora_Aquilegia01','Aquilegia','T_IngFlor_Aquilegia_01',1)
+,('T_Cyr_Flora_Bloodlill01','Blood Lily','T_IngFlor_BloodlilyFlower_01',1)
+,('T_Cyr_Flora_Bloodlill01','Blood Lily','T_IngFlor_BloodlilyPod_01',1)
+,('T_Cyr_Flora_BogBeac01','Bog Beacon','T_IngFlor_BogBeacon_01',1)
+,('T_Cyr_Flora_BogBeac02','Bog Beacon','T_IngFlor_BogBeacon_01',1)
+,('T_Cyr_Flora_BogBeac03','Bog Beacon','T_IngFlor_BogBeacon_01',1)
+,('T_Cyr_Flora_CairnBol01','Cairn Bolete','T_IngFlor_CairnBolete_01',1)
+,('T_Cyr_Flora_CairnBol02','Cairn Bolete','T_IngFlor_CairnBolete_01',1)
+,('T_Cyr_Flora_CairnBol03','Cairn Bolete','T_IngFlor_CairnBolete_01',1)
+,('T_Cyr_Flora_Chokeberr01','Chokeberry Vine','T_IngFlor_Chokeberry_01',2)
+,('T_Cyr_Flora_CinnaPoly01','Cinnabar Polypore Red Cap','T_IngFlor_CinnabarPolypore_01',1)
+,('T_Cyr_Flora_CinnaPoly02','Cinnabar Polypore Yellow Cap','T_IngFlor_CinnabarPolypore_02',1)
+,('T_Cyr_Flora_CloudedFn01','Clouded Funnel','T_IngFlor_CloudedFunnel_01',1)
+,('T_Cyr_Flora_CloudedFn02','Clouded Funnel','T_IngFlor_CloudedFunnel_01',1)
+,('T_Cyr_Flora_CloudedFn03','Clouded Funnel','T_IngFlor_CloudedFunnel_01',1)
+,('T_Cyr_Flora_DryadSad01','Dryad''s Saddle Polypore','T_IngFlor_DryadSaddle_01',1)
+,('T_Cyr_Flora_DryadSad02','Dryad''s Saddle Polypore','T_IngFlor_DryadSaddle_01',1)
+,('T_Cyr_Flora_DryadSad03','Dryad''s Saddle Polypore','T_IngFlor_DryadSaddle_01',1)
+,('T_Cyr_Flora_DryadSad04','Dryad''s Saddle Polypore','T_IngFlor_DryadSaddle_01',1)
+,('T_Cyr_Flora_Elfcup01','Elf Cup','T_IngFlor_Elfcup_01',1)
+,('T_Cyr_Flora_EmeticRus01','Emetic Russula','T_IngFlor_EmeticRussula_01',1)
+,('T_Cyr_Flora_EmeticRus02','Emetic Russula','T_IngFlor_EmeticRussula_01',1)
+,('T_Cyr_Flora_Fig01','Fig Tree','T_IngFood_Fig_01',3)
+,('T_Cyr_Flora_Fig02','Fig Tree','T_IngFood_Fig_01',3)
+,('T_Cyr_Flora_Fig03','Fig Tree','T_IngFood_Fig_01',3)
+,('T_Cyr_Flora_Ginseng01','Ginseng','T_IngFlor_Ginseng_01',1)
+,('T_Cyr_Flora_Ginseng02','Ginseng','T_IngFlor_Ginseng_01',1)
+,('T_Cyr_Flora_Goldenrod01','Goldenrod','T_IngFlor_GoldenRod_01',1)
+,('T_Cyr_Flora_Goldenrod02','Goldenrod','T_IngFlor_GoldenRod_01',1)
+,('T_Cyr_Flora_Goldenrod03','Goldenrod','T_IngFlor_GoldenRod_01',1)
+,('T_Cyr_Flora_Grape01','Grapevine','T_IngFood_Grape_01',2)
+,('T_Cyr_Flora_Grape02','Grapevine','T_IngFood_Grape_01',2)
+,('T_Cyr_Flora_Grape03','Grapevine','T_IngFood_Grape_01',2)
+,('T_Cyr_Flora_GreenstCp01','Green Stain Cup','T_IngFlor_Greenstain_01',1)
+,('T_Cyr_Flora_GreenstSh01','Green Stain Shelf','T_IngFlor_Greenstain_01',1)
+,('T_Cyr_Flora_Indureta01','Durata Stalk','T_IngFood_Indureta_01',1)
+,('T_Cyr_Flora_Inkwood01','Inkwood','T_IngFlor_InkCone_01',1)
+,('T_Cyr_Flora_Inkwood02','Inkwood','T_IngFlor_InkCone_01',1)
+,('T_Cyr_Flora_Inkwood03','Inkwood','T_IngFlor_InkCone_01',1)
+,('T_Cyr_Flora_Inkwood04','Inkwood','T_IngFlor_InkCone_01',1)
+,('T_Cyr_Flora_Ironrye01','Ironrye','T_IngFood_Ironrye_01',1)
+,('T_Cyr_Flora_Ironrye02','Ironrye','T_IngFood_Ironrye_01',1)
+,('T_Cyr_Flora_Ladysmck01','Lady''s Smock','T_IngFlor_LadysSmock_01',1)
+,('T_Cyr_Flora_Ladysmnt01','Lady''s Mantle','T_IngFlor_LadysMantle_01',1)
+,('T_Cyr_Flora_LillyVall01','Lily of the Valley','T_IngFlor_TigerlilyNectar_01',1)
+,('T_Cyr_Flora_LillyVall02','Lily of the Valley','T_IngFlor_TigerlilyNectar_01',1)
+,('T_Cyr_Flora_LillyVall03','Lily of the Valley','T_IngFlor_TigerlilyNectar_01',1)
+,('T_Cyr_Flora_LillyVall04','Lily of the Valley','T_IngFlor_TigerlilyNectar_01',1)
+,('T_Cyr_Flora_Lotus01','Perrif''s Lotus','T_IngFlor_PLotusLeaf_01',1)
+,('T_Cyr_Flora_Lycovine01','Lycovine','T_IngFood_Lyco_01',1)
+,('T_Cyr_Flora_Mandrake01','Mandrake','T_IngFlor_MandrakeRoot_01',1)
+,('T_Cyr_Flora_MarasBead01','Mara''s Beads','T_IngFlor_MarasBeads_01',1)
+,('T_Cyr_Flora_MarshStlk01','Marsh Stalk','T_IngFlor_MarshStalk_01',1)
+,('T_Cyr_Flora_Monarda01','Monarda Flower','T_IngFlor_MonardaSeed_01',1)
+,('T_Cyr_Flora_Monkshood01','Monkshood','T_IngFlor_MonkshoodRootPulp_01',1)
+,('T_Cyr_Flora_Monkshood01','Monkshood','T_IngFlor_Monkshood_01',1)
+,('T_Cyr_Flora_MorningGl01','Morning Glory','T_IngFlor_MorningGlory_01',1)
+,('T_Cyr_Flora_MorningGl02','Morning Glory','T_IngFlor_MorningGlory_01',1)
+,('T_Cyr_Flora_MorningGl03','Morning Glory','T_IngFlor_MorningGlory_01',1)
+,('T_Cyr_Flora_Motherw01','Motherwort','T_IngFlor_Motherwort_01',1)
+,('T_Cyr_Flora_Peony01','Peony','T_IngFlor_Peony_01',1)
+,('T_Cyr_Flora_Peony02','Peony','T_IngFlor_Peony_01',1)
+,('T_Cyr_Flora_Pitcher_01','Pitcher','T_IngFlor_Pitcher_01',1)
+,('T_Cyr_Flora_Pitcher_02','Pitcher','T_IngFlor_Pitcher_01',1)
+,('T_Cyr_Flora_Poppad01','Poppad Gourd','T_IngFood_PoppadGourd_01',1)
+,('T_Cyr_Flora_Primrose01','Primrose','T_IngFlor_Primrose_01',1)
+,('T_Cyr_Flora_Primrose02','Primrose','T_IngFlor_Primrose_01',1)
+,('T_Cyr_Flora_Primrose03','Primrose','T_IngFlor_Primrose_01',1)
+,('T_Cyr_Flora_Siyat01','Siyat','T_IngFlor_Siyat_01',1)
+,('T_Cyr_Flora_Socrata01','Socatra Plant','T_IngFlor_SocrataNectar_01',1)
+,('T_Cyr_Flora_Socrata02','Socatra Plant','T_IngFlor_SocrataNectar_01',1)
+,('T_Cyr_Flora_Socrata03','Young Socatra Plant','T_IngFlor_SocrataNectar_01',1)
+,('T_Cyr_Flora_Spikerice01','Spike Rice','T_IngFood_Rice_01',1)
+,('T_Cyr_Flora_Spikerice02','Spike Rice','T_IngFood_Rice_01',1)
+,('T_Cyr_Flora_Spikerice03','Spike Rice','T_IngFood_Rice_01',1)
+,('T_Cyr_Flora_Steelblue01','Steel Blue Entoloma','T_IngFlor_Steelblue_01',1)
+,('T_Cyr_Flora_Steelblue02','Steel Blue Entoloma','T_IngFlor_Steelblue_01',1)
+,('T_Cyr_Flora_Stinkhorn01','Stinkhorn','T_IngFlor_Stinkhorn_01',1)
+,('T_Cyr_Flora_Stinkhorn02','Stinkhorn','T_IngFlor_Stinkhorn_01',1)
+,('T_Cyr_Flora_StjahnsWr01','St. Jahn''s Wort','T_IngFlor_StJahnsWort_01',1)
+,('T_Cyr_Flora_SummerBol01','Summer Bolete','T_IngFlor_SummerBolete_01',1)
+,('T_Cyr_Flora_SummerBol02','Summer Bolete','T_IngFlor_SummerBolete_01',1)
+,('T_Cyr_Flora_Tacca01','Tacca','T_IngFlor_Tacca_01',1)
+,('T_Cyr_Flora_Tacca02','Tacca','T_IngFlor_Tacca_01',1)
+,('T_Cyr_Flora_Thunglew01','Thungleweed','T_IngFlor_Thungleweed_01',1)
+,('T_Cyr_Flora_Tigerlill01','Tiger Lily','T_IngFlor_TigerlilyNectar_01',1)
+,('T_Cyr_Flora_Tigerlill02','Tiger Lily','T_IngFlor_TigerlilyNectar_01',1)
+,('T_Cyr_Flora_TindPoly01','Tinder Polypore','T_IngFlor_TinderPolypore_01',1)
+,('T_Cyr_Flora_TindPoly02','Tinder Polypore','T_IngFlor_TinderPolypore_01',1)
+,('T_Cyr_Flora_TindPoly03','Tinder Polypore','T_IngFlor_TinderPolypore_01',1)
+,('T_Cyr_Flora_TindPoly04','Tinder Polypore','T_IngFlor_TinderPolypore_01',1)
+,('T_Cyr_Flora_TindPoly05','Tinder Polypore','T_IngFlor_TinderPolypore_01',1)
+,('T_Cyr_Flora_TrinityPl01','Trinity Plant','T_IngFood_TrinityFruit_01',1)
+,('T_Cyr_Flora_ViperBugl01','Viper''s Bugloss','T_IngFlor_ViperBugloss_01',1)
+,('T_Cyr_Flora_Wheat01','Plainwheat','T_IngFood_Wheat_01',3)
+,('T_Cyr_Flora_Wheat02','Plainwheat','T_IngFood_Wheat_01',3)
+,('T_Cyr_Flora_Wheat03','Plainwheat','T_IngFood_Wheat_01',2)
+,('T_Cyr_Flora_Wispstalk01','Wisp Stalk','T_IngFlor_WispStalk_01',1)
+,('T_Cyr_Flora_Wispstalk02','Wisp Stalk','T_IngFlor_WispStalk_01',1)
+,('T_Cyr_Flora_Wispstalk03','Wisp Stalk','T_IngFlor_WispStalk_01',1)
+,('T_Cyr_Flora_Wispstalk04','Wisp Stalk','T_IngFlor_WispStalk_01',1)
+,('T_Cyr_Flora_Wispstalk05','Wisp Stalk','T_IngFlor_WispStalk_01',1)
+,('T_Cyr_Mine_OreCHAdam01','Raw Adamantium','ingred_adamantium_ore_01',1)
+,('T_Cyr_Mine_OreCHAdam02','Raw Adamantium','ingred_adamantium_ore_01',1)
+,('T_Cyr_Mine_OreCHAdam03','Raw Adamantium','ingred_adamantium_ore_01',1)
+,('T_Cyr_Mine_OreCHAdam04','Raw Adamantium','ingred_adamantium_ore_01',1)
+,('T_Cyr_Mine_OreCHAdam05','Raw Adamantium','ingred_adamantium_ore_01',1)
+,('T_Cyr_Mine_OreCHAdam06','Raw Adamantium','ingred_adamantium_ore_01',1)
+,('T_Cyr_Mine_OreCHAdam07','Raw Adamantium','ingred_adamantium_ore_01',1)
+,('T_Cyr_Mine_OreCHCopp01','Raw Copper','T_IngMine_OreCopper_01',2)
+,('T_Cyr_Mine_OreCHCopp02','Raw Copper','T_IngMine_OreCopper_01',2)
+,('T_Cyr_Mine_OreCHCopp03','Raw Copper','T_IngMine_OreCopper_01',2)
+,('T_Cyr_Mine_OreCHCopp04','Raw Copper','T_IngMine_OreCopper_01',3)
+,('T_Cyr_Mine_OreCHCopp05','Raw Copper','T_IngMine_OreCopper_01',4)
+,('T_Cyr_Mine_OreCHCopp06','Raw Copper','T_IngMine_OreCopper_01',3)
+,('T_Cyr_Mine_OreCHCopp07','Raw Copper','T_IngMine_OreCopper_01',4)
+,('T_Cyr_Mine_OreCHIron01','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Cyr_Mine_OreCHIron02','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Cyr_Mine_OreCHIron03','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Cyr_Mine_OreCHIron04','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Cyr_Mine_OreCHIron05','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Cyr_Mine_OreCHIron06','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Cyr_Mine_OreCHIron07','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Cyr_Mine_OreCHRuby01','Raw Ruby','ingred_ruby_01',2)
+,('T_Cyr_Mine_OreCHRuby02','Raw Ruby','ingred_ruby_01',2)
+,('T_Cyr_Mine_OreCHRuby03','Raw Ruby','ingred_ruby_01',2)
+,('T_Cyr_Mine_OreCHRuby04','Raw Ruby','ingred_ruby_01',2)
+,('T_Cyr_Mine_OreCHRuby05','Raw Ruby','ingred_ruby_01',2)
+,('T_Cyr_Mine_OreCHRuby06','Raw Ruby','ingred_ruby_01',2)
+,('T_Cyr_Mine_OreCHSpinl01','Raw Spinel','T_IngMine_Spinel_01',2)
+,('T_Cyr_Mine_OreCHSpinl02','Raw Spinel','T_IngMine_Spinel_01',2)
+,('T_Cyr_Mine_OreCHSpinl03','Raw Spinel','T_IngMine_Spinel_01',2)
+,('T_Cyr_Mine_OreCHSpinl04','Raw Spinel','T_IngMine_Spinel_01',2)
+,('T_Cyr_Mine_OreCHSpinl05','Raw Spinel','T_IngMine_Spinel_01',2)
+,('T_Cyr_Mine_OreCHSpinl06','Raw Spinel','T_IngMine_Spinel_01',2)
+,('T_Cyr_Mine_OreCHTopaz01','Raw Topaz','T_IngMine_Topaz_01',2)
+,('T_Cyr_Mine_OreCHTopaz02','Raw Topaz','T_IngMine_Topaz_01',2)
+,('T_Cyr_Mine_OreCHTopaz03','Raw Topaz','T_IngMine_Topaz_01',2)
+,('T_Cyr_Mine_OreCHTopaz04','Raw Topaz','T_IngMine_Topaz_01',2)
+,('T_Cyr_Mine_OreCHTopaz05','Raw Topaz','T_IngMine_Topaz_01',2)
+,('T_Cyr_Mine_OreCHTopaz06','Raw Topaz','T_IngMine_Topaz_01',2)
+,('T_Cyr_Mine_OreGCAdam01','Raw Adamantium','ingred_adamantium_ore_01',2)
+,('T_Cyr_Mine_OreGCAdam02','Raw Adamantium','ingred_adamantium_ore_01',1)
+,('T_Cyr_Mine_OreGCAdam03','Raw Adamantium','ingred_adamantium_ore_01',1)
+,('T_Cyr_Mine_OreGCAdam04','Raw Adamantium','ingred_adamantium_ore_01',1)
+,('T_Cyr_Mine_OreGCAdam05','Raw Adamantium','ingred_adamantium_ore_01',2)
+,('T_Cyr_Mine_OreGCAdam06','Raw Adamantium','ingred_adamantium_ore_01',2)
+,('T_Cyr_Mine_OreGCAdam07','Raw Adamantium','ingred_adamantium_ore_01',2)
+,('T_Cyr_Mine_OreGCGold01','Raw Gold','T_IngMine_OreGold_01',1)
+,('T_Cyr_Mine_OreGCGold02','Raw Gold','T_IngMine_OreGold_01',1)
+,('T_Cyr_Mine_OreGCGold03','Raw Gold','T_IngMine_OreGold_01',1)
+,('T_Cyr_Mine_OreGCGold04','Raw Gold','T_IngMine_OreGold_01',2)
+,('T_Cyr_Mine_OreGCGold05','Raw Gold','T_IngMine_OreGold_01',3)
+,('T_Cyr_Mine_OreGCGold06','Raw Gold','T_IngMine_OreGold_01',2)
+,('T_Cyr_Mine_OreGCGold07','Raw Gold','T_IngMine_OreGold_01',3)
+,('T_Cyr_Mine_OreGCIron01','Raw Iron','T_IngMine_OreIron_01',2)
+,('T_Cyr_Mine_OreGCIron02','Raw Iron','T_IngMine_OreIron_01',2)
+,('T_Cyr_Mine_OreGCIron03','Raw Iron','T_IngMine_OreIron_01',2)
+,('T_Cyr_Mine_OreGCIron04','Raw Iron','T_IngMine_OreIron_01',3)
+,('T_Cyr_Mine_OreGCIron05','Raw Iron','T_IngMine_OreIron_01',4)
+,('T_Cyr_Mine_OreGCIron06','Raw Iron','T_IngMine_OreIron_01',3)
+,('T_Cyr_Mine_OreGCIron07','Raw Iron','T_IngMine_OreIron_01',4)
+,('T_Cyr_Mine_OreGCSalt_01','Rock Salt','T_IngMine_Salt_01',4)
+,('T_Cyr_Mine_OreGCSalt_02','Rock Salt','T_IngMine_Salt_01',4)
+,('T_Cyr_Mine_OreGCSalt_03','Rock Salt','T_IngMine_Salt_01',4)
+,('T_Cyr_Mine_OreGCSilv01','Raw Silver','T_IngMine_OreSilver_01',1)
+,('T_Cyr_Mine_OreGCSilv02','Raw Silver','T_IngMine_OreSilver_01',1)
+,('T_Cyr_Mine_OreGCSilv03','Raw Silver','T_IngMine_OreSilver_01',1)
+,('T_Cyr_Mine_OreGCSilv04','Raw Silver','T_IngMine_OreSilver_01',2)
+,('T_Cyr_Mine_OreGCSilv05','Raw Silver','T_IngMine_OreSilver_01',3)
+,('T_Cyr_Mine_OreGCSilv06','Raw Silver','T_IngMine_OreSilver_01',2)
+,('T_Cyr_Mine_OreGCSilv07','Raw Silver','T_IngMine_OreSilver_01',3)
+,('T_Cyr_Mine_OreGHSalt_01','Rock Salt','T_IngMine_Salt_01',4)
+,('T_Cyr_Mine_OreGHSalt_02','Rock Salt','T_IngMine_Salt_01',4)
+,('T_Cyr_Mine_OreGHSalt_03','Rock Salt','T_IngMine_Salt_01',4)
+,('T_Cyr_Mine_OreWWIron01','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Cyr_Mine_OreWWIron02','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Cyr_Mine_OreWWIron03','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Cyr_Mine_OreWWIron04','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Cyr_Mine_OreWWIron05','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Cyr_Mine_OreWWIron06','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Els_Flora_Hibiscus01','Hibiscus','T_IngFlor_Hibiscus_01',1)
+,('T_Els_Flora_Nightsh01','Nightshade','T_IngFlor_Nightshade_01',1)
+,('T_Els_Flora_Oleander01','Nerium Rose','T_IngFlor_Oleander_01',1)
+,('T_Els_Flora_Sugarcane01','Sweetgrass','T_IngFlor_Sugarcane_01',1)
+,('T_Els_Flora_Sugarcane02','Sweetgrass','T_IngFlor_Sugarcane_01',1)
+,('T_Els_Flora_Sugarcane03','Sweetgrass','T_IngFlor_Sugarcane_01',1)
+,('T_Els_Flora_Sugarcane04','Sweetgrass','T_IngFlor_Sugarcane_01',4)
+,('T_Els_Flora_Thornt_01','Thorntail','T_IngFlor_ThorntailFlower_01',1)
+,('T_Els_Flora_Thornt_03','Thorntail','T_IngFlor_ThorntailBerry_01',1)
+,('T_GlbDreu_Furn_SaArg1','Food Sac','ingred_bonemeal_01',1)
+,('T_GlbDreu_Furn_SaFsh1','Food Sac','ingred_bonemeal_01',1)
+,('T_GlbDreu_Furn_SaFsh2','Food Sac','ingred_bonemeal_01',1)
+,('T_GlbDreu_Furn_SaHum1','Food Sac','ingred_bonemeal_01',1)
+,('T_GlbDreu_Furn_SaHum2','Food Sac','ingred_bonemeal_01',1)
+,('T_GlbDreu_Furn_SaHum3','Food Sac','ingred_bonemeal_01',1)
+,('T_GlbDreu_Furn_SaKha1','Food Sac','ingred_bonemeal_01',1)
+,('T_GlbDreu_Furn_SaOrc1','Food Sac','ingred_bonemeal_01',1)
+,('T_Glb_Fauna_ChickHang01','Chicken','T_IngFood_MeatChicken_01',2)
+,('T_Glb_Fauna_Clam_01','Clam','T_IngCrea_ClamMeat',1)
+,('T_Glb_Fauna_Clam_01','Clam','T_IngMine_PearlBlack_01',1)
+,('T_Glb_Fauna_Clam_01','Clam','T_IngMine_PearlBlue_01',1)
+,('T_Glb_Fauna_Clam_01','Clam','T_IngMine_PearlPink_01',1)
+,('T_Glb_Fauna_Clam_01','Clam','ingred_pearl_01',48)
+,('T_Glb_Fauna_Clam_02a','Clam','T_IngCrea_ClamMeat',1)
+,('T_Glb_Fauna_Clam_02a','Clam','T_IngMine_PearlBlack_01',1)
+,('T_Glb_Fauna_Clam_02a','Clam','T_IngMine_PearlBlue_01',1)
+,('T_Glb_Fauna_Clam_02a','Clam','T_IngMine_PearlPink_01',1)
+,('T_Glb_Fauna_Clam_02a','Clam','ingred_pearl_01',48)
+,('T_Glb_Fauna_Clam_02b','Clam','T_IngCrea_ClamMeat',1)
+,('T_Glb_Fauna_Clam_02b','Clam','T_IngMine_PearlBlack_01',1)
+,('T_Glb_Fauna_Clam_02b','Clam','T_IngMine_PearlBlue_01',1)
+,('T_Glb_Fauna_Clam_02b','Clam','T_IngMine_PearlPink_01',1)
+,('T_Glb_Fauna_Clam_02b','Clam','ingred_pearl_01',48)
+,('T_Glb_Fauna_Clam_03a','Giant Clam','T_IngCrea_ClamMeat',1)
+,('T_Glb_Fauna_Clam_03a','Giant Clam','T_IngMine_PearlBlack_01',1)
+,('T_Glb_Fauna_Clam_03a','Giant Clam','T_IngMine_PearlBlue_01',1)
+,('T_Glb_Fauna_Clam_03a','Giant Clam','T_IngMine_PearlPink_01',1)
+,('T_Glb_Fauna_Clam_03a','Giant Clam','ingred_pearl_01',48)
+,('T_Glb_Fauna_Clam_03b','Giant Clam','T_IngCrea_ClamMeat',1)
+,('T_Glb_Fauna_Clam_03b','Giant Clam','T_IngMine_PearlBlack_01',1)
+,('T_Glb_Fauna_Clam_03b','Giant Clam','T_IngMine_PearlBlue_01',1)
+,('T_Glb_Fauna_Clam_03b','Giant Clam','T_IngMine_PearlPink_01',1)
+,('T_Glb_Fauna_Clam_03b','Giant Clam','ingred_pearl_01',48)
+,('T_Glb_Fauna_FishSch_Anf','Angelfish','T_IngCrea_Angelfish_01',3)
+,('T_Glb_Fauna_FishSch_Dpf','Dusky Parrotfish','T_IngCrea_DuskyParrotfish_01',3)
+,('T_Glb_Fauna_FishSch_Jly','Astral Jellyfish','T_IngCrea_AstralJellyfish_01',3)
+,('T_Glb_Fauna_FishSlRst01','Roasted Fish','T_IngFood_FishSlaughterDried_01',2)
+,('T_Glb_Fauna_FishSlRst01','Roasted Fish','ingred_scales_01',2)
+,('T_Glb_Fauna_FishSlRst02','Roasted Fish','T_IngFood_FishSlaughterDried_01',4)
+,('T_Glb_Fauna_FishSlRst02','Roasted Fish','ingred_scales_01',4)
+,('T_Glb_Fauna_FishSlRst03','Roasted Fish','T_IngFood_FishSlaughterDried_01',1)
+,('T_Glb_Fauna_FishSlRst03','Roasted Fish','ingred_scales_01',1)
+,('T_Glb_Fauna_OystGrp_01a','Oysters','T_IngCrea_OysterMeat_01',4)
+,('T_Glb_Fauna_OystGrp_01a','Oysters','ingred_pearl_01',3)
+,('T_Glb_Fauna_OystGrp_01b','Oysters','T_IngCrea_OysterMeat_01',3)
+,('T_Glb_Fauna_OystGrp_01b','Oysters','ingred_pearl_01',2)
+,('T_Glb_Fauna_OystGrp_01c','Oysters','T_IngCrea_OysterMeat_01',3)
+,('T_Glb_Fauna_OystGrp_01c','Oysters','ingred_pearl_01',2)
+,('T_Glb_Fauna_OystGrp_02a','Oysters','T_IngCrea_OysterMeat_02',3)
+,('T_Glb_Fauna_OystGrp_02a','Oysters','ingred_pearl_01',3)
+,('T_Glb_Fauna_OystGrp_02b','Oysters','T_IngCrea_OysterMeat_02',5)
+,('T_Glb_Fauna_OystGrp_02b','Oysters','ingred_pearl_01',2)
+,('T_Glb_Fauna_OystGrp_02c','Oysters','T_IngCrea_OysterMeat_02',3)
+,('T_Glb_Fauna_OystGrp_02c','Oysters','ingred_pearl_01',2)
+,('T_Glb_Fauna_Oyster_01a','Oyster','T_IngCrea_OysterMeat_01',1)
+,('T_Glb_Fauna_Oyster_01a','Oyster','ingred_pearl_01',1)
+,('T_Glb_Fauna_Oyster_01b','Oyster','T_IngCrea_OysterMeat_01',1)
+,('T_Glb_Fauna_Oyster_01b','Oyster','ingred_pearl_01',1)
+,('T_Glb_Fauna_Oyster_01c','Oyster','T_IngCrea_OysterMeat_01',1)
+,('T_Glb_Fauna_Oyster_01c','Oyster','ingred_pearl_01',1)
+,('T_Glb_Fauna_Oyster_02a','Oyster','T_IngCrea_OysterMeat_02',1)
+,('T_Glb_Fauna_Oyster_02a','Oyster','ingred_pearl_01',1)
+,('T_Glb_Fauna_Oyster_02b','Oyster','T_IngCrea_OysterMeat_02',1)
+,('T_Glb_Fauna_Oyster_02b','Oyster','ingred_pearl_01',1)
+,('T_Glb_Fauna_Oyster_02c','Oyster','T_IngCrea_OysterMeat_02',1)
+,('T_Glb_Fauna_Oyster_02c','Oyster','ingred_pearl_01',1)
+,('T_Glb_Fauna_RatRst01','Roasted Rat','ingred_rat_meat_01',1)
+,('T_Glb_Fauna_RatRst02','Roasted Rat','ingred_rat_meat_01',1)
+,('T_Glb_Fauna_SeaUrch01a','Sea Urchin','T_IngCrea_SeaUrchinMeat_01',1)
+,('T_Glb_Fauna_SeaUrch01b','Sea Urchin','T_IngCrea_SeaUrchinMeat_01',1)
+,('T_Glb_Fauna_SeaUrch01c','Sea Urchin','T_IngCrea_SeaUrchinMeat_01',1)
+,('T_Glb_Fauna_SeaUrch01d','Sea Urchin','T_IngCrea_SeaUrchinMeat_01',1)
+,('T_Glb_Fauna_SeaUrch02a','Sea Urchin','T_IngCrea_SeaUrchinMeat_01',1)
+,('T_Glb_Fauna_SeaUrch02b','Sea Urchin','T_IngCrea_SeaUrchinMeat_01',1)
+,('T_Glb_Fauna_SeaUrch02c','Sea Urchin','T_IngCrea_SeaUrchinMeat_01',1)
+,('T_Glb_Fauna_SeaUrch02d','Sea Urchin','T_IngCrea_SeaUrchinMeat_01',1)
+,('T_Glb_Fauna_SeaUrch02e','Sea Urchin','T_IngCrea_SeaUrchinMeat_01',1)
+,('T_Glb_Fauna_SeaUrch02f','Sea Urchin','T_IngCrea_SeaUrchinMeat_01',1)
+,('T_Glb_Fauna_StarF_01a','Starfish','T_IngCrea_Starfish_01',1)
+,('T_Glb_Fauna_StarF_01b','Starfish','T_IngCrea_Starfish_01',1)
+,('T_Glb_Fauna_StarF_01c','Starfish','T_IngCrea_Starfish_01',1)
+,('T_Glb_Fauna_StarF_02a','Starfish','T_IngCrea_Starfish_02',1)
+,('T_Glb_Fauna_StarF_02b','Starfish','T_IngCrea_Starfish_02',1)
+,('T_Glb_Fauna_StarF_03a','Starfish','T_IngCrea_Starfish_03',1)
+,('T_Glb_Fauna_StarF_03b','Starfish','T_IngCrea_Starfish_03',1)
+,('T_Glb_Fauna_StarF_03c','Starfish','T_IngCrea_Starfish_03',1)
+,('T_Glb_Flora_Blackberr01','Blackberry Bush','T_IngFood_Blackberry_01',1)
+,('T_Glb_Flora_Blackberr02','Blackberry Bush','T_IngFood_Blackberry_01',1)
+,('T_Glb_Flora_Blackberr03','Blackberry Bush','T_IngFood_Blackberry_01',1)
+,('T_Glb_Flora_Cabbage01','Cabbage','T_IngFlor_Cabbage_01',1)
+,('T_Glb_Flora_Cabbage01','Cabbage','T_IngFlor_Cabbage_02',4)
+,('T_Glb_Flora_Carrot01','Carrot Plant','T_IngFood_Carrot_01',1)
+,('T_Glb_Flora_Coconut01','Coconut','T_IngFlor_Coconut_01',1)
+,('T_Glb_Flora_CoconutCls1','Coconuts','T_IngFlor_Coconut_01',2)
+,('T_Glb_Flora_CoconutCls2','Coconuts','T_IngFlor_Coconut_01',3)
+,('T_Glb_Flora_Fennel01','Fennel','T_IngFlor_FennelSeed_01',1)
+,('T_Glb_Flora_FlAmanita01','Fly Amanita','T_IngFlor_FlyAmanita_01',1)
+,('T_Glb_Flora_FlAmanita02','Fly Amanita','T_IngFlor_FlyAmanita_01',1)
+,('T_Glb_Flora_Flax01','Flax','T_IngFlor_FlaxFlower_01',1)
+,('T_Glb_Flora_Flax02','Flax','T_IngFlor_FlaxFlower_02',1)
+,('T_Glb_Flora_Flax03','Flax','T_IngFlor_FlaxFlower_03',1)
+,('T_Glb_Flora_Foxglove01','Foxglove','T_IngFlor_FoxgloveNectar_01',1)
+,('T_Glb_Flora_Garlic01','Garlic','T_IngFood_Garlic_01',1)
+,('T_Glb_Flora_Garlic02','Garlic','T_IngFood_Garlic_01',1)
+,('T_Glb_Flora_GarlicHan01','Bundle of Garlic','T_IngFood_Garlic_01',4)
+,('T_Glb_Flora_GarlicHan02','Bundled Garlic','T_IngFood_Garlic_01',4)
+,('T_Glb_Flora_Gooseb01','Gooseberry Bush','T_IngFood_Gooseb01',2)
+,('T_Glb_Flora_Hemlock01','Hemlock','T_IngFlor_Hemlock_01',1)
+,('T_Glb_Flora_Hemlock02','Hemlock','T_IngFlor_Hemlock_01',1)
+,('T_Glb_Flora_Hemlock03','Hemlock','T_IngFlor_Hemlock_01',1)
+,('T_Glb_Flora_Lavender01','Lavender','T_IngFlor_Lavender_01',1)
+,('T_Glb_Flora_Leek01','Leek','T_IngFood_Leek_01',1)
+,('T_Glb_Flora_Lotus01','Sacred Lotus','T_IngFlor_LotusSeed_01',1)
+,('T_Glb_Flora_Milkthist01','Milk Thistle','T_IngFlor_Milkthistle_01',1)
+,('T_Glb_Flora_Milkthist02','Milk Thistle','T_IngFlor_Milkthistle_01',1)
+,('T_Glb_Flora_Nirnroot01','Nirnroot','T_IngFlor_Nirnroot_01',1)
+,('T_Glb_Flora_Onion01','Onion','T_IngFood_Onion_01',1)
+,('T_Glb_Flora_Onion02','Onion','T_IngFood_Onion_01',1)
+,('T_Glb_Flora_OnionHang01','Onion Bundle','T_IngFood_Onion_01',5)
+,('T_Glb_Flora_Potato01','Potato','T_IngFood_Potato_01',2)
+,('T_Glb_Flora_Radish01','Radish','T_IngFood_Radish_01',1)
+,('T_Glb_Flora_Strawberr01','Strawberry','T_IngFood_Strawberry_01',2)
+,('T_Glb_Flora_Tobacco01','Tobacco','T_IngFlor_Tobacco_01',2)
+,('T_Glb_Flora_Tomato01','Tomato Plant','T_IngFood_Tomato_01',3)
+,('T_Glb_Flora_Wasabi_01','Wasabi','T_IngFood_WasabiRoot_01',1)
+,('T_Glb_Flora_Wasabi_02','Wasabi','T_IngFood_WasabiRoot_01',1)
+,('T_Glb_Flora_WtHyacint01','Water Hyacinth','T_IngFlor_HyacinthNectar_01',1)
+,('T_Glb_Flora_WtHyacint02','Water Hyacinth','T_IngFlor_HyacinthNectar_01',1)
+,('T_Glb_Flora_WtHyacint03','Water Hyacinth','T_IngFlor_HyacinthNectar_01',1)
+,('T_Glb_Flora_WtHyacint04','Water Hyacinth','T_IngFlor_HyacinthNectar_01',1)
+,('T_Glb_Flora_WtLilyPnk01','Water Lilly','T_IngFlor_WtLillyPink_01',1)
+,('T_Glb_Flora_WtLilyPrp01','Water Lilly','T_IngFlor_WtLillyPurple_01',1)
+,('T_Glb_Flora_WtLilyWht01','Water Lilly','T_IngFlor_WtLillyWhite_01',1)
+,('T_Glb_Flora_WtLilyYlw01','Water Lilly','T_IngFlor_WtLillyYellow_01',1)
+,('T_Glb_Mine_OreCoal_01','Coal Pile','T_IngMine_Coal_01',5)
+,('T_Glb_Mine_RedCoral01','Red Coral','T_IngFlor_RedCoral_01',5)
+,('T_Glb_Mine_RedCoral02','Red Coral','T_IngFlor_RedCoral_01',10)
+,('T_Glb_Mine_RedCoral03','Red Coral','T_IngFlor_RedCoral_01',15)
+,('T_Glb_Mine_Spellstone01','Spellstone','T_IngMine_Spellstone_01',2)
+,('T_Glb_Mine_Spellstone02','Spellstone','T_IngMine_Spellstone_01',3)
+,('T_Glb_Mine_Spellstone03','Spellstone','T_IngMine_Spellstone_01',4)
+,('T_Ham_Fauna_TermHill_01','Termite Hill','T_IngCrea_Termite_01',1)
+,('T_Ham_Fauna_TermHill_02','Termite Hill','T_IngCrea_Termite_01',1)
+,('T_Ham_Fauna_TermHill_03','Termite Hill','T_IngCrea_Termite_01',1)
+,('T_Ham_Fauna_TermHill_04','Termite Hill','T_IngCrea_Termite_01',1)
+,('T_Ham_Fauna_TermHill_05','Termite Hill','T_IngCrea_Termite_01',1)
+,('T_Ham_Fauna_TermHill_06','Termite Hill','T_IngCrea_Termite_01',1)
+,('T_Ham_Fauna_TermHill_07','Termite Hill','T_IngCrea_Termite_01',1)
+,('T_Ham_Flora_Asteria01','Asteria','T_IngFlor_Asteria_01',1)
+,('T_Ham_Flora_Asteria02','Asteria','T_IngFlor_Asteria_01',1)
+,('T_Ham_Flora_GoldWatc01A','Golden Watcher','T_IngFlor_GoldWatcSeed_01',1)
+,('T_Ham_Flora_GoldWatc01B','Golden Watcher','T_IngFlor_GoldWatcSeed_01',1)
+,('T_Ham_Flora_GoldWatc02A','Golden Watcher','T_IngFlor_GoldWatcSeed_01',1)
+,('T_Ham_Flora_GoldWatc02B','Golden Watcher','T_IngFlor_GoldWatcSeed_01',1)
+,('T_Ham_Flora_GoldWatc03A','Golden Watcher','T_IngFlor_GoldWatcSeed_01',1)
+,('T_Ham_Flora_GoldWatc03B','Golden Watcher','T_IngFlor_GoldWatcSeed_01',1)
+,('T_Ham_Flora_MaceShrub01','Mace Shrub','T_IngFlor_MaceFruit_01',1)
+,('T_Ham_Flora_MaceShrub02','Mace Shrub','T_IngFlor_MaceFruit_01',1)
+,('T_Ham_Flora_MaceShrub03','Mace Shrub','T_IngFlor_MaceFruit_01',1)
+,('T_Ham_Flora_MaceShrub04','Mace Shrub','T_IngFlor_MaceFruit_01',3)
+,('T_Ham_Flora_Opuntia01',NULL,'T_IngFlor_PricklyPear_01',1)
+,('T_Ham_Flora_Opuntia02',NULL,'T_IngFlor_PricklyPear_01',1)
+,('T_Ham_Flora_Opuntia03',NULL,'T_IngFlor_PricklyPear_01',1)
+,('T_Ham_Flora_Persarine01','Persarine','T_IngFlor_Persarine_01',2)
+,('T_Ham_Flora_Persarine02','Persarine','T_IngFlor_Persarine_01',1)
+,('T_Ham_Flora_PersarineH1','Dried Persarine','T_IngFlor_Persarine_01',1)
+,('T_Ham_Flora_Prickspice1','Pricklespice Tree','T_IngSpice_Pricklespice_01',2)
+,('T_Ham_Flora_Rustbloss01','Rustblossom Aloe','T_IngFlor_RustblossomSeed_01',2)
+,('T_Ham_Flora_Rustbloss02','Rustblossom Aloe','T_IngFlor_RustblossomSeed_01',2)
+,('T_Ham_Flora_Rustbloss03','Rustblossom Aloe','T_IngFlor_RustblossomSeed_01',2)
+,('T_Ham_Flora_Silverplm01','Silver Palm','T_IngFood_SilverPalmfruit_01',1)
+,('T_Ham_Flora_Silverplm02','Silver Palm','T_IngFood_SilverPalmfruit_01',1)
+,('T_Ham_Flora_Silverplm03','Silver Palm','T_IngFood_SilverPalmfruit_01',1)
+,('T_Ham_Flora_Silverplm04','Silver Palm','T_IngFood_SilverPalmfruit_01',1)
+,('T_Ham_Flora_Tigara01','Tigara','T_IngFlor_TigaraFruit_01',1)
+,('T_Ham_Flora_Tigara02','Tigara','T_IngFlor_TigaraFruit_01',2)
+,('T_Ham_Flora_Tigara03','Tigara','T_IngFlor_TigaraFruit_01',3)
+,('T_Hr_FloraDF_DrakTail01','Draketail','T_IngFlor_Draketail_01',1)
+,('T_Hr_FloraDF_DrakTail02','Draketail','T_IngFlor_Draketail_01',1)
+,('T_Hr_FloraDF_Draktail03','Draketail','T_IngFlor_Draketail_01',1)
+,('T_Hr_Flora_Bitterstar01','Bitterstar','T_IngFlor_Bitterstar_01',1)
+,('T_Hr_Flora_Bitterstar02','Bitterstar','T_IngFlor_Bitterstar_01',1)
+,('T_Hr_Flora_BjoulsRose01','Bjoulsae Rose','T_IngFlor_BjoulsaeRose_01',2)
+,('T_Hr_Flora_BjoulsRose02','Bjoulsae Rose','T_IngFlor_BjoulsaeRose_01',2)
+,('T_Hr_Flora_Bleakstar_01','Bleakstar','T_IngFlor_Bleakstar_01',1)
+,('T_Hr_Flora_Bleakstar_02','Bleakstar','T_IngFlor_Bleakstar_01',1)
+,('T_Hr_Flora_Cornflo01','Cornflower','T_IngFlor_Cornflower_01',1)
+,('T_Hr_Flora_Dragynia01','Dragynia','T_IngFlor_Dragynia_01',1)
+,('T_Hr_Flora_Dragynia02','Dragynia','T_IngFlor_Dragynia_01',1)
+,('T_Hr_Flora_Gloomtear_01','Gloomtear','T_IngFlor_Gloomtear_01',1)
+,('T_Hr_Flora_Gloomtear_02','Gloomtear','T_IngFlor_Gloomtear_01',1)
+,('T_Hr_Flora_Maidenhair01','Maidenhair','T_IngFlor_Maidenhair_01',1)
+,('T_Hr_Flora_Maidenhair02','Maidenhair','T_IngFlor_Maidenhair_01',1)
+,('T_Hr_Flora_Maidenhair03','Maidenhair','T_IngFlor_Maidenhair_01',1)
+,('T_Hr_Flora_Mindcap01','Mindcap','T_IngFlor_Mindcap_01',1)
+,('T_Hr_Flora_Mindcap02','Mindcap','T_IngFlor_Mindcap_01',1)
+,('T_Hr_Flora_Mindcap03','Mindcap','T_IngFlor_Mindcap_01',2)
+,('T_Hr_Flora_MistleDry','Dried Mistletoe','T_IngFlor_Mistletoe_01',2)
+,('T_Hr_Flora_Mistletoe01','Mistletoe','T_IngFlor_Mistletoe_01',2)
+,('T_Hr_Flora_Redpoppy01','Red Poppy','T_IngFlor_Redpoppy_01',1)
+,('T_Hr_Flora_Shadowfly01','Shadowfly','T_IngFlor_Shadowfly_01',1)
+,('T_Hr_Flora_Shadowfly01','Shadowfly','T_IngFlor_Shadowfly_02',1)
+,('T_Hr_Flora_Shadowfly02','Shadowfly','T_IngFlor_Shadowfly_01',1)
+,('T_Hr_Flora_Shadowfly02','Shadowfly','T_IngFlor_Shadowfly_02',1)
+,('T_Hr_Flora_Shadowfly03','Shadowfly','T_IngFlor_Shadowfly_01',2)
+,('T_Hr_Flora_Shadowfly03','Shadowfly','T_IngFlor_Shadowfly_02',1)
+,('T_Hr_Flora_Shadowfly04','Shadowfly','T_IngFlor_Shadowfly_01',1)
+,('T_Hr_Flora_Shadowfly04','Shadowfly','T_IngFlor_Shadowfly_02',1)
+,('T_Hr_Flora_Shadowfly05','Shadowfly','T_IngFlor_Shadowfly_01',1)
+,('T_Hr_Flora_Shadowfly05','Shadowfly','T_IngFlor_Shadowfly_02',1)
+,('T_Hr_Flora_Shadowfly06','Shadowfly','T_IngFlor_Shadowfly_02',1)
+,('T_Hr_Flora_ShadowflyH01','Dried Shadowfly','T_IngFlor_Shadowfly_01',1)
+,('T_Hr_Flora_ShadowflyH01','Dried Shadowfly','T_IngFlor_Shadowfly_02',1)
+,('T_Hr_Flora_SnowBlossom1','Snow Blossom','T_IngFlor_SnowBlossom_01',2)
+,('T_Hr_Flora_Trefoil_01','Gloomtear','T_IngFlor_Trefoil_01',1)
+,('T_Hr_Flora_WormWh01','Worm Wheat','T_IngFlor_WormWh01',1)
+,('T_Hr_Flora_WormWh02','Worm Wheat','T_IngFlor_WormWh01',1)
+,('T_Hr_Flora_WormWh03','Worm Wheat','T_IngFlor_WormWh02',1)
+,('T_Hr_Flora_WrothgGrap01','Wrothgarian Grape','T_IngFood_GrapeWrothgarian_01',1)
+,('T_Hr_Flora_Yuin01','Yuin','T_IngFlor_YuinRoot_01',1)
+,('T_Hr_Food_CheeseWheel01','Cheese Wheel','T_IngFood_CheeseBreton_01',4)
+,('T_Hr_Food_CheeseWheel02','Cheese Wheel','T_IngFood_CheeseBreton_01',3)
+,('T_Mw_Fauna_BeeHvVM_01','Bee Hole','T_IngFood_Honey_01',2)
+,('T_Mw_Fauna_BeeHvVM_02','Bee Hole','T_IngFood_Honey_01',2)
+,('T_Mw_Fauna_BeeHvVM_03','Bee Hole','T_IngFood_Honey_01',2)
+,('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','T_IngFood_MeatAlit_01',1)
+,('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','T_IngFood_MeatCliffracer_01',1)
+,('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','T_IngFood_MeatGuar_01',1)
+,('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','T_IngFood_MeatKagouti_01',1)
+,('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','T_IngFood_MeatKwama_01',1)
+,('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','T_IngFood_MeatMutton_01',1)
+,('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','T_IngFood_MeatOrnada_01',4)
+,('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','T_IngFood_MeatParastylus_01',1)
+,('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','ingred_crab_meat_01',1)
+,('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','ingred_hound_meat_01',1)
+,('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','ingred_rat_meat_01',1)
+,('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','ingred_scrib_jelly_01',1)
+,('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','ingred_scrib_jerky_01',1)
+,('T_Mw_Fauna_CookedOrnd01','Cooked Ornada','ingred_scuttle_01',1)
+,('T_Mw_Fauna_EyestarCnt01','Eyestar','T_IngCrea_Eyestar_01',1)
+,('T_Mw_Fauna_HoomEggs_01','Hoom Eggs','T_IngCrea_HoomEgg_01',2)
+,('T_Mw_Fauna_HoomEggs_02','Hoom Eggs','T_IngCrea_HoomEgg_01',2)
+,('T_Mw_Fauna_HoomEggs_03','Hoom Eggs','T_IngCrea_HoomEgg_01',3)
+,('T_Mw_Fauna_HoomEggs_04','Hoom Eggs','T_IngCrea_HoomEgg_01',3)
+,('T_Mw_Fauna_KwoomEggs_01','Kwoom Eggs','T_IngCrea_KwoomEgg_01',3)
+,('T_Mw_Fauna_KwoomEggs_02','Kwoom Eggs','T_IngCrea_KwoomEgg_01',3)
+,('T_Mw_Fauna_KwoomEggs_03','Kwoom Eggs','T_IngCrea_KwoomEgg_01',4)
+,('T_Mw_Fauna_KwoomEggs_04','Kwoom Eggs','T_IngCrea_KwoomEgg_01',5)
+,('T_Mw_Fauna_MeatHoney_01','Meat Honey','T_IngCrea_MeatHoney_01',3)
+,('T_Mw_Fauna_MeatHoney_01','Meat Honey','ingred_bonemeal_01',1)
+,('T_Mw_Fauna_MeatHoney_02','Meat Honey','T_IngCrea_MeatHoney_01',3)
+,('T_Mw_Fauna_MolecrEggs01','Mole Crab Egg Clutch','T_IngFood_EggMolecrab_01',15)
+,('T_Mw_Fauna_MolecrEggs02','Mole Crab Egg Clutch','T_IngFood_EggMolecrab_01',15)
+,('T_Mw_Fauna_OrnadaEggs01','Ornada Egg Clutch','T_IngFood_EggOrnada_01',5)
+,('T_Mw_Fauna_OrnadaEggs02','Ornada Egg Clutch','T_IngFood_EggOrnada_01',5)
+,('T_Mw_Fauna_RiversEggs01','Waterstrider Eggs','T_IngFood_RiverstriderEgg_01',5)
+,('T_Mw_Fauna_RiversEggs02','Waterstrider Eggs','T_IngFood_RiverstriderEgg_01',3)
+,('T_Mw_Fauna_RiversEggs03','Waterstrider Eggs','T_IngFood_RiverstriderEgg_01',6)
+,('T_Mw_Fauna_RiversEggs04','Waterstrider Eggs','T_IngFood_RiverstriderEgg_01',1)
+,('T_Mw_Fauna_RiversEggs05','Waterstrider Eggs','T_IngFood_RiverstriderEgg_01',4)
+,('T_Mw_Fauna_SkyrendPupa1','Skyrender Pupa','T_IngCrea_SkyrendSlumgum_01',2)
+,('T_Mw_Fauna_VentWorm_01','Vent Worm','T_IngMine_OreSulfur_01',1)
+,('T_Mw_Fauna_VentWorm_02','Vent Worm','T_IngMine_OreSulfur_01',1)
+,('T_Mw_Fauna_VentWorm_03','Vent Worm','T_IngMine_OreSulfur_01',2)
+,('T_Mw_Fauna_VentWorm_04','Vent Worm','T_IngMine_OreSulfur_01',3)
+,('T_Mw_FloraAT_Lily_01','Thirrine Water Lily','T_IngFlor_ThirrineLily_01',1)
+,('T_Mw_FloraAT_OranMoss01','Orange Moss','T_IngFlor_OrangeMoss_01',1)
+,('T_Mw_FloraAT_OranMoss02','Orange Moss','T_IngFlor_OrangeMoss_01',1)
+,('T_Mw_FloraAT_OranMoss03','Orange Moss','T_IngFlor_OrangeMoss_01',1)
+,('T_Mw_FloraAT_Uracia_01','Pyrous Uracia','T_IngFlor_PyrousUracia',1)
+,('T_Mw_FloraAT_Uracia_02','Pyrous Uracia','T_IngFlor_PyrousUracia',1)
+,('T_Mw_FloraCM_Shutag_01','Shutag Pod','T_IngFlor_ShutagJelly_01',2)
+,('T_Mw_FloraCM_Shutag_02','Shutag Pod','T_IngFlor_ShutagJelly_01',2)
+,('T_Mw_FloraCM_Shutag_03','Shutag Pod','T_IngFlor_ShutagJelly_01',2)
+,('T_Mw_FloraCM_Shutag_04','Shutag Pod','T_IngFlor_ShutagJelly_01',1)
+,('T_Mw_FloraCM_Shutag_05','Shutag Pod','T_IngFlor_ShutagJelly_01',1)
+,('T_Mw_FloraDP_SStrLeaf01','Saltstrap Leaf','T_IngFlor_SaltstrapLeaf_01',1)
+,('T_Mw_FloraDP_SStrLeaf02','Saltstrap Leaf','T_IngFlor_SaltstrapLeaf_01',1)
+,('T_Mw_FloraDP_SStrLeaf03','Saltstrap Leaf','T_IngFlor_SaltstrapLeaf_01',1)
+,('T_Mw_FloraDP_SStrLeaf04','Saltstrap Leaf','T_IngFlor_SaltstrapLeaf_01',1)
+,('T_Mw_FloraDP_SStrLeaf05','Saltstrap Leaf','T_IngFlor_SaltstrapLeaf_01',1)
+,('T_Mw_FloraDP_SStrLeaf06','Saltstrap Leaf','T_IngFlor_SaltstrapLeaf_01',1)
+,('T_Mw_FloraDP_SStrLeaf07','Saltstrap Leaf','T_IngFlor_SaltstrapLeaf_01',1)
+,('T_Mw_FloraDP_SStrLeaf08','Saltstrap Leaf','T_IngFlor_SaltstrapLeaf_01',1)
+,('T_Mw_FloraDP_SStrLeaf09','Saltstrap Leaf','T_IngFlor_SaltstrapLeaf_01',1)
+,('T_Mw_FloraDP_SStrLeaf10','Saltstrap Leaf','T_IngFlor_SaltstrapLeaf_01',1)
+,('T_Mw_FloraDP_SStrap01','Saltstrap','T_IngFlor_SaltstrapPollen_01',4)
+,('T_Mw_FloraDP_SStrap02','Saltstrap','T_IngFlor_SaltstrapPollen_01',4)
+,('T_Mw_FloraDP_SStrap03','Saltstrap','T_IngFlor_SaltstrapPollen_01',2)
+,('T_Mw_FloraDP_SStrap04','Saltstrap','T_IngFlor_SaltstrapPollen_01',2)
+,('T_Mw_FloraDP_SaltCroc01','Salt Crocus','T_IngFlor_SaltCrocusPetal_01',2)
+,('T_Mw_FloraDP_Saltrice01','Saltrice','ingred_saltrice_01',1)
+,('T_Mw_FloraDP_Saltrice02','Saltrice','ingred_saltrice_01',1)
+,('T_Mw_FloraDP_Saltrice03','Saltrice','ingred_saltrice_01',1)
+,('T_Mw_FloraDS_SStrap01','Saltstrap','T_IngFlor_SaltstrapLeaf_01',2)
+,('T_Mw_FloraDS_SStrap01','Saltstrap','T_IngFlor_SaltstrapPollen_01',1)
+,('T_Mw_FloraDS_SStrap02','Saltstrap','T_IngFlor_SaltstrapLeaf_01',2)
+,('T_Mw_FloraDS_SStrap02','Saltstrap','T_IngFlor_SaltstrapPollen_01',1)
+,('T_Mw_FloraGM_AnemTwin01','Anemic Twinstipe','T_IngFlor_AnemicTwinstipe_01',1)
+,('T_Mw_FloraGM_GrTkPoly01','Grey Tick Polypore','T_IngFlor_GreyTickPowder_01',1)
+,('T_Mw_FloraGM_GrTkPoly02','Grey Tick Polypore','T_IngFlor_GreyTickPowder_01',1)
+,('T_Mw_FloraGM_GrTkPoly03','Grey Tick Polypore','T_IngFlor_GreyTickPowder_01',1)
+,('T_Mw_FloraGM_GrTkPoly04','Grey Tick Polypore','T_IngFlor_GreyTickPowder_01',1)
+,('T_Mw_FloraGM_UmbMorch01','Umber Morchella','T_IngFlor_UmberMorchella_01',1)
+,('T_Mw_FloraGM_VileMorc01','Vile Morchella','T_IngFlor_VileMorchella_01',1)
+,('T_Mw_FloraJS_BrlHydnm01','Boreal Hydnum','T_IngFlor_BorealHydnum_01',1)
+,('T_Mw_FloraJS_BrlHydnm02','Boreal Hydnum','T_IngFlor_BorealHydnum_01',1)
+,('T_Mw_FloraJS_BrlHydnm03','Boreal Hydnum','T_IngFlor_BorealHydnum_01',1)
+,('T_Mw_FloraJS_BrlHydnm04','Boreal Hydnum','T_IngFlor_BorealHydnum_01',1)
+,('T_Mw_FloraJS_BrlHydnm05','Boreal Hydnum','T_IngFlor_BorealHydnum_01',1)
+,('T_Mw_FloraJS_BrlHydnm06','Boreal Hydnum','T_IngFlor_BorealHydnum_01',1)
+,('T_Mw_FloraJS_BrlHydnm07','Boreal Hydnum','T_IngFlor_BorealHydnum_01',1)
+,('T_Mw_FloraOR_LotusPo01','Lotus Poppy','T_IngFlor_LotusPoppyHead_01',1)
+,('T_Mw_FloraOR_LotusPo02','Lotus Poppy','T_IngFlor_LotusPoppyHead_01',1)
+,('T_Mw_FloraOR_LotusPo03','Lotus Poppy','T_IngFlor_LotusPoppyHead_01',1)
+,('T_Mw_FloraOR_Raflesia01','Lovers Rafflesia','T_IngFlor_LoversRaflesiaPistil',4)
+,('T_Mw_FloraOW_CFungus_01','Ramaria Formosa','T_IngFlor_CFungus_01',1)
+,('T_Mw_FloraOW_CFungus_02','Ramaria Formosa','T_IngFlor_CFungus_01',1)
+,('T_Mw_FloraOW_CFungus_03','Ramaria Formosa','T_IngFlor_CFungus_01',1)
+,('T_Mw_FloraOW_CFungus_04','Ramaria Formosa','T_IngFlor_CFungus_01',1)
+,('T_Mw_FloraOW_CFungus_05','Ramaria Formosa','T_IngFlor_CFungus_01',1)
+,('T_Mw_FloraOW_CFungus_06','Ramaria Formosa','T_IngFlor_CFungus_01',1)
+,('T_Mw_FloraOW_CFungus_07','Ramaria Formosa','T_IngFlor_CFungus_01',1)
+,('T_Mw_FloraOW_CFungus_08','Ramaria Formosa','T_IngFlor_CFungus_01',1)
+,('T_Mw_FloraOW_Cupling01','Widow''s Mortar','T_IngFlor_Cupling_01',4)
+,('T_Mw_FloraOW_Cupling02','Widow''s Mortar','T_IngFlor_Cupling_01',4)
+,('T_Mw_FloraOW_Cupling03','Widow''s Mortar','T_IngFlor_Cupling_01',4)
+,('T_Mw_FloraOW_Cupling04','Widow''s Mortar','T_IngFlor_Cupling_01',4)
+,('T_Mw_FloraOW_Cupling05','Widow''s Mortar','T_IngFlor_Cupling_01',4)
+,('T_Mw_FloraOW_Cupling06','Widow''s Mortar','T_IngFlor_Cupling_01',4)
+,('T_Mw_FloraOW_Glwshrm_01','Roridomyces Phyllostachydis','T_IngFlor_Glowshroom',1)
+,('T_Mw_FloraOW_Glwshrm_02','Roridomyces Phyllostachydis','T_IngFlor_Glowshroom',1)
+,('T_Mw_FloraOW_Glwshrm_03','Roridomyces Phyllostachydis','T_IngFlor_Glowshroom',1)
+,('T_Mw_FloraOW_Glwshrm_04','Roridomyces Phyllostachydis','T_IngFlor_Glowshroom',1)
+,('T_Mw_FloraOW_Glwshrm_05','Roridomyces Phyllostachydis','T_IngFlor_Glowshroom',1)
+,('T_Mw_FloraOW_PBloom01','Poison Bloom','T_IngFlor_PBloomBulb_01',1)
+,('T_Mw_FloraOW_PBloom02','Poison Bloom','T_IngFlor_PBloomBulb_01',1)
+,('T_Mw_FloraOW_PBloom03','Poison Bloom','T_IngFlor_PBloomBulb_01',1)
+,('T_Mw_FloraOW_PBloom04','Poison Bloom','T_IngFlor_PBloomBulb_01',1)
+,('T_Mw_FloraOW_PBloom05','Poison Bloom','T_IngFlor_PBloomBulb_01',1)
+,('T_Mw_FloraOW_Rockbrst01','Rockburst','T_IngFlor_RockburstClaw_01',4)
+,('T_Mw_FloraOW_Rockbrst02','Rockburst','T_IngFlor_RockburstClaw_01',4)
+,('T_Mw_FloraOW_Rockbrst03','Rockburst','T_IngFlor_RockburstClaw_01',4)
+,('T_Mw_FloraOW_Rockbrst04','Rockburst','T_IngFlor_RockburstClaw_01',4)
+,('T_Mw_FloraOW_Rockbrst05','Rockburst','T_IngFlor_RockburstClaw_01',4)
+,('T_Mw_FloraOW_ShlfFung01','Sweetbread Polypore','T_IngFlor_SweetbreadPolypore_01',1)
+,('T_Mw_FloraOW_ShlfFung02','Sweetbread Polypore','T_IngFlor_SweetbreadPolypore_01',1)
+,('T_Mw_FloraOW_ShlfFung03','Sweetbread Polypore','T_IngFlor_SweetbreadPolypore_01',1)
+,('T_Mw_FloraOW_ShlfFung04','Sweetbread Polypore','T_IngFlor_SweetbreadPolypore_01',1)
+,('T_Mw_FloraOW_SujPod01','Kuj Sprout','T_IngFlor_SujPod_01',1)
+,('T_Mw_FloraOW_SujPod02','Kuj Sprout','T_IngFlor_SujPod_01',1)
+,('T_Mw_FloraOW_SujPod03','Kuj Sprout','T_IngFlor_SujPod_01',1)
+,('T_Mw_FloraOW_SujPod04','Kuj Sprout','T_IngFlor_SujPod_01',1)
+,('T_Mw_FloraOW_SujPod05','Kuj Sprout','T_IngFlor_SujPod_01',1)
+,('T_Mw_FloraOW_SujPod06','Kuj Sprout','T_IngFlor_SujPod_01',1)
+,('T_Mw_FloraOW_WidMort01','Widow''s Mortar','T_IngFlor_Cupling_01',4)
+,('T_Mw_FloraOW_WidMort02','Widow''s Mortar','T_IngFlor_Cupling_01',4)
+,('T_Mw_FloraOW_WidMort03','Widow''s Mortar','T_IngFlor_Cupling_01',4)
+,('T_Mw_FloraOW_WidMort04','Widow''s Mortar','T_IngFlor_Cupling_01',4)
+,('T_Mw_FloraOW_WidMort05','Widow''s Mortar','T_IngFlor_Cupling_01',4)
+,('T_Mw_FloraOW_WidMort06','Widow''s Mortar','T_IngFlor_Cupling_01',4)
+,('T_Mw_FloraSH_BlisFom01','Blistering Fomentarius','T_IngFlor_BlisteringFoment_01',1)
+,('T_Mw_FloraSH_BlisFom02','Blistering Fomentarius','T_IngFlor_BlisteringFoment_01',1)
+,('T_Mw_FloraSH_BlisFom03','Blistering Fomentarius','T_IngFlor_BlisteringFoment_01',3)
+,('T_Mw_FloraSH_Drumpear01','Drumpear','T_IngFlor_DrumpearSeeds_01',1)
+,('T_Mw_FloraSH_Drumpear02','Drumpear','T_IngFlor_DrumpearSeeds_01',1)
+,('T_Mw_FloraSH_Drumpear03','Drumpear','T_IngFlor_DrumpearSeeds_01',1)
+,('T_Mw_FloraSH_Drumpear04','Drumpear','T_IngFlor_DrumpearSeeds_01',1)
+,('T_Mw_FloraSH_Drumpear05','Drumpear','T_IngFlor_DrumpearSeeds_01',1)
+,('T_Mw_FloraSH_Drumpear06','Drumpear','T_IngFlor_DrumpearSeeds_01',1)
+,('T_Mw_FloraSH_Tanna01','Tanna','T_IngFlor_Tanna_01',5)
+,('T_Mw_FloraSH_Tanna02','Tanna','T_IngFlor_Tanna_01',5)
+,('T_Mw_FloraSH_Tanna03','Tanna','T_IngFlor_Tanna_01',5)
+,('T_Mw_FloraSH_Tanna04','Tanna','T_IngFlor_Tanna_01',4)
+,('T_Mw_FloraSH_VeilUrn01','Veiled Urnula','T_IngFlor_VeiledUrnula_01',1)
+,('T_Mw_FloraSH_VeilUrn02','Veiled Urnula','T_IngFlor_VeiledUrnula_01',1)
+,('T_Mw_FloraSH_VeilUrn03','Veiled Urnula','T_IngFlor_VeiledUrnula_01',1)
+,('T_Mw_FloraSS_AlchGlob01','Alchemist''s Globe','T_IngFlor_AlchemistsGlobe_01',2)
+,('T_Mw_FloraSS_AlchGlob02','Alchemist''s Globe','T_IngFlor_AlchemistsGlobe_01',2)
+,('T_Mw_FloraSS_AlchGlob03','Alchemist''s Globe','T_IngFlor_AlchemistsGlobe_01',2)
+,('T_Mw_FloraSS_AlchGlob04','Alchemist''s Globe','T_IngFlor_AlchemistsGlobe_01',2)
+,('T_Mw_FloraSS_AlchGlob05','Alchemist''s Globe','T_IngFlor_AlchemistsGlobe_01',2)
+,('T_Mw_FloraSS_RougeCam01','Rouge Camillea','T_IngFlor_RougeCamillea_01',1)
+,('T_Mw_FloraSS_RougeCam02','Rouge Camillea','T_IngFlor_RougeCamillea_01',1)
+,('T_Mw_FloraSS_RougeCam03','Rouge Camillea','T_IngFlor_RougeCamillea_01',1)
+,('T_Mw_FloraSS_RougeCam04','Rouge Camillea','T_IngFlor_RougeCamillea_01',1)
+,('T_Mw_FloraTV_SpoLotus01','Sponge Lotus','T_IngFlor_SpongeLotusSeed_01',3)
+,('T_Mw_FloraTV_SpoLotus02','Sponge Lotus','T_IngFlor_SpongeLotusSeed_01',3)
+,('T_Mw_FloraTV_Weepveil01','Weeping Veil','T_IngFlor_Weepveil_01',1)
+,('T_Mw_FloraTV_Weepveil02','Weeping Veil','T_IngFlor_Weepveil_01',1)
+,('T_Mw_FloraTV_Weepveil03','Weeping Veil','T_IngFlor_Weepveil_01',1)
+,('T_Mw_Flora_Ashdew','Ashdew','T_IngFlor_Ashdew_01',3)
+,('T_Mw_Flora_Bertpod_01','Bertpod','T_IngFlor_BertpodSlice_01',1)
+,('T_Mw_Flora_Blackrose01','Black Rose','T_IngFlor_BlackrosePetal_01',1)
+,('T_Mw_Flora_Blackrose02','Black Rose','T_IngFlor_BlackrosePetal_01',1)
+,('T_Mw_Flora_BlisterSpr01','Blister Spore','T_IngFlor_BlisterSpore_01',3)
+,('T_Mw_Flora_BlisterSpr02','Blister Spore','T_IngFlor_BlisterSpore_01',3)
+,('T_Mw_Flora_BlisterSpr03','Blister Spore','T_IngFlor_BlisterSpore_01',3)
+,('T_Mw_Flora_Bloatroot01','White Bloatroot','T_IngFlor_Bloatroot',1)
+,('T_Mw_Flora_Bloatroot02','White Bloatroot','T_IngFlor_Bloatroot',2)
+,('T_Mw_Flora_Bloatroot03','White Bloatroot','T_IngFlor_Bloatroot',3)
+,('T_Mw_Flora_Bloatspore01','Bloatspore','ingred_bloat_01',1)
+,('T_Mw_Flora_BlueKanet_01','Blue Kanet','T_IngFlor_BlueKanet_01',1)
+,('T_Mw_Flora_BlueKanet_02','Blue Kanet','T_IngFlor_BlueKanet_01',2)
+,('T_Mw_Flora_Bluefoot01','Bluefoot','T_IngFlor_Bluefoot_01',1)
+,('T_Mw_Flora_Bluefoot02','Bluefoot','T_IngFlor_Bluefoot_01',1)
+,('T_Mw_Flora_Bluefoot03','Bluefoot','T_IngFlor_Bluefoot_01',1)
+,('T_Mw_Flora_Bluefoot04','Bluefoot','T_IngFlor_Bluefoot_01',3)
+,('T_Mw_Flora_DesertRose01','Desert Rose','T_IngFlor_DesrosePetal_01',1)
+,('T_Mw_Flora_DesertRose02','Desert Rose','T_IngFlor_DesrosePetal_01',1)
+,('T_Mw_Flora_DesertRose03','Desert Rose','T_IngFlor_DesrosePetal_01',1)
+,('T_Mw_Flora_GhostLaur01','Ghost Laurel','T_IngFlor_GhostLaurel',1)
+,('T_Mw_Flora_GhostLaur02','Ghost Laurel','T_IngFlor_GhostLaurel',1)
+,('T_Mw_Flora_GhostLaur03','Ghost Laurel','T_IngFlor_GhostLaurel',2)
+,('T_Mw_Flora_GhostLaur04','Ghost Laurel','T_IngFlor_GhostLaurel',1)
+,('T_Mw_Flora_Glasswort01','Glasswort','T_IngFlor_Glasswort_01',1)
+,('T_Mw_Flora_Glasswort02','Glasswort','T_IngFlor_Glasswort_01',2)
+,('T_Mw_Flora_Glasswort03','Glasswort','T_IngFlor_Glasswort_01',3)
+,('T_Mw_Flora_Gorapple01','Gorapples','T_IngFood_Gorapple_01',5)
+,('T_Mw_Flora_Hackle-Lo_03','Hackle-lo','ingred_hackle-lo_leaf_01',1)
+,('T_Mw_Flora_Hackle-Lo_04','Hackle-lo','ingred_hackle-lo_leaf_01',1)
+,('T_Mw_Flora_Hackle-Lo_05','Hackle-lo','ingred_hackle-lo_leaf_01',1)
+,('T_Mw_Flora_Hamumroot01','Hamum Root','T_IngFlor_Hamumroot_01',1)
+,('T_Mw_Flora_Hamumroot02','Hamum Root','T_IngFlor_Hamumroot_01',1)
+,('T_Mw_Flora_Hornlilly01','Horn Lily','Ingred_horn_lily_bulb_01',1)
+,('T_Mw_Flora_Hornlilly02','Horn Lily','Ingred_horn_lily_bulb_01',1)
+,('T_Mw_Flora_Hornlilly03','Horn Lily','Ingred_horn_lily_bulb_01',1)
+,('T_Mw_Flora_Hornlilly04','Horn Lily','Ingred_horn_lily_bulb_01',1)
+,('T_Mw_Flora_Hornlilly05','Horn Lily','Ingred_horn_lily_bulb_01',1)
+,('T_Mw_Flora_Lazarum01','Lazarum Lazandrum','T_IngFlor_Lazarum_01',1)
+,('T_Mw_Flora_LichenBk03','Black Lichen','ingred_black_lichen_01',1)
+,('T_Mw_Flora_LichenBl01','Blue Lichen','T_IngFlor_LichenBlue_01',1)
+,('T_Mw_Flora_LichenBl02','Blue Lichen','T_IngFlor_LichenBlue_01',1)
+,('T_Mw_Flora_LichenBl03','Blue Lichen','T_IngFlor_LichenBlue_01',1)
+,('T_Mw_Flora_LichenGn03','Green Lichen','ingred_green_lichen_01',1)
+,('T_Mw_Flora_LichenOr01','Orange Lichen','T_IngFlor_LichenOrange_01',1)
+,('T_Mw_Flora_LichenOr02','Orange Lichen','T_IngFlor_LichenOrange_01',1)
+,('T_Mw_Flora_LichenOr03','Orange Lichen','T_IngFlor_LichenOrange_01',1)
+,('T_Mw_Flora_LichenRd03','Red Lichen','ingred_red_lichen_01',1)
+,('T_Mw_Flora_LichenWt01','White Lichen','T_IngFlor_LichenWhite_01',1)
+,('T_Mw_Flora_LichenWt02','White Lichen','T_IngFlor_LichenWhite_01',1)
+,('T_Mw_Flora_LichenWt03','White Lichen','T_IngFlor_LichenWhite_01',1)
+,('T_Mw_Flora_LichenYw01','Yellow Lichen','T_IngFlor_LichenYellow_01',1)
+,('T_Mw_Flora_LichenYw02','Yellow Lichen','T_IngFlor_LichenYellow_01',1)
+,('T_Mw_Flora_LichenYw03','Yellow Lichen','T_IngFlor_LichenYellow_01',1)
+,('T_Mw_Flora_Meadowrye01','Meadow Rye','Ingred_meadow_rye_01',1)
+,('T_Mw_Flora_Meadowrye02','Meadow Rye','Ingred_meadow_rye_01',1)
+,('T_Mw_Flora_Meadowrye03','Meadow Rye','Ingred_meadow_rye_01',1)
+,('T_Mw_Flora_Meadowrye04','Meadow Rye','Ingred_meadow_rye_01',1)
+,('T_Mw_Flora_MountDama01','Mountain Damask','T_IngFlor_MountainDamask',1)
+,('T_Mw_Flora_MountDama02','Mountain Damask','T_IngFlor_MountainDamask',1)
+,('T_Mw_Flora_MountDama03','Mountain Damask','T_IngFlor_MountainDamask',2)
+,('T_Mw_Flora_MountDama04','Mountain Damask','T_IngFlor_MountainDamask',1)
+,('T_Mw_Flora_Nirthfly01','Nirthfly Stalks','Ingred_nirthfly_stalks_01',1)
+,('T_Mw_Flora_Nirthfly02','Nirthfly Stalks','Ingred_nirthfly_stalks_01',1)
+,('T_Mw_Flora_Nirthfly03','Nirthfly Stalks','Ingred_nirthfly_stalks_01',1)
+,('T_Mw_Flora_Nirthfly04','Nirthfly Stalks','Ingred_nirthfly_stalks_01',1)
+,('T_Mw_Flora_Nirthfly05','Nirthfly Stalks','Ingred_nirthfly_stalks_01',1)
+,('T_Mw_Flora_NodStreak01','Nodding Streakwort','T_IngFlor_NoddingStreakwort',1)
+,('T_Mw_Flora_NodStreak02','Nodding Streakwort','T_IngFlor_NoddingStreakwort',1)
+,('T_Mw_Flora_NodStreak03','Nodding Streakwort','T_IngFlor_NoddingStreakwort',2)
+,('T_Mw_Flora_NodStreak04','Nodding Streakwort','T_IngFlor_NoddingStreakwort',1)
+,('T_Mw_Flora_Orcscrown01','Orcscrown','T_IngFlor_Orcscrown',1)
+,('T_Mw_Flora_Orcscrown02','Orcscrown','T_IngFlor_Orcscrown',1)
+,('T_Mw_Flora_Orcscrown03','Orcscrown','T_IngFlor_Orcscrown',2)
+,('T_Mw_Flora_Orcscrown04','Orcscrown','T_IngFlor_Orcscrown',1)
+,('T_Mw_Flora_PilgrimP01','Pilgrim''s Pillar','T_IngFlor_PilgrimGel_01',1)
+,('T_Mw_Flora_PilgrimP01','Pilgrim''s Pillar','T_IngFlor_PilgrimPetals_01',1)
+,('T_Mw_Flora_PilgrimP02','Pilgrim''s Pillar','T_IngFlor_PilgrimGel_01',1)
+,('T_Mw_Flora_PilgrimP03','Pilgrim''s Pillar','T_IngFlor_PilgrimGel_01',1)
+,('T_Mw_Flora_PilgrimP03','Pilgrim''s Pillar','T_IngFlor_PilgrimPetals_01',1)
+,('T_Mw_Flora_PilgrimP04','Pilgrim''s Pillar','T_IngFlor_PilgrimGel_01',1)
+,('T_Mw_Flora_PomTree01','Pomegranate Tree','T_IngFood_Pomegranate_01',4)
+,('T_Mw_Flora_PomTree02','Pomegranate Tree','T_IngFood_Pomegranate_01',2)
+,('T_Mw_Flora_PomTree03','Pomegranate Tree','T_IngFood_Pomegranate_01',3)
+,('T_Mw_Flora_PomTree_B','Bonsai Pomegranate Tree','T_IngFood_Pomegranate_01',1)
+,('T_Mw_Flora_RedCoral01','Red Coral','T_IngFlor_RedCoral_01',15)
+,('T_Mw_Flora_RedCoral02','Red Coral','T_IngFlor_RedCoral_01',20)
+,('T_Mw_Flora_RedCoral03','Red Coral','T_IngFlor_RedCoral_01',25)
+,('T_Mw_Flora_Redfireflw01','Duskbell','T_IngFlor_Fireflower_01',3)
+,('T_Mw_Flora_Redfireflw02','Duskbell','T_IngFlor_Fireflower_01',2)
+,('T_Mw_Flora_Redfireflw03','Duskbell','T_IngFlor_Fireflower_01',1)
+,('T_Mw_Flora_Redrose01','Rose','T_IngFlor_RedrosePetal_01',1)
+,('T_Mw_Flora_Redrose02','Rose','T_IngFlor_RedrosePetal_01',1)
+,('T_Mw_Flora_ResinTap01','Resin Tap','ingred_resin_01',3)
+,('T_Mw_Flora_Scathecraw03','Scathecraw Plant','ingred_scathecraw_01',1)
+,('T_Mw_Flora_Scathecraw04','Scathecraw Plant','ingred_scathecraw_01',1)
+,('T_Mw_Flora_Scathecraw05','Scathecraw Plant','ingred_scathecraw_01',1)
+,('T_Mw_Flora_Scathecraw06','Scathecraw Plant','ingred_scathecraw_01',1)
+,('T_Mw_Flora_Scathecraw07','Scathecraw Plant','ingred_scathecraw_01',1)
+,('T_Mw_Flora_Scathecraw08','Scathecraw Plant','ingred_scathecraw_01',1)
+,('T_Mw_Flora_Seacup_01','Spotted Gillsieve','T_IngFlor_SeaCup_01',1)
+,('T_Mw_Flora_Seacup_02','Spotted Gillsieve','T_IngFlor_SeaCup_01',2)
+,('T_Mw_Flora_Seacup_03','Spotted Gillsieve','T_IngFlor_SeaCup_01',3)
+,('T_Mw_Flora_Seacup_04','Spotted Gillsieve','T_IngFlor_SeaCup_01',4)
+,('T_Mw_Flora_SheggShelf01','Sheggo''s Shelf','T_IngFlor_SheggoShelf_01',1)
+,('T_Mw_Flora_SheggShelf02','Sheggo''s Shelf','T_IngFlor_SheggoShelf_01',1)
+,('T_Mw_Flora_SheggShelf03','Sheggo''s Shelf','T_IngFlor_SheggoShelf_01',1)
+,('T_Mw_Flora_SmearAlgae01','Smear Algae','T_IngFlor_SmearSpores_01',1)
+,('T_Mw_Flora_SmearAlgae02','Smear Algae','T_IngFlor_SmearSpores_01',1)
+,('T_Mw_Flora_SmearAlgae03','Smear Algae','T_IngFlor_SmearSpores_01',1)
+,('T_Mw_Flora_SpinyLlor01','Spiny Lloramor','Ingred_lloramor_spines_01',2)
+,('T_Mw_Flora_SpinyLlor02','Spiny Lloramor','Ingred_lloramor_spines_01',1)
+,('T_Mw_Flora_SpinyLlor03','Spiny Lloramor','Ingred_lloramor_spines_01',1)
+,('T_Mw_Flora_SpinyLlor04','Spiny Lloramor','Ingred_lloramor_spines_01',1)
+,('T_Mw_Flora_SpinyLlor05','Spiny Lloramor','Ingred_lloramor_spines_01',4)
+,('T_Mw_Flora_Swtbarrel_01','Desert Sweetbarrel','Ingred_sweetpulp_01',2)
+,('T_Mw_Flora_Swtbarrel_02','Flowering Sweetbarrel','Ingred_sweetpulp_01',2)
+,('T_Mw_Flora_TempleDom01','Temple Dome','T_IngFlor_TempleDome_01',1)
+,('T_Mw_Flora_TempleDom02','Temple Dome','T_IngFlor_TempleDome_01',2)
+,('T_Mw_Flora_TimsaComeB01','Timsa-Come-By flowers','Ingred_timsa-come-by_01',1)
+,('T_Mw_Flora_TimsaComeB02','Timsa-Come-By flowers','Ingred_timsa-come-by_01',1)
+,('T_Mw_Flora_TimsaComeB03','Timsa-Come-By flowers','Ingred_timsa-come-by_01',1)
+,('T_Mw_Flora_TimsaComeB04','Timsa-Come-By flowers','Ingred_timsa-come-by_01',1)
+,('T_Mw_Flora_TimsaComeB05','Timsa-Come-By flowers','Ingred_timsa-come-by_01',1)
+,('T_Mw_Flora_YamOrb01','Yam Orb','T_IngFlor_YamOrb_01',1)
+,('T_Mw_Flora_YamOrb02','Yam Orb','T_IngFlor_YamOrb_01',1)
+,('T_Mw_Mine_Amber01','Amber','T_IngMine_Amber_01',3)
+,('T_Mw_Mine_Amber01b','Amber','T_IngMine_Amber_01',3)
+,('T_Mw_Mine_OreAmethyst01','Raw Amethyst','T_IngMine_Amethyst_01',8)
+,('T_Mw_Mine_OreAmethyst02','Raw Amethyst','T_IngMine_Amethyst_01',8)
+,('T_Mw_Mine_OreAmethyst03','Raw Amethyst','T_IngMine_Amethyst_01',8)
+,('T_Mw_Mine_OreAmethyst04','Raw Amethyst','T_IngMine_Amethyst_01',8)
+,('T_Mw_Mine_OreAmethyst05','Raw Amethyst','T_IngMine_Amethyst_01',8)
+,('T_Mw_Mine_OreAmethyst06','Raw Amethyst','T_IngMine_Amethyst_01',8)
+,('T_Mw_Mine_OreEmerald01','Raw Emerald','ingred_emerald_01',8)
+,('T_Mw_Mine_OreEmerald02','Raw Emerald','ingred_emerald_01',8)
+,('T_Mw_Mine_OreEmerald03','Raw Emerald','ingred_emerald_01',8)
+,('T_Mw_Mine_OreEmerald04','Raw Emerald','ingred_emerald_01',8)
+,('T_Mw_Mine_OreEmerald05','Raw Emerald','ingred_emerald_01',8)
+,('T_Mw_Mine_OreEmerald06','Raw Emerald','ingred_emerald_01',8)
+,('T_Mw_Mine_OreGarnet01','Raw Garnet','T_IngMine_Garnet_01',8)
+,('T_Mw_Mine_OreGarnet01b','Raw Garnet','T_IngMine_Garnet_01',8)
+,('T_Mw_Mine_OreGarnet02','Raw Garnet','T_IngMine_Garnet_01',8)
+,('T_Mw_Mine_OreGarnet02b','Raw Garnet','T_IngMine_Garnet_01',8)
+,('T_Mw_Mine_OreGarnet03','Raw Garnet','T_IngMine_Garnet_01',8)
+,('T_Mw_Mine_OreGarnet03b','Raw Garnet','T_IngMine_Garnet_01',8)
+,('T_Mw_Mine_OreGarnet04','Raw Garnet','T_IngMine_Garnet_01',8)
+,('T_Mw_Mine_OreGarnet04b','Raw Garnet','T_IngMine_Garnet_01',8)
+,('T_Mw_Mine_OreGarnet05','Raw Garnet','T_IngMine_Garnet_01',8)
+,('T_Mw_Mine_OreGarnet05b','Raw Garnet','T_IngMine_Garnet_01',8)
+,('T_Mw_Mine_OreGarnet06','Raw Garnet','T_IngMine_Garnet_01',8)
+,('T_Mw_Mine_OreGarnet06b','Raw Garnet','T_IngMine_Garnet_01',8)
+,('T_Mw_Mine_OreGold01','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Mw_Mine_OreGold02','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Mw_Mine_OreGold03','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Mw_Mine_OreGold04','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Mw_Mine_OreGold05','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Mw_Mine_OreGold06','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Mw_Mine_OreGold07','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Mw_Mine_OreIron01','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Mw_Mine_OreIron02','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Mw_Mine_OreIron03','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Mw_Mine_OreIron04','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Mw_Mine_OreIron05','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Mw_Mine_OreIron06','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Mw_Mine_OreIron07','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Mw_Mine_OreOMAdam01','Raw Adamantium','ingred_adamantium_ore_01',1)
+,('T_Mw_Mine_OreOMAdam02','Raw Adamantium','ingred_adamantium_ore_01',1)
+,('T_Mw_Mine_OreOMAdam03','Raw Adamantium','ingred_adamantium_ore_01',1)
+,('T_Mw_Mine_OreOMAdam04','Raw Adamantium','ingred_adamantium_ore_01',1)
+,('T_Mw_Mine_OreOMAdam05','Raw Adamantium','ingred_adamantium_ore_01',1)
+,('T_Mw_Mine_OreOMAdam06','Raw Adamantium','ingred_adamantium_ore_01',1)
+,('T_Mw_Mine_OreOMAdam07','Raw Adamantium','ingred_adamantium_ore_01',1)
+,('T_Mw_Mine_OrePlatinum01','Raw Platinum','T_IngMine_OrePlatinum_01',8)
+,('T_Mw_Mine_OrePlatinum02','Raw Platinum','T_IngMine_OrePlatinum_01',8)
+,('T_Mw_Mine_OrePlatinum03','Raw Platinum','T_IngMine_OrePlatinum_01',8)
+,('T_Mw_Mine_OrePlatinum04','Raw Platinum','T_IngMine_OrePlatinum_01',8)
+,('T_Mw_Mine_OrePlatinum05','Raw Platinum','T_IngMine_OrePlatinum_01',8)
+,('T_Mw_Mine_OrePlatinum06','Raw Platinum','T_IngMine_OrePlatinum_01',8)
+,('T_Mw_Mine_OrePlatinum07','Raw Platinum','T_IngMine_OrePlatinum_01',8)
+,('T_Mw_Mine_OreRuby01','Raw Ruby','ingred_ruby_01',8)
+,('T_Mw_Mine_OreRuby02','Raw Ruby','ingred_ruby_01',8)
+,('T_Mw_Mine_OreRuby03','Raw Ruby','ingred_ruby_01',8)
+,('T_Mw_Mine_OreRuby04','Raw Ruby','ingred_ruby_01',8)
+,('T_Mw_Mine_OreRuby05','Raw Ruby','ingred_ruby_01',8)
+,('T_Mw_Mine_OreRuby06','Raw Ruby','ingred_ruby_01',8)
+,('T_Mw_Mine_OreSHAthyst01','Raw Amethyst','T_IngMine_Amethyst_01',8)
+,('T_Mw_Mine_OreSHAthyst02','Raw Amethyst','T_IngMine_Amethyst_01',8)
+,('T_Mw_Mine_OreSHAthyst03','Raw Amethyst','T_IngMine_Amethyst_01',8)
+,('T_Mw_Mine_OreSHAthyst04','Raw Amethyst','T_IngMine_Amethyst_01',8)
+,('T_Mw_Mine_OreSHAthyst05','Raw Amethyst','T_IngMine_Amethyst_01',8)
+,('T_Mw_Mine_OreSHAthyst06','Raw Amethyst','T_IngMine_Amethyst_01',8)
+,('T_Mw_Mine_OreSHSaph01','Raw Sapphire','T_IngMine_Sapphire_01',8)
+,('T_Mw_Mine_OreSHSaph02','Raw Sapphire','T_IngMine_Sapphire_01',8)
+,('T_Mw_Mine_OreSHSaph03','Raw Sapphire','T_IngMine_Sapphire_01',8)
+,('T_Mw_Mine_OreSHSaph04','Raw Sapphire','T_IngMine_Sapphire_01',8)
+,('T_Mw_Mine_OreSHSaph05','Raw Sapphire','T_IngMine_Sapphire_01',8);
+INSERT INTO IngtoFlora(`ID`,`Name`,`Ingredient`,`Count`) VALUES
+ ('T_Mw_Mine_OreSHSaph06','Raw Sapphire','T_IngMine_Sapphire_01',8)
+,('T_Mw_Mine_OreSapphire01','Raw Sapphire','T_IngMine_Sapphire_01',8)
+,('T_Mw_Mine_OreSapphire02','Raw Sapphire','T_IngMine_Sapphire_01',8)
+,('T_Mw_Mine_OreSapphire03','Raw Sapphire','T_IngMine_Sapphire_01',8)
+,('T_Mw_Mine_OreSapphire04','Raw Sapphire','T_IngMine_Sapphire_01',8)
+,('T_Mw_Mine_OreSapphire05','Raw Sapphire','T_IngMine_Sapphire_01',8)
+,('T_Mw_Mine_OreSapphire06','Raw Sapphire','T_IngMine_Sapphire_01',8)
+,('T_Mw_Mine_OreSlvr01','Raw Silver','T_IngMine_OreSilver_01',8)
+,('T_Mw_Mine_OreSlvr02','Raw Silver','T_IngMine_OreSilver_01',8)
+,('T_Mw_Mine_OreSlvr03','Raw Silver','T_IngMine_OreSilver_01',8)
+,('T_Mw_Mine_OreSlvr04','Raw Silver','T_IngMine_OreSilver_01',8)
+,('T_Mw_Mine_OreSlvr05','Raw Silver','T_IngMine_OreSilver_01',8)
+,('T_Mw_Mine_OreSlvr06','Raw Silver','T_IngMine_OreSilver_01',8)
+,('T_Mw_Mine_OreSlvr07','Raw Silver','T_IngMine_OreSilver_01',8)
+,('T_Mw_Mine_OreSulfur01','Sulphur Deposit','T_IngMine_OreSulfur_01',1)
+,('T_Mw_Mine_OreSulfur02','Sulphur Deposit','T_IngMine_OreSulfur_01',1)
+,('T_Mw_Mine_OreSulfur03','Sulphur Deposit','T_IngMine_OreSulfur_01',1)
+,('T_Mw_Mine_OreTopaz01','Raw Topaz','T_IngMine_Topaz_01',8)
+,('T_Mw_Mine_OreTopaz02','Raw Topaz','T_IngMine_Topaz_01',8)
+,('T_Mw_Mine_OreTopaz03','Raw Topaz','T_IngMine_Topaz_01',8)
+,('T_Mw_Mine_OreTopaz04','Raw Topaz','T_IngMine_Topaz_01',8)
+,('T_Mw_Mine_OreTopaz05','Raw Topaz','T_IngMine_Topaz_01',8)
+,('T_Mw_Mine_OreTopaz06','Raw Topaz','T_IngMine_Topaz_01',8)
+,('T_Obl_Flora_Bloodgras01','Bloodgrass','T_IngFlor_Bloodgrass_01',1)
+,('T_Obl_Flora_Harrada01','Harrada Root','T_IngFlor_Harrada_01',1)
+,('T_Obl_Flora_Spiddal01','Spiddal','T_IngFlor_Spiddal_01',1)
+,('T_Pi_Fauna_ClamGullWing','Gull Wing Clam','T_IngCrea_ClamMeat',1)
+,('T_Pi_Fauna_ClamGullWing','Gull Wing Clam','T_IngMine_PearlBlack_01',1)
+,('T_Pi_Fauna_ClamGullWing','Gull Wing Clam','T_IngMine_PearlBlue_01',1)
+,('T_Pi_Fauna_ClamGullWing','Gull Wing Clam','T_IngMine_PearlPink_01',1)
+,('T_Pi_Fauna_ClamGullWing','Gull Wing Clam','ingred_pearl_01',48)
+,('T_Pi_Fauna_FishJdHrnfi1','Jade Hornfish','T_IngCrea_Jadescales_01',1)
+,('T_Pi_Fauna_FishJdHrnfi2','Jade Hornfish','T_IngCrea_Jadescales_01',1)
+,('T_Pi_Fauna_FishPadBar01','Padomaic Barracuda','T_IngCrea_BarracudaSteak_01',3)
+,('T_Pi_Fauna_FishPadBar01','Padomaic Barracuda','T_IngCrea_BarracudaTailfin_01',1)
+,('T_Pi_Fauna_FishPadBar02','Padomaic Barracuda','T_IngCrea_BarracudaSteak_01',3)
+,('T_Pi_Fauna_FishPadBar02','Padomaic Barracuda','T_IngCrea_BarracudaTailfin_01',1)
+,('T_Pi_Fauna_FishRdShrk01','Red Shark','T_IngCrea_RedSharkMeat_01',3)
+,('T_Pi_Fauna_FishSlvSpd1','Silver Spade','T_IngCrea_SilverSpadeMeat_01',3)
+,('T_Pi_Fauna_FishSlvSpd2','Silver Spade','T_IngCrea_SilverSpadeMeat_01',3)
+,('T_Pi_Fauna_FishSlvSpd3','Silver Spade','T_IngCrea_SilverSpadeMeat_01',3)
+,('T_Pi_FloraCQ_DftPuff_01','Drift Puff','T_IngFlor_DriftPuff_01',1)
+,('T_Pi_FloraCQ_DftPuff_02','Drift Puff','T_IngFlor_DriftPuff_01',1)
+,('T_Pi_FloraCQ_DftPuff_03','Drift Puff','T_IngFlor_DriftPuff_01',1)
+,('T_Pi_FloraTm_Bugloss01','Temarin Bugloss','T_IngFlor_TemarinBugloss_01',1)
+,('T_Pi_FloraTm_Bugloss02','Temarin Bugloss','T_IngFlor_TemarinBugloss_01',1)
+,('T_Pi_FloraTm_Bugloss03','Temarin Bugloss','T_IngFlor_TemarinBugloss_01',1)
+,('T_Pi_FloraTm_SomberWido','Somber Widow','T_IngFlor_SomberWidow_01',1)
+,('T_Pi_FloraTm_Succulent','Embertip','T_IngFlor_SucculentPulp_01',2)
+,('T_Pi_FloraYN_Ginger_01','Bitter Ginger','T_IngFlor_GingerFlower',3)
+,('T_Pi_FloraYN_Ginger_01','Bitter Ginger','T_IngFlor_GingerRoot',3)
+,('T_Pi_FloraYN_Ginger_02','Bitter Ginger','T_IngFlor_GingerFlower',2)
+,('T_Pi_FloraYN_Ginger_02','Bitter Ginger','T_IngFlor_GingerRoot',2)
+,('T_Pi_FloraYN_Ginger_03','Bitter Ginger','T_IngFlor_GingerFlower',1)
+,('T_Pi_FloraYN_Ginger_03','Bitter Ginger','T_IngFlor_GingerRoot',1)
+,('T_Pi_FloraYN_Ginger_04','Bitter Ginger','T_IngFlor_GingerFlower',3)
+,('T_Pi_FloraYN_Ginger_04','Bitter Ginger','T_IngFlor_GingerRoot',3)
+,('T_Pi_FloraYN_ZukBlos01','Zukoma Blossom','T_IngFlor_ZukomaBlossom_01',2)
+,('T_Pi_FloraYN_ZukBlos02','Zukoma Blossom','T_IngFlor_ZukomaBlossom_01',2)
+,('T_Pi_Flora_Sage01','Padomaic Sage','T_IngFlor_PadomaicSage_01',1)
+,('T_Pi_Flora_Sage02','Padomaic Sage','T_IngFlor_PadomaicSage_01',1)
+,('T_Pi_Flora_Sage03','Padomaic Sage','T_IngFlor_PadomaicSage_01',1)
+,('T_Pi_Mine_OreBitterst01','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OreBitterst02','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OreBitterst03','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OreBitterst04','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OreBitterst05','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OreBitterst06','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OreCQBitter01','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OreCQBitter02','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OreCQBitter03','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OreCQBitter04','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OreCQBitter05','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OreCQBitter06','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OreCQBitter07','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OreCQDiamond1','Diamond','ingred_diamond_01',8)
+,('T_Pi_Mine_OreCQDiamond2','Diamond','ingred_diamond_01',8)
+,('T_Pi_Mine_OreCQDiamond3','Diamond','ingred_diamond_01',8)
+,('T_Pi_Mine_OreCQDiamond4','Diamond','ingred_diamond_01',8)
+,('T_Pi_Mine_OreCQDiamond5','Diamond','ingred_diamond_01',8)
+,('T_Pi_Mine_OreCQDiamond6','Diamond','ingred_diamond_01',8)
+,('T_Pi_Mine_OreCQIron01','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OreCQIron02','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OreCQIron03','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OreCQIron04','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OreCQIron05','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OreCQIron06','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OreCQIron07','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OreCQLapis01','Raw Lapis Lazuli','T_IngMine_LapisLazuli_01',8)
+,('T_Pi_Mine_OreCQLapis02','Raw Lapis Lazuli','T_IngMine_LapisLazuli_01',8)
+,('T_Pi_Mine_OreCQLapis03','Raw Lapis Lazuli','T_IngMine_LapisLazuli_01',8)
+,('T_Pi_Mine_OreCQLapis04','Raw Lapis Lazuli','T_IngMine_LapisLazuli_01',8)
+,('T_Pi_Mine_OreCQLapis05','Raw Lapis Lazuli','T_IngMine_LapisLazuli_01',8)
+,('T_Pi_Mine_OreCQLapis06','Raw Lapis Lazuli','T_IngMine_LapisLazuli_01',8)
+,('T_Pi_Mine_OreCQTurquoi1','Raw Turquoise','T_IngMine_Turquoise_01',8)
+,('T_Pi_Mine_OreCQTurquoi2','Raw Turquoise','T_IngMine_Turquoise_01',8)
+,('T_Pi_Mine_OreCQTurquoi3','Raw Turquoise','T_IngMine_Turquoise_01',8)
+,('T_Pi_Mine_OreCQTurquoi4','Raw Turquoise','T_IngMine_Turquoise_01',8)
+,('T_Pi_Mine_OreCQTurquoi5','Raw Turquoise','T_IngMine_Turquoise_01',8)
+,('T_Pi_Mine_OreCQTurquoi6','Raw Turquoise','T_IngMine_Turquoise_01',8)
+,('T_Pi_Mine_OrePOBitter01','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OrePOBitter02','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OrePOBitter03','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OrePOBitter04','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OrePOBitter05','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OrePOBitter06','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OrePOBitter07','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OrePOCobalt01','Raw Cobalt','T_IngMine_OreCobalt_01',8)
+,('T_Pi_Mine_OrePOCobalt02','Raw Cobalt','T_IngMine_OreCobalt_01',8)
+,('T_Pi_Mine_OrePOCobalt03','Raw Cobalt','T_IngMine_OreCobalt_01',8)
+,('T_Pi_Mine_OrePOCobalt04','Raw Cobalt','T_IngMine_OreCobalt_01',8)
+,('T_Pi_Mine_OrePOCobalt05','Raw Cobalt','T_IngMine_OreCobalt_01',8)
+,('T_Pi_Mine_OrePOCobalt06','Raw Cobalt','T_IngMine_OreCobalt_01',8)
+,('T_Pi_Mine_OrePOCobalt07','Raw Cobalt','T_IngMine_OreCobalt_01',8)
+,('T_Pi_Mine_OrePODiamond1','Diamond','ingred_diamond_01',8)
+,('T_Pi_Mine_OrePODiamond2','Diamond','ingred_diamond_01',8)
+,('T_Pi_Mine_OrePODiamond3','Diamond','ingred_diamond_01',8)
+,('T_Pi_Mine_OrePODiamond4','Diamond','ingred_diamond_01',8)
+,('T_Pi_Mine_OrePODiamond5','Diamond','ingred_diamond_01',8)
+,('T_Pi_Mine_OrePODiamond6','Diamond','ingred_diamond_01',8)
+,('T_Pi_Mine_OrePOGold01','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Pi_Mine_OrePOGold02','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Pi_Mine_OrePOGold03','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Pi_Mine_OrePOGold04','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Pi_Mine_OrePOGold05','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Pi_Mine_OrePOGold06','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Pi_Mine_OrePOGold07','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Pi_Mine_OrePOPeridot1','Raw Peridot','T_IngMine_Peridot_01',8)
+,('T_Pi_Mine_OrePOPeridot2','Raw Peridot','T_IngMine_Peridot_01',8)
+,('T_Pi_Mine_OrePOPeridot3','Raw Peridot','T_IngMine_Peridot_01',8)
+,('T_Pi_Mine_OrePOPeridot4','Raw Peridot','T_IngMine_Peridot_01',8)
+,('T_Pi_Mine_OrePOPeridot5','Raw Peridot','T_IngMine_Peridot_01',8)
+,('T_Pi_Mine_OrePOPeridot6','Raw Peridot','T_IngMine_Peridot_01',8)
+,('T_Pi_Mine_OrePYBitter01','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OrePYBitter02','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OrePYBitter03','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OrePYBitter04','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OrePYBitter05','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OrePYBitter06','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OrePYBitter07','Raw Bitterstone','T_IngMine_OreBitterstone_01',8)
+,('T_Pi_Mine_OrePYDiamond1','Diamond','ingred_diamond_01',8)
+,('T_Pi_Mine_OrePYDiamond2','Diamond','ingred_diamond_01',8)
+,('T_Pi_Mine_OrePYDiamond3','Diamond','ingred_diamond_01',8)
+,('T_Pi_Mine_OrePYDiamond4','Diamond','ingred_diamond_01',8)
+,('T_Pi_Mine_OrePYDiamond5','Diamond','ingred_diamond_01',8)
+,('T_Pi_Mine_OrePYDiamond6','Diamond','ingred_diamond_01',8)
+,('T_Pi_Mine_OrePYIron01','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OrePYIron02','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OrePYIron03','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OrePYIron04','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OrePYIron05','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OrePYIron06','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OrePYIron07','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OreYNGold01','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Pi_Mine_OreYNGold02','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Pi_Mine_OreYNGold03','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Pi_Mine_OreYNGold04','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Pi_Mine_OreYNGold05','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Pi_Mine_OreYNGold06','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Pi_Mine_OreYNGold07','Raw Gold','T_IngMine_OreGold_01',8)
+,('T_Pi_Mine_OreYNIron01','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OreYNIron02','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OreYNIron03','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OreYNIron04','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OreYNIron05','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OreYNIron06','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OreYNIron07','Raw Iron','T_IngMine_OreIron_01',8)
+,('T_Pi_Mine_OreYNJade01','Raw Jade','T_IngMine_Jade_01',8)
+,('T_Pi_Mine_OreYNJade02','Raw Jade','T_IngMine_Jade_01',8)
+,('T_Pi_Mine_OreYNJade03','Raw Jade','T_IngMine_Jade_01',8)
+,('T_Pi_Mine_OreYNJade04','Raw Jade','T_IngMine_Jade_01',8)
+,('T_Pi_Mine_OreYNJade05','Raw Jade','T_IngMine_Jade_01',8)
+,('T_Pi_Mine_OreYNJade06','Raw Jade','T_IngMine_Jade_01',8)
+,('T_Pi_Mine_OreYNRuby01','Raw Ruby','ingred_ruby_01',8)
+,('T_Pi_Mine_OreYNRuby02','Raw Ruby','ingred_ruby_01',8)
+,('T_Pi_Mine_OreYNRuby03','Raw Ruby','ingred_ruby_01',8)
+,('T_Pi_Mine_OreYNRuby04','Raw Ruby','ingred_ruby_01',8)
+,('T_Pi_Mine_OreYNRuby05','Raw Ruby','ingred_ruby_01',8)
+,('T_Pi_Mine_OreYNRuby06','Raw Ruby','ingred_ruby_01',8)
+,('T_Pi_Mine_OreYNSaphire1','Raw Sapphire','T_IngMine_Sapphire_01',8)
+,('T_Pi_Mine_OreYNSaphire2','Raw Sapphire','T_IngMine_Sapphire_01',8)
+,('T_Pi_Mine_OreYNSaphire3','Raw Sapphire','T_IngMine_Sapphire_01',8)
+,('T_Pi_Mine_OreYNSaphire4','Raw Sapphire','T_IngMine_Sapphire_01',8)
+,('T_Pi_Mine_OreYNSaphire5','Raw Sapphire','T_IngMine_Sapphire_01',8)
+,('T_Pi_Mine_OreYNSaphire6','Raw Sapphire','T_IngMine_Sapphire_01',8)
+,('T_Pi_Mine_SandCQGlass01','Shards of Raw Glass','ingred_raw_glass_01',3)
+,('T_Pi_Mine_SandCQGlass02','Shards of Raw Glass','ingred_raw_glass_01',6)
+,('T_Pi_Mine_SandCQGlsBlk1','Shards of Raw Glass','ingred_raw_glass_01',3)
+,('T_Pi_Mine_SandCQGlsBlk2','Shards of Raw Glass','ingred_raw_glass_01',6)
+,('T_Pi_Mine_SandPOGlass01','Shards of Raw Glass','ingred_raw_glass_01',3)
+,('T_Pi_Mine_SandPOGlass02','Shards of Raw Glass','ingred_raw_glass_01',6)
+,('T_Pi_Mine_SandYNGlass01','Shards of Raw Glass','ingred_raw_glass_01',3)
+,('T_Pi_Mine_SandYNGlass02','Shards of Raw Glass','ingred_raw_glass_01',6)
+,('T_SkyNor_Set_Beehive01','Bee Hive','T_IngFood_Honey_01',5)
+,('T_SkyNor_Set_Beehive02','Bee Hive','T_IngFood_Honey_01',5)
+,('T_Sky_Fauna_BeeHvEart01','Bee Hole','T_IngFood_Honey_01',2)
+,('T_Sky_Fauna_BeeHvEart02','Bee Hole','T_IngFood_Honey_01',2)
+,('T_Sky_Fauna_BeeHvEart03','Bee Hole','T_IngFood_Honey_01',2)
+,('T_Sky_Fauna_BrstlbRst01','Roasted Bristleback','T_IngFood_MeatBoar_02',5)
+,('T_Sky_Fauna_FishBrwnt01','Browntrout','T_IngFood_FishBrowntrout_01',1)
+,('T_Sky_Fauna_FishCod01','Cod','T_IngFood_FishCod_01',1)
+,('T_Sky_Fauna_FishCod02','Dried Cod','T_IngFood_FishCodDried_01',1)
+,('T_Sky_Fauna_FishPike01','Pike','T_IngFood_FishPike_01',1)
+,('T_Sky_Fauna_FishPikeP01','Pikeperch','T_IngFood_FishPikeperch_01',1)
+,('T_Sky_Fauna_FishSalm01','Salmon','T_IngFood_FishSalmon_01',1)
+,('T_Sky_Fauna_SpkwrmRst01','Roasted Spikeworm','T_IngCrea_Spikeworm_01',1)
+,('T_Sky_Flora_Apple01','Apple Tree','T_IngFood_AppleSkyrim_01',3)
+,('T_Sky_Flora_Apple02','Apple Tree','T_IngFood_AppleSkyrim_01',3)
+,('T_Sky_Flora_Apple03','Apple Tree','T_IngFood_AppleSkyrim_01',3)
+,('T_Sky_Flora_AspyrTea01','Aspyr Tea','T_IngFlor_AspyrTea_01',1)
+,('T_Sky_Flora_AspyrTea02','Aspyr Tea','T_IngFlor_AspyrTea_01',1)
+,('T_Sky_Flora_AspyrTeaH01','Dried Aspyr Tea Leaves','T_IngFlor_AspyrTea_01',1)
+,('T_Sky_Flora_Bearclaw01','Bearclaw','T_IngFlor_Bearclaw_01',1)
+,('T_Sky_Flora_Bearclaw02','Bearclaw','T_IngFlor_Bearclaw_01',1)
+,('T_Sky_Flora_BksporeCp01','Black Spore Cap','T_IngFlor_BlacksporeCap_01',1)
+,('T_Sky_Flora_BksporeCp02','Black Spore Cap','T_IngFlor_BlacksporeCap_01',1)
+,('T_Sky_Flora_BksporeCp03','Black Spore Cap','T_IngFlor_BlacksporeCap_01',1)
+,('T_Sky_Flora_BleakBlH01','Bleakbell Hay','T_IngFlor_Bleakbell_01',1)
+,('T_Sky_Flora_BleakBlH02','Bleakbell Hay','T_IngFlor_Bleakbell_01',1)
+,('T_Sky_Flora_BleakBlH03','Bleakbell Hay','T_IngFlor_Bleakbell_01',1)
+,('T_Sky_Flora_BleakBlH04','Bleakbell Hay','T_IngFlor_Bleakbell_01',1)
+,('T_Sky_Flora_Blknet01','Blacknettle','T_IngFlor_Blknet_01',1)
+,('T_Sky_Flora_Blknet02','Blacknettle','T_IngFlor_Blknet_01',1)
+,('T_Sky_Flora_BlknetD01','Blacknettle','T_IngFlor_Blknet_01',1)
+,('T_Sky_Flora_BlknetD02','Blacknettle','T_IngFlor_Blknet_01',1)
+,('T_Sky_Flora_Bottomwee01','Bottomweed','T_IngFlor_Bottomweed_01',1)
+,('T_Sky_Flora_Brideth01','Bridethorn','T_IngFood_BridethornBerry_01',1)
+,('T_Sky_Flora_Brideth02','Bridethorn','T_IngFood_BridethornBerry_01',1)
+,('T_Sky_Flora_Brideth03','Bridethorn','T_IngFood_BridethornBerry_01',1)
+,('T_Sky_Flora_BridethSn01','Bridethorn','T_IngFood_BridethornBerry_01',1)
+,('T_Sky_Flora_BridethSn02','Bridethorn','T_IngFood_BridethornBerry_01',1)
+,('T_Sky_Flora_BridethSn03','Bridethorn','T_IngFood_BridethornBerry_01',1)
+,('T_Sky_Flora_CanisR01','Canis Root','T_IngFlor_CanisRoot_01',1)
+,('T_Sky_Flora_CarlineTh01','Carline Thistle','T_IngFlor_CarlineTh_01',1)
+,('T_Sky_Flora_CloudyCrn01','Cloudy Corn','T_IngFood_CloudyCorn_01',1)
+,('T_Sky_Flora_CloudyCrn02','Cloudy Corn','T_IngFood_CloudyCorn_01',1)
+,('T_Sky_Flora_CloudyCrn03','Cloudy Corn','T_IngFood_CloudyCorn_01',1)
+,('T_Sky_Flora_Comatus01','Comatus Corpinus','T_IngFlor_Comatus_01',1)
+,('T_Sky_Flora_CowBell01','Cow Bell','T_IngFlor_Cowbell_01',1)
+,('T_Sky_Flora_DarkSage01','Dark Sage','T_IngFlor_DarkSage_01',1)
+,('T_Sky_Flora_DarkSageD01','Dried Dark Sage','T_IngFlor_DarkSage_01',1)
+,('T_Sky_Flora_DeathBell01','Death Bell','T_IngFlor_Deathbell_01',1)
+,('T_Sky_Flora_ForsythTr01','Forsythia Tromja','T_IngFlor_ForsythiaTrRoots_01',1)
+,('T_Sky_Flora_FungalPod01','Fungal Pod','T_IngFlor_FungalPod_01',1)
+,('T_Sky_Flora_GrassPod01','Grass Pod','T_IngFlor_GrassPod01',1)
+,('T_Sky_Flora_GrassPod02','Grass Pod','T_IngFlor_GrassPod01',1)
+,('T_Sky_Flora_Hellebore01','Hellebore','T_IngFlor_Hellebore_01',1)
+,('T_Sky_Flora_Hellebore02','Hellebore','T_IngFlor_Hellebore_01',1)
+,('T_Sky_Flora_Hellebore03','Hellebore','T_IngFlor_Hellebore_01',1)
+,('T_Sky_Flora_HollyWrea01','Holly Wreath','ingred_holly_01',1)
+,('T_Sky_Flora_HoneyLill01','Honey Lily','T_IngFlor_HoneyLily_01',2)
+,('T_Sky_Flora_HoneyLill01','Honey Lily','T_IngFlor_HoneyLily_02',1)
+,('T_Sky_Flora_HoneyLill02','Honey Lily','T_IngFlor_HoneyLily_01',3)
+,('T_Sky_Flora_HoneyLill02','Honey Lily','T_IngFlor_HoneyLily_02',1)
+,('T_Sky_Flora_HoneyLill03','Honey Lily','T_IngFlor_HoneyLily_01',2)
+,('T_Sky_Flora_HoneyLill03','Honey Lily','T_IngFlor_HoneyLily_02',1)
+,('T_Sky_Flora_HoneyLill04','Honey Lily','T_IngFlor_HoneyLily_01',1)
+,('T_Sky_Flora_HoneyLill04','Honey Lily','T_IngFlor_HoneyLily_02',1)
+,('T_Sky_Flora_HoneyLill05','Honey Lily','T_IngFlor_HoneyLily_01',1)
+,('T_Sky_Flora_HoneyLill05','Honey Lily','T_IngFlor_HoneyLily_02',1)
+,('T_Sky_Flora_HoneyLill06','Honey Lily','T_IngFlor_HoneyLily_02',1)
+,('T_Sky_Flora_IcyShell01','Icy Shell Fungus','T_IngFlor_IcyShell01',1)
+,('T_Sky_Flora_Ironwood01','Ironwood Tree','T_IngFlor_IronwoodNut_01',2)
+,('T_Sky_Flora_Ironwood02','Ironwood Tree','T_IngFlor_IronwoodNut_01',2)
+,('T_Sky_Flora_Ironwood03','Ironwood Tree','T_IngFlor_IronwoodNut_01',1)
+,('T_Sky_Flora_Jarmush01','Jarmush','T_IngFlor_Jarmush_01',1)
+,('T_Sky_Flora_KingBol01','King Bolete','T_IngFlor_KingBolete_01',1)
+,('T_Sky_Flora_KingBol02','King Bolete','T_IngFlor_KingBolete_01',1)
+,('T_Sky_Flora_KingBol03','King Bolete','T_IngFlor_KingBolete_01',1)
+,('T_Sky_Flora_KingBol04','King Bolete','T_IngFlor_KingBolete_01',1)
+,('T_Sky_Flora_KingBol05','King Bolete','T_IngFlor_KingBolete_01',1)
+,('T_Sky_Flora_KingBolSn01','King Bolete','T_IngFlor_KingBolete_01',1)
+,('T_Sky_Flora_KingBolSn02','King Bolete','T_IngFlor_KingBolete_01',1)
+,('T_Sky_Flora_KingBolSn03','King Bolete','T_IngFlor_KingBolete_01',1)
+,('T_Sky_Flora_KingBolSn04','King Bolete','T_IngFlor_KingBolete_01',1)
+,('T_Sky_Flora_KingBolSn05','King Bolete','T_IngFlor_KingBolete_01',1)
+,('T_Sky_Flora_KingThist01','King Thistle','T_IngFlor_KingThistle_01',1)
+,('T_Sky_Flora_KingThist02','King Thistle','T_IngFlor_KingThistle_01',1)
+,('T_Sky_Flora_Lichen01','Lichen','ingred_green_lichen_01',1)
+,('T_Sky_Flora_LichenCav01','Cave Lichen','ingred_black_lichen_01',1)
+,('T_Sky_Flora_Lizardf01','Lizards Foot','T_IngFlor_LizardFootExtract_01',1)
+,('T_Sky_Flora_Lizardf02','Lizards Foot','T_IngFlor_LizardFootExtract_01',1)
+,('T_Sky_Flora_Moosebite01','Moosebite Polyphore','T_IngFlor_Moosebite_01',1)
+,('T_Sky_Flora_Moosebite02','Moosebite Polyphore','T_IngFlor_Moosebite_01',1)
+,('T_Sky_Flora_Mustard01','Mustard','T_IngFlor_Mustard_01',1)
+,('T_Sky_Flora_RustRuss01','Rust Russula','T_IngFlor_RustRussula_01',1)
+,('T_Sky_Flora_RustRuss02','Rust Russula','T_IngFlor_RustRussula_01',1)
+,('T_Sky_Flora_RustRuss03','Rust Russula','T_IngFlor_RustRussula_01',1)
+,('T_Sky_Flora_RustRuss04','Rust Russula','T_IngFlor_RustRussula_01',1)
+,('T_Sky_Flora_RustRuss05','Rust Russula','T_IngFlor_RustRussula_01',1)
+,('T_Sky_Flora_Snowberry01','Snow Berry','T_IngFood_Snowberry_01',1)
+,('T_Sky_Flora_SwmpChal01','Swamp Chalice','T_IngFlor_SwmpChal_01',1)
+,('T_Sky_Flora_Taragetis01','Taragetis','T_IngFlor_Taragetis_01',1)
+,('T_Sky_Flora_Taragetis02','Taragetis','T_IngFlor_Taragetis_01',1)
+,('T_Sky_Flora_Taragetis03','Taragetis','T_IngFlor_Taragetis_01',1)
+,('T_Sky_Flora_Taragetis04','Taragetis','T_IngFlor_Taragetis_01',1)
+,('T_Sky_Flora_Taragetis05','Taragetis','T_IngFlor_Taragetis_01',1)
+,('T_Sky_Flora_TawnFun01','Tawny Funnel Cap','T_IngFlor_TawnyFunnelCap_01',1)
+,('T_Sky_Flora_TawnFun02','Tawny Funnel Cap','T_IngFlor_TawnyFunnelCap_01',1)
+,('T_Sky_Flora_TawnFun03','Tawny Funnel Cap','T_IngFlor_TawnyFunnelCap_01',1)
+,('T_Sky_Flora_TawnFunSn01','Tawny Funnel Cap','T_IngFlor_TawnyFunnelCap_01',1)
+,('T_Sky_Flora_TawnFunSn02','Tawny Funnel Cap','T_IngFlor_TawnyFunnelCap_01',1)
+,('T_Sky_Flora_TawnFunSn03','Tawny Funnel Cap','T_IngFlor_TawnyFunnelCap_01',1)
+,('T_Sky_Flora_Tremblwee01','Tremble Weed','T_IngFlor_TrembleWeedSap_01',1)
+,('T_Sky_Flora_Trollroot01','Troll Root','T_IngFlor_Trollroot_01',2)
+,('T_Sky_Flora_Trollroot02','Troll Root','T_IngFlor_Trollroot_01',2)
+,('T_Sky_Flora_Turnip01','Turnip','T_IngFlor_Turnip_01',1)
+,('T_Sky_Flora_VicHerb01','Vicar Herb','T_IngFlor_VicarHerb_01',1)
+,('T_Sky_Flora_VicHerb02','Vicar Herb','T_IngFlor_VicarHerb_01',1)
+,('T_Sky_Flora_VicHerbH01','Dried Vicar Herb Leaves','T_IngFlor_VicarHerb_01',1)
+,('T_Sky_Flora_WidowkisD01','Dried Widow Kiss','T_IngFlor_WidowkissPowder_01',1)
+,('T_Sky_Flora_Widowkiss01','Widow Kiss','T_IngFlor_WidowkissPowder_01',1)
+,('T_Sky_Flora_WithWheat01','Witherwheat','T_IngFood_Wheat_01',2)
+,('T_Sky_Flora_WithWheat02','Witherwheat','T_IngFood_Wheat_01',2)
+,('T_Sky_Flora_WithWheat03','Witherwheat','T_IngFood_Wheat_01',2)
+,('T_Sky_Flora_Woadfl01','Woad Flower','T_IngFlor_Woadfl_01',1)
+,('T_Sky_Flora_Wormwood01','Wormwood','T_IngFlor_Wormwood_01',1)
+,('T_Sky_Flora_WormwoodD01','Dried Wormwood','T_IngFlor_Wormwood_01',1)
+,('T_Sky_Food_CheeseWhee01','Cheese Wheel','T_IngFood_CheeseNord_01',3)
+,('T_Sky_Food_CheeseWhee02','Cheese Wheel','T_IngFood_CheeseNord_01',4)
+,('T_Sky_Mine_Amber01','Amber','T_IngMine_Amber_01',3)
+,('T_Sky_Mine_OreREIron01','Raw Iron','T_IngMine_OreIron_01',3)
+,('T_Sky_Mine_OreREIron02','Raw Iron','T_IngMine_OreIron_01',3)
+,('T_Sky_Mine_OreREIron03','Raw Iron','T_IngMine_OreIron_01',3)
+,('T_Sky_Mine_OreREIron04','Raw Iron','T_IngMine_OreIron_01',2)
+,('T_Sky_Mine_OreREIron05','Raw Iron','T_IngMine_OreIron_01',2)
+,('T_Sky_Mine_OreREIron06','Raw Iron','T_IngMine_OreIron_01',2)
+,('T_Sky_Mine_OreREIron07','Raw Iron','T_IngMine_OreIron_01',3)
+,('T_Sky_Mine_OreREOrich01','Raw Orichalcum','T_IngMine_OreOrichalcum_01',3)
+,('T_Sky_Mine_OreREOrich02','Raw Orichalcum','T_IngMine_OreOrichalcum_01',3)
+,('T_Sky_Mine_OreREOrich03','Raw Orichalcum','T_IngMine_OreOrichalcum_01',3)
+,('T_Sky_Mine_OreREOrich04','Raw Orichalcum','T_IngMine_OreOrichalcum_01',3)
+,('T_Sky_Mine_OreREOrich05','Raw Orichalcum','T_IngMine_OreOrichalcum_01',3)
+,('T_Sky_Mine_OreREOrich06','Raw Orichalcum','T_IngMine_OreOrichalcum_01',3)
+,('T_Sky_Mine_OreREOrich07','Raw Orichalcum','T_IngMine_OreOrichalcum_01',3)
+,('T_Sky_Mine_OreREQuiks01','Raw Quicksilver Ore','T_IngMine_OreQuicksilver_01',2)
+,('T_Sky_Mine_OreRESilv01','Raw Silver','T_IngMine_OreSilver_01',1)
+,('T_Sky_Mine_OreRESilv02','Raw Silver','T_IngMine_OreSilver_01',1)
+,('T_Sky_Mine_OreRESilv03','Raw Silver','T_IngMine_OreSilver_01',1)
+,('T_Sky_Mine_OreRESilv04','Raw Silver','T_IngMine_OreSilver_01',1)
+,('T_Sky_Mine_OreRESilv05','Raw Silver','T_IngMine_OreSilver_01',1)
+,('T_Sky_Mine_OreRESilv06','Raw Silver','T_IngMine_OreSilver_01',1)
+,('T_Sky_Mine_OreRESilv07','Raw Silver','T_IngMine_OreSilver_01',1)
+,('T_Val_Flora_Arrowroot01','Arrowroot','T_IngFlor_Arrowroot_01',1)
+,('T_Val_Flora_Arrowroot02','Arrowroot','T_IngFlor_Arrowroot_01',1)
+,('T_Val_Flora_Arrowroot03','Arrowroot','T_IngFlor_ArrowrootFlower_01',1)
+,('T_Val_Flora_Arrowroot03','Arrowroot','T_IngFlor_Arrowroot_01',1)
+,('T_Val_Flora_DomicRedw01','Domica Redwort','T_IngFlor_DomicaRedwort_01',1)
+,('barrel_01_ahnassi_food','Wooden Barrel','food_kwama_egg_01',20)
+,('barrel_01_ahnassi_food','Wooden Barrel','food_kwama_egg_02',10)
+,('barrel_01_ahnassi_food','Wooden Barrel','ingred_hackle-lo_leaf_01',10)
+,('barrel_01_ahnassi_food','Wooden Barrel','ingred_hound_meat_01',10)
+,('barrel_01_ahnassi_food','Wooden Barrel','ingred_saltrice_01',20)
+,('barrel_01_ahnassi_food','Wooden Barrel','ingred_scuttle_01',20)
+,('cavern_spore00','Bloatspore','ingred_bloat_01',1)
+,('contain_trama_shrub_01','Trama Shrub','ingred_trama_root_01',2)
+,('contain_trama_shrub_02','Trama Shrub','ingred_trama_root_01',3)
+,('contain_trama_shrub_03','Trama Shrub','ingred_trama_root_01',3)
+,('contain_trama_shrub_04','Trama Shrub','ingred_trama_root_01',3)
+,('contain_trama_shrub_05','Trama Shrub','ingred_trama_root_01',2)
+,('contain_trama_shrub_06','Trama Shrub','ingred_trama_root_01',3)
+,('egg_kwama00','Kwama Egg Sack','food_kwama_egg_02',1)
+,('flora_ash_yam_01','Ash Yam','ingred_ash_yam_01',1)
+,('flora_ash_yam_02','Ash Yam','ingred_ash_yam_01',1)
+,('flora_bc_fern_01','Slough Fern','ingred_bc_spore_pod',3)
+,('flora_bc_mushroom_01','Luminous Russula','ingred_russula_01',1)
+,('flora_bc_mushroom_02','Luminous Russula','ingred_russula_01',2)
+,('flora_bc_mushroom_03','Luminous Russula','ingred_russula_01',1)
+,('flora_bc_mushroom_04','Luminous Russula','ingred_russula_01',2)
+,('flora_bc_mushroom_05','Luminous Russula','ingred_russula_01',1)
+,('flora_bc_mushroom_06','Violet Coprinus','ingred_coprinus_01',1)
+,('flora_bc_mushroom_07','Violet Coprinus','ingred_coprinus_01',1)
+,('flora_bc_mushroom_08','Violet Coprinus','ingred_coprinus_01',2)
+,('flora_bc_podplant_01','Draggle-Tail','ingred_bc_ampoule_pod',1)
+,('flora_bc_podplant_02','Draggle-Tail','ingred_bc_ampoule_pod',1)
+,('flora_bc_podplant_03','Draggle-Tail','ingred_bc_coda_flower',1)
+,('flora_bc_shelffungus_01','Bungler''s Bane','ingred_bc_bungler''s_bane',1)
+,('flora_bc_shelffungus_02','Bungler''s Bane','ingred_bc_bungler''s_bane',1)
+,('flora_bc_shelffungus_03','Hypha Facia','ingred_bc_hypha_facia',1)
+,('flora_bc_shelffungus_04','Hypha Facia','ingred_bc_hypha_facia',1)
+,('flora_bittergreen_01','Bittergreen Plant','ingred_bittergreen_petals_01',1)
+,('flora_bittergreen_02','Bittergreen Plant','ingred_bittergreen_petals_01',2)
+,('flora_bittergreen_03','Bittergreen Plant','ingred_bittergreen_petals_01',3)
+,('flora_bittergreen_04','Bittergreen Plant','ingred_bittergreen_petals_01',2)
+,('flora_bittergreen_05','Bittergreen Plant','ingred_bittergreen_petals_01',2)
+,('flora_black_anther_01','Black Anther Plant','ingred_black_anther_01',2)
+,('flora_black_anther_02','Black Anther Plant','ingred_black_anther_01',1)
+,('flora_black_lichen_01','Black Lichen','ingred_black_lichen_01',1)
+,('flora_black_lichen_02','Black Lichen','ingred_black_lichen_01',1)
+,('flora_chokeweed_02','Chokeweed','ingred_chokeweed_01',1)
+,('flora_comberry_01','Comberry','ingred_comberry_01',1)
+,('flora_corkbulb','Corkbulb','ingred_corkbulb_root_01',1)
+,('flora_fire_fern_01','Fire Fern','ingred_fire_petal_01',1)
+,('flora_fire_fern_02','Fire Fern','ingred_fire_petal_01',1)
+,('flora_fire_fern_03','Fire Fern','ingred_fire_petal_01',1)
+,('flora_gold_kanet_01','Gold Kanet Flower','ingred_gold_kanet_01',1)
+,('flora_gold_kanet_01_uni','Gold Kanet Flower','ingred_gold_kanet_unique',3)
+,('flora_gold_kanet_02','Gold Kanet Flower','ingred_gold_kanet_01',1)
+,('flora_gold_kanet_02_uni','Gold Kanet Flower','ingred_gold_kanet_unique',1)
+,('flora_green_lichen_01','Green Lichen','ingred_green_lichen_01',1)
+,('flora_green_lichen_02','Green Lichen','ingred_green_lichen_01',1)
+,('flora_hackle-lo_01','Hackle-lo','ingred_hackle-lo_leaf_01',1)
+,('flora_hackle-lo_02','Hackle-lo','ingred_hackle-lo_leaf_01',1)
+,('flora_heather_01','Heather','ingred_heather_01',2)
+,('flora_kreshweed_01','Kreshweed','ingred_kresh_fiber_01',1)
+,('flora_kreshweed_02','Kreshweed','ingred_kresh_fiber_01',1)
+,('flora_kreshweed_03','Kreshweed','ingred_kresh_fiber_01',1)
+,('flora_marshmerrow_01','Marshmerrow','ingred_marshmerrow_01',1)
+,('flora_marshmerrow_02','Marshmerrow','ingred_marshmerrow_01',1)
+,('flora_marshmerrow_03','Marshmerrow','ingred_marshmerrow_01',1)
+,('flora_muckspunge_01','Muckspunge','ingred_muck_01',1)
+,('flora_muckspunge_02','Muckspunge','ingred_muck_01',1)
+,('flora_muckspunge_03','Muckspunge','ingred_muck_01',1)
+,('flora_muckspunge_04','Muckspunge','ingred_muck_01',1)
+,('flora_muckspunge_05','Muckspunge','ingred_muck_01',1)
+,('flora_muckspunge_06','Muckspunge','ingred_muck_01',1)
+,('flora_plant_02','Nirthfly Stalks','Ingred_nirthfly_stalks_01',2)
+,('flora_plant_03','Timsa-Come-By flowers','Ingred_timsa-come-by_01',2)
+,('flora_plant_04','Meadow Rye','Ingred_meadow_rye_01',2)
+,('flora_plant_05','Flowering Sweetbarrel','Ingred_sweetpulp_01',2)
+,('flora_plant_06','Desert Sweetbarrel','Ingred_sweetpulp_01',2)
+,('flora_plant_07','Scrib Cabbage','Ingred_scrib_cabbage_01',2)
+,('flora_plant_08','Spiny Lloramor','Ingred_lloramor_spines_01',2)
+,('flora_red_lichen_01','Red Lichen','ingred_red_lichen_01',1)
+,('flora_red_lichen_02','Red Lichen','ingred_red_lichen_01',1)
+,('flora_rm_scathecraw_01','Scathecraw Plant','ingred_scathecraw_01',1)
+,('flora_rm_scathecraw_02','Scathecraw Plant','ingred_scathecraw_01',1)
+,('flora_roobrush_02','Roobrush','ingred_roobrush_01',1)
+,('flora_saltrice_01','Saltrice','ingred_saltrice_01',1)
+,('flora_saltrice_02','Saltrice','ingred_saltrice_01',1)
+,('flora_sedge_01','Golden Sedge','Ingred_golden_sedge_01',1)
+,('flora_sedge_02','Noble Sedge','Ingred_noble_sedge_01',1)
+,('flora_stoneflower_01','Stoneflower','ingred_stoneflower_petals_01',1)
+,('flora_stoneflower_02','Stoneflower','ingred_stoneflower_petals_01',1)
+,('flora_wickwheat_01','Wickwheat','ingred_wickwheat_01',1)
+,('flora_wickwheat_02','Wickwheat','ingred_wickwheat_01',1)
+,('flora_wickwheat_03','Wickwheat','ingred_wickwheat_01',1)
+,('flora_wickwheat_04','Wickwheat','ingred_wickwheat_01',1)
+,('flora_willow_flower_01','Willow Flower','ingred_willow_anther_01',1)
+,('flora_willow_flower_02','Willow Flower','ingred_willow_anther_01',1)
+,('kollop_01_pearl','Large Kollop','ingred_pearl_01',1)
+,('kollop_02_pearl','Kollop','ingred_pearl_01',1)
+,('kollop_03_pearl','Small Kollop','ingred_pearl_01',1)
+,('rock_adam_py09','Raw Adamantium','ingred_adamantium_ore_01',1)
+,('rock_diamond_01','Diamond','ingred_diamond_01',5)
+,('rock_diamond_02','Diamond','ingred_diamond_01',8)
+,('rock_diamond_03','Diamond','ingred_diamond_01',5)
+,('rock_diamond_04','Diamond','ingred_diamond_01',8)
+,('rock_diamond_05','Diamond','ingred_diamond_01',8)
+,('rock_diamond_06','Diamond','ingred_diamond_01',10)
+,('rock_diamond_07','Diamond','ingred_diamond_01',10)
+,('rock_ebony_01','Raw Ebony','ingred_raw_ebony_01',8)
+,('rock_ebony_02','Raw Ebony','ingred_raw_ebony_01',8)
+,('rock_ebony_03','Raw Ebony','ingred_raw_ebony_01',8)
+,('rock_ebony_04','Raw Ebony','ingred_raw_ebony_01',8)
+,('rock_ebony_05','Raw Ebony','ingred_raw_ebony_01',8)
+,('rock_ebony_06','Raw Ebony','ingred_raw_ebony_01',8)
+,('rock_ebony_07','Raw Ebony','ingred_raw_ebony_01',8)
+,('rock_glass_01','Raw Glass','ingred_raw_glass_01',8)
+,('rock_glass_02','Raw Glass','ingred_raw_glass_01',8)
+,('rock_glass_03','Raw Glass','ingred_raw_glass_01',8)
+,('rock_glass_04','Raw Glass','ingred_raw_glass_01',8)
+,('rock_glass_05','Raw Glass','ingred_raw_glass_01',8)
+,('rock_glass_06','Raw Glass','ingred_raw_glass_01',8)
+,('rock_glass_07','Raw Glass','ingred_raw_glass_01',8)
+,('tr_m4_flora_bc_msh_king','Luminous Russula King','ingred_russula_01',8)
+,('tramaroot_01','Trama Root','ingred_trama_root_01',3)
+,('tramaroot_02','Trama Root','ingred_trama_root_01',1)
+,('tramaroot_03','Trama Root','ingred_trama_root_01',1)
+,('tramaroot_04','Trama Root','ingred_trama_root_01',1)
+,('tramaroot_05','Trama Root','ingred_trama_root_01',1);
