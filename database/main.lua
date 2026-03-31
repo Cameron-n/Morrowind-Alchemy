@@ -244,8 +244,8 @@ local function ingredientsList(e)
             origin = "Tamriel Data"
             if ing.icon:sub(1,2):lower() == "pc" then
                 origin = "Cyrodiil"
-            elseif ing.icon:sub(1,2):lower() == "pi" then
-                origin = "Cyrodiil"
+            -- elseif ing.icon:sub(1,2):lower() == "pi" then
+            --     origin = "Cyrodiil"
             elseif ing.icon:sub(1,3):lower() == "sky" then
                 origin = "Skyrim"
             elseif ing.icon:sub(1,2):lower() == "tr" then
