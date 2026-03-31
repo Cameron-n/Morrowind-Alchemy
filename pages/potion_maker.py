@@ -40,8 +40,6 @@ import dash_mantine_components as dmc
 from components.data_access import DF_INGREDIENTS, DF_EFFECTS, DF_TOOLS
 
 DF_EFFECTS.fillna(0, inplace=True)
-DF_INGREDIENTS = DF_INGREDIENTS.replace(-1, 1)
-DF_INGREDIENTS = DF_INGREDIENTS.replace(-2, 0)
 
 data_origins = DF_INGREDIENTS["Origin"].unique()
 
@@ -94,6 +92,11 @@ explain_stack = dmc.Stack([
 min_v = 0
 max_v = 1000
 
+checks = dmc.Group([
+    dmc.Checkbox("MWSE", id="potion-maker-MWSE"),
+    dmc.Checkbox("Poison", id="potion-maker-poison")
+    ], wrap="nowrap")
+
 stats = dmc.Group([
     dmc.NumberInput(label="Alchemy",
                     value=50,
@@ -120,6 +123,7 @@ stats = dmc.Group([
 
 stats = dmc.Stack([
     explain_stack,
+    checks,
     stats,
     ], align="center")
 
@@ -324,12 +328,19 @@ def potion_effects(list_of_effect_lists):
     return effects
 
 
-def update_effect_list(value):
+def update_effect_list(value, mwse):
     """Get an ingredient's effects and return a list of dmc.Text objects"""
     if value is None:
         return None
     # Get list of up to 4 effects from DF_INGREDIENTS
-    ingredient_row = DF_INGREDIENTS[DF_INGREDIENTS["Ingredient"] == value]
+    ingredient_row = DF_INGREDIENTS[DF_INGREDIENTS["Ingredient"] == value].copy()
+    if mwse:
+        ingredient_row = ingredient_row.replace(-1, 0)
+        ingredient_row = ingredient_row.replace(-2, 1)
+    else:
+        ingredient_row = ingredient_row.replace(-1, 1)
+        ingredient_row = ingredient_row.replace(-2, 0)
+
     ingredient_row_not_nan = ingredient_row[ingredient_row != 0].notna().iloc[0]
     columns_not_nan = DF_INGREDIENTS.columns[ingredient_row_not_nan]
 
@@ -360,9 +371,10 @@ def update_effect_list(value):
     [Output(f"ing_{i+1}_effects", "children") for i in range(4)],
     [Output(f"ing_{i+1}", "data") for i in range(4)],
     [Input(f"ing_{i+1}", "value") for i in range(4)],
+    Input("potion-maker-MWSE", "checked"),
     prevent_initial_call=True
 )
-def update_effect_dropdowns(value_1, value_2, value_3, value_4):
+def update_effect_dropdowns(value_1, value_2, value_3, value_4, mwse):
     """
     Remove shared effects from dropdowns.
 
@@ -384,10 +396,18 @@ def update_effect_dropdowns(value_1, value_2, value_3, value_4):
                         data_1[j]["items"] = data_1[j]["items"][data_1[j]["items"] != i]
         data_list.append(data_1)
 
-    i = int(dash.callback_context.triggered_id[-1])
+    i = dash.callback_context.triggered_id[-1]
+    if i != 'E':
+        i=int(i)
 
     return_tuple = [dash.no_update] * 4
-    return_tuple[i-1] = update_effect_list(values[i-1])
+
+    if i != 'E':
+        return_tuple[i-1] = update_effect_list(values[i-1], mwse)
+    else:
+        for j in [1,2,3,4]:
+            return_tuple[j-1] = update_effect_list(values[j-1], mwse)
+
     return_tuple += data_list
     return_tuple = tuple(return_tuple)
 
@@ -419,6 +439,7 @@ def update_effect_list_final(ing_1, ing_2, ing_3, ing_4):
 
 @callback(
     Output("mag_and_dur", "children"),
+    Input("potion-maker-poison", "checked"),
     Input("alchemy", "value"),
     Input("intelligence", "value"),
     Input("luck", "value"),
@@ -429,6 +450,7 @@ def update_effect_list_final(ing_1, ing_2, ing_3, ing_4):
     Input("potion_maker_effects", "children")
 )
 def update_potion_mag_and_dur(
+        poison,
         alchemy,
         intelligence,
         luck,
@@ -477,7 +499,7 @@ def update_potion_mag_and_dur(
             retort,
             calcinator,
             cost,
-            positive=pos
+            positive=pos if not poison else 1 - pos
             )
         text = f"• {round(mag)} points for {round(dur)} seconds"
         stack_list.append(dmc.Text(text, c=gray_or_black[counter % 2]))

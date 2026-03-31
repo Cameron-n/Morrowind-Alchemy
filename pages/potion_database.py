@@ -31,8 +31,6 @@ from components.data_access import DF_INGREDIENTS, DF_EFFECTS
 from components.combos import potion_combinations, potion_quads
 
 DF_INGREDIENTS = DF_INGREDIENTS.fillna(0)
-DF_INGREDIENTS = DF_INGREDIENTS.replace(-1, 1)
-DF_INGREDIENTS = DF_INGREDIENTS.replace(-2, 0)
 DF_EFFECTS = DF_EFFECTS.fillna(0)
 
 
@@ -126,9 +124,13 @@ effects = dmc.Stack([
 
 calc_button = dmc.Button("Calculate", id="Effect Button")
 down_button = dmc.Button("Download", id="Download Button")
+mwse_button = dmc.Checkbox("MWSE", id="potion-database-MWSE")
+pois_button = dmc.Checkbox("Poison", id="potion-database-poison")
 buttons = dmc.Group([
     calc_button,
     down_button,
+    mwse_button,
+    pois_button,
     dcc.Store(id="potion-database-store", storage_type='session'),
     dcc.Download(id="potion-database-download"),
     ], justify="center", wrap="nowrap")
@@ -208,12 +210,16 @@ clientside_callback(
     Output("potion-database-store", "data"),
     Input("Effect Button", "n_clicks"),
     State("data-origins", "value"),
+    State("potion-database-MWSE", "checked"),
+    State("potion-database-poison", "checked"),
     [State(f"Effect {i+1}", "value") for i in range(8)],
     prevent_initial_call=True
 )
 def calculate_potions(
         n_clicks,
         origins,
+        mwse,
+        poison,
         value_1,
         value_2,
         value_3,
@@ -253,6 +259,9 @@ def calculate_potions(
         DESCRIPTION.
 
     """
+    if not origins:
+        return [], False, dash.no_update
+    
     if not (value_1 or value_2 or value_3 or value_4 or
             value_5 or value_6 or value_7 or value_8):
         return [], False, dash.no_update
@@ -265,6 +274,13 @@ def calculate_potions(
 
     # Limit to selected origins
     origin_limited = DF_INGREDIENTS.copy()
+    if mwse:
+        origin_limited = origin_limited.replace(-1, 0)
+        origin_limited = origin_limited.replace(-2, 1)
+    else:
+        origin_limited = origin_limited.replace(-1, 1)
+        origin_limited = origin_limited.replace(-2, 0)
+
     if origins:
         origin_limited = origin_limited[origin_limited["Origin"].isin(origins)]
         origin_limited = origin_limited.reset_index().drop("index", axis=1)
@@ -354,7 +370,10 @@ def calculate_potions(
              ('e8', object)]
     potion_sorted = [tuple(i) for i in potion_sorted]
     potion_sorted = np.array(potion_sorted, dtype=dtype)
-    potion_sorted = np.sort(potion_sorted, order=['pos', 'neg'])
+    if poison:
+        potion_sorted = np.sort(potion_sorted, order=['neg', 'pos'])[::-1]
+    else:
+        potion_sorted = np.sort(potion_sorted, order=['pos', 'neg'])
 
     potion_data = []
     for index, potion in enumerate(potion_sorted):
