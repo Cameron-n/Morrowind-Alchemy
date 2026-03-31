@@ -440,10 +440,10 @@ def update_potion_mag_and_dur(
         ):
     """Formats the visual element's data for potion_magnitude_and_duration"""
     # get effect names
-    if not children or not alchemy or not intelligence or not luck:
+    if not children:
         return None
     if type(alchemy)==str or type(intelligence)==str or type(luck)==str:
-        return "Integer size exceeded. Try a smaller value."
+        return None
 
     # Each name starts with "• ", e.g. "• Drain Fatigue"
     effect_names = [i['props']['children'][2:] for i in children]
