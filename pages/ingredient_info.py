@@ -143,6 +143,7 @@ def update_image(value):
 
     if value:
         value = value.replace(" ", "_")
+        icon = icon.replace("\\", "/")
         src = f"assets/icons/{icon}.png"
     else:
         src= ""
