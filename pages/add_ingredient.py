@@ -4,6 +4,8 @@ Created on Wed May 21 21:41:23 2025
 
 @author: Cameron-n
 
+CURRENTLY DISABLED. CANDIDATE FOR DELETION.
+
 Page to add ingredients to the database. Password protected and
 not on navigation bar to stop it being publically accessible
 """
@@ -37,7 +39,8 @@ from components.data_access import db, Ingredient, DF_INGREDIENTS, DF_EFFECTS
 #%% Boilerplate
 
 if __name__ != '__main__':
-    dash.register_page(__name__)
+    pass
+    #dash.register_page(__name__)
 
 path = os.path.join(os.path.dirname(__file__), "../.env")
 load_dotenv(path)

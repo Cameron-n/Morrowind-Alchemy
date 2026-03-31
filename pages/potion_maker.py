@@ -91,24 +91,30 @@ explain_stack = dmc.Stack([
     gap=0
 )
 
+min_v = 0
+max_v = 1000
+
 stats = dmc.Group([
     dmc.NumberInput(label="Alchemy",
                     value=50,
-                    min=0,
-                    max=100,
+                    min=min_v,
+                    max=max_v,
                     allowDecimal=False,
+                    clampBehavior="strict",
                     id="alchemy"),
     dmc.NumberInput(label="Intelligence",
                     value=50,
-                    min=0,
-                    max=100,
+                    min=min_v,
+                    max=max_v,
                     allowDecimal=False,
+                    clampBehavior="strict",
                     id="intelligence"),
     dmc.NumberInput(label="Luck",
                     value=40,
-                    min=0,
-                    max=100,
+                    min=min_v,
+                    max=max_v,
                     allowDecimal=False,
+                    clampBehavior="strict",
                     id="luck"),
     ], wrap="nowrap")
 
@@ -130,27 +136,33 @@ renderOptionIng = {
     }
 
 alchemy_tools = dmc.Group([
-    dmc.Select(label="Mortar and Pestle",
-               data=tools_grouped("Mortar and Pestle"),
-               value=DF_TOOLS[DF_TOOLS["Type"]=="Mortar and Pestle"][DF_TOOLS["Quality"]==0.5]["Name"].iloc[0],
-               allowDeselect=False,
-               renderOption=renderOptionAppa,
-               id="mortar"),
-    dmc.Select(label="Alembic",
-               data=tools_grouped("Alembic"),
-               renderOption=renderOptionAppa,
-               id="alembic"),
-    dmc.Select(label="Calcinator",
-               data=tools_grouped("Calcinator"),
-               renderOption=renderOptionAppa,
-               id="calcinator"),
-    dmc.Select(label="Retort",
-               data=tools_grouped("Retort"),
-               renderOption=renderOptionAppa,
-               id="retort"),
+    dmc.Group([
+        dmc.Select(label="Mortar and Pestle",
+                   data=tools_grouped("Mortar and Pestle"),
+                   value=DF_TOOLS[DF_TOOLS["Type"]=="Mortar and Pestle"][DF_TOOLS["Quality"]==0.5]["Name"].iloc[0],
+                   allowDeselect=False,
+                   renderOption=renderOptionAppa,
+                   id="mortar"),
+        dmc.Select(label="Alembic",
+                   data=tools_grouped("Alembic"),
+                   renderOption=renderOptionAppa,
+                   id="alembic"),
     ],
-    grow=True,
-    wrap="nowrap",)
+        grow=True,
+        wrap="nowrap",),
+    dmc.Group([
+        dmc.Select(label="Calcinator",
+                   data=tools_grouped("Calcinator"),
+                   renderOption=renderOptionAppa,
+                   id="calcinator"),
+        dmc.Select(label="Retort",
+                   data=tools_grouped("Retort"),
+                   renderOption=renderOptionAppa,
+                   id="retort"),
+    ],
+        grow=True,
+        wrap="nowrap",),
+    ])
 
 alchemy_tools = dmc.Stack([
     alchemy_tools_title,
@@ -160,20 +172,25 @@ alchemy_tools = dmc.Stack([
 ingredients_title = dmc.Text("Ingredients")
 
 ingredients = dmc.Group([
-    dmc.Select(value=None,
-               data=grouped_data,
-               searchable=True,
-               clearable=True,
-               #renderOption=renderOptionIng,
-               id="ing_1",
-               ),
-    dmc.Select(value=None,
-               data=grouped_data,
-               searchable=True,
-               clearable=True,
-               #renderOption=renderOptionIng,
-               id="ing_2",
-               ),
+    dmc.Group([
+        dmc.Select(value=None,
+                   data=grouped_data,
+                   searchable=True,
+                   clearable=True,
+                   #renderOption=renderOptionIng,
+                   id="ing_1",
+                   ),
+        dmc.Select(value=None,
+                   data=grouped_data,
+                   searchable=True,
+                   clearable=True,
+                   #renderOption=renderOptionIng,
+                   id="ing_2",
+                   ),
+    ],
+        grow=True,
+        wrap="nowrap",),
+    dmc.Group([
     dmc.Select(value=None,
                data=grouped_data,
                searchable=True,
@@ -189,8 +206,9 @@ ingredients = dmc.Group([
                id="ing_4",
                ),
     ],
-    grow=True,
-    wrap="nowrap",)
+        grow=True,
+        wrap="nowrap",),
+    ])
 
 ingredients = dmc.Stack([
     ingredients_title,
@@ -204,7 +222,8 @@ ingredient_effect_boxes = dmc.Group([
     dmc.Card(id="ing_4_effects"),
     ],
     grow=True,
-    wrap="nowrap",)
+    wrap="nowrap",
+    visibleFrom="md",)
 
 left_items = dmc.Stack([
     alchemy_tools,
@@ -391,7 +410,9 @@ def update_effect_list_final(ing_1, ing_2, ing_3, ing_4):
         num += 1
         list_of_lists.append([j['props']['children'] for j in i])
 
-    content = [dmc.Text(i) for i in potion_effects(list_of_lists)]
+    gray_or_black = ["black", "grey"]
+    content = [dmc.Text("• "+i, c=gray_or_black[counter % 2]) for 
+               counter, i in enumerate(potion_effects(list_of_lists))]
 
     return content
 
@@ -419,10 +440,13 @@ def update_potion_mag_and_dur(
         ):
     """Formats the visual element's data for potion_magnitude_and_duration"""
     # get effect names
-    if not children:
+    if not children or not alchemy or not intelligence or not luck:
         return None
+    if type(alchemy)==str or type(intelligence)==str or type(luck)==str:
+        return "Integer size exceeded. Try a smaller value."
 
-    effect_names = [i['props']['children'] for i in children]
+    # Each name starts with "• ", e.g. "• Drain Fatigue"
+    effect_names = [i['props']['children'][2:] for i in children]
 
     # get effect costs from names
     effect_costs = [DF_EFFECTS["Base Cost"][DF_EFFECTS["Spell Effects"] == i].iloc[0] for i in effect_names]
@@ -441,6 +465,8 @@ def update_potion_mag_and_dur(
     
     # calculate mag and duration
     stack_list = []
+    gray_or_black = ["black", "grey"]
+    counter = 0
     for cost, pos in zip(effect_costs, pos_neg):
         mag, dur = potion_magnitude_and_duration(
             alchemy,
@@ -453,7 +479,8 @@ def update_potion_mag_and_dur(
             cost,
             positive=pos
             )
-        text = f"{round(mag)} points for {round(dur)} seconds"
-        stack_list.append(dmc.Text(text))
+        text = f"• {round(mag)} points for {round(dur)} seconds"
+        stack_list.append(dmc.Text(text, c=gray_or_black[counter % 2]))
+        counter += 1
     
     return stack_list

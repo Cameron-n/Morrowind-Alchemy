@@ -55,8 +55,8 @@ db.init_app(server)
 
 # For new effects, add them:
     # Here
-    # In `Ingredient` in the database
-    # In `Effects` in the database
+    # In `Ingredient` in the database (as a column)
+    # In `Effects` in the database (as a row)
 class Ingredient(db.Model):
     __tablename__ = "Ingredient"
 
