@@ -30,3 +30,12 @@
     border-color: var(--mantine-color-myColors-2);
     overflow: scroll;
 }
+
+.map-size {
+    height: 50vh; 
+    background-color: rgba(33,32,28,1.0);
+    
+    @media (min-width: 64em) {
+        height: 75vh;
+    }
+}

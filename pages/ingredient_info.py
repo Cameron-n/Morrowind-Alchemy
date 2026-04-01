@@ -10,6 +10,7 @@ Created on Thu May 22 20:17:00 2025
 #%% Imports
 
 # Standard
+import os
 import pandas as pd
 
 # Dash
@@ -19,7 +20,11 @@ import dash_mantine_components as dmc
 import dash_leaflet as dl
 
 # Relative
-from components.data_access import db, DF_INGREDIENTS, DF_EFFECTS, NPCtoCell, IngtoNPC, Ingredient
+from components.data_access import (
+    db, DF_INGREDIENTS, DF_EFFECTS, NPCtoCell, IngtoNPC, ContainertoCell, 
+    FloratoCell, IngtoContainer, IngtoFauna, IngtoFlora, IngtoLoose, 
+    LvlcretoCell, Ingredient
+    )
 
 
 #%% Boilerplate
@@ -45,7 +50,7 @@ grouped_data = [
 
 crs = "Simple"
 
-layout = dmc.Stack([
+info = dmc.Stack([
     dmc.Group([
         dmc.Stack([
             dmc.Title("Ingredient Info", order=3),
@@ -74,17 +79,32 @@ layout = dmc.Stack([
         dmc.Title("Effects", order=4),
         dmc.Box(id="ingredient_info_effects"),
         ]),
-    dmc.Stack([
+    ])
+
+leaf_map = dmc.Stack([
         dmc.Title("Locations", order=4),
         dl.Map([
             dl.TileLayer(url=url, maxZoom=8, minZoom=0, noWrap=True),
-            ], #+ markerslist,
-            center=[70, -50], zoom=1, style={"height": "50vh", "background-color": "rgba(33,32,28,1.0)"}, crs=crs,
-            id="ingredient_info_markers"
+            dl.LayersControl([
+                    dl.Overlay(dl.LayerGroup(id="ingredient_info_npcs"), name="NPCs", checked=True),
+                    dl.Overlay(dl.LayerGroup(id="ingredient_info_fauna"), name="Fauna", checked=True),
+                    dl.Overlay(dl.LayerGroup(id="ingredient_info_flora"), name="Flora", checked=True),
+                    dl.Overlay(dl.LayerGroup(id="ingredient_info_containers"), name="Containers", checked=True),
+                    dl.Overlay(dl.LayerGroup(id="ingredient_info_loose"), name="Loose", checked=True)
+                ])
+            ],
+            center=[-50, 100], zoom=1, className="map-size", crs=crs,
             )
-        ]),
-    ], style={"margin": "auto", "max-width": "500px"})
+        ])
 
+layout = dmc.Grid([
+    dmc.GridCol(info, span=4),
+    dmc.GridCol(leaf_map, span=8),
+    ], 
+    style={"margin": "auto", "max-width": "1000px"}, 
+    grow=True,
+    align="stretch"
+    )
 
 #%% Functions
 
@@ -106,10 +126,19 @@ def update_effect_list(value):
     ingredient_row_not_nan = ingredient_row[ingredient_row != 0].notna().iloc[0]
     columns_not_nan = DF_INGREDIENTS.columns[ingredient_row_not_nan]
     
+    mwse_effect = ingredient_row[ingredient_row == -2].notna().iloc[0]
+    mwse_effect = DF_INGREDIENTS.columns[mwse_effect]
+    mwse_effect = list(mwse_effect)
+    
+    not_mwse_effect = ingredient_row[ingredient_row == -1].notna().iloc[0]
+    not_mwse_effect = DF_INGREDIENTS.columns[not_mwse_effect]
+    not_mwse_effect = list(not_mwse_effect)
+    
     price = ingredient_row["Value"].iloc[0]
     price = f"{str(price):<6}" # Doesn't work (pad with spaces)
     weight = ingredient_row["Weight"].iloc[0]
     weight = f"{str(weight):<6}"
+    first = ingredient_row["First Effect"].iloc[0]
 
     effects = list(columns_not_nan)
     try:
@@ -125,9 +154,20 @@ def update_effect_list(value):
     effects.remove("First Effect")
     effects.remove("ID")
     effects.remove("Icon")
+    effects.remove(first)
+
+    if not_mwse_effect:
+        if not_mwse_effect == [first]:
+            first = not_mwse_effect[0] + '/' + mwse_effect[0]
+        else:
+            for k, v in enumerate(effects):
+                if v == not_mwse_effect[0]:
+                    effects[k] += '/' + mwse_effect[0]
+        effects.remove(mwse_effect[0])
 
     # Add components
     content = [dmc.Text(i, truncate="end") for i in effects]
+    content = [first] + content
 
     return content, price, weight
 
@@ -144,14 +184,15 @@ def update_image(value):
     if value:
         value = value.replace(" ", "_")
         icon = icon.replace("\\", "/")
-        src = f"assets/icons/{icon}.png"
+        src = f"/assets/icons/{icon}.png"
     else:
         src= ""
 
     return src
 
 @callback(
-    Output("ingredient_info_markers", "children"),
+    Output("ingredient_info_npcs", "children"),
+    Output("ingredient_info_flora", "children"),
     Input("ingredient_info_select_ing", "value")
 )
 def update_markers(value):
@@ -159,19 +200,32 @@ def update_markers(value):
     ids = db.session.execute(db.select(Ingredient.ID)
                              .where(Ingredient.Ingredient == value))
     ids = ids.scalar()
-    
+
     if not ids:
-        return dl.TileLayer(url=url, maxZoom=8, minZoom=0, noWrap=True)
+        return None, None
 
     df_npc = pd.DataFrame(db.session.execute(db.select(
         NPCtoCell.Name, NPCtoCell.CellX, NPCtoCell.CellY)
         .join(IngtoNPC, NPCtoCell.Name == IngtoNPC.NPCName)
         .where(IngtoNPC.Name == ids)))
 
-    markerslist = [
-        dl.Marker(position=[y - 34, x + 139], children=[dl.Tooltip(content=content)]) for content, x, y in zip(df_npc["Name"], df_npc["CellX"], df_npc["CellY"])
-        ]
+    df_flora = pd.DataFrame(db.session.execute(db.select(
+        FloratoCell.CellName, FloratoCell.CellX, FloratoCell.CellY)
+        .join(IngtoFlora, FloratoCell.ID == IngtoFlora.ID)
+        .where(IngtoFlora.Ingredient == ids)))
+
+    if not df_npc.empty:
+        markerslist_npc = [
+            dl.Marker(position=[y - 34, x + 139], children=[dl.Tooltip(content=content)]) for content, x, y in zip(df_npc["Name"], df_npc["CellX"], df_npc["CellY"])
+            ]
+    else:
+        markerslist_npc = None
     
-    tile_and_markers = [dl.TileLayer(url=url, maxZoom=8, minZoom=0, noWrap=True)] + markerslist
+    if not df_flora.empty:
+        markerslist_flora = [
+            dl.Marker(position=[y - 34, x + 139], children=[dl.Tooltip(content=content)]) for content, x, y in zip(df_flora["CellName"], df_flora["CellX"], df_flora["CellY"])
+            ]
+    else:
+        markerslist_flora = None
     
-    return tile_and_markers
+    return markerslist_npc, markerslist_flora
