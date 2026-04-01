@@ -43,9 +43,9 @@ if __name__ != '__main__':
 #%% Layout
 
 text = """
-1. Select the effects you want to include in the resulting potions.
-2. Press Calculate to find these potions.
-3. Limit the origins of the ingredients to include or exclude mods, dlcs, or base game ingredients.
+1. Select the effects you want.
+2. (Optional) Limit the origins of the ingredients.
+3. Press Calculate.
 """
 
 explain_stack = dmc.Stack([

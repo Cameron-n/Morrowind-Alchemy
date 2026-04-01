@@ -75,9 +75,9 @@ if __name__ != '__main__':
 #%% Layout
 
 text = """
-1. Set the stats to see the effects on the magnitude and duration of potion effects
-2. Select the appartuses. These also alter the magnitude and duration. Note, only a Mortar and Pestle is *required*
-3. Select the ingredients. These determine the outcome of the potion
+1. Set the stats.
+2. Select the appartuses.
+3. Select the ingredients.
 """
 
 explain_title = dmc.Title("Potion Maker", order=3)
