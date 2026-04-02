@@ -10,7 +10,6 @@ Created on Thu May 22 20:17:00 2025
 #%% Imports
 
 # Standard
-import os
 import pandas as pd
 
 # Dash
@@ -18,6 +17,8 @@ import dash
 from dash import callback, Input, Output
 import dash_mantine_components as dmc
 import dash_leaflet as dl
+import dash_leaflet.express as dlx
+from dash_extensions.javascript import assign
 
 # Relative
 from components.data_access import (
@@ -190,6 +191,7 @@ def update_image(value):
 
     return src
 
+
 @callback(
     Output("ingredient_info_npcs", "children"),
     Output("ingredient_info_fauna", "children"),
@@ -236,9 +238,29 @@ def update_markers(value):
         markerslist_fauna = None
     
     if not df_flora.empty:
-        markerslist_flora = [
-            dl.Marker(position=[y - 34, x + 139], children=[dl.Tooltip(content=content)]) for content, x, y in zip(df_flora["CellName"], df_flora["CellX"], df_flora["CellY"])
-            ]
+        # icon = db.session.execute(db.select(Ingredient.Icon)
+        #                           .where(Ingredient.Ingredient == value))
+        # icon = icon.scalar().lower()
+        
+        markerslist_flora = dlx.dicts_to_geojson(
+            [
+                dict(lat=y-34, lon=x+139, popup=content) 
+                for content, x, y in 
+                zip(df_flora["CellName"], df_flora["CellX"], df_flora["CellY"])
+                ]
+            )
+
+        markerslist_flora = dl.GeoJSON(
+            data=markerslist_flora, 
+            cluster=True,
+            #pointToLayer={"variable": "dashExtensions.default.customMarkersFlora"},
+            superClusterOptions={"maxZoom": 7},
+            spiderfyOnMaxZoom=False,
+            )
+        
+        # markerslist_flora = [
+        #     dl.Marker(position=[y - 34, x + 139], children=[dl.Tooltip(content=content)]) for content, x, y in zip(df_flora["CellName"], df_flora["CellX"], df_flora["CellY"])
+        #     ]
     else:
         markerslist_flora = None
         
