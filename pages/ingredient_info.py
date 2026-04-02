@@ -184,7 +184,7 @@ def update_image(value):
     if value:
         value = value.replace(" ", "_")
         icon = icon.replace("\\", "/")
-        src = f"/assets/icons/{icon}.png"
+        src = f"assets/icons/{icon.lower()}.png"
     else:
         src= ""
 
@@ -192,7 +192,10 @@ def update_image(value):
 
 @callback(
     Output("ingredient_info_npcs", "children"),
+    Output("ingredient_info_fauna", "children"),
     Output("ingredient_info_flora", "children"),
+    Output("ingredient_info_containers", "children"),
+    Output("ingredient_info_loose", "children"),
     Input("ingredient_info_select_ing", "value")
 )
 def update_markers(value):
@@ -202,17 +205,23 @@ def update_markers(value):
     ids = ids.scalar()
 
     if not ids:
-        return None, None
+        return None, None, None, None, None
 
     df_npc = pd.DataFrame(db.session.execute(db.select(
         NPCtoCell.Name, NPCtoCell.CellX, NPCtoCell.CellY)
         .join(IngtoNPC, NPCtoCell.Name == IngtoNPC.NPCName)
         .where(IngtoNPC.Name == ids)))
+    
+    df_fauna = pd.DataFrame()
 
     df_flora = pd.DataFrame(db.session.execute(db.select(
         FloratoCell.CellName, FloratoCell.CellX, FloratoCell.CellY)
         .join(IngtoFlora, FloratoCell.ID == IngtoFlora.ID)
         .where(IngtoFlora.Ingredient == ids)))
+    
+    df_cont = pd.DataFrame()
+    
+    df_loose = pd.DataFrame()
 
     if not df_npc.empty:
         markerslist_npc = [
@@ -220,6 +229,11 @@ def update_markers(value):
             ]
     else:
         markerslist_npc = None
+        
+    if not df_fauna.empty:
+        pass
+    else:
+        markerslist_fauna = None
     
     if not df_flora.empty:
         markerslist_flora = [
@@ -227,5 +241,15 @@ def update_markers(value):
             ]
     else:
         markerslist_flora = None
+        
+    if not df_cont.empty:
+        pass
+    else:
+        markerslist_cont = None
+        
+    if not df_loose.empty:
+        pass
+    else:
+        markerslist_loose = None
     
-    return markerslist_npc, markerslist_flora
+    return markerslist_npc, markerslist_fauna, markerslist_flora, markerslist_cont, markerslist_loose
