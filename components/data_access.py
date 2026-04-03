@@ -267,7 +267,7 @@ class IngtoContainer(db.Model):
     ID = mapped_column(String(50), primary_key=True)
     Name = mapped_column(String(50))
     Ingredient = mapped_column(String(50), primary_key=True)
-    Count = mapped_column(Integer)
+    CountC = mapped_column("Count", Integer)
 
 class IngtoFauna(db.Model):
     __tablename__ = "IngtoFauna"
@@ -275,7 +275,7 @@ class IngtoFauna(db.Model):
     ID = mapped_column(String(50), primary_key=True)
     Name = mapped_column(String(50))
     Ingredient = mapped_column(String(50), primary_key=True)
-    Count = mapped_column(Integer)
+    CountC = mapped_column("Count", Integer)
 
 class IngtoFlora(db.Model):
     __tablename__ = "IngtoFlora"
@@ -283,7 +283,7 @@ class IngtoFlora(db.Model):
     ID = mapped_column(String(50), primary_key=True)
     Name = mapped_column(String(50))
     Ingredient = mapped_column(String(50), primary_key=True)
-    Count = mapped_column(Integer)
+    CountC = mapped_column("Count", Integer)
 
 class IngtoLoose(db.Model):
     __tablename__ = "IngtoLoose"
