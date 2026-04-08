@@ -138,8 +138,8 @@ def dataframe_to_geojson(df, icon, interior="{cellname}<br>Count: {count}", exte
             data=markerslist, 
             cluster=True,
             pointToLayer=ns("pointToLayer"),
-            superClusterOptions={"maxZoom": 5},
-            spiderfyOnMaxZoom=False,
+            superClusterOptions={"maxZoom": 7},
+            #spiderfyOnMaxZoom=False,
             )
     else:
         markerslist = None
