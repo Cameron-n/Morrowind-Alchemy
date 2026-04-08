@@ -290,14 +290,14 @@ def calculate_potions(
     potions_2 = potion_combinations(potions_1, origin_limited, restrictions)  # pairs
     potions_3 = potion_combinations(potions_2, origin_limited, restrictions)  # triplets
     potions_4 = potion_combinations(potions_3, origin_limited, restrictions)  # linked quads
-    potions_2_2 = potion_quads(potions_2) # 2 unlinked pairs
+    potions_2_2 = potion_combinations(potions_2, potions_2, restrictions, pairs=True) # 2 unlinked pairs
     potions = pd.concat([potions_2, potions_3, potions_4, potions_2_2])
     potions = potions.reset_index().drop("index", axis=1)
 
     # We remove the ingredients columns to do maths on
     # the effect columns. We'll save the ingredients to
     # add them back on later
-    ingredients_columns = ["Ingredient", "Ingredient 2",
+    ingredients_columns = ["Ingredient 1", "Ingredient 2",
                            "Ingredient 3", "Ingredient 4"]
     shared_columns = potions.columns.intersection(ingredients_columns)
     potions_ingredients = potions[shared_columns]
