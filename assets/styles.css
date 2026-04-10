@@ -17,7 +17,7 @@
 
 .media-navbar {
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .mantine-Table-th {
@@ -28,7 +28,7 @@
     border-style: groove;
     border-width: thick;
     border-color: var(--mantine-color-myColors-2);
-    overflow: scroll;
+    overflow: auto;
 }
 
 .map-size {

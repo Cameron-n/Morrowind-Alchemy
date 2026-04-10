@@ -28,7 +28,7 @@ from components.data_access import server
 
 #%% Boilerplate
 
-app = Dash(__name__, server=server, use_pages=True)
+app = Dash(__name__, server=server, use_pages=True, title="Morrowind Alchemy Calculator")
 
 
 #%% Layout
@@ -42,7 +42,8 @@ layout = dmc.AppShell([
     dmc.AppShellNavbar(
         Navbar(),
         p="md",
-        bg="myColors.1"
+        bg="myColors.1",
+        zIndex=1000, # Otherwise map overlays it
     ),
     dmc.AppShellMain(dash.page_container)
 ],
