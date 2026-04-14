@@ -91,15 +91,15 @@ leaf_map = dmc.Stack([
         dmc.Title("Locations", order=4),
         dl.Map([
             dl.TileLayer(url=url, maxZoom=8, minZoom=0, noWrap=True),
-            dl.LayersControl([
-                    dl.Overlay(dl.LayerGroup(id="ingredient_info_npcs"), name="NPCs", checked=True),
-                    dl.Overlay(dl.LayerGroup(id="ingredient_info_fauna"), name="Fauna", checked=True),
-                    dl.Overlay(dl.LayerGroup(id="ingredient_info_flora"), name="Flora", checked=True),
-                    dl.Overlay(dl.LayerGroup(id="ingredient_info_containers"), name="Containers", checked=True),
-                    dl.Overlay(dl.LayerGroup(id="ingredient_info_loose"), name="Loose", checked=True)
+            dl.LayersControl([ # Could add icons instead of color names
+                    dl.Overlay(dl.LayerGroup(id="ingredient_info_npcs"), name="NPCs (pins)", checked=True),
+                    dl.Overlay(dl.LayerGroup(id="ingredient_info_fauna"), name="Fauna (blue)", checked=True),
+                    dl.Overlay(dl.LayerGroup(id="ingredient_info_flora"), name="Flora (cyan)", checked=True),
+                    dl.Overlay(dl.LayerGroup(id="ingredient_info_containers"), name="Containers (magenta)", checked=True),
+                    dl.Overlay(dl.LayerGroup(id="ingredient_info_loose"), name="Loose (green)", checked=True)
                 ])
             ],
-            center=[-50, 100], zoom=1, className="map-size", crs=crs,
+            center=dict(lat=-50, lng=100), zoom=1, className="map-size", crs=crs
             )
         ])
 
@@ -119,13 +119,13 @@ def dataframe_to_geojson(df, icon, interior="{cellname}<br>Count: {count}", exte
         markerslist = dlx.dicts_to_geojson(
             [
                 dict(
-                    lat=y - 34,
-                    lon=x + 139,
+                    lat=y - 34 + 0, # BUG +0 for attempted supercluster latlng limit fix. Did not work.
+                    lon=x + 139 - 0, # Possible solution, remake maps with ~20 empty cells to the bottom and to the right.
                     popup=interior
                     .format(name=name, cellname=cellname, count=count) 
                     if isInterior==1 else 
                     exterior
-                    .format(name=name, cellname=cellname), icon=icon) 
+                    .format(name=name, cellname=cellname), icon=icon+'i' if isInterior==1 else icon+'e') 
                 for name, isInterior, count, cellname, x, y in
                 zip(df["Name"], df["IsInterior"], df["Count"], df["CellName"], df["CellX"], df["CellY"])
                 ]
@@ -138,8 +138,10 @@ def dataframe_to_geojson(df, icon, interior="{cellname}<br>Count: {count}", exte
             data=markerslist, 
             cluster=True,
             pointToLayer=ns("pointToLayer"),
-            superClusterOptions={"maxZoom": 7},
+            clusterToLayer=ns("clusterToLayer"),
+            superClusterOptions={"maxZoom": 6},
             #spiderfyOnMaxZoom=False,
+            style={"weight": 1.5, "color": "red", "opacity": 0.5}
             )
     else:
         markerslist = None
@@ -298,9 +300,9 @@ def update_markers(value):
     else:
         markerslist_npc = None
 
-    markerslist_fauna = dataframe_to_geojson(df_fauna, "m/tx_alembic_05", interior="{cellname}<br>Name: {name}", exterior="{cellname}<br>Name: {name}")
-    markerslist_flora = dataframe_to_geojson(df_flora, icon)
-    markerslist_cont = dataframe_to_geojson(df_cont, "m/tx_calcinator_05")
-    markerslist_loose = dataframe_to_geojson(df_loose, "m/tx_retort_05")
+    markerslist_fauna = dataframe_to_geojson(df_fauna, "marker_blue_", interior="{cellname}<br>Name: {name}", exterior="{cellname}<br>Name: {name}")
+    markerslist_flora = dataframe_to_geojson(df_flora, "marker_cyan_")
+    markerslist_cont = dataframe_to_geojson(df_cont, "marker_magenta_")
+    markerslist_loose = dataframe_to_geojson(df_loose, "marker_green_")
 
     return markerslist_npc, markerslist_fauna, markerslist_flora, markerslist_cont, markerslist_loose
