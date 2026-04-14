@@ -51,6 +51,8 @@ layout = dmc.Stack([
     dmc.Text(home_text[3], style={"white-space": "pre-wrap"}),
     dmc.Title("Ingredient Info", order=4),
     dmc.Text(home_text[4], style={"white-space": "pre-wrap"}),
+    dmc.Title("Known Issues", order=4),
+    dmc.Text(home_text[5], style={"white-space": "pre-wrap"}),
     dmc.Title("Credits", order=4),
     dmc.Text([
         "- The game Morrowind belongs to Bethesda Studios\n",
