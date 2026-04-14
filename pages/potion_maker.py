@@ -293,18 +293,18 @@ def potion_magnitude_and_duration(
     mult = 1
     if positive:
         if retort and calcinator:
-            extras = round(calcinator) + 2 * (round(retort))
+            extras = calcinator + 2 * (retort)
         elif retort:
-            extras = round(retort)
+            extras = retort
         elif calcinator:
-            extras = round(calcinator)
+            extras = calcinator
     else:
         if alembic and calcinator:
             mult = 1 / (2 * alembic + 3 * calcinator)
         elif alembic:
             mult = 1 / (alembic + 1)
         elif calcinator:
-            extras = round(calcinator)
+            extras = calcinator
 
     magnitude = magnitude_base * mult + extras
     duration = duration_base * mult + extras
