@@ -18,7 +18,6 @@ Features:
 #%% Imports
 
 # Standard
-import numpy as np
 import pandas as pd
 
 # Dash
@@ -271,6 +270,7 @@ def calculate_potions(
               value_5, value_6, value_7, value_8]:
         if i not in [None, "", []]:
             restrictions.append(i)
+    restrictions = list(set(restrictions))
 
     # Limit to selected origins
     origin_limited = DF_INGREDIENTS.copy()
