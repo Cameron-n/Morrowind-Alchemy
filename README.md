@@ -1,6 +1,6 @@
 # Morrowind-Alchemy
 
-**Note: See >[this](https://cameron-n.github.io/Alchemy/Python-Webapp/)< post for a more detailed look at this project.**
+**Note: See >[this](https://cameron-n.github.io/Alchemy/Python-Webapp/)< post for a more detailed look at this project (WIP).**
 
 ## Overview
 
@@ -14,7 +14,9 @@ and finding potions with additional positive effects.
 Features:
 - Potion Maker: Mimics the in-game alchemy menu
 - Potion Database: Search combinations and calculate the 'optimal' potions
-- Tamriel Rebuilt: Ingredients included and can be filtered to exclude
+- Ingredient Info: Map of ingredient locations
+- Includes Tamriel Rebuilt/Project Tamriel ingredients
+- Includes support for Poisons
 
 [//]: # (Add Ingredient: Add new ingredients to the database)
 
@@ -45,7 +47,7 @@ Run the app by running `app.py` and navitgating to `localhost:8050` on a browser
 
 Create a database and load the data. Note, I am using MySQL so e.g. the backticks may need to be replaced:
 Run `create_tables.sql` to create the tables.
-Run `effect_data.sql`, `ingredient_data.sql`, and `tool.sql` to populate the tables.
+Run `{xyz}_data.sql` files to populate the tables.
 
 Create a .env file in the root folder with the following information:
 ```
@@ -55,10 +57,16 @@ ADD_INGREDIENT_TOKEN="<A secure token>"
 The DATABASE_URI contains the connection string to your database. If you don't
 want to use MySQL, here is where you need to change that.
 
+```diff
+- Outdated VVVVV
+```
 The ADD_INGREDIENT_TOKEN is used to stop anyone adding ingredients to the database
 using the `add-ingredient` page. You can set it to any valid string you like and
 will need it for that page. You can navigate to this page by explicitly stating
 the URL, e.g. `http://localhost:8050/add-ingredient`.
+```diff
+- Outdated ^^^^^
+```
 
 In case you want to add new spell effects, these must be added in three places:
 
@@ -86,7 +94,6 @@ readers!
 
 - Component IDs are in the form `<file_name>-<component_name>-<custom>`. This is because Dash does not allow duplicate
 IDs and it's very easy to lose track of the names.
-- Test
 
 ## External Docs and Credits
 
@@ -98,11 +105,3 @@ This project is built on:
 - [Flask](https://flask.palletsprojects.com/en/stable/) - For the underlying server
 - [SQLAlchemy](https://www.sqlalchemy.org/) - A database ORM
     - See also [Flask-SQLAlchemy](https://flask-sqlalchemy.readthedocs.io/en/stable/quickstart/)
-
-The original data is taken from [this spreadsheet](https://docs.google.com/spreadsheets/d/1JQ391ET9lkKRoAdzQnkyIly7XCg2fNmtJqhpqmJitaM/edit?gid=1565250262#gid=1565250262).
-- Data cleaning steps:
-    - Add columns
-    - The original source has these errors
-        - Heartwood is labelled as "Resist Magicka" but should be "Restore Magicka"
-        - Deadra's Heart is labelled as "Resist Magicka" but should be "Restore Magicka"
-        - Wolf Pelt is labelled as "Burden" "Poison" "Restore Magicka" "Reflect" but is "Drain Fatigue" "Fortify Speed" "Resist Common Disease" "Night Eye"
