@@ -286,108 +286,23 @@ def calculate_potions(
         origin_limited = origin_limited.reset_index().drop("index", axis=1)
 
     # Get all possible potion combinations
-    potions_2 = potion_combinations(origin_limited, 2, restrictions)  # pairs
-    potions_3 = potion_combinations(origin_limited, 3, restrictions)  # triplets
-    potions_4 = potion_combinations(origin_limited, 4, restrictions)  # quads
-    potions = pd.concat([potions_2, potions_3, potions_4])
-    potions = potions.reset_index().drop("index", axis=1)
-
-    # We remove the ingredients columns to do maths on
-    # the effect columns. We'll save the ingredients to
-    # add them back on later
-    ingredients_columns = ["Ingredient 1", "Ingredient 2",
-                           "Ingredient 3", "Ingredient 4"]
-    shared_columns = potions.columns.intersection(ingredients_columns)
-    potions_ingredients = potions[shared_columns]
-    potions = potions.drop(ingredients_columns, axis=1, errors='ignore')
-
-    # potion_combinations returns all combinations where each
-    # ingredient has at least one of the restrictions. We need
-    # to further limit this to combinations where every restriction
-    # is included
-    if not potions.empty:
-        ingredients_restrictions = pd.Series([True for _ in range(len(potions))])
-        for i in restrictions:
-            ingredients_restrictions = ingredients_restrictions & (potions[i] == 2)
-        potions = potions[ingredients_restrictions]
-
-    # A potion has an effect if at least 2 ingredients share that effect.
-    # Here we replace the '2's in the dataframe with the actual effect names
-    potions = potions.where(potions < 2, potions.columns.to_series(), axis=1)
-
-    # Get the ingredient names indexed correctly after the .where operation
-    potions_ingredients = potions.join(potions_ingredients)[shared_columns]
-    potions_ingredients = potions_ingredients.fillna('')
-    potions = potions.to_numpy()
-
-    # Add the potion data to the dmc table
-    potion_as_words = []
-    for index, potion in enumerate(potions):
-
-        # Remove effects not part of the ingredients (0)
-        # or in only an ingredient but not the other (1)
-        potion = potion[potion != 0]
-        potion = potion[potion != 1]
-        potion_as_words.append(potion)
-
-    # Sort by +ve effects descending, -ve effects ascending
-    potion_sorted = []
-    for i in potion_as_words:
-        total = len(i)
-        num_pos = 0
-        for j in i:
-            num_pos -= DF_EFFECTS[DF_EFFECTS["Spell Effects"] == j]["Positive"].iloc[0]
-        for j in range(8 - len(i)):
-            i = np.append(i, '')
-        part_one = np.append(total+num_pos, i)
-        potion_sorted.append(np.append(num_pos, part_one))
-
-    ingredients_sorted = []
-    potions_ingredients = potions_ingredients.to_numpy()
-    for i in potions_ingredients:
-        for j in range(4-len(i)):
-            i = np.append(i, '')
-        ingredients_sorted.append(i)
-
-    if potion_sorted != []:
-        potion_sorted = np.append(ingredients_sorted, potion_sorted, axis=1)
-
-    dtype = [('ing 1', object),
-             ('ing 2', object),
-             ('ing 3', object),
-             ('ing 4', object),
-             ('pos', float),
-             ('neg', float),
-             ('e1', object),
-             ('e2', object),
-             ('e3', object),
-             ('e4', object),
-             ('e5', object),
-             ('e6', object),
-             ('e7', object),
-             ('e8', object)]
-    potion_sorted = [tuple(i) for i in potion_sorted]
-    potion_sorted = np.array(potion_sorted, dtype=dtype)
-    if poison:
-        potion_sorted = np.sort(potion_sorted, order=['neg', 'pos'])[::-1]
-    else:
-        potion_sorted = np.sort(potion_sorted, order=['pos', 'neg'])
+    potions = potion_combinations(origin_limited, restrictions, poison)
 
     potion_data = []
-    for index, potion in enumerate(potion_sorted):
+    for i in potions.index:
         new_row = {
-            "Ingredient 1": potion[0],
-            "Ingredient 2": potion[1],
-            "Ingredient 3": potion[2],
-            "Ingredient 4": potion[3],
-            "Effect 1": potion[4+2],
-            "Effect 2": potion[5+2],
-            "Effect 3": potion[6+2],
-            "Effect 4": potion[7+2],
-            "Effect 5": potion[8+2],
-            "Effect 6": potion[9+2],
-            "Effect 7": potion[10+2],
-            "Effect 8": potion[11+2],
+            "Ingredient 1": potions.iloc[i].get("ing1", ''),
+            "Ingredient 2": potions.iloc[i].get("ing2", ''),
+            "Ingredient 3": potions.iloc[i].get("ing3", ''),
+            "Ingredient 4": potions.iloc[i].get("ing4", ''),
+            "Effect 1": potions.iloc[i].get(0, '') if type(potions.iloc[i].get(0, ''))!=type(1.0) else '', # '' if missing on nan
+            "Effect 2": potions.iloc[i].get(1, '') if type(potions.iloc[i].get(1, ''))!=type(1.0) else '',
+            "Effect 3": potions.iloc[i].get(2, '') if type(potions.iloc[i].get(2, ''))!=type(1.0) else '',
+            "Effect 4": potions.iloc[i].get(3, '') if type(potions.iloc[i].get(3, ''))!=type(1.0) else '',
+            "Effect 5": potions.iloc[i].get(4, '') if type(potions.iloc[i].get(4, ''))!=type(1.0) else '',
+            "Effect 6": potions.iloc[i].get(5, '') if type(potions.iloc[i].get(5, ''))!=type(1.0) else '',
+            "Effect 7": potions.iloc[i].get(6, '') if type(potions.iloc[i].get(6, ''))!=type(1.0) else '',
+            "Effect 8": potions.iloc[i].get(7, '') if type(potions.iloc[i].get(7, ''))!=type(1.0) else '',
         }
         potion_data.append(new_row)
 

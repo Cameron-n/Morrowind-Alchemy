@@ -97,7 +97,8 @@ leaf_map = dmc.Stack([
                     dl.Overlay(dl.LayerGroup(id="ingredient_info_flora"), name="Flora (cyan)", checked=True),
                     dl.Overlay(dl.LayerGroup(id="ingredient_info_containers"), name="Containers (magenta)", checked=True),
                     dl.Overlay(dl.LayerGroup(id="ingredient_info_loose"), name="Loose (green)", checked=True)
-                ])
+                ]),
+            dl.FullScreenControl(),
             ],
             center=dict(lat=-50, lng=100), zoom=1, className="map-size", crs=crs
             )
