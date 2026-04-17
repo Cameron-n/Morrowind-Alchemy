@@ -1,20 +1,36 @@
-INSERT INTO Tool(`Name`,`Quality`,`Type`) VALUES ('Apprentice''s Alembic',0.5,'Alembic');
-INSERT INTO Tool(`Name`,`Quality`,`Type`) VALUES ('Apprentice''s Calcinator',0.5,'Calcinator');
-INSERT INTO Tool(`Name`,`Quality`,`Type`) VALUES ('Apprentice''s Mortar and Pestle',0.5,'Mortar and Pestle');
-INSERT INTO Tool(`Name`,`Quality`,`Type`) VALUES ('Apprentice''s Retort',0.5,'Retort');
-INSERT INTO Tool(`Name`,`Quality`,`Type`) VALUES ('Grandmaster''s Alembic',1.5,'Alembic');
-INSERT INTO Tool(`Name`,`Quality`,`Type`) VALUES ('Grandmaster''s Calcinator',1.5,'Calcinator');
-INSERT INTO Tool(`Name`,`Quality`,`Type`) VALUES ('Grandmaster''s Mortar and Pestle',1.5,'Mortar and Pestle');
-INSERT INTO Tool(`Name`,`Quality`,`Type`) VALUES ('Grandmaster''s Retort',1.5,'Retort');
-INSERT INTO Tool(`Name`,`Quality`,`Type`) VALUES ('Journeyman''s Alembic',1,'Alembic');
-INSERT INTO Tool(`Name`,`Quality`,`Type`) VALUES ('Journeyman''s Calcinator',1,'Calcinator');
-INSERT INTO Tool(`Name`,`Quality`,`Type`) VALUES ('Journeyman''s Mortar and Pestle',1,'Mortar and Pestle');
-INSERT INTO Tool(`Name`,`Quality`,`Type`) VALUES ('Journeyman''s Retort',1,'Retort');
-INSERT INTO Tool(`Name`,`Quality`,`Type`) VALUES ('Master''s Alembic',1.2,'Alembic');
-INSERT INTO Tool(`Name`,`Quality`,`Type`) VALUES ('Master''s Calcinator',1.2,'Calcinator');
-INSERT INTO Tool(`Name`,`Quality`,`Type`) VALUES ('Master''s Mortar and Pestle',1.2,'Mortar and Pestle');
-INSERT INTO Tool(`Name`,`Quality`,`Type`) VALUES ('Master''s Retort',1.2,'Retort');
-INSERT INTO Tool(`Name`,`Quality`,`Type`) VALUES ('SecretMaster''s Alembic',2,'Alembic');
-INSERT INTO Tool(`Name`,`Quality`,`Type`) VALUES ('SecretMaster''s Calcinator',2,'Calcinator');
-INSERT INTO Tool(`Name`,`Quality`,`Type`) VALUES ('SecretMaster''s Mortar and Pestle',2,'Mortar and Pestle');
-INSERT INTO Tool(`Name`,`Quality`,`Type`) VALUES ('SecretMaster''s Retort',2,'Retort');
+INSERT INTO Tool(`Name`,`Quality`,`Type`,`Origin`,`Icon`) VALUES
+ ('Apprentice''s Alembic',0.5,'Alembic','Base','m\\tx_alembic_01')
+,('Good Skooma Pipe',0.15,'Alembic','Base','m\\tx_spipe_01')
+,('Grandmaster''s Alembic',1.5,'Alembic','Base','m\\tx_alembic_04')
+,('Journeyman''s Alembic',1,'Alembic','Base','m\\tx_alembic_02')
+,('Master''s Alembic',1.2,'Alembic','Base','m\\tx_alembic_03')
+,('SecretMaster''s Alembic',2,'Alembic','Base','m\\tx_alembic_05')
+,('Tsiya''s Skooma Pipe',0.15,'Alembic','Base','m\\tx_spipe_01')
+,('Aegrotat Lamp',0.9,'Alembic','Cyrodiil','pc\\m\\pc_misc_aegrotatlamp')
+,('Skooma Pipe',0.15,'Alembic','Cyrodiil','pc\\m\\pc_misc_skoomapipe')
+,('Direnni Alembic',1.2,'Alembic','Skyrim','sky\\m\\tx_app_dalembic_01')
+,('Ebony Alembic',1.75,'Alembic','Tamriel Rebuilt','tr\\m\\tr_app_e_alembic')
+,('Flavored Hookah',0.75,'Alembic','Tamriel Rebuilt','tr\\m\\tr_hookah')
+,('Hookah',0.45,'Alembic','Tamriel Rebuilt','tr\\m\\tr_hookah')
+,('Punavit Communal Cup',1.6,'Alembic','Tamriel Rebuilt','tr\\m\\tr_ind_velk_comcup01')
+,('Apprentice''s Calcinator',0.5,'Calcinator','Base','m\\tx_calcinator_01')
+,('Grandmaster''s Calcinator',1.5,'Calcinator','Base','m\\tx_calcinator_04')
+,('Journeyman''s Calcinator',1,'Calcinator','Base','m\\tx_calcinator_01')
+,('Master''s Calcinator',1.2,'Calcinator','Base','m\\tx_calcinator_03')
+,('SecretMaster''s Calcinator',2,'Calcinator','Base','m\\tx_calcinator_05')
+,('Ebony Calcinator',1.75,'Calcinator','Tamriel Rebuilt','tr\\m\\tr_app_e_calcinator')
+,('Punavit Samovar',1.6,'Calcinator','Tamriel Rebuilt','tr\\m\\tr_ind_velk_samovar01')
+,('Apprentice''s Mortar and Pestle',0.5,'Mortar and Pestle','Base','m\\tx_mortarpestle_01')
+,('Grandmaster''s Mortar and Pestle',1.5,'Mortar and Pestle','Base','m\\tx_mortarpestle_g_01')
+,('Journeyman''s Mortar and Pestle',1,'Mortar and Pestle','Base','m\\tx_mortarpestle_01')
+,('Master''s Mortar and Pestle',1.2,'Mortar and Pestle','Base','m\\tx_mortarpestle_m_01')
+,('SecretMaster''s Mortar and Pestl',2,'Mortar and Pestle','Base','m\\tx_mortarpestle_s_01')
+,('Grinder',1,'Mortar and Pestle','Cyrodiil','pc\\m\\pc_tx_grinder')
+,('Direnni Mortar and Pestle',1.2,'Mortar and Pestle','Skyrim','sky\\m\\tx_app_dmortar_01')
+,('Ebony Mortar and Pestle',1.75,'Mortar and Pestle','Tamriel Rebuilt','tr\\m\\tr_app_e_mortarpestle')
+,('Apprentice''s Retort',0.5,'Retort','Base','m\\tx_retort_01')
+,('Grandmaster''s Retort',1.5,'Retort','Base','m\\tx_retort_04')
+,('Journeyman''s Retort',1,'Retort','Base','m\\tx_retort_02')
+,('Master''s Retort',1.2,'Retort','Base','m\\tx_retort_03')
+,('SecretMaster''s Retort',2,'Retort','Base','m\\tx_retort_05')
+,('Ebony Retort',1.75,'Retort','Tamriel Rebuilt','tr\\m\\tr_app_e_retort');

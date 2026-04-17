@@ -14,7 +14,7 @@ import dash_mantine_components as dmc
 
 
 #%% Layout
-def navbar():
+def Navbar():
     """
     Navbar component for the app shell.
 
@@ -27,13 +27,31 @@ def navbar():
     """
     layout = dmc.Stack([
         dmc.Anchor(
-            dmc.Button("Potion Database", fullWidth=True),
-            href="/", underline="never", c="myColors.9"
+            dmc.Button("Home", fullWidth=True, id="nav-btn-home",
+                       className="media-navbar-button"),
+            href="/", underline="never", c="myColors.9",
+            className="media-navbar-anchor"
         ),
         dmc.Anchor(
-            dmc.Button("Potion Maker", fullWidth=True),
-            href="/potion-maker", underline="never", c="myColors.9"
+            dmc.Button("Potion Database", fullWidth=True, id="nav-btn-data",
+                       className="media-navbar-button"),
+            href="/potion-database", underline="never", c="myColors.9",
+            className="media-navbar-anchor"
         ),
-    ])
+        dmc.Anchor(
+            dmc.Button("Potion Maker", fullWidth=True, id="nav-btn-maker",
+                       className="media-navbar-button"),
+            href="/potion-maker", underline="never", c="myColors.9",
+            className="media-navbar-anchor"
+        ),
+        dmc.Anchor(
+            dmc.Button("Ingredient Info", fullWidth=True, id="nav-btn-info",
+                       className="media-navbar-button"),
+            href="/ingredient-info", underline="never", c="myColors.9",
+            className="media-navbar-anchor"
+        ),
+    ],
+        className="media-navbar"
+    )
 
     return layout

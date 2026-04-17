@@ -4,6 +4,8 @@ Created on Wed May 21 21:41:23 2025
 
 @author: Cameron-n
 
+CURRENTLY DISABLED. CANDIDATE FOR DELETION.
+
 Page to add ingredients to the database. Password protected and
 not on navigation bar to stop it being publically accessible
 """
@@ -37,7 +39,8 @@ from components.data_access import db, Ingredient, DF_INGREDIENTS, DF_EFFECTS
 #%% Boilerplate
 
 if __name__ != '__main__':
-    dash.register_page(__name__)
+    pass
+    #dash.register_page(__name__)
 
 path = os.path.join(os.path.dirname(__file__), "../.env")
 load_dotenv(path)
@@ -51,22 +54,22 @@ success_fail_alert = dmc.Alert(hide=True, variant='outline',
 data_origin = DF_INGREDIENTS["Origin"].unique()
 
 attributes = dmc.Group([
-        dmc.NumberInput(label="Value", min=0, required=True, id="textinput_value"),
-        dmc.NumberInput(label="Weight", min=0, required=True, id="textinput_weight"),
-        dmc.TextInput(label="Ingredient", required=True, id="textinput_ingredient"),
-        dmc.TagsInput(label="Origin", data=data_origin, maxTags=1, required=True, id="textinput_origin"),
-        ],
+    dmc.NumberInput(label="Value", min=0, required=True, id="textinput_value"),
+    dmc.NumberInput(label="Weight", min=0, required=True, id="textinput_weight"),
+    dmc.TextInput(label="Ingredient", required=True, id="textinput_ingredient"),
+    dmc.TagsInput(label="Origin", data=data_origin, maxTags=1, required=True, id="textinput_origin"),
+    ],
     grow=True,
     wrap="nowrap")
 
 data_effects = DF_EFFECTS["Spell Effects"]
 
 properties = dmc.Group([
-        dmc.Select(label="Property 1", data=data_effects, clearable=False, required=True, searchable=True, id="textinput_property_1"),
-        dmc.Select(label="Property 2", data=data_effects, clearable=True, searchable=True, id="textinput_property_2"),
-        dmc.Select(label="Property 3", data=data_effects, clearable=True, searchable=True, id="textinput_property_3"),
-        dmc.Select(label="Property 4", data=data_effects, clearable=True, searchable=True, id="textinput_property_4"),
-        ],
+    dmc.Select(label="Property 1", data=data_effects, clearable=False, required=True, searchable=True, id="textinput_property_1"),
+    dmc.Select(label="Property 2", data=data_effects, clearable=True, searchable=True, id="textinput_property_2"),
+    dmc.Select(label="Property 3", data=data_effects, clearable=True, searchable=True, id="textinput_property_3"),
+    dmc.Select(label="Property 4", data=data_effects, clearable=True, searchable=True, id="textinput_property_4"),
+    ],
     grow=True,
     wrap="nowrap")
 
@@ -100,26 +103,23 @@ layout = dmc.Stack([
     State("textinput_property_3", "value"),
     State("textinput_property_4", "value"),
     State("textinput_auth", "value"),
-    Input("button_add_ingredient","n_clicks"),
+    Input("button_add_ingredient", "n_clicks"),
     prevent_initial_call=True
     )
 def on_add_ingredient_button_clicked(
         hide,
-        value_value, 
-        value_weight, 
+        value_value,
+        value_weight,
         value_ingredient,
         value_origin,
-        value_property_1, 
-        value_property_2, 
-        value_property_3, 
+        value_property_1,
+        value_property_2,
+        value_property_3,
         value_property_4,
         auth,
         n_clicks
         ):
-    """
-    Adds ingredient and properties to database
-    """
-
+    """Add ingredient and properties to database"""
     TOKEN = os.environ.get("ADD_INGREDIENT_TOKEN")
     if auth != TOKEN:
         return "Access Denied.", "Failed!", "red", False
@@ -130,12 +130,13 @@ def on_add_ingredient_button_clicked(
     if True in [i in [None, [], ""] for i in starred]:
         return "Missing required inputs.", "Failed!", "red", False
 
-    properties = [value_property_1, value_property_2, 
+    properties = [value_property_1, value_property_2,
                   value_property_3, value_property_4]
 
     # Need to replace spaces with underscores as the flask-sqlalchemy columns
     # are defined as variables. E.g. "Resist Magicka" -> "Resist_Magicka"
-    effects = {i.replace(" ","_") : '1' for i in properties if i not in [None, [], ""]}
+    effects = {i.replace(" ", "_"): '1'
+               for i in properties if i not in [None, [], ""]}
 
     new_ingredient = Ingredient(
         Value=value_value,
@@ -152,6 +153,6 @@ def on_add_ingredient_button_clicked(
     except IntegrityError:
         return "Duplicate ingredient name.", "Failed!", "red", False
     except OperationalError:
-       return "Database Error. Try again later.", "Failed!", "red", False
+        return "Database Error. Try again later.", "Failed!", "red", False
 
     return f"Ingredient '{value_ingredient}' successfully added!", "Success!", "green", False

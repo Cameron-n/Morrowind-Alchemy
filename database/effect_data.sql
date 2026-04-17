@@ -1,71 +1,133 @@
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Blind',1,NULL);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Burden',1,NULL);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Cure Blight Disease',2000,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Cure Common Disease',300,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Cure Paralyzation',100,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Cure Poison',100,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Damage Health',8,NULL);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Detect Animal',0.75,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Detect Enchantment',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Detect Key',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Dispel',5,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Drain Agility',1,NULL);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Drain Endurance',1,NULL);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Drain Fatigue',2,NULL);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Drain Health',4,NULL);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Drain Intelligence',1,NULL);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Drain Luck',1,NULL);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Drain Magicka',4,NULL);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Drain Personality',1,NULL);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Drain Speed',1,NULL);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Drain Strength',1,NULL);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Drain Willpower',1,NULL);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Feather',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Fire Shield',3,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Fortify Agility',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Fortify Attack',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Fortify Endurance',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Fortify Fatigue',0.5,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Fortify Health',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Fortify Intelligence',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Fortify Luck',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Fortify Magicka',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Fortify Personality',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Fortify Speed',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Fortify Strength',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Fortify Willpower',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Frost Damage',5,NULL);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Frost Shield',3,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Invisibility',20,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Levitate',3,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Light',0.2,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Lightning Shield',3,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Night Eye',0.2,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Paralyze',40,NULL);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Poison',9,NULL);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Reflect',10,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Resist Common Disease',2,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Resist Fire',2,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Resist Frost',2,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Resist Magicka',2,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Resist Paralysis',0.2,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Resist Poison',2,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Resist Shock',2,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Restore Agility',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Restore Endurance',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Restore Fatigue',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Restore Health',5,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Restore Intelligence',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Restore Luck',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Restore Magicka',5,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Restore Personality',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Restore Speed',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Restore Strength',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Restore Willpower',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Sound',3,NULL);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Spell Absorption',10,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Swift Swim',2,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Telekinesis',1,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Water Breathing',3,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Water Walking',3,1);
-INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`) VALUES ('Weakness to Fire',2,NULL);
+INSERT INTO Effect(`Spell Effects`,`Base Cost`,`Positive`,`HasNoDuration`,`HasNoMagnitude`,`Icon`) VALUES
+ ('Blind',1,NULL,NULL,NULL,'s\\b_tx_s_blind')
+,('Burden',1,NULL,NULL,NULL,'s\\b_tx_s_burden')
+,('Chameleon',1,1,NULL,NULL,'s\\b_tx_s_chameleon')
+,('Cure Blight Disease',2000,1,1,1,'s\\b_tx_s_cure_bghtdise')
+,('Cure Common Disease',300,1,1,1,'s\\b_tx_s_cure_comdise')
+,('Cure Paralyzation',100,1,1,1,'s\\b_tx_s_cure_paralyse')
+,('Cure Poison',100,1,1,1,'s\\b_tx_s_poision')
+,('Damage Agility',8,NULL,NULL,NULL,'s\\b_tx_s_dmg_attrib')
+,('Damage Endurance',8,NULL,NULL,NULL,'s\\b_tx_s_dmg_attrib')
+,('Damage Fatigue',4,NULL,NULL,NULL,'s\\b_tx_s_dmg_fati')
+,('Damage Health',0.75,NULL,NULL,NULL,'s\\b_tx_s_dmg_health')
+,('Damage Intelligence',8,NULL,NULL,NULL,'s\\b_tx_s_dmg_attrib')
+,('Damage Luck',8,NULL,NULL,NULL,'s\\b_tx_s_dmg_attrib')
+,('Damage Magicka',8,NULL,NULL,NULL,'s\\b_tx_s_dmg_magic')
+,('Damage Personality',8,NULL,NULL,NULL,'s\\b_tx_s_dmg_attrib')
+,('Damage Speed',8,NULL,NULL,NULL,'s\\b_tx_s_dmg_attrib')
+,('Damage Strength',8,NULL,NULL,NULL,'s\\b_tx_s_dmg_attrib')
+,('Damage Willpower',8,NULL,NULL,NULL,'s\\b_tx_s_dmg_attrib')
+,('Detect Animal',0.75,1,NULL,NULL,'s\\b_tx_s_detect_animal')
+,('Detect Enchantment',1,1,NULL,NULL,'s\\b_tx_s_detect_enchtmt')
+,('Detect Key',1,1,NULL,NULL,'s\\b_tx_s_detect_key')
+,('Disintegrate Armor',6,NULL,NULL,NULL,'s\\b_tx_s_disintgt_armor')
+,('Disintegrate Weapon',6,NULL,NULL,NULL,'s\\b_tx_s_disintgt_wpn')
+,('Dispel',5,1,1,NULL,'s\\b_tx_s_dispel')
+,('Divine Intervention',150,1,1,1,'s\\b_tx_s_divine_intervt')
+,('Drain Agility',1,NULL,NULL,NULL,'s\\b_tx_s_drain_attrib')
+,('Drain Alteration',1,NULL,NULL,NULL,'s\\b_tx_s_drain_skill')
+,('Drain Endurance',1,NULL,NULL,NULL,'s\\b_tx_s_drain_attrib')
+,('Drain Fatigue',2,NULL,NULL,NULL,'s\\b_tx_s_drain_fati')
+,('Drain Health',4,NULL,NULL,NULL,'s\\b_tx_s_drain_health')
+,('Drain Intelligence',1,NULL,NULL,NULL,'s\\b_tx_s_drain_attrib')
+,('Drain Luck',1,NULL,NULL,NULL,'s\\b_tx_s_drain_attrib')
+,('Drain Magicka',4,NULL,NULL,NULL,'s\\b_tx_s_drain_magic')
+,('Drain Mysticism',1,NULL,NULL,NULL,'s\\b_tx_s_drain_skill')
+,('Drain Personality',1,NULL,NULL,NULL,'s\\b_tx_s_drain_attrib')
+,('Drain Sneak',1,NULL,NULL,NULL,'s\\b_tx_s_drain_skill')
+,('Drain Speed',1,NULL,NULL,NULL,'s\\b_tx_s_drain_attrib')
+,('Drain Strength',1,NULL,NULL,NULL,'s\\b_tx_s_drain_attrib')
+,('Drain Willpower',1,NULL,NULL,NULL,'s\\b_tx_s_drain_attrib')
+,('Feather',1,1,NULL,NULL,'s\\b_tx_s_feather')
+,('Fire Damage',5,NULL,NULL,NULL,'s\\b_tx_s_fire_dmg')
+,('Fire Shield',3,1,NULL,NULL,'s\\b_tx_s_fire_shield')
+,('Fortify Acrobatics',1,1,NULL,NULL,'s\\b_tx_s_ftfy_skill')
+,('Fortify Agility',1,1,NULL,NULL,'s\\b_tx_s_ftfy_attrib')
+,('Fortify Alchemy',1,1,NULL,NULL,'s\\b_tx_s_ftfy_skill')
+,('Fortify Athletics',1,1,NULL,NULL,'s\\b_tx_s_ftfy_skill')
+,('Fortify Attack',1,1,NULL,NULL,'s\\b_tx_s_ftfy_attack')
+,('Fortify Blunt Weapon',1,1,NULL,NULL,'s\\b_tx_s_ftfy_skill')
+,('Fortify Conjuration',1,1,NULL,NULL,'s\\b_tx_s_ftfy_skill')
+,('Fortify Endurance',1,1,NULL,NULL,'s\\b_tx_s_ftfy_attrib')
+,('Fortify Fatigue',0.5,1,NULL,NULL,'s\\b_tx_s_ftfy_fati')
+,('Fortify Health',1,1,NULL,NULL,'s\\b_tx_s_ftfy_health')
+,('Fortify Intelligence',1,1,NULL,NULL,'s\\b_tx_s_ftfy_attrib')
+,('Fortify Light Armor',1,1,NULL,NULL,'s\\b_tx_s_ftfy_skill')
+,('Fortify Luck',1,1,NULL,NULL,'s\\b_tx_s_ftfy_attrib')
+,('Fortify Magicka',1,1,NULL,NULL,'s\\b_tx_s_ftfy_magic')
+,('Fortify Marksman',1,1,NULL,NULL,'s\\b_tx_s_ftfy_skill')
+,('Fortify Maximum Magicka',4,1,NULL,NULL,'s\\b_tx_s_ftfy_mgcmtplr')
+,('Fortify Mysticism',1,1,NULL,NULL,'s\\b_tx_s_ftfy_skill')
+,('Fortify Personality',1,1,NULL,NULL,'s\\b_tx_s_ftfy_attrib')
+,('Fortify Restoration',1,1,NULL,NULL,'s\\b_tx_s_ftfy_skill')
+,('Fortify Speechcraft',1,1,NULL,NULL,'s\\b_tx_s_ftfy_skill')
+,('Fortify Speed',1,1,NULL,NULL,'s\\b_tx_s_ftfy_attrib')
+,('Fortify Strength',1,1,NULL,NULL,'s\\b_tx_s_ftfy_attrib')
+,('Fortify Unarmored',1,1,NULL,NULL,'s\\b_tx_s_ftfy_skill')
+,('Fortify Willpower',1,1,NULL,NULL,'s\\b_tx_s_ftfy_attrib')
+,('Frost Damage',5,NULL,NULL,NULL,'s\\b_tx_s_frost_dmg')
+,('Frost Shield',3,1,NULL,NULL,'s\\b_tx_s_frost_shield')
+,('Invisibility',20,1,NULL,1,'s\\b_tx_s_invisible')
+,('Jump',3,1,NULL,NULL,'s\\b_tx_s_jump')
+,('Levitate',3,1,NULL,NULL,'s\\b_tx_s_levitate')
+,('Light',0.2,1,NULL,NULL,'s\\b_tx_s_light')
+,('Lightning Shield',3,1,NULL,NULL,'s\\b_tx_s_light_shield')
+,('Mark',350,1,1,1,'s\\b_tx_s_mark')
+,('Night Eye',0.2,1,NULL,NULL,'s\\b_tx_s_nighteye')
+,('Paralyze',40,NULL,NULL,1,'s\\b_tx_s_paralyse')
+,('Poison',9,NULL,NULL,NULL,'s\\b_tx_s_poison')
+,('Recall',350,1,1,1,'s\\b_tx_s_recall')
+,('Reflect',10,1,NULL,NULL,'s\\b_tx_s_reflect')
+,('Resist Blight Disease',5,1,NULL,NULL,'s\\b_tx_s_rst_bghtdise')
+,('Resist Common Disease',2,1,NULL,NULL,'s\\b_tx_s_rst_comdise')
+,('Resist Fire',2,1,NULL,NULL,'s\\b_tx_s_rst_fire')
+,('Resist Frost',2,1,NULL,NULL,'s\\b_tx_s_rst_frost')
+,('Resist Magicka',2,1,NULL,NULL,'s\\b_tx_s_rst_magic')
+,('Resist Normal Weapons',5,1,NULL,NULL,'s\\b_tx_s_rst_nmlwpn')
+,('Resist Paralysis',0.2,1,NULL,NULL,'s\\b_tx_s_rst_plysis')
+,('Resist Poison',2,1,NULL,NULL,'s\\b_tx_s_rst_poison')
+,('Resist Shock',2,1,NULL,NULL,'s\\b_tx_s_rst_shock')
+,('Restore Agility',1,1,NULL,NULL,'s\\b_tx_s_rstor_attrib')
+,('Restore Athletics',1,1,NULL,NULL,'s\\b_tx_s_rstor_skill')
+,('Restore Destruction',1,1,NULL,NULL,'s\\b_tx_s_rstor_skill')
+,('Restore Endurance',1,1,NULL,NULL,'s\\b_tx_s_rstor_attrib')
+,('Restore Fatigue',1,1,NULL,NULL,'s\\b_tx_s_rstor_fatigue')
+,('Restore Health',5,1,NULL,NULL,'s\\b_tx_s_rstor_health')
+,('Restore Intelligence',1,1,NULL,NULL,'s\\b_tx_s_rstor_attrib')
+,('Restore Luck',1,1,NULL,NULL,'s\\b_tx_s_rstor_skill')
+,('Restore Magicka',5,1,NULL,NULL,'s\\b_tx_s_rstor_magic')
+,('Restore Personality',1,1,NULL,NULL,'s\\b_tx_s_rstor_attrib')
+,('Restore Restoration',1,1,NULL,NULL,'s\\b_tx_s_rstor_skill')
+,('Restore Speechcraft',1,1,NULL,NULL,'s\\b_tx_s_rstor_skill')
+,('Restore Speed',1,1,NULL,NULL,'s\\b_tx_s_rstor_attrib')
+,('Restore Strength',1,1,NULL,NULL,'s\\b_tx_s_rstor_attrib')
+,('Restore Willpower',1,1,NULL,NULL,'s\\b_tx_s_rstor_attrib')
+,('Sanctuary',1,1,NULL,NULL,'s\\b_tx_s_sanctuary')
+,('Shield',2,1,NULL,NULL,'s\\b_tx_s_shield')
+,('Shock Damage',7,NULL,NULL,NULL,'s\\b_tx_s_shock_dmg')
+,('Silence',40,NULL,NULL,1,'s\\b_tx_s_silence')
+,('Slowfall',3,1,NULL,NULL,'s\\b_tx_s_slowfall')
+,('Sound',3,NULL,NULL,NULL,'s\\b_tx_s_sound')
+,('Spell Absorption',10,1,NULL,NULL,'s\\b_tx_s_spll_absb')
+,('Stunted Magicka',1,NULL,NULL,1,'s\\b_tx_s_dmg_magic')
+,('Summon Scamp',12,1,NULL,1,'s\\b_tx_s_smmn_scamp')
+,('Swift Swim',2,1,NULL,NULL,'s\\b_tx_s_swiftswim')
+,('Telekinesis',1,1,NULL,NULL,'s\\b_tx_s_telekinesis')
+,('Vampirism',5,NULL,1,1,'s\\b_tx_s_vampire')
+,('Water Breathing',3,1,NULL,1,'s\\b_tx_s_water_breath')
+,('Water Walking',3,1,NULL,1,'s\\b_tx_s_water_walk')
+,('Weakness to Common Disease',2,NULL,NULL,NULL,'s\\b_tx_s_wknstocomdise')
+,('Weakness to Fire',2,NULL,NULL,NULL,'s\\b_tx_s_wknstofire')
+,('Weakness to Frost',2,NULL,NULL,NULL,'s\\b_tx_s_wknstofrost')
+,('Weakness to Magicka',2,NULL,NULL,NULL,'s\\b_tx_s_wknstomagic')
+,('Weakness to Normal Weapons',2,NULL,NULL,NULL,'s\\b_tx_s_wknstonmlwpns')
+,('Weakness to Poison',2,NULL,NULL,NULL,'s\\b_tx_s_wknstopoison')
+,('Weakness to Shock',2,NULL,NULL,NULL,'s\\b_tx_s_wknstoshock')
+,('Reflect Damage',20,1,NULL,NULL,'td\\s\\b_td_s_ref_dam')
+,('Insight',10,1,NULL,NULL,'td\\s\\b_td_s_insight')
+,('Fortify Casting',1,1,NULL,NULL,'td\\s\\b_td_s_ftfy_cast')
+,('Radiant Shield',5,1,NULL,NULL,'td\\s\\b_td_s_radiant_shield')
+,('Detect Invisibility',3,1,NULL,NULL,'td\\s\\b_td_s_det_invisibility')
+,('Detect Enemy',2.25,1,NULL,NULL,'td\\s\\b_td_s_det_enemy')
+,('Detect Humanoid',1.5,1,NULL,NULL,'td\\s\\b_td_s_det_hum')
+,('Blink',10,1,1,NULL,'td\\s\\b_td_s_blink');
