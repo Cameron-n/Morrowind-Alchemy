@@ -19,6 +19,7 @@ Features:
 
 # Standard
 import pandas as pd
+from io import StringIO
 
 # Dash
 import dash
@@ -194,10 +195,12 @@ layout = dmc.Stack([
 clientside_callback(
     """
     function updateLoadingState(n_clicks) {
-        return true
+        return [true, true, true];
     }
     """,
     Output("data-loader-overlay", "visible"),
+    Output("Effect Button", "disabled"),
+    Output("Download Button", "disabled"),
     Input("Effect Button", "n_clicks"),
     prevent_initial_call=True,
 )
@@ -206,6 +209,8 @@ clientside_callback(
 @callback(
     Output("Effect Table", "children"),
     Output("data-loader-overlay", "visible", allow_duplicate=True),
+    Output("Effect Button", "disabled", allow_duplicate=True),
+    Output("Download Button", "disabled", allow_duplicate=True),
     Output("potion-database-store", "data"),
     Input("Effect Button", "n_clicks"),
     State("data-origins", "value"),
@@ -259,11 +264,11 @@ def calculate_potions(
 
     """
     if not origins:
-        return [], False, dash.no_update
+        return [], False, False, False, dash.no_update
     
     if not (value_1 or value_2 or value_3 or value_4 or
             value_5 or value_6 or value_7 or value_8):
-        return [], False, dash.no_update
+        return [], False, False, False, dash.no_update
 
     restrictions = []
     for i in [value_1, value_2, value_3, value_4,
@@ -326,7 +331,7 @@ def calculate_potions(
 
     potion_data = pd.DataFrame(potion_data).to_json(date_format='iso', orient='split')
 
-    return rows, False, potion_data
+    return rows, False, False, False, potion_data
 
 
 @callback(
@@ -340,7 +345,7 @@ def download_table(data, value_1, value_2, value_3, value_4, value_5, value_6, v
     if not data:
         data = pd.DataFrame([])
     else:
-        data = pd.read_json(data, orient='split')
+        data = pd.read_json(StringIO(data), orient='split')
         data.loc[-1] = ['Selected Effects', '', '', '', value_1, value_2, value_3, value_4, value_5, value_6, value_7, value_8]
         data.index = data.index + 1
         data = data.sort_index()
@@ -356,7 +361,7 @@ def download_table(data, value_1, value_2, value_3, value_4, value_5, value_6, v
 def load_last_table(data, n_clicks):
 
     if data:
-        data = pd.read_json(data, orient='split')
+        data = pd.read_json(StringIO(data), orient='split')
         data = [data.iloc[i].to_dict() for i in range(len(data))]
         
         rows = [dmc.TableTr([

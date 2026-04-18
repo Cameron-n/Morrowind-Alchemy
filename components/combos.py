@@ -21,10 +21,6 @@ Contains the logic to calculate ingredient combinations (i.e. potions)
 # https://medium.com/@vamarnath/why-pandas-is-slower-than-you-think-and-how-to-optimize-your-dataframe-code-1c23b2bd4803
 # USE .astype('category')
 
-# Tasks
-# - disjoint function
-# - fix mode if effect occurs 3/4 times [mode of pairs + mode of triples + mode of quads???]
-
 #%% Imports
 
 # Standard
@@ -39,21 +35,50 @@ DF_EFFECTS = DF_EFFECTS.fillna(0)
 
 
 #%% Functions
+def apply_function(x):
+    """
+    Currently Unused, get_effects is ~14x faster.
+    """
+    x = x.value_counts()
+    x = x[x>1].index
+    return list(x)
 
-def only_effects(df, n=2): #<-- UNFINISHED
+
+def get_effects(df):
+    """
+    WARNING: Code adapted from ChatGPT.
+
+    Vectorized function for finding repeated
+    effects for combination of ingredients.
+    """
+    # Turn into multiindex Series with 1st index being the row, 2nd col
+    df = df.stack()
+    # Group by index (each row of unstacked df) then by values
+    # Transform by size and only get repeats (i.e. more than 1)
+    mask = df.groupby([df.index.get_level_values(0), df.values], observed=False).transform('size')>1
+    # Mask is True for both/all locations of repeats. We want only one
+    df = df[mask].reset_index(level=1, drop=True).groupby(level=0).unique()
+    df = pd.DataFrame(list(df))
+    return df
+
+
+def only_effects(df, n=2):
     if df.empty:
         return pd.DataFrame()
 
     if n==2:
-        #https://stackoverflow.com/questions/60014754/value-counts-for-each-row-pandas-dataframe
-        df = df.mode(axis=1).assign(ing1=df[0], ing2=df[1]).astype("category")
+        #Outdated -> https://stackoverflow.com/questions/60014754/value-counts-for-each-row-pandas-dataframe
+        #df = df.drop([0,1], axis=1).mode(axis=1)
+        df2 = df.drop([0,1], axis=1)
+        df2 = get_effects(df2)
+        df = df2.assign(ing1=df[0], ing2=df[1]).astype("category")
     elif n==3:
-        df2 = df.apply(lambda x: pd.DataFrame(list(x.value_counts()[x.value_counts()>1].index)).transpose(), axis=1)
-        df2 = pd.concat(list(df2))
+        df2 = df.drop([0,1,2], axis=1)
+        df2 = get_effects(df2)
         df = df2.assign(ing1=df[0], ing2=df[1], ing3=df[2]).astype("category")
     elif n==4:
-        df2 = df.apply(lambda x: pd.DataFrame(list(x.value_counts()[x.value_counts()>1].index)).transpose(), axis=1)
-        df2 = pd.concat(list(df2))
+        df2 = df.drop([0,1,2,3], axis=1)
+        df2 = get_effects(df2)
         df = df2.assign(ing1=df[0], ing2=df[1], ing3=df[2], ing4=df[3]).astype("category")
 
     return df
@@ -285,7 +310,7 @@ def potion_combinations(ingredients, restrictions, poison):
     del ne22
 
     if len(restrictions) == 2:
-        d2 = disjoint(ingredients, restrictions, poison) # .mode before to calc highest num of effects
+        d2 = disjoint(ingredients, restrictions, poison)
         pe22 = only_effects(pe22)
         pe23 = only_effects(pe23, 3)
         potions = pd.concat([pe22, pe23, d2])
@@ -374,9 +399,11 @@ def potion_combinations(ingredients, restrictions, poison):
     pe63 = pe53[is_minimal==3]
     ne63 = pe53[is_minimal==2]
 
+    # Outside if as len(restrictions==7) needs access
+    pe64 = extend(ne63, right, 3).reset_index().drop("index", axis=1)
+
     if len(restrictions) == 6:
-        pe64 = extend(ne63, right, 3).reset_index().drop("index", axis=1)
-        d6 = disjoint(ingredients, restrictions, poison) # .mode before to calc highest num of effects
+        d6 = disjoint(ingredients, restrictions, poison)
         pe63 = only_effects(pe63, 3)
         pe64 = only_effects(pe64, 4)
         potions = pd.concat([pe63, pe64, d6])
@@ -389,14 +416,14 @@ def potion_combinations(ingredients, restrictions, poison):
     if len(restrictions) == 7:
         is_minimal = pe64[[0,1,2,3]].isin(list(all_effects)).sum(axis=1)
         pe74 = pe64[is_minimal==4]
-        d7 = disjoint(ingredients, restrictions, poison) # .mode before to calc highest num of effects
+        d7 = disjoint(ingredients, restrictions, poison)
         pe74 = only_effects(pe74, 4)
         potions = pd.concat([pe74, d7])
         potions = rank_potions(potions, 100, poison)        
         return potions
     #%% 8
     if len(restrictions) == 8:
-        d8 = disjoint(ingredients, restrictions, poison) # .mode before to calc highest num of effects
+        d8 = disjoint(ingredients, restrictions, poison)
         potions = rank_potions(d8, 100, poison)        
         return potions
 
