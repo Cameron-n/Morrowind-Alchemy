@@ -402,11 +402,8 @@ def update_effect_dropdowns(value_1, value_2, value_3, value_4, mwse):
 
     return_tuple = [dash.no_update] * 4
 
-    if i != 'E':
-        return_tuple[i-1] = update_effect_list(values[i-1], mwse)
-    else:
-        for j in [1,2,3,4]:
-            return_tuple[j-1] = update_effect_list(values[j-1], mwse)
+    for j in [1,2,3,4]:
+        return_tuple[j-1] = update_effect_list(values[j-1], mwse)
 
     return_tuple += data_list
     return_tuple = tuple(return_tuple)
